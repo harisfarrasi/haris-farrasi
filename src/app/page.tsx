@@ -4,6 +4,7 @@ import { Projects } from '@/components/sections/projects';
 import { Writings } from '@/components/sections/writings';
 import { Library } from '@/components/sections/library';
 import { Footer } from '@/components/layout/footer';
+import { Copyright } from '@/components/layout/copyright';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </main>
       <Footer />
       <Library />
+      <Copyright />
     </>
   );
 }

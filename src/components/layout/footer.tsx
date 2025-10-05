@@ -4,7 +4,6 @@ import { Button } from '../ui/button';
 import Link from 'next/link';
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer id="contact" className="py-16 sm:py-24 border-t border-border">
@@ -38,12 +37,6 @@ export function Footer() {
                 Send Message <Send className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-        </div>
-
-        <div className="mt-16 pt-8 border-t border-border text-center text-muted-foreground">
-          <p className="text-sm">
-            &copy; {currentYear} Haris Farrasi.
-          </p>
         </div>
       </div>
     </footer>
