@@ -38,9 +38,14 @@ export function Projects() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateIn>
-          <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center">
-            Projects
-          </h2>
+          <div className="text-center mb-12">
+              <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">
+                Projects
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Creations designed to provide leverage and drive progress.
+              </p>
+            </div>
         </AnimateIn>
 
         {/* Desktop Grid View */}
