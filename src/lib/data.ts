@@ -8,6 +8,7 @@ export const PROJECTS = [
     tags: ['Education', 'AI'],
     liveUrl: 'https://plajar.com',
     sourceUrl: '#',
+    icon: 'BookOpen',
   },
   {
     id: 'project-2',
@@ -18,6 +19,7 @@ export const PROJECTS = [
     tags: ['Application', 'AI', 'Productivity'],
     liveUrl: 'https://scoraa.com',
     sourceUrl: '#',
+    icon: 'Spline',
   },
   {
     id: 'project-3',
@@ -28,6 +30,7 @@ export const PROJECTS = [
     tags: ['Agency', 'AI', 'B2B'],
     liveUrl: 'https://operatorr.framer.website',
     sourceUrl: '#',
+    icon: 'Workflow',
   },
 ];
 
