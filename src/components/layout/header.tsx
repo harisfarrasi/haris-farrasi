@@ -4,9 +4,12 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Menu, X } from 'lucide-react';
 
 export function Header() {
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,6 +37,8 @@ export function Header() {
           <Link href="/" className="font-headline text-xl font-bold text-foreground transition-colors hover:text-primary">
             Haris Farrasi
           </Link>
+
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
               <Button key={link.href} variant="link" asChild>
@@ -46,7 +51,52 @@ export function Header() {
                 <Link href="#contact">Contact</Link>
             </Button>
           </nav>
-          {/* Mobile menu trigger can be added here */}
+
+          {/* Mobile Navigation */}
+          <div className="md:hidden">
+            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Open menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left" className="w-full max-w-xs bg-background p-6">
+                <div className="flex flex-col h-full">
+                  <div className="flex items-center justify-between mb-8">
+                    <Link href="/" onClick={() => setIsMenuOpen(false)} className="font-headline text-xl font-bold">
+                        Haris Farrasi
+                    </Link>
+                    <SheetTrigger asChild>
+                      <Button variant="ghost" size="icon">
+                        <X className="h-6 w-6" />
+                        <span className="sr-only">Close menu</span>
+                      </Button>
+                    </SheetTrigger>
+                  </div>
+                  
+                  <nav className="flex flex-col space-y-4">
+                    {navLinks.map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            onClick={() => setIsMenuOpen(false)}
+                            className="text-lg text-muted-foreground hover:text-foreground"
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
+                  </nav>
+
+                  <div className="mt-auto">
+                    <Button asChild className="w-full">
+                        <Link href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+                    </Button>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
