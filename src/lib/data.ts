@@ -6,7 +6,7 @@ export const PROJECTS = [
     description: 'Empowering people with AI knowledge and skills for the future.',
     image: 'project-1',
     tags: ['Education', 'AI'],
-    liveUrl: '#',
+    liveUrl: 'https://plajar.com',
     sourceUrl: '#',
   },
   {
@@ -16,7 +16,7 @@ export const PROJECTS = [
     description: 'Personal leverage and cognitive amplifier to enhance human potential.',
     image: 'project-2',
     tags: ['Application', 'AI', 'Productivity'],
-    liveUrl: '#',
+    liveUrl: 'https://scoraa.com',
     sourceUrl: '#',
   },
   {
@@ -26,7 +26,7 @@ export const PROJECTS = [
     description: 'Applied AI for businesses, serving as a cashflow engine for the ecosystem.',
     image: 'project-3',
     tags: ['Agency', 'AI', 'B2B'],
-    liveUrl: '#',
+    liveUrl: 'https://operatorr.framer.website',
     sourceUrl: '#',
   },
 ];
