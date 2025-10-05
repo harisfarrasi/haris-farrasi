@@ -72,7 +72,7 @@ export function Header() {
           <div
             className={cn(
               'md:hidden absolute top-full w-screen max-w-xs left-1/2 -translate-x-1/2 mt-3 p-4',
-              'rounded-2xl border border-border bg-card shadow-xl',
+              'rounded-2xl border border-border bg-background/10 backdrop-blur-xl shadow-md',
               'origin-top transition-all duration-300 ease-out',
               isMenuOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
             )}
