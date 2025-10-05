@@ -1,11 +1,12 @@
 import { AnimateIn } from '@/components/animate-in';
 import { Button } from '@/components/ui/button';
+import { BookOpen, Spline, Workflow } from 'lucide-react';
 import Link from 'next/link';
 
-const LogoPlaceholder = ({ letter, delay = 0 }: { letter: string, delay?: number }) => (
+const IconContainer = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => (
   <AnimateIn delay={delay}>
-    <div className="w-10 h-10 bg-card flex items-center justify-center rounded-lg text-xl font-headline text-primary shadow-md border border-white/10">
-      {letter}
+    <div className="w-10 h-10 bg-card flex items-center justify-center rounded-lg text-primary shadow-md border border-white/10">
+      {children}
     </div>
   </AnimateIn>
 );
@@ -17,13 +18,19 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center items-center gap-4 mb-8">
           <Link href="#project-1">
-            <LogoPlaceholder letter="P" delay={0} />
+            <IconContainer delay={0}>
+              <BookOpen className="w-5 h-5" />
+            </IconContainer>
           </Link>
           <Link href="#project-2">
-            <LogoPlaceholder letter="S" delay={100} />
+            <IconContainer delay={100}>
+              <Spline className="w-5 h-5" />
+            </IconContainer>
           </Link>
           <Link href="#project-3">
-            <LogoPlaceholder letter="O" delay={200} />
+            <IconContainer delay={200}>
+              <Workflow className="w-5 h-5" />
+            </IconContainer>
           </Link>
         </div>
         <AnimateIn delay={300}>
