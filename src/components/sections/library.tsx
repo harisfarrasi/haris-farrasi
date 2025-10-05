@@ -10,12 +10,12 @@ export function Library() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateIn>
           <div className="max-w-3xl mx-auto">
-            <div className="text-center sm:text-left mb-12">
+            <div className="text-center mb-12">
               <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">
                 Library
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Hal-hal yang saya baca ini telah mengubah cara saya melihat dunia.
+                The readings that have changed the way I see the world.
               </p>
             </div>
             <div className="space-y-2">
