@@ -5,8 +5,8 @@ import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
 
 const timeline = [
-  { year: '2003', event: 'Born into a world on the cusp of technological change.' },
-  { year: '2022', event: 'Began studies at Diponegoro University.' },
+  { year: '2003', event: 'Born in Indonesia, beginning a journey at the intersection of local identity and global technology.' },
+  { year: '2022', event: 'Began studies in Economics at Universitas Diponegoro, while self-teaching technology and programming.' },
   { year: '2024', event: 'Founded Plajar, an AI Academy to democratize AI knowledge.' },
   { year: '2025', event: 'Launched Scoraa, an AI application for personal leverage.' },
   { year: '2025', event: 'Building Operatorr, an AI agency for business solutions.' },
