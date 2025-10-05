@@ -1,3 +1,4 @@
+
 export const PROJECTS = [
   {
     id: 'project-1',
@@ -24,8 +25,8 @@ export const PROJECTS = [
   {
     id: 'project-3',
     title: 'Operatorr',
-    tagline: 'AI Agency',
-    description: 'Applied AI for businesses, serving as a cashflow engine for the ecosystem.',
+    tagline: 'AI Ops',
+    description: 'Accelerating AI adoption for businesses through applied solutions.',
     image: 'project-3',
     tags: ['Agency', 'AI', 'B2B'],
     liveUrl: 'https://operatorr.framer.website',
