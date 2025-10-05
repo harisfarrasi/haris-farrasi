@@ -24,18 +24,18 @@ export function Projects() {
     if (!api) return;
 
     const scrollProgress = api.scrollProgress();
-    const newScaleValues = api.scrollSnapList().map((snap, index) => {
+    const newScaleValues = api.scrollSnapList().map((snap) => {
         let diff = Math.abs(snap - scrollProgress);
-        if (api.options.loop) {
+        if (api.options?.loop) {
             const wrapDiff = Math.abs(1 - diff);
             diff = Math.min(diff, wrapDiff);
         }
         return 1 - diff * 0.2; // Center is 1, others are smaller
     });
     
-    const newOpacityValues = api.scrollSnapList().map((snap, index) => {
+    const newOpacityValues = api.scrollSnapList().map((snap) => {
         let diff = Math.abs(snap - scrollProgress);
-        if (api.options.loop) {
+        if (api.options?.loop) {
             const wrapDiff = Math.abs(1 - diff);
             diff = Math.min(diff, wrapDiff);
         }
