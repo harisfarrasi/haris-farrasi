@@ -1,8 +1,7 @@
 import { SOCIAL_LINKS } from '@/lib/data';
 import { Linkedin, Send, Twitter, Instagram, Mail } from 'lucide-react';
 import { Button } from '../ui/button';
-import { Input } from '../ui/input';
-import { Textarea } from '../ui/textarea';
+import Link from 'next/link';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -34,14 +33,13 @@ export function Footer() {
               </Button>
             </div>
           </div>
-          <form className="space-y-4">
-            <Input type="text" placeholder="Name" />
-            <Input type="email" placeholder="Email" />
-            <Textarea placeholder="Message" />
-            <Button type="submit" className="w-full">
-              Send Message <Send className="ml-2 h-4 w-4" />
+          <div className="flex flex-col justify-center">
+            <Button asChild size="lg" className="w-full">
+              <Link href="mailto:harisfarrasi@gmail.com">
+                Send Message <Send className="ml-2 h-4 w-4" />
+              </Link>
             </Button>
-          </form>
+          </div>
         </div>
 
         <div className="mt-16 pt-8 border-t border-border text-center text-muted-foreground">
