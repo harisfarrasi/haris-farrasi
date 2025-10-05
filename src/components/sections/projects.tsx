@@ -27,7 +27,7 @@ export function Projects() {
     const scrollProgress = api.scrollProgress();
     const newScaleValues = api.scrollSnapList().map((snap, index) => {
         let diff = Math.abs(snap - scrollProgress);
-        if (api.options.loop) {
+        if (api.options?.loop) {
             const wrapDiff = Math.abs(1 - diff);
             diff = Math.min(diff, wrapDiff);
         }
@@ -36,7 +36,7 @@ export function Projects() {
     
     const newOpacityValues = api.scrollSnapList().map((snap, index) => {
         let diff = Math.abs(snap - scrollProgress);
-        if (api.options.loop) {
+        if (api.options?.loop) {
             const wrapDiff = Math.abs(1 - diff);
             diff = Math.min(diff, wrapDiff);
         }
