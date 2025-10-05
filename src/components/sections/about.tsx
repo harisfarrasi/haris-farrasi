@@ -2,9 +2,9 @@ import { AnimateIn } from '@/components/animate-in';
 import Image from 'next/image';
 
 const timeline = [
-  { year: '2023', event: 'Founded Plajar, an AI Academy to democratize AI knowledge.' },
-  { year: '2024', event: 'Launched Scoraa, an AI application for personal leverage.' },
-  { year: 'Present', event: 'Building Operatorr, an AI agency for business solutions.' },
+  { year: '2024', event: 'Founded Plajar, an AI Academy to democratize AI knowledge.' },
+  { year: '2025', event: 'Launched Scoraa, an AI application for personal leverage.' },
+  { year: '2025', event: 'Building Operatorr, an AI agency for business solutions.' },
   { year: 'Future', event: 'Expanding the AI Tech Conglomerate globally.' }
 ];
 
