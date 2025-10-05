@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import { PROJECTS } from '@/lib/data';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { AnimateIn } from '@/components/animate-in';
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { ArrowUpRight } from 'lucide-react';
 
 const LogoPlaceholder = ({ letter }: { letter: string }) => (
   <div className="w-20 h-20 bg-card flex items-center justify-center rounded-full text-4xl font-headline text-primary">
@@ -23,18 +25,23 @@ export function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {PROJECTS.map((project, index) => (
             <AnimateIn key={project.id} delay={index * 150}>
-              <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="block h-full">
-                <Card className="h-full flex flex-col items-center text-center p-6 bg-card hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1 rounded-2xl">
-                  <CardHeader className="p-0 mb-4">
-                    <LogoPlaceholder letter={project.title.charAt(0)} />
-                  </CardHeader>
-                  <CardContent className="p-0 flex-grow">
-                    <CardTitle className="font-headline text-2xl mb-2">{project.title}</CardTitle>
-                    <p className="font-bold text-primary mb-2">{project.tagline}</p>
-                    <p className="text-muted-foreground">{project.description}</p>
-                  </CardContent>
-                </Card>
-              </Link>
+              <Card className="h-full flex flex-col items-center text-center p-6 bg-card hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1 rounded-2xl">
+                <CardHeader className="p-0 mb-4">
+                  <LogoPlaceholder letter={project.title.charAt(0)} />
+                </CardHeader>
+                <CardContent className="p-0 flex-grow">
+                  <CardTitle className="font-headline text-2xl mb-2">{project.title}</CardTitle>
+                  <p className="font-bold text-primary mb-2">{project.tagline}</p>
+                  <p className="text-muted-foreground">{project.description}</p>
+                </CardContent>
+                <CardFooter className="p-0 pt-6">
+                  <Button asChild>
+                    <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      View Project <ArrowUpRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
             </AnimateIn>
           ))}
         </div>
