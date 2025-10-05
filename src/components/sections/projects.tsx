@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { AnimateIn } from '@/components/animate-in';
@@ -17,51 +17,17 @@ const LogoPlaceholder = ({ letter }: { letter: string }) => (
 
 export function Projects() {
   const [api, setApi] = useState<CarouselApi>();
-  const [scaleValues, setScaleValues] = useState<number[]>([]);
-  const [opacityValues, setOpacityValues] = useState<number[]>([]);
-
-  const onScroll = useCallback(() => {
-    if (!api) return;
-
-    const scrollProgress = api.scrollProgress();
-    const newScaleValues = api.scrollSnapList().map((snap) => {
-        let diff = Math.abs(snap - scrollProgress);
-        if (api.options?.loop) {
-            const wrapDiff = Math.abs(1 - diff);
-            diff = Math.min(diff, wrapDiff);
-        }
-        return 1 - diff * 0.2; // Center is 1, others are smaller
-    });
-    
-    const newOpacityValues = api.scrollSnapList().map((snap) => {
-        let diff = Math.abs(snap - scrollProgress);
-        if (api.options?.loop) {
-            const wrapDiff = Math.abs(1 - diff);
-            diff = Math.min(diff, wrapDiff);
-        }
-        return 1 - diff * 0.5; // Center is 1, others are more transparent
-    });
-
-    setScaleValues(newScaleValues);
-    setOpacityValues(newOpacityValues);
-  }, [api]);
-
 
   useEffect(() => {
     if (!api) {
       return;
     }
-    
-    onScroll();
 
-    api.on("scroll", onScroll);
-    api.on("reInit", onScroll);
-    api.on("select", onScroll);
+    api.on("select", () => {
+      // Future logic on select can go here
+    });
 
-    return () => {
-      api?.off("scroll", onScroll);
-    };
-  }, [api, onScroll]);
+  }, [api]);
 
   return (
     <section id="projects" className="py-24 sm:py-32 overflow-hidden relative scroll-mt-20">
@@ -114,10 +80,6 @@ export function Projects() {
                   <div className="p-1" id={project.id}>
                     <Card 
                       className="h-full flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-xl transition-transform duration-300 ease-out shadow-lg border-white/10 rounded-2xl"
-                      style={{
-                        transform: `scale(${scaleValues[index] || 0.8})`,
-                        opacity: opacityValues[index] || 0.5,
-                      }}
                     >
                       <CardHeader className="p-0 mb-4">
                         <LogoPlaceholder letter={project.title.charAt(0)} />
