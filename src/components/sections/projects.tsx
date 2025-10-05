@@ -11,7 +11,7 @@ import { PROJECTS } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
 const LogoPlaceholder = ({ letter }: { letter: string }) => (
-  <div className="w-20 h-20 bg-card flex items-center justify-center rounded-full text-4xl font-headline text-primary">
+  <div className="w-20 h-20 bg-card flex items-center justify-center rounded-lg text-4xl font-headline text-primary">
     {letter}
   </div>
 );
@@ -51,7 +51,7 @@ export function Projects() {
         <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8">
           {PROJECTS.map((project, index) => (
             <AnimateIn key={project.id} delay={index * 150}>
-              <Card className="h-full flex flex-col items-center text-center p-6 bg-card hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1 rounded-2xl">
+              <Card className="h-full flex flex-col items-center text-center p-6 bg-card hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
                 <CardHeader className="p-0 mb-4">
                   <LogoPlaceholder letter={project.title.charAt(0)} />
                 </CardHeader>
@@ -83,7 +83,7 @@ export function Projects() {
                 <CarouselItem key={project.id} className="basis-3/4">
                   <div className="p-1">
                     <Card className={cn(
-                      "h-full flex flex-col items-center text-center p-6 bg-card transition-all duration-300 rounded-2xl",
+                      "h-full flex flex-col items-center text-center p-6 bg-card transition-all duration-300",
                       index === current ? "scale-100 opacity-100" : "scale-90 opacity-60"
                     )}>
                       <CardHeader className="p-0 mb-4">
