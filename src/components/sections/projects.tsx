@@ -26,7 +26,7 @@ export function Projects() {
     const scrollProgress = api.scrollProgress();
     const newScaleValues = api.scrollSnapList().map((snap) => {
         let diff = Math.abs(snap - scrollProgress);
-        if (api.options().loop) {
+        if (api.options()?.loop) {
             const wrapDiff = Math.abs(1 - diff);
             diff = Math.min(diff, wrapDiff);
         }
@@ -35,7 +35,7 @@ export function Projects() {
     
     const newOpacityValues = api.scrollSnapList().map((snap) => {
         let diff = Math.abs(snap - scrollProgress);
-        if (api.options().loop) {
+        if (api.options()?.loop) {
             const wrapDiff = Math.abs(1 - diff);
             diff = Math.min(diff, wrapDiff);
         }
@@ -64,11 +64,13 @@ export function Projects() {
   }, [api, onScroll]);
 
   return (
-    <section id="projects" className="relative py-24 sm:py-32 bg-card/50 overflow-hidden">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full filter blur-[100px] -translate-x-1/2 -translate-y-1/2 z-0"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/10 rounded-full filter blur-[100px] translate-x-1/2 translate-y-1/2 z-0"></div>
+    <section id="projects" className="py-24 sm:py-32 overflow-hidden relative">
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full filter blur-[100px] -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/10 rounded-full filter blur-[100px] translate-x-1/2 translate-y-1/2"></div>
+      </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateIn>
           <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center">
             Projects
