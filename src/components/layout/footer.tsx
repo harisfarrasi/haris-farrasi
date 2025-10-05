@@ -9,37 +9,35 @@ export function Footer() {
   return (
     <footer id="contact" className="py-16 sm:py-24 border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <h3 className="font-headline text-2xl md:text-3xl font-bold mb-4">Contact</h3>
+        <div className="max-w-3xl mx-auto text-center">
+            <h3 className="font-headline text-3xl md:text-4xl font-bold mb-4">Contact</h3>
             <p className="text-lg text-muted-foreground mb-8">
               I'm always open to new ideas and collaborations. Let's connect to collaborate, invest, or join the mission. Let's build the future together.
             </p>
-            <div className="flex justify-start gap-4 mt-8">
-              <Button variant="outline" asChild>
+            
+            <div className="flex justify-center gap-4 mb-8">
+              <Button variant="outline" size="icon" asChild>
                 <a href="mailto:harisfarrasi@gmail.com">
                   <Mail />
                 </a>
               </Button>
-              <Button variant="outline" asChild>
+              <Button variant="outline" size="icon" asChild>
                 <a href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer">
                   <Twitter />
                 </a>
               </Button>
-              <Button variant="outline" asChild>
+              <Button variant="outline" size="icon" asChild>
                 <a href="https://instagram.com/harisfarrasi" target="_blank" rel="noopener noreferrer">
                   <Instagram />
                 </a>
               </Button>
             </div>
-          </div>
-          <div className="flex flex-col justify-center">
-            <Button asChild size="lg" className="w-full">
+
+            <Button asChild size="lg">
               <Link href="mailto:harisfarrasi@gmail.com">
                 Send Message <Send className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-          </div>
         </div>
 
         <div className="mt-16 pt-8 border-t border-border text-center text-muted-foreground">
