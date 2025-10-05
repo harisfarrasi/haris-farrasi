@@ -18,7 +18,7 @@ export function Hero() {
         </AnimateIn>
         <AnimateIn delay={400}>
            <Button asChild size="lg">
-              <Link href="#manifesto">Join the Mission</Link>
+              <Link href="#projects">Join the Mission</Link>
            </Button>
         </AnimateIn>
       </div>
