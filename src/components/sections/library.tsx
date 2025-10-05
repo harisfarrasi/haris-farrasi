@@ -8,8 +8,8 @@ export function Library() {
   return (
     <section id="library" className="py-24 sm:py-32 bg-card/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <AnimateIn>
-          <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto">
+          <AnimateIn>
             <div className="text-center mb-12">
               <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">
                 Library
@@ -18,9 +18,11 @@ export function Library() {
                 The readings that have changed the way I see the world.
               </p>
             </div>
-            <div className="space-y-1">
-              {LIBRARY_LINKS.map((link, index) => (
-                <div key={link.id}>
+          </AnimateIn>
+          <div className="space-y-1">
+            {LIBRARY_LINKS.map((link, index) => (
+              <AnimateIn key={link.id} delay={index * 50}>
+                <div>
                   <Link href={link.url} target="_blank" rel="noopener noreferrer" className="block group">
                     <div className="p-3 rounded-lg transition-colors hover:bg-card/50">
                         <div className="flex justify-between items-start gap-4">
@@ -34,10 +36,10 @@ export function Library() {
                   </Link>
                   {index < LIBRARY_LINKS.length - 1 && <Separator />}
                 </div>
-              ))}
-            </div>
+              </AnimateIn>
+            ))}
           </div>
-        </AnimateIn>
+        </div>
       </div>
     </section>
   );
