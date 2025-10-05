@@ -16,9 +16,15 @@ export function Hero() {
     <section className="min-h-screen flex items-center justify-center text-center pt-24 pb-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center items-center gap-4 mb-8">
-          <LogoPlaceholder letter="P" delay={0} />
-          <LogoPlaceholder letter="S" delay={100} />
-          <LogoPlaceholder letter="O" delay={200} />
+          <Link href="#project-1">
+            <LogoPlaceholder letter="P" delay={0} />
+          </Link>
+          <Link href="#project-2">
+            <LogoPlaceholder letter="S" delay={100} />
+          </Link>
+          <Link href="#project-3">
+            <LogoPlaceholder letter="O" delay={200} />
+          </Link>
         </div>
         <AnimateIn delay={300}>
           <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-6 max-w-4xl mx-auto">
