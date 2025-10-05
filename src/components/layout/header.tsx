@@ -35,7 +35,7 @@ export function Header() {
       <div
         className={cn(
           'relative transition-all duration-300',
-          'mx-auto max-w-max rounded-full border border-border bg-background/80 backdrop-blur-sm shadow-md',
+          'mx-auto max-w-max rounded-full border border-border bg-background/80 backdrop-blur-lg shadow-md',
           'px-4'
         )}
       >
