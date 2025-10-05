@@ -13,7 +13,7 @@ export function Hero() {
         </AnimateIn>
         <AnimateIn delay={200}>
           <p className="font-headline text-xl md:text-2xl text-primary max-w-3xl mx-auto mb-10">
-            I’m building an AI Tech Conglomerate from Indonesia to the world.
+            Founder of Plajar, Scoraa, and Operatorr. I design and build things that create leverage for people.
           </p>
         </AnimateIn>
         <AnimateIn delay={400}>
