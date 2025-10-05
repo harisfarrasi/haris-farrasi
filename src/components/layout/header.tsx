@@ -8,16 +8,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, X } from 'lucide-react';
 
 export function Header() {
-  const [hasScrolled, setHasScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setHasScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navLinks = [
     { href: '#projects', label: 'Projects' },
@@ -26,37 +17,39 @@ export function Header() {
   ];
 
   return (
-    <header
-      className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        hasScrolled ? 'bg-background/80 backdrop-blur-sm border-b border-border' : 'bg-transparent'
-      )}
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <Link href="/" className="font-headline text-xl font-bold text-foreground transition-colors hover:text-primary">
+    <header className="fixed top-0 left-0 right-0 z-50 p-4">
+      <div
+        className={cn(
+          'relative transition-all duration-300',
+          'mx-auto max-w-max rounded-full border border-border bg-background/80 backdrop-blur-sm shadow-md', // Desktop: floating island
+          'md:px-4',
+          'max-md:w-full max-md:rounded-xl max-md:px-2' // Mobile: full-width floating bar
+        )}
+      >
+        <div className="flex items-center justify-between h-14">
+          <Link href="/" className="font-headline text-xl font-bold text-foreground transition-colors hover:text-primary px-4">
             Haris Farrasi
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
-              <Button key={link.href} variant="link" asChild>
+              <Button key={link.href} variant="ghost" asChild className="rounded-full">
                 <Link href={link.href} className="text-muted-foreground hover:text-foreground">
                   {link.label}
                 </Link>
               </Button>
             ))}
-            <Button asChild>
+            <Button asChild className="rounded-full">
                 <Link href="#contact">Contact</Link>
             </Button>
           </nav>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden">
+          <div className="md:hidden pr-2">
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="rounded-full">
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
                 </Button>
