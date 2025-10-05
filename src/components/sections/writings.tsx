@@ -5,7 +5,7 @@ import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
 
 const timeline = [
-  { year: '2003', event: 'Born, instantly assigned Indonesian nationality. 🇮🇩' },
+  { year: '2003', event: 'Born, instantly assigned Indonesian nationality 🇮🇩.' },
   { year: '2022', event: 'Began Economics at Unievrsitas Diponegoro, self-learning technology and engineering.' },
   { year: '2024', event: 'Founded Plajar, an AI Academy to democratize AI knowledge.' },
   { year: '2025', event: 'Launched Scoraa, an AI application for personal leverage.' },
