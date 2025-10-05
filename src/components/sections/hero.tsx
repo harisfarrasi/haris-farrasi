@@ -1,6 +1,6 @@
 import { AnimateIn } from '@/components/animate-in';
 import { Button } from '@/components/ui/button';
-import { BookOpen, Spline, Workflow } from 'lucide-react';
+import { BookOpen, Sparkles, Workflow } from 'lucide-react';
 import Link from 'next/link';
 
 const IconContainer = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => (
@@ -24,7 +24,7 @@ export function Hero() {
           </Link>
           <Link href="#project-2">
             <IconContainer delay={100}>
-              <Spline className="w-5 h-5" />
+              <Sparkles className="w-5 h-5" />
             </IconContainer>
           </Link>
           <Link href="#project-3">

@@ -19,7 +19,7 @@ export const PROJECTS = [
     tags: ['Application', 'AI', 'Productivity'],
     liveUrl: 'https://scoraa.com',
     sourceUrl: '#',
-    icon: 'Spline',
+    icon: 'Sparkles',
   },
   {
     id: 'project-3',
