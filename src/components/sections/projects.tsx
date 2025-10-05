@@ -26,7 +26,7 @@ export function Projects() {
     const scrollProgress = api.scrollProgress();
     const newScaleValues = api.scrollSnapList().map((snap) => {
         let diff = Math.abs(snap - scrollProgress);
-        if (api && api.options && api.options.loop) {
+        if (api.options.loop) {
             const wrapDiff = Math.abs(1 - diff);
             diff = Math.min(diff, wrapDiff);
         }
@@ -35,7 +35,7 @@ export function Projects() {
     
     const newOpacityValues = api.scrollSnapList().map((snap) => {
         let diff = Math.abs(snap - scrollProgress);
-        if (api && api.options && api.options.loop) {
+        if (api.options.loop) {
             const wrapDiff = Math.abs(1 - diff);
             diff = Math.min(diff, wrapDiff);
         }
@@ -81,7 +81,7 @@ export function Projects() {
         <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8">
           {PROJECTS.map((project, index) => (
             <AnimateIn key={project.id} delay={index * 150}>
-              <Card className="h-full flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-xl hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1 shadow-lg border-white/10">
+              <Card className="h-full flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-xl hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1 shadow-lg border-white/10 rounded-2xl">
                 <CardHeader className="p-0 mb-4">
                   <LogoPlaceholder letter={project.title.charAt(0)} />
                 </CardHeader>
@@ -113,7 +113,7 @@ export function Projects() {
                 <CarouselItem key={project.id} className="basis-2/3">
                   <div className="p-1">
                     <Card 
-                      className="h-full flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-xl transition-transform duration-300 ease-out shadow-lg border-white/10"
+                      className="h-full flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-xl transition-transform duration-300 ease-out shadow-lg border-white/10 rounded-2xl"
                       style={{
                         transform: `scale(${scaleValues[index] || 0.8})`,
                         opacity: opacityValues[index] || 0.5,
