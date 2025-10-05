@@ -35,7 +35,7 @@ export function Header() {
       <div
         className={cn(
           'relative transition-all duration-300',
-          'mx-auto max-w-max rounded-full border border-border bg-background/80 backdrop-blur-lg shadow-md',
+          'mx-auto max-w-max rounded-full border border-border bg-background/50 backdrop-blur-xl shadow-md',
           'px-4'
         )}
       >
@@ -75,7 +75,7 @@ export function Header() {
               'origin-top transition-all duration-300 ease-out',
             )}
           >
-            <div className="rounded-2xl border border-border bg-background/80 backdrop-blur-lg shadow-xl p-4">
+            <div className="rounded-2xl border border-border bg-background/50 backdrop-blur-xl shadow-xl p-4">
               <nav className="flex flex-col space-y-2">
                 {navLinks.map((link) => (
                   <Link
