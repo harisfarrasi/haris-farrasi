@@ -4,7 +4,7 @@ export function Copyright() {
   return (
     <div className="py-8 text-center text-muted-foreground border-t border-border">
       <p className="text-sm">
-        &copy; {currentYear} Haris Farrasi.
+        &copy; {currentYear} Alwan Haris Farrasi.
       </p>
     </div>
   );

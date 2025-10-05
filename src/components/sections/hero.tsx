@@ -8,7 +8,7 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateIn>
           <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-6 max-w-4xl mx-auto">
-            Haris Farrasi
+            Alwan Haris Farrasi
           </h1>
         </AnimateIn>
         <AnimateIn delay={200}>
