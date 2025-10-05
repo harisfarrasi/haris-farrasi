@@ -17,9 +17,10 @@ export function Header() {
   }, []);
 
   const navLinks = [
-    { href: '#about', label: 'About' },
+    { href: '#manifesto', label: 'Manifesto' },
     { href: '#projects', label: 'Projects' },
-    { href: '#writing', label: 'Writing' },
+    { href: '#essays', label: 'Essays' },
+    { href: '#about', label: 'About' },
   ];
 
   return (

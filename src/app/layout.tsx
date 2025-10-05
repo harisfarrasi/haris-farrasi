@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Haris Farrasi | Software Engineer',
-  description: 'Personal portfolio of Haris Farrasi, a software engineer and digital craftsman.',
+  title: 'Haris Farrasi | Building an AI Tech Conglomerate',
+  description: 'I’m building an AI Tech Conglomerate from Indonesia to the world — through education, applications, and agency.',
 };
 
 export default function RootLayout({

@@ -1,28 +1,31 @@
 export const PROJECTS = [
   {
     id: 'project-1',
-    title: 'Project Nebula',
-    description: 'A platform for real-time data visualization and analysis, built with Next.js and D3.js. Explores complex datasets with an intuitive interface.',
+    title: 'Plajar',
+    tagline: 'AI Academy',
+    description: 'Empowering people with AI knowledge and skills for the future.',
     image: 'project-1',
-    tags: ['Next.js', 'TypeScript', 'D3.js', 'Vercel'],
+    tags: ['Education', 'AI'],
     liveUrl: '#',
     sourceUrl: '#',
   },
   {
     id: 'project-2',
-    title: 'QuantumLeap AI',
-    description: 'An open-source machine learning framework for developers. Simplifies model training and deployment with a Python-based SDK.',
+    title: 'Scoraa',
+    tagline: 'AI Application',
+    description: 'Personal leverage and cognitive amplifier to enhance human potential.',
     image: 'project-2',
-    tags: ['Python', 'Machine Learning', 'API', 'Open Source'],
+    tags: ['Application', 'AI', 'Productivity'],
     liveUrl: '#',
     sourceUrl: '#',
   },
   {
     id: 'project-3',
-    title: 'EchoWave Social',
-    description: 'A decentralized social media application focused on user privacy and data ownership, leveraging blockchain technology.',
+    title: 'Operatorr',
+    tagline: 'AI Agency',
+    description: 'Applied AI for businesses, serving as a cashflow engine for the ecosystem.',
     image: 'project-3',
-    tags: ['React Native', 'Blockchain', 'Solidity', 'IPFS'],
+    tags: ['Agency', 'AI', 'B2B'],
     liveUrl: '#',
     sourceUrl: '#',
   },
@@ -31,27 +34,21 @@ export const PROJECTS = [
 export const WRITINGS = [
     {
         id: 'writing-1',
-        title: 'The Art of Asynchronous JavaScript',
-        publication: 'Code & Coffee',
-        date: '2023-10-15',
+        title: 'Leverage > Labor',
         url: '#',
-        description: 'A deep dive into promises, async/await, and event loops.'
+        description: 'Exploring how technology creates unprecedented leverage.'
     },
     {
         id: 'writing-2',
-        title: 'Building Scalable APIs with GraphQL',
-        publication: 'The Developer Digest',
-        date: '2023-07-22',
+        title: 'Indonesia’s Inflection Point',
         url: '#',
-        description: 'Exploring the benefits of GraphQL over traditional REST APIs.'
+        description: 'Why this is the most exciting time for technology in Indonesia.'
     },
     {
         id: 'writing-3',
-        title: 'An Introduction to Design Systems',
-        publication: 'UI/UX Weekly',
-        date: '2023-04-05',
+        title: 'The Perfect Storm 2029',
         url: '#',
-        description: 'How to create and maintain a design system for consistency and scale.'
+        description: 'Predictions on the convergence of AI, demographics, and global shifts.'
     }
 ];
 
