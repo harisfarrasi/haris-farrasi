@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { AnimateIn } from '@/components/animate-in';
@@ -18,25 +18,51 @@ const LogoPlaceholder = ({ letter }: { letter: string }) => (
 
 export function Projects() {
   const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
+  const [scaleValues, setScaleValues] = useState<number[]>([]);
+  const [opacityValues, setOpacityValues] = useState<number[]>([]);
+
+  const onScroll = useCallback(() => {
+    if (!api) return;
+
+    const scrollProgress = api.scrollProgress();
+    const newScaleValues = api.scrollSnapList().map((snap, index) => {
+        let diff = Math.abs(snap - scrollProgress);
+        if (api.options.loop) {
+            const wrapDiff = Math.abs(1 - diff);
+            diff = Math.min(diff, wrapDiff);
+        }
+        return 1 - diff * 0.2; // Center is 1, others are smaller
+    });
+    
+    const newOpacityValues = api.scrollSnapList().map((snap, index) => {
+        let diff = Math.abs(snap - scrollProgress);
+        if (api.options.loop) {
+            const wrapDiff = Math.abs(1 - diff);
+            diff = Math.min(diff, wrapDiff);
+        }
+        return 1 - diff * 0.5; // Center is 1, others are more transparent
+    });
+
+    setScaleValues(newScaleValues);
+    setOpacityValues(newOpacityValues);
+  }, [api]);
+
 
   useEffect(() => {
     if (!api) {
       return;
     }
+    
+    onScroll();
+    api.on("scroll", onScroll);
+    api.on("reInit", onScroll);
+    api.on("select", onScroll);
 
-    setCurrent(api.selectedScrollSnap());
-
-    const handleSelect = () => {
-      setCurrent(api.selectedScrollSnap());
-    };
-
-    api.on("select", handleSelect);
 
     return () => {
-      api.off("select", handleSelect);
+      api.off("scroll", onScroll);
     };
-  }, [api]);
+  }, [api, onScroll]);
 
   return (
     <section id="projects" className="py-24 sm:py-32 bg-card/50">
@@ -82,10 +108,13 @@ export function Projects() {
               {PROJECTS.map((project, index) => (
                 <CarouselItem key={project.id} className="basis-3/4">
                   <div className="p-1">
-                    <Card className={cn(
-                      "h-full flex flex-col items-center text-center p-6 bg-card transition-all duration-300",
-                      index === current ? "scale-100 opacity-100" : "scale-90 opacity-60"
-                    )}>
+                    <Card 
+                      className="h-full flex flex-col items-center text-center p-6 bg-card transition-transform duration-300 ease-out"
+                      style={{
+                        transform: `scale(${scaleValues[index] || 0.8})`,
+                        opacity: opacityValues[index] || 0.5,
+                      }}
+                    >
                       <CardHeader className="p-0 mb-4">
                         <LogoPlaceholder letter={project.title.charAt(0)} />
                       </CardHeader>
