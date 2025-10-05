@@ -5,6 +5,8 @@ import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
 
 const timeline = [
+  { year: '2003', event: 'Lahir' },
+  { year: '2022', event: 'Masuk kuliah di Undip' },
   { year: '2024', event: 'Founded Plajar, an AI Academy to democratize AI knowledge.' },
   { year: '2025', event: 'Launched Scoraa, an AI application for personal leverage.' },
   { year: '2025', event: 'Building Operatorr, an AI agency for business solutions.' },
