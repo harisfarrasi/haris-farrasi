@@ -21,29 +21,18 @@ export function Writings() {
         <div id="about" className="mb-24 sm:mb-32">
           <AnimateIn>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid lg:grid-cols-3 gap-12 items-center">
+              <div className="grid lg:grid-cols-1 gap-12 items-center">
                 <div className="lg:col-span-2">
                   <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-8">
                     Who is Haris?
                   </h2>
-                  <div className="space-y-6 text-lg text-muted-foreground">
+                  <div className="space-y-6 text-lg text-muted-foreground max-w-3xl">
                     <p>
                       I am a founder, thinker, builder, operator, and perpetual learner at the intersection of technology and human potential. My work is driven by a vision to leverage artificial intelligence to solve meaningful problems, starting from Indonesia and reaching the global stage.
                     </p>
                     <p>
                       My journey is one of relentless building and iterating, transforming ambitious ideas into tangible products and platforms that empower individuals and businesses. I believe in the power of technology not just as a tool, but as a cognitive amplifier that can unlock new possibilities for humanity.
                     </p>
-                  </div>
-                </div>
-                <div className="flex justify-center">
-                  <div className="relative w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-lg">
-                    <Image
-                      src="https://picsum.photos/seed/haris/400/400"
-                      alt="Haris Farrasi"
-                      fill
-                      className="object-cover"
-                      data-ai-hint="portrait man"
-                    />
                   </div>
                 </div>
               </div>
