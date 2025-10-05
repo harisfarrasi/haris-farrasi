@@ -57,3 +57,18 @@ export const SOCIAL_LINKS = {
   linkedin: 'https://linkedin.com',
   twitter: 'https://twitter.com',
 };
+
+export const LIBRARY_LINKS = [
+    {
+        id: 'library-1',
+        title: 'How To Be Successful',
+        url: 'https://blog.samaltman.com/how-to-be-successful',
+        description: 'by Sam Altman'
+    },
+    {
+        id: 'library-2',
+        title: '100 Blocks a Day',
+        url: 'https://waitbutwhy.com/2016/10/100-blocks-day.html',
+        description: 'by Tim Urban (Wait But Why)'
+    }
+];

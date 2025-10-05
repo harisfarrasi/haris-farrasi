@@ -17,9 +17,9 @@ export function Header() {
   }, []);
 
   const navLinks = [
-    { href: '#manifesto', label: 'Manifesto' },
     { href: '#projects', label: 'Projects' },
     { href: '#essays', label: 'Essays' },
+    { href: '#library', label: 'Library' },
     { href: '#about', label: 'About' },
   ];
 
