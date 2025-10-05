@@ -3,7 +3,6 @@ import { ArrowUpRight } from 'lucide-react';
 import { AnimateIn } from '@/components/animate-in';
 import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const timeline = [
   { year: '2024', event: 'Founded Plajar, an AI Academy to democratize AI knowledge.' },
@@ -28,10 +27,10 @@ export function Writings() {
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground max-w-3xl">
                     <p>
-                      I am a founder, thinker, builder, operator, and perpetual learner at the intersection of technology and human potential. My work is driven by a vision to leverage artificial intelligence to solve meaningful problems, starting from Indonesia and reaching the global stage.
+                      I’m 21, but I never saw my age as a limitation. I didn’t grow up in Silicon Valley. I grew up watching technology reshape the world from the outside, where every new breakthrough felt like both a promise and a warning. That distance shaped me: I don’t see tech as hype, but as raw material to rewire reality. My curiosity naturally gravitates toward AI, systems thinking, and code, because they are the strongest levers to multiply human capability.
                     </p>
                     <p>
-                      My journey is one of relentless building and iterating, transforming ambitious ideas into tangible products and platforms that empower individuals and businesses. I believe in the power of technology not just as a tool, but as a cognitive amplifier that can unlock new possibilities for humanity.
+                      At my core, I am a builder. I’m obsessed with turning complexity into clarity, and clarity into something people can actually use. I don’t think in terms of careers or companies; I think in terms of frameworks that can scale, endure, and compound over time. Building is not what I do. It’s who I am.
                     </p>
                   </div>
                 </div>
