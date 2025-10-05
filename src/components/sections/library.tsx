@@ -10,13 +10,18 @@ export function Library() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateIn>
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-8 text-center sm:text-left">
-              Library
-            </h2>
+            <div className="text-center sm:text-left mb-12">
+              <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight">
+                Library
+              </h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                Hal-hal yang saya baca ini telah mengubah cara saya melihat dunia.
+              </p>
+            </div>
             <div className="space-y-2">
               {LIBRARY_LINKS.map((link, index) => (
                 <div key={link.id}>
-                  <AnimateIn delay={index * 150}>
+                  <AnimateIn delay={index * 100}>
                     <Link href={link.url} target="_blank" rel="noopener noreferrer" className="block group">
                       <div className="p-4 rounded-lg transition-colors hover:bg-card/50">
                           <div className="flex justify-between items-start gap-4">
