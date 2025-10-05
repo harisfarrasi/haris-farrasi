@@ -35,7 +35,7 @@ export function Header() {
       <div
         className={cn(
           'relative transition-all duration-300',
-          'mx-auto max-w-max rounded-full border border-border bg-background/10 backdrop-blur-xl shadow-md',
+          'mx-auto max-w-max rounded-full border border-border bg-background/30 backdrop-blur-xl shadow-md',
           'px-4'
         )}
       >
@@ -72,7 +72,7 @@ export function Header() {
           <div
             className={cn(
               'md:hidden absolute top-full w-screen max-w-xs left-1/2 -translate-x-1/2 mt-3 p-4',
-              'rounded-2xl border border-border bg-background/10 backdrop-blur-xl shadow-md',
+              'rounded-2xl border border-border bg-background/30 backdrop-blur-xl shadow-md',
               'origin-top transition-all duration-300 ease-out',
               isMenuOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
             )}
