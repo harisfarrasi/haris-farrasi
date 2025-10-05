@@ -18,21 +18,21 @@ export function Library() {
                 The readings that have changed the way I see the world.
               </p>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-1">
               {LIBRARY_LINKS.map((link, index) => (
                 <div key={link.id}>
                   <Link href={link.url} target="_blank" rel="noopener noreferrer" className="block group">
-                    <div className="p-4 rounded-lg transition-colors hover:bg-card/50">
+                    <div className="p-3 rounded-lg transition-colors hover:bg-card/50">
                         <div className="flex justify-between items-start gap-4">
                             <div>
-                                <h3 className="font-headline text-xl font-semibold text-foreground group-hover:text-primary transition-colors">{link.title}</h3>
-                                <p className="mt-2 text-foreground/80">{link.description}</p>
+                                <h3 className="font-headline text-lg font-semibold text-foreground group-hover:text-primary transition-colors">{link.title}</h3>
+                                <p className="mt-1 text-foreground/80">{link.description}</p>
                             </div>
-                            <ArrowUpRight className="h-5 w-5 shrink-0 text-muted-foreground group-hover:text-primary transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
+                            <ArrowUpRight className="h-5 w-5 shrink-0 text-muted-foreground group-hover:text-primary transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                         </div>
                     </div>
                   </Link>
-                  {index < LIBRARY_LINKS.length - 1 && <Separator className="my-2" />}
+                  {index < LIBRARY_LINKS.length - 1 && <Separator />}
                 </div>
               ))}
             </div>
