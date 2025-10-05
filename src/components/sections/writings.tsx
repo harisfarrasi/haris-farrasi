@@ -41,12 +41,25 @@ export function Writings() {
                   <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-border -translate-x-1/2"></div>
                   {timeline.map((item, index) => (
                     <div key={index} className="relative flex items-center mb-8">
-                      <div className={`w-1/2 pr-8 text-right ${index % 2 === 0 ? 'order-1' : 'order-3'}`}>
-                        <p className="font-headline font-bold text-primary">{item.year}</p>
-                        <p className="text-muted-foreground">{item.event}</p>
-                      </div>
-                      <div className="w-4 h-4 rounded-full bg-primary border-4 border-background absolute left-1/2 -translate-x-1/2 z-10 order-2"></div>
-                      <div className="w-1/2 pl-8 order-1"></div>
+                      {index % 2 === 0 ? (
+                        <>
+                          <div className="w-1/2 pr-8 text-right">
+                            <p className="font-headline font-bold text-primary">{item.year}</p>
+                            <p className="text-muted-foreground">{item.event}</p>
+                          </div>
+                          <div className="w-4 h-4 rounded-full bg-primary border-4 border-background absolute left-1/2 -translate-x-1/2 z-10"></div>
+                          <div className="w-1/2 pl-8"></div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="w-1/2 pr-8"></div>
+                          <div className="w-4 h-4 rounded-full bg-primary border-4 border-background absolute left-1/2 -translate-x-1/2 z-10"></div>
+                          <div className="w-1/2 pl-8 text-left">
+                            <p className="font-headline font-bold text-primary">{item.year}</p>
+                            <p className="text-muted-foreground">{item.event}</p>
+                          </div>
+                        </>
+                      )}
                     </div>
                   ))}
                 </div>
