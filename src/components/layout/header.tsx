@@ -23,7 +23,7 @@ export function Header() {
           'relative transition-all duration-300',
           'mx-auto max-w-max rounded-full border border-border bg-background/80 backdrop-blur-sm shadow-md', // Desktop: floating island
           'md:px-4',
-          'max-md:w-full max-md:rounded-xl max-md:px-2' // Mobile: full-width floating bar
+          'max-md:w-full max-md:rounded-xl' // Mobile: full-width floating bar
         )}
       >
         <div className="flex items-center justify-between h-14">
