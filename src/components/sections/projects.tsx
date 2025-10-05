@@ -24,7 +24,7 @@ export function Projects() {
           {PROJECTS.map((project, index) => (
             <AnimateIn key={project.id} delay={index * 150}>
               <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="block h-full">
-                <Card className="h-full flex flex-col items-center text-center p-6 bg-card hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
+                <Card className="h-full flex flex-col items-center text-center p-6 bg-card hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1 rounded-2xl">
                   <CardHeader className="p-0 mb-4">
                     <LogoPlaceholder letter={project.title.charAt(0)} />
                   </CardHeader>
