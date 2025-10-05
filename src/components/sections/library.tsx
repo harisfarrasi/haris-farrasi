@@ -21,19 +21,17 @@ export function Library() {
             <div className="space-y-2">
               {LIBRARY_LINKS.map((link, index) => (
                 <div key={link.id}>
-                  <AnimateIn delay={index * 100}>
-                    <Link href={link.url} target="_blank" rel="noopener noreferrer" className="block group">
-                      <div className="p-4 rounded-lg transition-colors hover:bg-card/50">
-                          <div className="flex justify-between items-start gap-4">
-                              <div>
-                                  <h3 className="font-headline text-xl font-semibold text-foreground group-hover:text-primary transition-colors">{link.title}</h3>
-                                  <p className="mt-2 text-foreground/80">{link.description}</p>
-                              </div>
-                              <ArrowUpRight className="h-5 w-5 shrink-0 text-muted-foreground group-hover:text-primary transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
-                          </div>
-                      </div>
-                    </Link>
-                  </AnimateIn>
+                  <Link href={link.url} target="_blank" rel="noopener noreferrer" className="block group">
+                    <div className="p-4 rounded-lg transition-colors hover:bg-card/50">
+                        <div className="flex justify-between items-start gap-4">
+                            <div>
+                                <h3 className="font-headline text-xl font-semibold text-foreground group-hover:text-primary transition-colors">{link.title}</h3>
+                                <p className="mt-2 text-foreground/80">{link.description}</p>
+                            </div>
+                            <ArrowUpRight className="h-5 w-5 shrink-0 text-muted-foreground group-hover:text-primary transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
+                        </div>
+                    </div>
+                  </Link>
                   {index < LIBRARY_LINKS.length - 1 && <Separator className="my-2" />}
                 </div>
               ))}
