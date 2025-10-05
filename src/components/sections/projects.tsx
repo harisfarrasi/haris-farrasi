@@ -59,7 +59,7 @@ export function Projects() {
     api.on("select", onScroll);
 
     return () => {
-      api.off("scroll", onScroll);
+      api?.off("scroll", onScroll);
     };
   }, [api, onScroll]);
 
@@ -79,7 +79,7 @@ export function Projects() {
         <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8">
           {PROJECTS.map((project, index) => (
             <AnimateIn key={project.id} delay={index * 150}>
-              <Card className="h-full flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-xl hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
+              <Card className="h-full flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-xl hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1 shadow-lg border-white/10">
                 <CardHeader className="p-0 mb-4">
                   <LogoPlaceholder letter={project.title.charAt(0)} />
                 </CardHeader>
@@ -111,7 +111,7 @@ export function Projects() {
                 <CarouselItem key={project.id} className="basis-3/4">
                   <div className="p-1">
                     <Card 
-                      className="h-full flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-xl transition-transform duration-300 ease-out"
+                      className="h-full flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-xl transition-transform duration-300 ease-out shadow-lg border-white/10"
                       style={{
                         transform: `scale(${scaleValues[index] || 0.8})`,
                         opacity: opacityValues[index] || 0.5,
