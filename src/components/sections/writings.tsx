@@ -12,7 +12,7 @@ const timeline = [
 
 export function Writings() {
   return (
-    <section id="essays" className="py-24 sm:py-32">
+    <section id="story" className="py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         <div id="about" className="mb-24 sm:mb-32">
@@ -20,10 +20,10 @@ export function Writings() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid lg:grid-cols-1 gap-12 items-center">
                 <div className="lg:col-span-2">
-                  <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-8">
+                  <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-8 text-center">
                     My Story
                   </h2>
-                  <div className="space-y-6 text-lg text-muted-foreground max-w-3xl">
+                  <div className="space-y-6 text-lg text-muted-foreground max-w-3xl mx-auto">
                     <p>
                       I’m 21, and I didn’t grow up in Silicon Valley. I learned to watch technology reshape the world from the outside, where every breakthrough felt like both a promise and a warning. That distance made me see engineering differently: not as hype, but as raw material to design systems that endure. My curiosity has always gravitated toward technology and engineering because they hold the strongest levers to turn complexity into clarity and possibility into scale.
                     </p>
