@@ -41,7 +41,7 @@ export function Header() {
       >
         <div className="flex items-center justify-between h-14">
           <Link href="/" className="font-headline text-xl font-bold text-foreground transition-colors hover:text-primary md:px-4">
-            Alwan Haris Farrasi
+            Haris Farrasi
           </Link>
 
           {/* Desktop Navigation */}
