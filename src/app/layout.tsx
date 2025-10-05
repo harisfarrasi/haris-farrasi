@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Alwan Haris Farrasi | Building an AI Tech Conglomerate',
-  description: 'The personal website of Alwan Haris Farrasi. I’m building an AI Tech Conglomerate from Indonesia to the world — through education, applications, and agency.',
+  title: 'Alwan Haris Farrasi | Creating Technology for Leverage',
+  description: 'The personal website of Alwan Haris Farrasi. I create technology and systems that give people real leverage.',
 };
 
 export default function RootLayout({
