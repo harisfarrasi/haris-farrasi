@@ -11,8 +11,8 @@ export function Header() {
   const headerRef = useRef<HTMLDivElement>(null);
 
   const navLinks = [
+    { href: '#about', label: 'My Story' },
     { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' },
     { href: '#library', label: 'Library' },
   ];
 
