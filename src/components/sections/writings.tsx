@@ -25,7 +25,7 @@ export function Writings() {
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground max-w-3xl mx-auto">
                     <p>
-                      I’m 21, and I didn’t grow up in Silicon Valley. I learned to watch technology reshape the world from the outside, where every breakthrough felt like both a promise and a warning. That distance made me see engineering differently: not as hype, but as raw material to design systems that endure. My curiosity has always gravitated toward technology and engineering because they hold the strongest levers to turn complexity into clarity and possibility into scale.
+                      I’m 21, and I didn’t grow up in Silicon Valley 🇺🇸, Shenzhen 🇨🇳, Bangalore 🇮🇳, or Europe 🇪🇺. I learned to watch technology reshape the world from the outside, where every breakthrough felt like both a promise and a warning. That distance made me see engineering differently: not as hype, but as raw material to design systems that endure. My curiosity has always gravitated toward technology and engineering because they hold the strongest levers to turn complexity into clarity and possibility into scale.
                     </p>
                     <p>
                       I am Alwan Haris Farrasi, I am a builder. My mission is simple: to create technology and systems that give people real leverage and outlast trends. I don’t think in terms of careers or companies. I think in frameworks, infrastructures, and tools that compound over time. Building isn’t just what I do; it’s how I live, and it’s how I intend to shape the future.
