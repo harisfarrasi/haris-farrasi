@@ -5,7 +5,7 @@ const timeline = [
   { year: '2022', event: 'Began Economics at Universitas Diponegoro, self-learning tech and engineering.' },
   { year: '2024', event: 'Founded Plajar, an AI Academy to democratize AI knowledge.' },
   { year: '2025', event: 'Launched Scoraa, an AI application for personal leverage.' },
-  { year: '2025', event: 'Building Operatorr, an AI agency for business solutions.' },
+  { year: '2025', event: 'Building Operatorr, an AI ops for business solutions.' },
   { year: 'Future', event: 'Expanding the AI Tech Conglomerate globally.' }
 ];
 
