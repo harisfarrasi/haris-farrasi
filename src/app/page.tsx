@@ -13,9 +13,9 @@ export default function Home() {
         <Hero />
         <Projects />
         <Writings />
-        <Library />
       </main>
       <Footer />
+      <Library />
     </>
   );
 }
