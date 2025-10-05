@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const LogoPlaceholder = ({ letter, delay = 0 }: { letter: string, delay?: number }) => (
   <AnimateIn delay={delay}>
-    <div className="w-16 h-16 bg-card flex items-center justify-center rounded-2xl text-3xl font-headline text-primary shadow-md border border-white/10">
+    <div className="w-10 h-10 bg-card flex items-center justify-center rounded-lg text-xl font-headline text-primary shadow-md border border-white/10">
       {letter}
     </div>
   </AnimateIn>
