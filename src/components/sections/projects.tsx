@@ -2,13 +2,7 @@ import Image from 'next/image';
 import { PROJECTS } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AnimateIn } from '@/components/animate-in';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import Link from 'next/link';
 
 const LogoPlaceholder = ({ letter }: { letter: string }) => (
   <div className="w-20 h-20 bg-card flex items-center justify-center rounded-full text-4xl font-headline text-primary">
@@ -25,53 +19,22 @@ export function Projects() {
             Projects
           </h2>
         </AnimateIn>
-        
-        {/* Mobile View */}
-        <div className="md:hidden">
-           <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full max-w-sm mx-auto"
-          >
-            <CarouselContent>
-              {PROJECTS.map((project, index) => (
-                <CarouselItem key={index} className="basis-full">
-                  <div className="p-1">
-                    <Card className="h-full flex flex-col items-center text-center p-6 bg-card hover:border-primary/50 transition-all duration-300">
-                      <CardHeader className="p-0 mb-4">
-                        <LogoPlaceholder letter={project.title.charAt(0)} />
-                      </CardHeader>
-                      <CardContent className="p-0 flex-grow">
-                        <CardTitle className="font-headline text-2xl mb-2">{project.title}</CardTitle>
-                        <p className="font-bold text-primary mb-2">{project.tagline}</p>
-                        <p className="text-muted-foreground">{project.description}</p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
 
-        {/* Desktop View */}
-        <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {PROJECTS.map((project, index) => (
             <AnimateIn key={project.id} delay={index * 150}>
-              <Card className="h-full flex flex-col items-center text-center p-6 bg-card hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
-                <CardHeader className="p-0 mb-4">
-                  <LogoPlaceholder letter={project.title.charAt(0)} />
-                </CardHeader>
-                <CardContent className="p-0 flex-grow">
-                  <CardTitle className="font-headline text-2xl mb-2">{project.title}</CardTitle>
-                  <p className="font-bold text-primary mb-2">{project.tagline}</p>
-                  <p className="text-muted-foreground">{project.description}</p>
-                </CardContent>
-              </Card>
+              <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="block h-full">
+                <Card className="h-full flex flex-col items-center text-center p-6 bg-card hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
+                  <CardHeader className="p-0 mb-4">
+                    <LogoPlaceholder letter={project.title.charAt(0)} />
+                  </CardHeader>
+                  <CardContent className="p-0 flex-grow">
+                    <CardTitle className="font-headline text-2xl mb-2">{project.title}</CardTitle>
+                    <p className="font-bold text-primary mb-2">{project.tagline}</p>
+                    <p className="text-muted-foreground">{project.description}</p>
+                  </CardContent>
+                </Card>
+              </Link>
             </AnimateIn>
           ))}
         </div>
