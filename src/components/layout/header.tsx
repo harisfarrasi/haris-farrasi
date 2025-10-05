@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -22,12 +22,11 @@ export function Header() {
         className={cn(
           'relative transition-all duration-300',
           'mx-auto max-w-max rounded-full border border-border bg-background/80 backdrop-blur-sm shadow-md', // Desktop: floating island
-          'md:px-4',
-          'max-md:w-full max-md:rounded-xl' // Mobile: full-width floating bar
+          'px-4'
         )}
       >
         <div className="flex items-center justify-between h-14">
-          <Link href="/" className="font-headline text-xl font-bold text-foreground transition-colors hover:text-primary px-4">
+          <Link href="/" className="font-headline text-xl font-bold text-foreground transition-colors hover:text-primary md:px-4">
             Haris Farrasi
           </Link>
 
@@ -46,7 +45,7 @@ export function Header() {
           </nav>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden pr-2">
+          <div className="md:hidden">
             <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full">
@@ -61,7 +60,7 @@ export function Header() {
                         Haris Farrasi
                     </Link>
                     <SheetTrigger asChild>
-                      <Button variant="ghost" size="icon">
+                      <Button variant="ghost" size="icon" className="rounded-full">
                         <X className="h-6 w-6" />
                         <span className="sr-only">Close menu</span>
                       </Button>
@@ -82,7 +81,7 @@ export function Header() {
                   </nav>
 
                   <div className="mt-auto">
-                    <Button asChild className="w-full">
+                    <Button asChild className="w-full rounded-full">
                         <Link href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
                     </Button>
                   </div>
