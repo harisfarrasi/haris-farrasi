@@ -6,9 +6,6 @@ export function Manifesto() {
       <AnimateIn>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-4">
-              Our Mission
-            </h2>
             <p className="text-xl md:text-2xl text-muted-foreground mb-12">
               From Vision to Reality: The Why, What, and How of Our AI Conglomerate.
             </p>
@@ -19,7 +16,7 @@ export function Manifesto() {
                   Why: The Vision
                 </h3>
                 <p className="text-lg text-foreground/80">
-                  We are at a critical inflection point. Indonesia has the demographic dividend, the ambition, and the digital readiness to become a global technology powerhouse. My vision is to harness the transformative power of Artificial Intelligence to accelerate this trajectory, creating a future where Indonesian innovation leads on the world stage. We exist to build sovereign technological capability and unlock the nation's immense human potential.
+                  We are at a critical inflection point. The world is shifting, and the AI decade is upon us. Indonesia has the demographic dividend, the ambition, and the digital readiness to become a global technology powerhouse. My vision is to harness this transformative power of Artificial Intelligence to accelerate this trajectory, creating a future where Indonesian innovation leads on the world stage. We exist to build sovereign technological capability and unlock the nation's immense human potential.
                 </p>
               </div>
 
@@ -28,7 +25,7 @@ export function Manifesto() {
                   What: The Vehicle
                 </h3>
                 <p className="text-lg text-foreground/80">
-                  We are building a vertically integrated AI Tech Conglomerate. This is not just a company; it's an ecosystem designed for sustainable growth and impact. It consists of three core pillars: an AI academy (Plajar) to cultivate talent, an AI application suite (Scoraa) to provide personal leverage, and an AI agency (Operatorr) to solve real-world business problems and generate cash flow. Each part strengthens the others, creating a powerful flywheel for innovation.
+                  We are building a vertically integrated AI Tech Conglomerate, an ecosystem designed for sustainable growth and impact. It consists of three core pillars: <strong>Plajar</strong> (an AI academy to cultivate talent), <strong>Scoraa</strong> (an AI application suite for personal leverage), and <strong>Operatorr</strong> (an AI agency to solve real-world business problems and generate cash flow). Each part strengthens the others, creating a powerful flywheel for innovation.
                 </p>
               </div>
 
