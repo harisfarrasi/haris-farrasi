@@ -8,12 +8,12 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateIn>
           <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-6 max-w-4xl mx-auto">
-            I’m building an AI Tech Conglomerate from Indonesia to the world.
+            Haris Farrasi
           </h1>
         </AnimateIn>
         <AnimateIn delay={200}>
           <p className="font-headline text-xl md:text-2xl text-primary max-w-3xl mx-auto mb-10">
-            Founder of Plajar, Scoraa, Operatorr.
+            I’m building an AI Tech Conglomerate from Indonesia to the world.
           </p>
         </AnimateIn>
         <AnimateIn delay={400}>
