@@ -1,7 +1,4 @@
-import { ArrowUpRight } from 'lucide-react';
 import { AnimateIn } from '@/components/animate-in';
-import { Separator } from '@/components/ui/separator';
-import Link from 'next/link';
 
 const timeline = [
   { year: '2003', event: 'Born, instantly assigned Indonesian nationality 🇮🇩.' },
@@ -24,7 +21,7 @@ export function Writings() {
               <div className="grid lg:grid-cols-1 gap-12 items-center">
                 <div className="lg:col-span-2">
                   <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-8">
-                    Who is Haris?
+                    My Story
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground max-w-3xl">
                     <p>
