@@ -17,7 +17,7 @@ export function Writings() {
         
         <div id="about" className="mb-24 sm:mb-32">
           <AnimateIn>
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-2xl mx-auto">
               <div className="grid lg:grid-cols-1 gap-12 items-center">
                 <div className="lg:col-span-2">
                   <h2 className="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-8 text-center">
