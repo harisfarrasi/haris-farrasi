@@ -8,7 +8,6 @@ import { Button } from '@/components/ui/button';
 import { ArrowUpRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 import { PROJECTS } from '@/lib/data';
-import { cn } from '@/lib/utils';
 
 const LogoPlaceholder = ({ letter }: { letter: string }) => (
   <div className="w-20 h-20 bg-card flex items-center justify-center rounded-lg text-4xl font-headline text-primary">
@@ -27,7 +26,7 @@ export function Projects() {
     const scrollProgress = api.scrollProgress();
     const newScaleValues = api.scrollSnapList().map((snap, index) => {
         let diff = Math.abs(snap - scrollProgress);
-        if (api.options?.loop) {
+        if (api.options.loop) {
             const wrapDiff = Math.abs(1 - diff);
             diff = Math.min(diff, wrapDiff);
         }
@@ -36,7 +35,7 @@ export function Projects() {
     
     const newOpacityValues = api.scrollSnapList().map((snap, index) => {
         let diff = Math.abs(snap - scrollProgress);
-        if (api.options?.loop) {
+        if (api.options.loop) {
             const wrapDiff = Math.abs(1 - diff);
             diff = Math.min(diff, wrapDiff);
         }
@@ -53,12 +52,16 @@ export function Projects() {
       return;
     }
     
+    // Initial call
     onScroll();
+
+    // Listeners
     api.on("scroll", onScroll);
     api.on("reInit", onScroll);
     api.on("select", onScroll);
 
 
+    // Cleanup
     return () => {
       api.off("scroll", onScroll);
     };
