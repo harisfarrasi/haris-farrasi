@@ -17,17 +17,17 @@ export function Hero() {
     <section className="min-h-screen flex items-center justify-center text-center pt-24 pb-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center items-center gap-4 mb-8">
-          <Link href="#project-1">
+          <Link href="#projects">
             <IconContainer delay={0}>
               <BookOpen className="w-5 h-5" />
             </IconContainer>
           </Link>
-          <Link href="#project-2">
+          <Link href="#projects">
             <IconContainer delay={100}>
               <Sparkles className="w-5 h-5" />
             </IconContainer>
           </Link>
-          <Link href="#project-3">
+          <Link href="#projects">
             <IconContainer delay={200}>
               <Workflow className="w-5 h-5" />
             </IconContainer>
