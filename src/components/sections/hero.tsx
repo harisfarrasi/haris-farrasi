@@ -13,7 +13,7 @@ export function Hero() {
         </AnimateIn>
         <AnimateIn delay={200}>
           <p className="font-headline text-xl md:text-2xl text-primary max-w-3xl mx-auto mb-10">
-            Founder of Plajar, Scoraa, and Operatorr. I design and build things that create leverage for people.
+            Founder of <a href="#project-1" className="font-bold hover:underline"><b>Plajar</b></a>, <a href="#project-2" className="font-bold hover:underline"><b>Scoraa</b></a>, and <a href="#project-3" className="font-bold hover:underline"><b>Operatorr</b></a>. I design and build things that create leverage for people.
           </p>
         </AnimateIn>
         <AnimateIn delay={400}>
