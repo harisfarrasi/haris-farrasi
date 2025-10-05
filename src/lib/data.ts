@@ -55,7 +55,8 @@ export const WRITINGS = [
 export const SOCIAL_LINKS = {
   github: 'https://github.com',
   linkedin: 'https://linkedin.com',
-  twitter: 'https://twitter.com',
+  twitter: 'https://x.com/harisfarrasi',
+  instagram: 'https://instagram.com/harisfarrasi',
 };
 
 export const LIBRARY_LINKS = [

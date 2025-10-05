@@ -1,5 +1,5 @@
 import { SOCIAL_LINKS } from '@/lib/data';
-import { Linkedin, Send } from 'lucide-react';
+import { Linkedin, Send, Twitter, Instagram } from 'lucide-react';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
@@ -18,7 +18,7 @@ export function Footer() {
             </p>
             <div className="flex justify-start gap-4 mt-8">
               <Button variant="outline" asChild>
-                <a href="mailto:hello@harisfarrasi.com">
+                <a href="mailto:harisfarrasi@gmail.com">
                   Email
                 </a>
               </Button>
@@ -28,8 +28,13 @@ export function Footer() {
                 </a>
               </Button>
               <Button variant="outline" asChild>
-                <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer">
-                  LinkedIn
+                <a href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer">
+                  <Twitter />
+                </a>
+              </Button>
+              <Button variant="outline" asChild>
+                <a href="https://instagram.com/harisfarrasi" target="_blank" rel="noopener noreferrer">
+                  <Instagram />
                 </a>
               </Button>
             </div>
