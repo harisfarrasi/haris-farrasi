@@ -20,7 +20,6 @@ export function Header() {
     { href: '#projects', label: 'Projects' },
     { href: '#essays', label: 'Essays' },
     { href: '#library', label: 'Library' },
-    { href: '#about', label: 'About' },
   ];
 
   return (
