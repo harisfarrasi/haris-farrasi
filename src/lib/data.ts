@@ -4,7 +4,7 @@ export const PROJECTS = [
     id: 'project-1',
     title: 'Plajar',
     tagline: 'AI Academy',
-    description: 'Empowering people with AI knowledge and skills for the future.',
+    description: 'Empowering people with AI knowledge and skills for their unique goal.',
     image: 'project-1',
     tags: ['Education', 'AI'],
     liveUrl: 'https://plajar.com',
@@ -115,3 +115,4 @@ export const LIBRARY_LINKS = [
     { id: 'library-49', title: 'Hire people who give a shit', url: 'https://perch.app/post/06a64b9f-31c2-43f5-a492-8bc9b2052986', description: 'by Alexandr Wang' },
     { id: 'library-50', title: 'Reflections on OpenAI', url: 'https://perch.app/post/ddb4fe67-9bfd-4548-95ab-ac08b342a9c6', description: 'by Calvin French-Owen' },
 ];
+
