@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Alwan Haris Farrasi | Creating Technology for Leverage',
+  title: 'Alwan Haris Farrasi',
   description: 'The personal website of Alwan Haris Farrasi. I create technology and systems that give people real leverage.',
 };
 
