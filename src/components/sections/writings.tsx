@@ -25,10 +25,10 @@ export function Writings() {
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p>
-                      I’m 21, and I didn’t grow up in Silicon Valley or Shenzhen. I learned to watch technology reshape the world from the outside, where every breakthrough felt like both a promise and a warning. That distance made me see engineering differently: not as hype, but as raw material to design systems that endure. My curiosity has always gravitated toward technology and engineering because they hold the strongest levers to turn complexity into clarity and possibility into scale.
+                      I wasn’t born in Silicon Valley. I grew up in a place where systems often fail and good ideas rarely get a fair chance. From that, I learned something simple: the world doesn’t break because of bad intentions, it breaks because of poor design. Since then, I’ve been drawn to understanding how things work and how they can be rebuilt. I build not to chase wealth, but to test whether ideas can make reality a little more coherent.
                     </p>
                     <p>
-                      I am Alwan Haris Farrasi, I am a builder. My mission is simple: to create technology and systems that give people real leverage and outlast trends. I don’t think in terms of careers or companies. I think in frameworks, infrastructures, and tools that compound over time. Building isn’t just what I do; it’s how I live, and it’s how I intend to shape the future.
+                      For me, building is not about a single product or a single moment of success. It’s about creating structures that make people and technology reinforce each other. I’m drawn to things with long half-lives, things that keep working even when I’m not around. I believe complexity isn’t the enemy as long as we’re patient enough to map it and brave enough to redesign it.
                     </p>
                   </div>
                 </div>
