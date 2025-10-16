@@ -25,10 +25,10 @@ export function Writings() {
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p>
-                      I wasn’t born in Silicon Valley. I grew up in a place where systems often fail and good ideas rarely get a fair chance. From that, I learned something simple: the world doesn’t break because of bad intentions, it breaks because of poor design. Since then, I’ve been drawn to understanding how things work and how they can be rebuilt. I build not to chase anything, but to test whether ideas can make reality a little more coherent.
+                      I didn’t grow up in Silicon Valley, but my days started to feel like i live inside its bubble. Small teams, quick feedback, move fast and break things, ship early and iterate. It began with fixing small problems: broken forms, slow processes, messy notes. Plajar came from teaching what people can actually use. Scoraa came from wanting an alternative to doomscrolling. A tool that turns noise into clearer decisions. Operatorr came from sitting inside real operations and closing quiet leaks of time and margins.
                     </p>
                     <p>
-                      For me, building is not about a single product or a single moment of success. It’s about creating structures that make people and technology reinforce each other. I’m drawn to things with long half-lives, things that keep working even when I’m not around. I believe complexity isn’t the enemy as long as we’re patient enough to map it and brave enough to redesign it.
+                      I thought there was something to the West, I’ll sail westward (Just like Colombus). So I choose speed over certainty, contact over theory, and simple over flashy. I ship early, learn fast, keep products lean, and let results compound. There was never a big blueprint, just steady steps in that direction. If these tools keep working when I’m not around, it’s because each small release kept pointing west.
                     </p>
                   </div>
                 </div>
