@@ -5,17 +5,17 @@ export default function People() {
   return (
     <main className="max-w-2xl mx-auto px-4 py-16 sm:py-24">
       <div className="space-y-12">
-        <header>
+        <section>
           <h1 className="text-3xl font-bold">People</h1>
           <p className="mt-4 text-lg text-muted-foreground">
             A list of thinkers and writers on the internet that I learn from regularly. They cover a broad range of topics.
           </p>
-        </header>
-
-        <section>
-          <p className="mb-6 text-muted-foreground">
+          <p className="mt-4 text-muted-foreground">
             Have a recommendation? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Let me know</Link>.
           </p>
+        </section>
+
+        <section>
           <ul className="list-disc list-inside text-muted-foreground">
             {PEOPLE_LINKS.map((person) => (
               <li key={person.id}>
