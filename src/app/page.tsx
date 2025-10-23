@@ -4,7 +4,7 @@ import { PROJECTS } from '@/lib/data';
 export default function Home() {
   return (
     <main className="max-w-2xl mx-auto px-4 py-16 sm:py-24">
-      <div className="space-y-12">
+      <div className="space-y-8">
         <section>
           <p className="text-lg text-muted-foreground">
             I didn’t grow up in Silicon Valley, but my days started to feel like i live inside its bubble. Small teams, quick feedback, move fast and break things, ship early and iterate. It began with fixing small problems: broken forms, slow processes, messy notes. Plajar came from teaching what people can actually use. Scoraa came from wanting an alternative to doomscrolling. A tool that turns noise into clearer decisions. Operatorr came from sitting inside real operations and closing quiet leaks of time and margins.
@@ -48,11 +48,27 @@ export default function Home() {
         </nav>
         
         <section>
-           <div className="flex space-x-4">
-            <Link href="mailto:harisfarrasi@gmail.com" className="text-muted-foreground hover:text-primary hover:underline">Email</Link>
-            <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary hover:underline">X/Twitter</Link>
-            <Link href="https://instagram.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary hover:underline">Instagram</Link>
-          </div>
+           <h2 className="text-xl font-bold mb-4">Contact</h2>
+           <div className="space-y-3">
+              <div>
+                <p className="text-muted-foreground">
+                  <Link href="mailto:harisfarrasi@gmail.com" className="font-semibold text-primary hover:underline">Email</Link>
+                  {' '}— harisfarrasi@gmail.com
+                </p>
+              </div>
+              <div>
+                <p className="text-muted-foreground">
+                  <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">X/Twitter</Link>
+                  {' '}— @harisfarrasi
+                </p>
+              </div>
+              <div>
+                <p className="text-muted-foreground">
+                  <Link href="https://instagram.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Instagram</Link>
+                  {' '}— @harisfarrasi
+                </p>
+              </div>
+            </div>
         </section>
       </div>
     </main>
