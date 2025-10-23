@@ -10,7 +10,7 @@ export default function People() {
           <p className="mt-4 text-lg text-muted-foreground">
             A list of thinkers and writers on the internet that I learn from regularly. They cover a broad range of topics.
           </p>
-          <p className="mt-4 text-muted-foreground">
+          <p className="mt-4 text-lg text-muted-foreground">
             Have a recommendation? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Let me know</Link>.
           </p>
         </section>

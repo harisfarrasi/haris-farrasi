@@ -10,7 +10,7 @@ export default function Read() {
           <p className="mt-4 text-lg text-muted-foreground">
             A collection of articles, essays, and books that have significantly influenced my perspective and shaped my thinking.
           </p>
-           <p className="mt-4 text-muted-foreground">
+           <p className="mt-4 text-lg text-muted-foreground">
             Have a recommendation? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Let me know</Link>.
           </p>
         </section>
