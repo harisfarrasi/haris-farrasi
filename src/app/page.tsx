@@ -7,9 +7,9 @@ export default function Home() {
       <div className="space-y-8">
         <section>
           <p className="text-lg text-muted-foreground">
-            I didn’t grow up in Silicon Valley, but my days started to feel like i live inside its bubble. Small teams, quick feedback, move fast and break things, ship early and iterate. It began with fixing small problems: broken forms, slow processes, messy notes. Plajar came from teaching what people can actually use. Scoraa came from wanting an alternative to doomscrolling. A tool that turns noise into clearer decisions. Operatorr came from sitting inside real operations and closing quiet leaks of time and margins.
+            My name is Alwan Haris Farrasi. I’m the CEO and founder of Plajar, and I build systems that help people adopt new technology faster. My projects: Plajar, Scoraa, and Operatorr focus on learning, automation, and human-AI collaboration. The goal is to make frontier technologies like AI and robotics easier to understand, easier to use, and easier to build with.
             <br/><br/>
-            I thought there was something to the West, I’ll sail westward (Just like Colombus). So I choose speed over certainty, contact over theory, and simple over flashy. I ship early, learn fast, keep products lean, and let results compound. There was never a big blueprint, just steady steps in that direction. If these tools keep working when I’m not around, it’s because each small release kept pointing west.
+            My work centers on the intersection of physical intelligence (robots) and cognitive intelligence (AI) — how machines move, think, and extend human capability. I care about design, engineering, and scale. If this mission speaks to you, you should consider joining us.
           </p>
         </section>
 
