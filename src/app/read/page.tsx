@@ -8,7 +8,7 @@ export default function Read() {
         <header>
           <h1 className="text-3xl font-bold">Read</h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            A collection of articles, essays, and books that have shaped my thinking.
+            A list of articles, essays, and books that have shaped my thinking.
           </p>
         </header>
 
