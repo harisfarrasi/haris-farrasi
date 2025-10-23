@@ -13,6 +13,9 @@ export default function Read() {
         </header>
 
         <section>
+           <p className="mb-6 text-muted-foreground">
+            Have a recommendation? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Let me know</Link>.
+          </p>
           <ul className="list-disc list-inside text-muted-foreground">
             {LIBRARY_LINKS.map((item) => (
               <li key={item.id}>
@@ -22,9 +25,6 @@ export default function Read() {
               </li>
             ))}
           </ul>
-           <p className="mt-6 text-muted-foreground">
-            Punya rekomendasi? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Beritahu saya</Link>.
-          </p>
         </section>
         
         <footer className="mt-12">
