@@ -13,16 +13,16 @@ export default function Read() {
         </header>
 
         <section>
-          <div className="space-y-4">
+          <ul className="space-y-3 list-disc list-inside text-muted-foreground">
             {LIBRARY_LINKS.map((item) => (
-              <div key={item.id}>
-                <Link href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline">
+              <li key={item.id}>
+                <Link href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
                   {item.title}
                 </Link>
-                <p className="text-muted-foreground">{item.description}</p>
-              </div>
+                {' '}— {item.description}
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
         
         <footer className="mt-12">

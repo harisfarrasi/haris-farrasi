@@ -15,60 +15,48 @@ export default function Home() {
 
         <section>
           <h2 className="text-xl font-bold mb-4">Projects</h2>
-          <div className="space-y-3">
+          <ul className="space-y-2 list-disc list-inside text-muted-foreground">
             {PROJECTS.map((project) => (
-              <div key={project.id}>
-                <p className="text-muted-foreground">
-                  <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
-                    {project.title}
-                  </Link>
-                  {' '}— {project.description}
-                </p>
-              </div>
+              <li key={project.id}>
+                <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
+                  {project.title}
+                </Link>
+                {' '}— {project.description}
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
 
         <nav>
           <h2 className="text-xl font-bold mb-4">Navigation</h2>
-          <div className="space-y-3">
-            <div>
-              <p className="text-muted-foreground">
+          <ul className="space-y-2 list-disc list-inside text-muted-foreground">
+            <li>
                 <Link href="/read" className="font-semibold text-primary hover:underline">Read</Link>
                 {' '}— My reading list and summaries.
-              </p>
-            </div>
-            <div>
-              <p className="text-muted-foreground">
+            </li>
+            <li>
                 <Link href="/people" className="font-semibold text-primary hover:underline">People</Link>
                 {' '}— Internet people I learn from.
-              </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </nav>
         
         <section>
            <h2 className="text-xl font-bold mb-4">Contact</h2>
-           <div className="space-y-3">
-              <div>
-                <p className="text-muted-foreground">
+           <ul className="space-y-2 list-disc list-inside text-muted-foreground">
+              <li>
                   <Link href="mailto:harisfarrasi@gmail.com" className="font-semibold text-primary hover:underline">Email</Link>
                   {' '}— harisfarrasi@gmail.com
-                </p>
-              </div>
-              <div>
-                <p className="text-muted-foreground">
+              </li>
+              <li>
                   <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">X/Twitter</Link>
                   {' '}— @harisfarrasi
-                </p>
-              </div>
-              <div>
-                <p className="text-muted-foreground">
+              </li>
+              <li>
                   <Link href="https://instagram.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Instagram</Link>
                   {' '}— @harisfarrasi
-                </p>
-              </div>
-            </div>
+              </li>
+            </ul>
         </section>
       </div>
     </main>
