@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { PROJECTS, WRITINGS } from '@/lib/data';
+import { PROJECTS } from '@/lib/data';
 
 export default function Home() {
   return (
@@ -18,10 +18,12 @@ export default function Home() {
           <div className="space-y-3">
             {PROJECTS.map((project) => (
               <div key={project.id}>
-                <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
-                  {project.title}
-                </Link>
-                <p className="text-muted-foreground">{project.description}</p>
+                <p className="text-muted-foreground">
+                  <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
+                    {project.title}
+                  </Link>
+                  {' '}— {project.description}
+                </p>
               </div>
             ))}
           </div>
@@ -31,12 +33,16 @@ export default function Home() {
           <h2 className="text-xl font-bold mb-4">Navigation</h2>
           <div className="space-y-3">
             <div>
-              <Link href="/read" className="font-semibold text-primary hover:underline">Read</Link>
-              <p className="text-muted-foreground">My reading list and summaries.</p>
+              <p className="text-muted-foreground">
+                <Link href="/read" className="font-semibold text-primary hover:underline">Read</Link>
+                {' '}— My reading list and summaries.
+              </p>
             </div>
             <div>
-              <Link href="/people" className="font-semibold text-primary hover:underline">People</Link>
-              <p className="text-muted-foreground">Internet people I learn from.</p>
+              <p className="text-muted-foreground">
+                <Link href="/people" className="font-semibold text-primary hover:underline">People</Link>
+                {' '}— Internet people I learn from.
+              </p>
             </div>
           </div>
         </nav>
