@@ -13,10 +13,7 @@ export default function Read() {
            <p className="mt-4 text-lg text-muted-foreground">
             Have a recommendation? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Let me know</Link>.
           </p>
-        </section>
-
-        <section>
-          <ul className="list-disc list-inside text-muted-foreground">
+          <ul className="mt-8 list-disc list-inside text-muted-foreground">
             {LIBRARY_LINKS.map((item) => (
               <li key={item.id}>
                 <Link href={item.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
