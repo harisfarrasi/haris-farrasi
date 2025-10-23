@@ -30,14 +30,14 @@ export default function Home() {
           <h2 className="text-xl font-bold mb-4">Navigation</h2>
           <ul className="list-disc list-inside text-muted-foreground">
             <li>
-                <Link href="/read" className="text-primary hover:underline">
-                  <span className="font-semibold">Read</span> — My reading list and summaries.
-                </Link>
+              <Link href="/read" className="text-primary hover:underline">
+                <span className="font-semibold">Read</span> — My reading list and summaries.
+              </Link>
             </li>
             <li>
-                <Link href="/people" className="text-primary hover:underline">
-                  <span className="font-semibold">People</span> — Internet people I learn from.
-                </Link>
+              <Link href="/people" className="text-primary hover:underline">
+                <span className="font-semibold">People</span> — Internet people I learn from.
+              </Link>
             </li>
           </ul>
         </nav>
@@ -46,7 +46,7 @@ export default function Home() {
            <div className="flex justify-center space-x-4 text-muted-foreground">
               <Link href="mailto:harisfarrasi@gmail.com" className="font-semibold text-primary hover:underline">Email</Link>
               <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">X/Twitter</Link>
-              <Link href="https://instagram.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Instagram</Link>
+              <Link href="https://www.instagram.com/haris.farrasi/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Instagram</Link>
             </div>
         </footer>
       </div>
