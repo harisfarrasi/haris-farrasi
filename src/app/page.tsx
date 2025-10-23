@@ -5,16 +5,17 @@ export default function Home() {
   return (
     <main className="max-w-2xl mx-auto px-4 py-16 sm:py-24">
       <div className="space-y-12">
-        <header>
-          <h1 className="text-3xl font-bold text-primary-foreground">Alwan Haris Farrasi</h1>
-          <p className="mt-4 text-lg text-muted-foreground">
-            I didn’t grow up in Silicon Valley. I learned the world doesn’t break because of bad intentions, but because of poor design. I build not to chase anything, but to test whether ideas can make reality a little more coherent.
+        <section>
+           <p className="text-lg text-muted-foreground">
+            I didn’t grow up in Silicon Valley, but my days started to feel like i live inside its bubble. Small teams, quick feedback, move fast and break things, ship early and iterate. It began with fixing small problems: broken forms, slow processes, messy notes. Plajar came from teaching what people can actually use. Scoraa came from wanting an alternative to doomscrolling. A tool that turns noise into clearer decisions. Operatorr came from sitting inside real operations and closing quiet leaks of time and margins.
+            <br/><br/>
+            I thought there was something to the West, I’ll sail westward (Just like Colombus). So I choose speed over certainty, contact over theory, and simple over flashy. I ship early, learn fast, keep products lean, and let results compound. There was never a big blueprint, just steady steps in that direction. If these tools keep working when I’m not around, it’s because each small release kept pointing west.
           </p>
-        </header>
+        </section>
 
         <section>
-          <h2 className="text-xl font-bold mb-4">Projects</h2>
-          <div className="space-y-3">
+          <h2 className="text-xl font-bold mb-4">Projects & Contact</h2>
+          <div className="space-y-3 mb-6">
             {PROJECTS.map((project) => (
               <div key={project.id}>
                 <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary-foreground hover:underline">
@@ -24,30 +25,26 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-bold mb-4">Writings</h2>
-           <div className="space-y-3">
-            {WRITINGS.map((writing) => (
-              <div key={writing.id}>
-                <Link href={writing.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary-foreground hover:underline">
-                  {writing.title}
-                </Link>
-                <p className="text-muted-foreground">{writing.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <footer id="contact">
-          <h2 className="text-xl font-bold mb-4">Contact</h2>
-          <div className="flex space-x-4">
+           <div className="flex space-x-4">
             <Link href="mailto:harisfarrasi@gmail.com" className="hover:underline">Email</Link>
             <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="hover:underline">X/Twitter</Link>
             <Link href="https://instagram.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="hover:underline">Instagram</Link>
           </div>
-        </footer>
+        </section>
+
+        <nav>
+            <h2 className="text-xl font-bold mb-4">Navigation</h2>
+            <div className="space-y-3">
+                <div>
+                    <Link href="/read" className="font-semibold text-primary-foreground hover:underline">Read</Link>
+                    <p className="text-muted-foreground">My reading list and summaries.</p>
+                </div>
+                 <div>
+                    <Link href="/people" className="font-semibold text-primary-foreground hover:underline">People</Link>
+                    <p className="text-muted-foreground">Internet people I learn from.</p>
+                </div>
+            </div>
+        </nav>
       </div>
     </main>
   );

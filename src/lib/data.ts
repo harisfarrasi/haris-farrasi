@@ -63,6 +63,14 @@ export const SOCIAL_LINKS = {
   instagram: 'https://instagram.com/harisfarrasi',
 };
 
+export const PEOPLE_LINKS = [
+    { id: 'person-1', name: 'Naval Ravikant', url: 'https://nav.al', description: 'Technology, philosophy, and wealth.' },
+    { id: 'person-2', name: 'Paul Graham', url: 'http://www.paulgraham.com', description: 'Startups, essays, and technology.' },
+    { id: 'person-3', name: 'Sam Altman', url: 'https://blog.samaltman.com', description: 'Technology, startups, and the future.' },
+    { id: 'person-4', name: 'Wait But Why', url: 'https://waitbutwhy.com', description: 'Deep dives into various topics.' },
+    { id: 'person-5', name: 'Morgan Housel', url: 'https://collabfund.com/blog/', description: 'Psychology of money and investing.' },
+];
+
 export const LIBRARY_LINKS = [
     { id: 'library-1', title: '100 Blocks a Day', url: 'https://perch.app/post/826cc63a-198b-44d0-9fda-545fdb3b90e6', description: 'by Wait But Why' },
     { id: 'library-2', title: 'Good and Bad Procrastination', url: 'https://perch.app/post/1ed4bbc9-a34e-43e3-8194-7adbf9a6ed31', description: 'by Paul Graham' },
@@ -115,4 +123,5 @@ export const LIBRARY_LINKS = [
     { id: 'library-49', title: 'Hire people who give a shit', url: 'https://perch.app/post/06a64b9f-31c2-43f5-a492-8bc9b2052986', description: 'by Alexandr Wang' },
     { id: 'library-50', title: 'Reflections on OpenAI', url: 'https://perch.app/post/ddb4fe67-9bfd-4548-95ab-ac08b342a9c6', description: 'by Calvin French-Owen' },
 ];
+
 
