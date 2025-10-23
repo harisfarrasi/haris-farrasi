@@ -41,23 +41,13 @@ export default function Home() {
           </ul>
         </nav>
         
-        <section>
-           <h2 className="text-xl font-bold mb-4">Contact</h2>
-           <ul className="space-y-2 list-disc list-inside text-muted-foreground">
-              <li>
-                  <Link href="mailto:harisfarrasi@gmail.com" className="font-semibold text-primary hover:underline">Email</Link>
-                  {' '}— harisfarrasi@gmail.com
-              </li>
-              <li>
-                  <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">X/Twitter</Link>
-                  {' '}— @harisfarrasi
-              </li>
-              <li>
-                  <Link href="https://instagram.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Instagram</Link>
-                  {' '}— @harisfarrasi
-              </li>
-            </ul>
-        </section>
+        <footer className="pt-8">
+           <div className="flex space-x-4 text-muted-foreground">
+              <Link href="mailto:harisfarrasi@gmail.com" className="font-semibold text-primary hover:underline">Email</Link>
+              <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">X/Twitter</Link>
+              <Link href="https://instagram.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">Instagram</Link>
+            </div>
+        </footer>
       </div>
     </main>
   );
