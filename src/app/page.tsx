@@ -15,13 +15,12 @@ export default function Home() {
 
         <section>
           <h2 className="text-xl font-bold mb-4">Projects</h2>
-          <ul className="space-y-2 list-disc list-inside text-muted-foreground">
+          <ul className="list-disc list-inside text-muted-foreground">
             {PROJECTS.map((project) => (
               <li key={project.id}>
-                <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
-                  {project.title}
+                <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  <span className="font-semibold">{project.title}</span> — {project.description}
                 </Link>
-                {' '}— {project.description}
               </li>
             ))}
           </ul>
@@ -29,14 +28,16 @@ export default function Home() {
 
         <nav>
           <h2 className="text-xl font-bold mb-4">Navigation</h2>
-          <ul className="space-y-2 list-disc list-inside text-muted-foreground">
+          <ul className="list-disc list-inside text-muted-foreground">
             <li>
-                <Link href="/read" className="font-semibold text-primary hover:underline">Read</Link>
-                {' '}— My reading list and summaries.
+                <Link href="/read" className="text-primary hover:underline">
+                  <span className="font-semibold">Read</span> — My reading list and summaries.
+                </Link>
             </li>
             <li>
-                <Link href="/people" className="font-semibold text-primary hover:underline">People</Link>
-                {' '}— Internet people I learn from.
+                <Link href="/people" className="text-primary hover:underline">
+                  <span className="font-semibold">People</span> — Internet people I learn from.
+                </Link>
             </li>
           </ul>
         </nav>

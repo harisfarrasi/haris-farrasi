@@ -13,20 +13,19 @@ export default function People() {
         </header>
 
         <section>
-          <ul className="space-y-3 list-disc list-inside text-muted-foreground">
+          <ul className="list-disc list-inside text-muted-foreground">
             {PEOPLE_LINKS.map((person) => (
               <li key={person.id}>
-                <Link href={person.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
-                  {person.name}
+                <Link href={person.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  <span className="font-semibold">{person.name}</span> — {person.description}
                 </Link>
-                 {' '}— {person.description}
               </li>
             ))}
           </ul>
         </section>
 
         <footer className="mt-12">
-            <Link href="/" className="hover:underline">Back to Home</Link>
+            <Link href="/" className="text-primary hover:underline">Back to Home</Link>
         </footer>
       </div>
     </main>

@@ -13,20 +13,19 @@ export default function Read() {
         </header>
 
         <section>
-          <ul className="space-y-3 list-disc list-inside text-muted-foreground">
+          <ul className="list-disc list-inside text-muted-foreground">
             {LIBRARY_LINKS.map((item) => (
               <li key={item.id}>
-                <Link href={item.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
-                  {item.title}
+                <Link href={item.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  <span className="font-semibold">{item.title}</span> — {item.description}
                 </Link>
-                {' '}— {item.description}
               </li>
             ))}
           </ul>
         </section>
         
         <footer className="mt-12">
-            <Link href="/" className="hover:underline">Back to Home</Link>
+            <Link href="/" className="text-primary hover:underline">Back to Home</Link>
         </footer>
       </div>
     </main>
