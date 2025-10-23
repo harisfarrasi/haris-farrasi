@@ -8,7 +8,7 @@ export default function People() {
         <header>
           <h1 className="text-3xl font-bold">People</h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Some internet people who (mostly) write about a wide variety of topics and who I regularly learn from. (I might try making lists of specialists in different fields at some point.)
+            A list of thinkers and writers on the internet that I learn from regularly. They cover a broad range of topics.
           </p>
         </header>
 
