@@ -18,10 +18,10 @@ export default function Home() {
           <div className="space-y-4">
             {PROJECTS.map((project) => (
               <div key={project.id}>
-                <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                  <span className="font-semibold">{project.title}</span>
+                <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  <span className="font-semibold text-primary">{project.title}</span>
+                  <span className="text-muted-foreground"> — {project.description}</span>
                 </Link>
-                <p className="text-muted-foreground">{project.description}</p>
               </div>
             ))}
           </div>
@@ -31,16 +31,16 @@ export default function Home() {
           <h2 className="text-xl font-bold mb-4">Navigation</h2>
            <div className="space-y-4">
             <div>
-              <Link href="/read" className="text-primary hover:underline">
-                <span className="font-semibold">Read</span>
+              <Link href="/read" className="hover:underline">
+                <span className="font-semibold text-primary">Read</span>
+                 <span className="text-muted-foreground"> — My reading list and summaries.</span>
               </Link>
-              <p className="text-muted-foreground">My reading list and summaries.</p>
             </div>
             <div>
-              <Link href="/people" className="text-primary hover:underline">
-                <span className="font-semibold">People</span>
+              <Link href="/people" className="hover:underline">
+                <span className="font-semibold text-primary">People</span>
+                 <span className="text-muted-foreground"> — Internet people I learn from.</span>
               </Link>
-               <p className="text-muted-foreground">Internet people I learn from.</p>
             </div>
           </div>
         </nav>
