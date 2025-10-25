@@ -15,33 +15,27 @@ export default function Home() {
 
         <section>
           <h2 className="text-xl font-bold mb-4">Projects</h2>
-          <div className="space-y-2">
+          <div className="flex flex-col space-y-1">
             {PROJECTS.map((project) => (
-              <div key={project.id}>
-                <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                  <span className="font-semibold text-primary">{project.title}</span>
-                  <span className="text-muted-foreground"> — {project.description}</span>
-                </Link>
-              </div>
+              <Link key={project.id} href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <span className="font-semibold text-primary">{project.title}</span>
+                <span className="text-muted-foreground"> — {project.description}</span>
+              </Link>
             ))}
           </div>
         </section>
 
         <nav>
           <h2 className="text-xl font-bold mb-4">Navigation</h2>
-           <div className="space-y-2">
-            <div>
+           <div className="flex flex-col space-y-1">
               <Link href="/read" className="hover:underline">
                 <span className="font-semibold text-primary">Read</span>
                  <span className="text-muted-foreground"> — My reading list and summaries.</span>
               </Link>
-            </div>
-            <div>
               <Link href="/people" className="hover:underline">
                 <span className="font-semibold text-primary">People</span>
                  <span className="text-muted-foreground"> — Internet people I learn from.</span>
               </Link>
-            </div>
           </div>
         </nav>
         
