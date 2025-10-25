@@ -15,31 +15,34 @@ export default function Home() {
 
         <section>
           <h2 className="text-xl font-bold mb-4">Projects</h2>
-          <ul className="list-disc list-inside text-muted-foreground">
+          <div className="space-y-4">
             {PROJECTS.map((project) => (
-              <li key={project.id}>
+              <div key={project.id}>
                 <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                  <span className="font-semibold">{project.title}</span> — {project.description}
+                  <span className="font-semibold">{project.title}</span>
                 </Link>
-              </li>
+                <p className="text-muted-foreground">{project.description}</p>
+              </div>
             ))}
-          </ul>
+          </div>
         </section>
 
         <nav>
           <h2 className="text-xl font-bold mb-4">Navigation</h2>
-          <ul className="list-disc list-inside text-muted-foreground">
-            <li>
+           <div className="space-y-4">
+            <div>
               <Link href="/read" className="text-primary hover:underline">
-                <span className="font-semibold">Read</span> — My reading list and summaries.
+                <span className="font-semibold">Read</span>
               </Link>
-            </li>
-            <li>
+              <p className="text-muted-foreground">My reading list and summaries.</p>
+            </div>
+            <div>
               <Link href="/people" className="text-primary hover:underline">
-                <span className="font-semibold">People</span> — Internet people I learn from.
+                <span className="font-semibold">People</span>
               </Link>
-            </li>
-          </ul>
+               <p className="text-muted-foreground">Internet people I learn from.</p>
+            </div>
+          </div>
         </nav>
         
         <footer className="pt-8">
