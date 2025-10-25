@@ -4,7 +4,7 @@ export const PROJECTS = [
     id: 'project-1',
     title: 'Plajar',
     tagline: 'AI Academy',
-    description: 'Empowering people with AI knowledge and skills for their unique goal.',
+    description: 'AI knowledge & skills.',
     image: 'project-1',
     tags: ['Education', 'AI'],
     liveUrl: 'https://plajar.com',
@@ -15,7 +15,7 @@ export const PROJECTS = [
     id: 'project-2',
     title: 'Scoraa',
     tagline: 'AI Application',
-    description: 'Personal leverage and cognitive amplifier to enhance human potential.',
+    description: 'Enhance human potential.',
     image: 'project-2',
     tags: ['Application', 'AI', 'Productivity'],
     liveUrl: 'https://scoraa.com',
@@ -26,7 +26,7 @@ export const PROJECTS = [
     id: 'project-3',
     title: 'Operatorr',
     tagline: 'AI Ops',
-    description: 'Accelerating AI adoption for businesses through applied solutions.',
+    description: 'AI for businesses.',
     image: 'project-3',
     tags: ['Agency', 'AI', 'B2B'],
     liveUrl: 'https://operatorr.framer.website',
@@ -123,5 +123,6 @@ export const LIBRARY_LINKS = [
     { id: 'library-49', title: 'Hire people who give a shit', url: 'https://perch.app/post/06a64b9f-31c2-43f5-a492-8bc9b2052986', description: 'by Alexandr Wang' },
     { id: 'library-50', title: 'Reflections on OpenAI', url: 'https://perch.app/post/ddb4fe67-9bfd-4548-95ab-ac08b342a9c6', description: 'by Calvin French-Owen' },
 ];
+
 
 
