@@ -14,8 +14,8 @@ export default function Home() {
         </section>
 
         <section>
-          <h2 className="text-xl font-bold mb-4">Projects</h2>
-          <ul className="list-disc list-outside pl-5">
+          <h2 className="text-xl font-bold">Projects</h2>
+          <ul className="mt-4 list-disc list-outside pl-5 space-y-1 text-base">
             {PROJECTS.map((project) => (
               <li key={project.id}>
                 <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
@@ -27,9 +27,9 @@ export default function Home() {
           </ul>
         </section>
 
-        <nav>
-          <h2 className="text-xl font-bold mb-4">Navigation</h2>
-           <ul className="list-disc list-outside pl-5">
+        <section>
+          <h2 className="text-xl font-bold">Navigation</h2>
+           <ul className="mt-4 list-disc list-outside pl-5 space-y-1 text-base">
               <li>
                 <Link href="/read" className="hover:underline">
                   <span className="font-semibold text-primary">Read</span>
@@ -43,7 +43,7 @@ export default function Home() {
                 </Link>
               </li>
           </ul>
-        </nav>
+        </section>
         
         <footer className="pt-8">
            <div className="flex justify-center space-x-4 text-muted-foreground">
