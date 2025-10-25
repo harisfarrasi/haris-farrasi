@@ -15,28 +15,34 @@ export default function Home() {
 
         <section>
           <h2 className="text-xl font-bold mb-4">Projects</h2>
-          <div className="flex flex-col space-y-1">
+          <ul className="list-disc list-outside pl-5">
             {PROJECTS.map((project) => (
-              <Link key={project.id} href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                <span className="font-semibold text-primary">{project.title}</span>
-                <span className="text-muted-foreground"> — {project.description}</span>
-              </Link>
+              <li key={project.id}>
+                <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  <span className="font-semibold text-primary">{project.title}</span>
+                  <span className="text-muted-foreground"> — {project.description}</span>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
 
         <nav>
           <h2 className="text-xl font-bold mb-4">Navigation</h2>
-           <div className="flex flex-col space-y-1">
-              <Link href="/read" className="hover:underline">
-                <span className="font-semibold text-primary">Read</span>
-                 <span className="text-muted-foreground"> — My reading list and summaries.</span>
-              </Link>
-              <Link href="/people" className="hover:underline">
-                <span className="font-semibold text-primary">People</span>
-                 <span className="text-muted-foreground"> — Internet people I learn from.</span>
-              </Link>
-          </div>
+           <ul className="list-disc list-outside pl-5">
+              <li>
+                <Link href="/read" className="hover:underline">
+                  <span className="font-semibold text-primary">Read</span>
+                  <span className="text-muted-foreground"> — My reading list and summaries.</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/people" className="hover:underline">
+                  <span className="font-semibold text-primary">People</span>
+                  <span className="text-muted-foreground"> — Internet people I learn from.</span>
+                </Link>
+              </li>
+          </ul>
         </nav>
         
         <footer className="pt-8">
