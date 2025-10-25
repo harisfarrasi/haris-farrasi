@@ -17,8 +17,14 @@ export default function People() {
             {PEOPLE_LINKS.map((person) => (
               <li key={person.id}>
                 <Link href={person.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                  <span className="font-semibold">{person.name}</span> — {person.description}
+                  <span className="font-semibold">{person.name}</span>
                 </Link>
+                {person.twitterHandle && (
+                  <Link href={`https://x.com/${person.twitterHandle}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-2">
+                    (@{person.twitterHandle})
+                  </Link>
+                )}
+                <span className="text-muted-foreground"> — {person.description}</span>
               </li>
             ))}
           </ul>

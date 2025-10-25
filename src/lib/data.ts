@@ -64,11 +64,38 @@ export const SOCIAL_LINKS = {
 };
 
 export const PEOPLE_LINKS = [
-    { id: 'person-1', name: 'Naval Ravikant', url: 'https://nav.al', description: 'Technology, philosophy, and wealth.' },
-    { id: 'person-2', name: 'Paul Graham', url: 'http://www.paulgraham.com', description: 'Startups, essays, and technology.' },
-    { id: 'person-3', name: 'Sam Altman', url: 'https://blog.samaltman.com', description: 'Technology, startups, and the future.' },
-    { id: 'person-4', name: 'Wait But Why', url: 'https://waitbutwhy.com', description: 'Deep dives into various topics.' },
-    { id: 'person-5', name: 'Morgan Housel', url: 'https://collabfund.com/blog/', description: 'Psychology of money and investing.' },
+    { id: 'person-1', name: 'Muhammad ﷺ', url: 'https://en.wikipedia.org/wiki/Muhammad', description: 'Final Prophet in Islam', twitterHandle: null },
+    { id: 'person-2', name: 'Muhammad Al-Fatih', url: 'https://en.wikipedia.org/wiki/Mehmed_the_Conqueror', description: 'Conqueror of Constantinople', twitterHandle: null },
+    { id: 'person-3', name: 'Ahmad Bahauddin Nursalim (Gus Baha)', url: 'https://en.wikipedia.org/wiki/Ahmad_Bahauddin_Nursalim', description: 'Indonesian Islamic scholar', twitterHandle: 'gusbahadaily' },
+    { id: 'person-4', name: 'Adi Hidayat', url: 'https://en.wikipedia.org/wiki/Adi_Hidayat', description: 'Indonesian Islamic scholar', twitterHandle: null },
+    { id: 'person-5', name: 'Elon Musk', url: 'https://en.wikipedia.org/wiki/Elon_Musk', description: 'Entrepreneur and business magnate', twitterHandle: 'elonmusk' },
+    { id: 'person-6', name: 'Sam Altman', url: 'https://en.wikipedia.org/wiki/Sam_Altman', description: 'CEO of OpenAI', twitterHandle: 'sama' },
+    { id: 'person-7', name: 'Peter Thiel', url: 'https://en.wikipedia.org/wiki/Peter_Thiel', description: 'Entrepreneur and venture capitalist', twitterHandle: null },
+    { id: 'person-8', name: 'Jensen Huang', url: 'https://en.wikipedia.org/wiki/Jensen_Huang', description: 'CEO of Nvidia', twitterHandle: 'jensenhuang' },
+    { id: 'person-9', name: 'Patrick Collison', url: 'https://en.wikipedia.org/wiki/Patrick_Collison', description: 'CEO of Stripe', twitterHandle: 'patrickc' },
+    { id: 'person-10', name: 'Andrej Karpathy', url: 'https://karpathy.ai/', description: 'AI researcher', twitterHandle: 'karpathy' },
+    { id: 'person-11', name: 'Demis Hassabis', url: 'https://en.wikipedia.org/wiki/Demis_Hassabis', description: 'CEO of Google DeepMind', twitterHandle: 'demishassabis' },
+    { id: 'person-12', name: 'Alexandr Wang', url: 'https://en.wikipedia.org/wiki/Alexandr_Wang', description: 'CEO of Scale AI', twitterHandle: 'alexandr_wang' },
+    { id: 'person-13', name: 'Marc Andreessen', url: 'https://en.wikipedia.org/wiki/Marc_Andreessen', description: 'Co-founder of Andreessen Horowitz', twitterHandle: 'pmarca' },
+    { id: 'person-14', name: 'Balaji Srinivasan', url: 'https://balajis.com/', description: 'Technologist and investor', twitterHandle: 'balajis' },
+    { id: 'person-15', name: 'Paul Graham', url: 'http://www.paulgraham.com/', description: 'Co-founder of Y Combinator', twitterHandle: 'paulg' },
+    { id: 'person-16', name: 'Naval Ravikant', url: 'https://nav.al/', description: 'Entrepreneur and investor', twitterHandle: 'naval' },
+    { id: 'person-17', name: 'Elad Gil', url: 'https://eladgil.com/', description: 'Entrepreneur and investor', twitterHandle: 'eladgil' },
+    { id: 'person-18', name: 'Ray Dalio', url: 'https://en.wikipedia.org/wiki/Ray_Dalio', description: 'Founder of Bridgewater Associates', twitterHandle: 'RayDalio' },
+    { id: 'person-19', name: 'Warren Buffett', url: 'https://en.wikipedia.org/wiki/Warren_Buffett', description: 'Investor and CEO of Berkshire Hathaway', twitterHandle: null },
+    { id: 'person-20', name: 'Charlie Munger', url: 'https://en.wikipedia.org/wiki/Charlie_Munger', description: 'Investor and vice chairman of Berkshire Hathaway', twitterHandle: null },
+    { id: 'person-21', name: 'Jeff Bezos', url: 'https://en.wikipedia.org/wiki/Jeff_Bezos', description: 'Founder of Amazon', twitterHandle: 'JeffBezos' },
+    { id: 'person-22', name: 'Larry Page', url: 'https://en.wikipedia.org/wiki/Larry_Page', description: 'Co-founder of Google', twitterHandle: null },
+    { id: 'person-23', name: 'Sergey Brin', url: 'https://en.wikipedia.org/wiki/Sergey_Brin', description: 'Co-founder of Google', twitterHandle: null },
+    { id: 'person-24', name: 'Mark Zuckerberg', url: 'https://en.wikipedia.org/wiki/Mark_Zuckerberg', description: 'CEO of Meta Platforms', twitterHandle: null },
+    { id: 'person-25', name: 'Reed Hastings', url: 'https://en.wikipedia.org/wiki/Reed_Hastings', description: 'Co-founder of Netflix', twitterHandle: null },
+    { id: 'person-26', name: 'Brian Chesky', url: 'https://en.wikipedia.org/wiki/Brian_Chesky', description: 'CEO of Airbnb', twitterHandle: 'bchesky' },
+    { id: 'person-27', name: 'Pavel Durov', url: 'https://en.wikipedia.org/wiki/Pavel_Durov', description: 'Founder of Telegram', twitterHandle: 'durov' },
+    { id: 'person-28', name: 'Masayoshi Son', url: 'https://en.wikipedia.org/wiki/Masayoshi_Son', description: 'CEO of SoftBank', twitterHandle: null },
+    { id: 'person-29', name: 'Tim Urban', url: 'https://waitbutwhy.com/', description: 'Writer and illustrator', twitterHandle: 'waitbutwhy' },
+    { id: 'person-30', name: 'Timothy Ronald', url: 'https://www.youtube.com/channel/UCFp37_n3a7y1J4Aihx7-dSA', description: 'Indonesian content creator', twitterHandle: 'timothy_ronald' },
+    { id: 'person-31', name: 'Steve Jobs', url: 'https://en.wikipedia.org/wiki/Steve_Jobs', description: 'Co-founder of Apple Inc.', twitterHandle: null },
+    { id: 'person-32', name: 'Jack Dorsey', url: 'https://en.wikipedia.org/wiki/Jack_Dorsey', description: 'Co-founder of Twitter', twitterHandle: 'jack' },
 ];
 
 export const LIBRARY_LINKS = [
@@ -123,6 +150,7 @@ export const LIBRARY_LINKS = [
     { id: 'library-49', title: 'Hire people who give a shit', url: 'https://perch.app/post/06a64b9f-31c2-43f5-a492-8bc9b2052986', description: 'by Alexandr Wang' },
     { id: 'library-50', title: 'Reflections on OpenAI', url: 'https://perch.app/post/ddb4fe67-9bfd-4548-95ab-ac08b342a9c6', description: 'by Calvin French-Owen' },
 ];
+
 
 
 
