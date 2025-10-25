@@ -13,10 +13,7 @@ export default function People() {
         </section>
 
         <section>
-          <p className="text-lg text-muted-foreground">
-            Have a recommendation? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Let me know</Link>.
-          </p>
-          <ul className="mt-8 list-disc list-outside pl-5 space-y-2 text-muted-foreground">
+          <ul className="list-disc list-outside pl-5 space-y-2 text-muted-foreground">
             {PEOPLE_LINKS.map((person) => (
               <li key={person.id}>
                 <span className="font-semibold">{person.name}</span>
@@ -31,6 +28,9 @@ export default function People() {
               </li>
             ))}
           </ul>
+           <p className="mt-8 text-lg text-muted-foreground">
+            Have a recommendation? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Let me know</Link>.
+          </p>
         </section>
 
         <footer className="mt-12">

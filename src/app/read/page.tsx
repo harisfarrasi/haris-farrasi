@@ -13,10 +13,7 @@ export default function Read() {
         </section>
 
         <section>
-           <p className="text-lg text-muted-foreground">
-            Have a recommendation? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Let me know</Link>.
-          </p>
-          <ul className="mt-8 list-disc list-outside pl-5 space-y-2">
+          <ul className="list-disc list-outside pl-5 space-y-2">
             {LIBRARY_LINKS.map((item) => (
               <li key={item.id}>
                 <Link href={item.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
@@ -25,6 +22,9 @@ export default function Read() {
               </li>
             ))}
           </ul>
+          <p className="mt-8 text-lg text-muted-foreground">
+            Have a recommendation? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Let me know</Link>.
+          </p>
         </section>
         
         <footer className="mt-12">
