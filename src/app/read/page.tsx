@@ -10,10 +10,13 @@ export default function Read() {
           <p className="mt-4 text-lg text-muted-foreground">
             A collection of articles, essays, and books that have significantly influenced my perspective and shaped my thinking.
           </p>
-           <p className="mt-4 text-lg text-muted-foreground">
+        </section>
+
+        <section>
+           <p className="text-lg text-muted-foreground">
             Have a recommendation? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Let me know</Link>.
           </p>
-          <ul className="mt-8 list-disc list-outside pl-5">
+          <ul className="mt-8 list-disc list-outside pl-5 space-y-2">
             {LIBRARY_LINKS.map((item) => (
               <li key={item.id}>
                 <Link href={item.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
