@@ -10,10 +10,7 @@ export default function People() {
           <p className="mt-4 text-lg text-muted-foreground">
             A list of thinkers and writers on the internet that I learn from regularly. They cover a broad range of topics.
           </p>
-        </section>
-
-        <section>
-          <ul className="list-disc list-outside pl-5 space-y-2 text-muted-foreground">
+          <ul className="mt-8 list-disc list-outside pl-5 space-y-2 text-muted-foreground">
             {PEOPLE_LINKS.map((person) => (
               <li key={person.id}>
                 <span className="font-semibold">{person.name}</span>
