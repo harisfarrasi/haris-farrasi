@@ -16,15 +16,13 @@ export default function People() {
           <ul className="mt-8 list-disc list-outside pl-5 text-muted-foreground">
             {PEOPLE_LINKS.map((person) => (
               <li key={person.id}>
-                <Link href={person.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                  <span className="font-semibold">{person.name}</span>
-                </Link>
-                {person.twitterHandle && (
-                  <Link href={`https://x.com/${person.twitterHandle}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-2">
-                    (@{person.twitterHandle})
+                {person.twitterHandle ? (
+                  <Link href={`https://x.com/${person.twitterHandle}`} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    <span className="font-semibold">{person.name}</span>
                   </Link>
+                ) : (
+                  <span className="font-semibold">{person.name}</span>
                 )}
-                <span className="text-muted-foreground"> — {person.description}</span>
               </li>
             ))}
           </ul>
