@@ -66,7 +66,7 @@ export const SOCIAL_LINKS = {
 export const PEOPLE_LINKS = [
     { id: 'person-1', name: 'Muhammad ﷺ', twitterHandle: null },
     { id: 'person-2', name: 'Muhammad Al-Fatih', twitterHandle: null },
-    { id: 'person-3', name: 'Ahmad Bahauddin Nursalim (Gus Baha)', twitterHandle: 'gusbahadaily' },
+    { id: 'person-3', name: 'Ahmad Bahauddin Nursalim (Gus Baha)', twitterHandle: null },
     { id: 'person-4', name: 'Adi Hidayat', twitterHandle: null },
     { id: 'person-5', name: 'Elon Musk', twitterHandle: 'elonmusk' },
     { id: 'person-6', name: 'Sam Altman', twitterHandle: 'sama' },
@@ -93,7 +93,7 @@ export const PEOPLE_LINKS = [
     { id: 'person-27', name: 'Pavel Durov', twitterHandle: 'durov' },
     { id: 'person-28', name: 'Masayoshi Son', twitterHandle: null },
     { id: 'person-29', name: 'Tim Urban', twitterHandle: 'waitbutwhy' },
-    { id: 'person-30', name: 'Timothy Ronald', twitterHandle: 'timothy_ronald' },
+    { id: 'person-30', name: 'Timothy Ronald', twitterHandle: 'timothyronald22' },
     { id: 'person-31', name: 'Steve Jobs', twitterHandle: null },
     { id: 'person-32', name: 'Jack Dorsey', twitterHandle: 'jack' },
 ];
@@ -150,6 +150,7 @@ export const LIBRARY_LINKS = [
     { id: 'library-49', title: 'Hire people who give a shit', url: 'https://perch.app/post/06a64b9f-31c2-43f5-a492-8bc9b2052986', description: 'by Alexandr Wang' },
     { id: 'library-50', title: 'Reflections on OpenAI', url: 'https://perch.app/post/ddb4fe67-9bfd-4548-95ab-ac08b342a9c6', description: 'by Calvin French-Owen' },
 ];
+
 
 
 
