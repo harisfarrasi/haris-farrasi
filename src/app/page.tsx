@@ -15,7 +15,7 @@ export default function Home() {
 
         <section>
           <h2 className="text-xl font-bold mb-4">Projects</h2>
-          <div className="space-y-4">
+          <div className="space-y-2">
             {PROJECTS.map((project) => (
               <div key={project.id}>
                 <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
@@ -29,7 +29,7 @@ export default function Home() {
 
         <nav>
           <h2 className="text-xl font-bold mb-4">Navigation</h2>
-           <div className="space-y-4">
+           <div className="space-y-2">
             <div>
               <Link href="/read" className="hover:underline">
                 <span className="font-semibold text-primary">Read</span>
