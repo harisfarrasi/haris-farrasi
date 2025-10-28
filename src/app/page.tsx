@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { PROJECTS } from '@/lib/data';
 
 export default function Home() {
   return (
@@ -11,20 +10,6 @@ export default function Home() {
             <br/><br/>
             My work centers on the intersection of physical intelligence (robots) and cognitive intelligence (AI) — how machines move, think, and extend human capability. I care about design, engineering, and scale. If this mission speaks to you, you should consider joining us.
           </p>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-bold">Projects</h2>
-          <ul className="mt-4 list-disc list-outside pl-5 space-y-1 text-base">
-            {PROJECTS.map((project) => (
-              <li key={project.id}>
-                <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                  <span className="font-semibold text-primary">{project.title}</span>
-                  <span className="text-muted-foreground"> — {project.description}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
         </section>
 
         <section>
