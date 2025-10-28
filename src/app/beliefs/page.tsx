@@ -13,7 +13,7 @@ export default function Beliefs() {
     <main className="max-w-2xl mx-auto px-4 py-16 sm:py-24">
       <h1 className="text-3xl font-bold">What I Believe</h1>
       <p className="mt-4 text-lg text-muted-foreground">
-        A set of principles and values that guide my work and life.
+        A curated collection of principles and values that guide my work, decisions, and approach to life.
       </p>
       
       <ul className="mt-8 list-disc list-outside pl-5 space-y-2 text-base">
@@ -24,6 +24,10 @@ export default function Beliefs() {
         ))}
       </ul>
       
+      <p className="mt-8 text-lg text-muted-foreground">
+        Have a recommendation? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Let me know</Link>.
+      </p>
+
       <footer className="mt-12">
           <Link href="/" className="text-primary hover:underline">Back to Home</Link>
       </footer>
