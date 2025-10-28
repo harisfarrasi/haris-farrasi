@@ -40,9 +40,12 @@ export default function Home() {
               This is not education as entertainment. This is education as capability.
             </p>
             <p>
-              My personal focus is the intersection of physical intelligence and cognitive
-              intelligence, how robots move, how AI thinks, and how both extend human capability.
-              But the ambition of{' '}
+              The long-term vision is to create a new learning infrastructure that combines
+              credibility, real-world outcomes, and massive scale. Education should feel less like
+              consuming content and more like a multiplayer system, where people learn, build, and
+              advance together. My personal focus is the intersection of physical intelligence and
+              cognitive intelligence, how robots move, how AI thinks, and how both extend human
+              capability. But the ambition of{' '}
               <Link
                 href="https://plajar.com"
                 className="text-primary hover:underline"
@@ -51,9 +54,8 @@ export default function Home() {
               >
                 Plajar
               </Link>{' '}
-              goes beyond frontier technologies. It is about creating a new infrastructure of
-              learning where any subject, from the oldest sciences to the newest skills, can be
-              mastered faster and applied at scale.
+              goes beyond frontier technologies. It is about enabling faster mastery across every
+              field, from the oldest sciences to the newest skills.
             </p>
           </div>
         </section>
