@@ -7,7 +7,7 @@ export default function Home() {
         <section>
           <div className="text-lg text-muted-foreground space-y-4">
             <p>
-              My name is Alwan Haris Farrasi. I’m the CEO and founder of{' '}
+              My name is Haris Farrasi. I’m the CEO and founder of{' '}
               <Link
                 href="https://plajar.com"
                 className="text-primary hover:underline"
