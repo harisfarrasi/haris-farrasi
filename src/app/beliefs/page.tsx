@@ -1,19 +1,19 @@
 import Link from 'next/link';
 
 const BELIEFS = [
-    { id: 'belief-1', text: 'Efficiency is elimination.' },
-    { id: 'belief-2', text: 'Use leverage for exponential results.' },
-    { id: 'belief-3', text: 'Iterate relentlessly towards perfection.' },
-    { id: 'belief-4', text: 'Everything is sales. Master it.' },
-    { id: 'belief-5', text: 'Work hard with total focus.' },
-    { id: 'belief-6', text: 'Be a learning machine, not just smart.' },
-    { id: 'belief-7', text: 'Measure everything, improve everything.' },
-    { id: 'belief-8', text: 'Find the right question first.' },
-    { id: 'belief-9', text: 'Embrace incredible levels of discomfort.' },
-    { id: 'belief-10', text: 'The desire to be liked is a weakness.' },
-    { id: 'belief-11', text: 'Value comes from solving problems.' },
-    { id: 'belief-12', text: 'Success requires obsession.' },
-    { id: 'belief-13', text: 'The status quo is the bottleneck.' },
+    { id: 'belief-1', text: 'Delete until nothing is left. In fact, if you don’t end up adding back at least 10%, you didn’t delete enough.' },
+    { id: 'belief-2', text: 'Leverage compounds. Always chase code, content, connection, capital, company, etc.' },
+    { id: 'belief-3', text: 'Iteration beats everything. Keep cycling until reality bends.' },
+    { id: 'belief-4', text: 'Everything is sales. The teacher sells, the leader sells, the orator sells.' },
+    { id: 'belief-5', text: 'Extreme people achieve extreme results. Work so hard it feels unnatural.' },
+    { id: 'belief-6', text: 'Being a machine learner beats being smart. Curiosity compounds.' },
+    { id: 'belief-7', text: 'Benchmark the best. Compete with the top or die average.' },
+    { id: 'belief-8', text: 'Always ask your question. Find the right question to ask is key.' },
+    { id: 'belief-9', text: 'Extreme discomfort means you’re exactly where you should be.' },
+    { id: 'belief-10', text: 'Wanting to be liked is weakness. Fulfillment must come from within.' },
+    { id: 'belief-11', text: 'Value comes only from solving real problems.' },
+    { id: 'belief-12', text: 'It’s hard to be wildly successful at anything you aren’t obsessed with.' },
+    { id: 'belief-13', text: 'Status quo bias is the enemy. >70% live in permanent slight suffering because they never take a big swing.' },
 ];
 
 export default function Beliefs() {
