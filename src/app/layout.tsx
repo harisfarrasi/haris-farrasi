@@ -6,8 +6,8 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Alwan Haris Farrasi - Founder of Plajar',
-  description: 'The personal website of Alwan Haris Farrasi, CEO and founder of Plajar. Building the future of education with AI and advancing human capability.',
+  title: 'Alwan Haris Farrasi',
+  description: 'My name is Alwan Haris Farrasi. I’m the CEO and founder of Plajar, where we build systems that help people adopt new knowledge and skills faster',
 };
 
 export default function RootLayout({
