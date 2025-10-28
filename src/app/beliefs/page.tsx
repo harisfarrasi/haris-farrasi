@@ -8,6 +8,12 @@ const BELIEFS = [
     { id: 'belief-5', text: 'Work hard with total focus.' },
     { id: 'belief-6', text: 'Be a learning machine, not just smart.' },
     { id: 'belief-7', text: 'Measure everything, improve everything.' },
+    { id: 'belief-8', text: 'Find the right question first.' },
+    { id: 'belief-9', text: 'Embrace incredible levels of discomfort.' },
+    { id: 'belief-10', text: 'The desire to be liked is a weakness.' },
+    { id: 'belief-11', text: 'Value comes from solving problems.' },
+    { id: 'belief-12', text: 'Success requires obsession.' },
+    { id: 'belief-13', text: 'The status quo is the bottleneck.' },
 ];
 
 export default function Beliefs() {
