@@ -11,7 +11,7 @@ const BELIEFS = [
 export default function Beliefs() {
   return (
     <main className="max-w-2xl mx-auto px-4 py-16 sm:py-24">
-      <h1 className="text-3xl font-bold">What I Believe</h1>
+      <h1 className="text-3xl font-bold">Beliefs</h1>
       <p className="mt-4 text-lg text-muted-foreground">
         A curated collection of principles and values that guide my work, decisions, and approach to life.
       </p>
