@@ -27,6 +27,12 @@ export default function Home() {
                   <span className="text-muted-foreground"> — Internet people I learn from.</span>
                 </Link>
               </li>
+              <li>
+                <Link href="/beliefs" className="hover:underline">
+                  <span className="font-semibold text-primary">Beliefs</span>
+                  <span className="text-muted-foreground"> — Things I believe in.</span>
+                </Link>
+              </li>
           </ul>
         </section>
         
