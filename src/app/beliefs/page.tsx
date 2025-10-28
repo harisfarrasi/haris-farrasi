@@ -1,13 +1,13 @@
 import Link from 'next/link';
 
 const BELIEFS = [
-    { id: 'belief-1', text: 'Efficiency is achieved by focusing on elimination.' },
-    { id: 'belief-2', text: 'Use leverage to create compounding returns.' },
-    { id: 'belief-3', text: 'Iteration is the path to excellence.' },
-    { id: 'belief-4', text: 'Everything is sales, so get good at it.' },
-    { id: 'belief-5', text: 'Work with intense and sustained focus.' },
-    { id: 'belief-6', text: 'Being a learning machine is more important than being smart.' },
-    { id: 'belief-7', text: 'Benchmark everything to measure progress.' },
+    { id: 'belief-1', text: 'Efisiensi adalah eliminasi.' },
+    { id: 'belief-2', text: 'Gunakan daya ungkit untuk hasil eksponensial.' },
+    { id: 'belief-3', text: 'Iterasi tanpa henti menuju kesempurnaan.' },
+    { id: 'belief-4', text: 'Segala sesuatu adalah penjualan. Kuasai itu.' },
+    { id: 'belief-5', text: 'Bekerja keras dengan fokus total.' },
+    { id: 'belief-6', text: 'Jadilah mesin pembelajar, bukan hanya pintar.' },
+    { id: 'belief-7', text: 'Ukur segalanya, tingkatkan segalanya.' },
 ];
 
 export default function Beliefs() {
