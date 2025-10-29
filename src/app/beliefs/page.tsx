@@ -25,7 +25,7 @@ export default function Beliefs() {
         A curated collection of principles and values that guide my work, decisions, and approach to life.
       </p>
       
-      <ul className="mt-8 list-disc list-outside pl-5 space-y-3 text-lg">
+      <ul className="mt-8 list-disc list-outside pl-5 space-y-3 text-lg text-muted-foreground">
         {BELIEFS.map((item) => (
           <li key={item.id}>
             <span>{item.text}</span>
