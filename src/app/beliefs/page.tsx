@@ -1,19 +1,19 @@
 import Link from 'next/link';
 
 const BELIEFS = [
-    { id: 'belief-1', text: 'Delete until nothing is left. In fact, if you don’t end up adding back at least 10%, you didn’t delete enough.' },
-    { id: 'belief-2', text: 'Leverage compounds. Always chase code, content, connection, capital, company, etc.' },
-    { id: 'belief-3', text: 'Iteration beats everything. Keep cycling until reality bends.' },
-    { id: 'belief-4', text: 'Everything is sales. The teacher sells, the leader sells, the orator sells.' },
-    { id: 'belief-5', text: 'Extreme people achieve extreme results. Work so hard it feels unnatural.' },
-    { id: 'belief-6', text: 'Being a machine learner beats being smart. Curiosity compounds.' },
-    { id: 'belief-7', text: 'Benchmark the best. Compete with the top or die average.' },
-    { id: 'belief-8', text: 'Always ask your question. Find the right question to ask is key.' },
-    { id: 'belief-9', text: 'Extreme discomfort means you’re exactly where you should be.' },
-    { id: 'belief-10', text: 'Wanting to be liked is weakness. Fulfillment must come from within.' },
-    { id: 'belief-11', text: 'Value comes only from solving real problems.' },
-    { id: 'belief-12', text: 'It’s hard to be wildly successful at anything you aren’t obsessed with.' },
-    { id: 'belief-13', text: 'Status quo bias is the enemy. >70% live in permanent slight suffering because they never take a big swing.' },
+    { id: 'belief-1', text: 'Value comes only from solving real problems.' },
+    { id: 'belief-2', text: 'Iteration beats everything. Keep cycling until reality bends.' },
+    { id: 'belief-3', text: 'Benchmark the best. Compete with the top or die average.' },
+    { id: 'belief-4', text: 'Leverage compounds. Always chase code, content, connection, capital, company, etc.' },
+    { id: 'belief-5', text: 'Being a machine learner beats being smart. Curiosity compounds.' },
+    { id: 'belief-6', text: 'Always ask your question. Find the right question to ask is key.' },
+    { id: 'belief-7', text: 'Extreme people achieve extreme results. Work so hard it feels unnatural.' },
+    { id: 'belief-8', text: 'Extreme discomfort means you’re exactly where you should be.' },
+    { id: 'belief-9', text: 'It’s hard to be wildly successful at anything you aren’t obsessed with.' },
+    { id: 'belief-10', text: 'Status quo bias is the enemy. >70% live in permanent slight suffering because they never take a big swing.' },
+    { id: 'belief-11', text: 'Delete until nothing is left. In fact, if you don’t end up adding back at least 10%, you didn’t delete enough.' },
+    { id: 'belief-12', text: 'Wanting to be liked is weakness. Fulfillment must come from within.' },
+    { id: 'belief-13', text: 'Everything is sales. The teacher sells, the leader sells, the orator sells.' },
 ];
 
 export default function Beliefs() {
