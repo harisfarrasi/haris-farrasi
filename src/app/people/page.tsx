@@ -12,7 +12,7 @@ export default function People() {
       <ul className="mt-8 list-disc list-outside pl-5 space-y-3 text-lg text-muted-foreground">
         {PEOPLE_LINKS.map((person) => (
           <li key={person.id}>
-            <span className="font-semibold">{person.name}</span>
+            <span>{person.name}</span>
             {person.twitterHandle && (
               <>
                 {' — '}

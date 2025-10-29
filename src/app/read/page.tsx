@@ -13,7 +13,7 @@ export default function Read() {
         {LIBRARY_LINKS.map((item) => (
           <li key={item.id}>
             <Link href={item.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-              <span className="font-semibold">{item.title}</span>
+              <span>{item.title}</span>
             </Link>
           </li>
         ))}
