@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 const BELIEFS = [
+    { id: 'belief-14', text: 'The universe defaults to scarcity; the mission is to engineer sustainable abundance.' },
     { id: 'belief-1', text: 'Value comes only from solving real problems.' },
     { id: 'belief-2', text: 'Iteration beats everything. Keep cycling until reality bends.' },
     { id: 'belief-3', text: 'Benchmark the best. Compete with the top or die average.' },
