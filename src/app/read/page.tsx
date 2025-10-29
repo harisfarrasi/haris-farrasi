@@ -9,7 +9,7 @@ export default function Read() {
         A collection of articles, essays, and books that have significantly influenced my perspective and shaped my thinking.
       </p>
       
-      <ul className="mt-8 list-disc list-outside pl-5 space-y-2 text-base">
+      <ul className="mt-8 list-disc list-outside pl-5 space-y-3 text-lg">
         {LIBRARY_LINKS.map((item) => (
           <li key={item.id}>
             <Link href={item.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">

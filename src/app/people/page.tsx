@@ -9,7 +9,7 @@ export default function People() {
         A list of thinkers and writers on the internet that I learn from regularly. They cover a broad range of topics.
       </p>
       
-      <ul className="mt-8 list-disc list-outside pl-5 space-y-2 text-base">
+      <ul className="mt-8 list-disc list-outside pl-5 space-y-3 text-lg">
         {PEOPLE_LINKS.map((person) => (
           <li key={person.id}>
             <span className="font-semibold">{person.name}</span>

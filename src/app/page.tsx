@@ -61,7 +61,7 @@ export default function Home() {
 
         <section>
           <h2 className="text-xl font-bold">Navigation</h2>
-           <ul className="mt-4 list-disc list-outside pl-5 space-y-1 text-base">
+           <ul className="mt-4 list-disc list-outside pl-5 space-y-2 text-lg">
               <li>
                 <Link href="/read" className="hover:underline">
                   <span className="font-semibold text-primary">Read</span>
