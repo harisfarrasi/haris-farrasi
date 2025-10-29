@@ -16,15 +16,12 @@ export default function Home() {
               >
                 Plajar
               </Link>
-              , where we build systems that help people adopt new knowledge and skills faster. The
-              dirty secret of Edtech 1.0 is that most platforms didn’t actually care if you learned
-              anything. Duolingo became a $14B giant but most users still can’t hold a basic
-              conversation. Masterclass sells inspiration but not mastery. Udemy and Coursera
-              reached millions yet video courses average only 4 to 10 percent completion. Creator
-              platforms enabled tens of thousands of courses, but too many optimized for sales over
-              outcomes. Engagement grew, but real learning did not.
-            </p>
-            <p>
+              , built as an answer to the failures of Edtech 1.0. The dirty secret is that most
+              platforms never cared if people actually learned: Duolingo became a $14B giant but
+              most users still can’t hold a basic conversation. Masterclass sells inspiration
+              without mastery. Coursera and Udemy reached millions, yet video courses average only
+              4–10 percent completion. Creator platforms scaled quickly but too often optimized
+              for sales over outcomes. Engagement grew, but learning did not.{' '}
               <Link
                 href="https://plajar.com"
                 className="text-primary hover:underline"
@@ -33,19 +30,21 @@ export default function Home() {
               >
                 Plajar
               </Link>{' '}
-              is my answer to that failure. We are building Edtech 2.0: real learning outcomes with
-              high engagement. The world is entering the largest reskilling and upskilling demand in
-              modern history, and old tools will not be enough. Our mission is to make every domain
-              of knowledge and skill easier to understand, easier to use, and easier to build with.
-              This is not education as entertainment. This is education as capability.
+              is my response: building Edtech 2.0, where education delivers real outcomes with
+              high engagement, and where learning feels less like consuming content and more like a
+              multiplayer system: people learning, building, and advancing together. The world is
+              entering the largest reskilling and upskilling demand in modern history, and old
+              tools will not be enough.
             </p>
             <p>
-              The long-term vision is to create a new learning infrastructure that combines
-              credibility, real-world outcomes, and massive scale. Education should feel less like
-              consuming content and more like a multiplayer system, where people learn, build, and
-              advance together. My personal focus is the intersection of physical intelligence and
-              cognitive intelligence, how robots move, how AI thinks, and how both extend human
-              capability. But the ambition of{' '}
+              The long-term vision is to create the operating system of civilization that makes
+              mastery across every field from the oldest sciences to the newest skills not only
+              possible, but faster, fairer, and massively scalable. Education is the first proof
+              point: if we can redesign how knowledge is mastered, we can redesign how every system
+              that powers abundance works. My thesis is that true abundance can only be achieved
+              through three pillars: cognitive intelligence (AI that thinks), physical
+              intelligence (machines that act), and governance (the systems that align and
+              distribute).{' '}
               <Link
                 href="https://plajar.com"
                 className="text-primary hover:underline"
@@ -54,8 +53,8 @@ export default function Home() {
               >
                 Plajar
               </Link>{' '}
-              goes beyond frontier technologies. It is about enabling faster mastery across every
-              field, from the oldest sciences to the newest skills.
+              is my immediate vehicle in this journey, but the larger direction is clear: building
+              governance for universal abundance.
             </p>
           </div>
         </section>
