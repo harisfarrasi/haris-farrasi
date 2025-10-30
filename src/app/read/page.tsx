@@ -20,11 +20,11 @@ export default function Read() {
       </ul>
 
       <p className="mt-8 text-lg text-muted-foreground">
-        Have a recommendation? <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">Let me know</Link>.
+        Saya selalu dalam proses belajar dan mengkaji ulang banyak hal. Jika Anda punya rekomendasi, <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">jangan ragu untuk memberitahu saya</Link>.
       </p>
       
       <footer className="mt-12">
-          <Link href="/" className="text-muted-foreground no-underline hover:underline">Back to Home</Link>
+          <Link href="/" className="text-primary hover:underline">Back to Home</Link>
       </footer>
     </main>
   );
