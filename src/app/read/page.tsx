@@ -20,7 +20,7 @@ export default function Read() {
       </ul>
 
       <p className="mt-8 text-lg text-muted-foreground">
-        Saya selalu dalam proses belajar dan mengkaji ulang banyak hal. Jika Anda punya rekomendasi, <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">jangan ragu untuk memberitahu saya</Link>.
+        I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">please let me know</Link>.
       </p>
       
       <footer className="mt-12">
