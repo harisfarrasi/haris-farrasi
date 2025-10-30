@@ -63,9 +63,9 @@ export default function Home() {
           <h2 className="text-xl font-bold">Navigation</h2>
            <ul className="mt-4 list-disc list-outside pl-5 space-y-2 text-lg">
               <li>
-                <Link href="/read" className="hover:underline">
-                  <span className="font-semibold text-primary">Read</span>
-                  <span className="text-muted-foreground"> — My reading list and summaries.</span>
+                <Link href="/beliefs" className="hover:underline">
+                  <span className="font-semibold text-primary">Beliefs</span>
+                  <span className="text-muted-foreground"> — Things I believe in.</span>
                 </Link>
               </li>
               <li>
@@ -75,9 +75,9 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="/beliefs" className="hover:underline">
-                  <span className="font-semibold text-primary">Beliefs</span>
-                  <span className="text-muted-foreground"> — Things I believe in.</span>
+                <Link href="/read" className="hover:underline">
+                  <span className="font-semibold text-primary">Read</span>
+                  <span className="text-muted-foreground"> — My reading list and summaries.</span>
                 </Link>
               </li>
           </ul>
