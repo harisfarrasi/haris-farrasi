@@ -30,7 +30,7 @@ export default function People() {
       </p>
 
       <footer className="mt-12">
-          <Link href="/" className="text-primary hover:underline">Back to Home</Link>
+          <Link href="/" className="text-muted-foreground no-underline hover:underline">Back to Home</Link>
       </footer>
     </main>
   );
