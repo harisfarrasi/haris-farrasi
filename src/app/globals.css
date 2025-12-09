@@ -50,7 +50,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
   a {
-    @apply text-primary hover:underline;
+    @apply text-foreground hover:underline;
   }
   h1, h2, h3 {
     @apply font-semibold;
