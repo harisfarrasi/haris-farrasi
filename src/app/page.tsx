@@ -135,7 +135,7 @@ function Clock() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col justify-between max-w-3xl mx-auto px-6 sm:px-8 py-8 sm:py-16">
+    <div className="min-h-screen flex flex-col justify-between max-w-3xl mx-auto px-8 sm:px-12 py-12 sm:py-24">
       <main className="flex-grow">
         <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-16">
           <TabsList className="flex-row md:flex-col h-auto items-start bg-transparent p-0 border-none space-x-4 md:space-x-0 md:space-y-2 mb-8 md:mb-0 md:w-32">
@@ -196,7 +196,7 @@ export default function Home() {
                   ))}
               </ol>
               <p className="mt-8 text-base text-foreground">
-                  I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-muted-foreground hover:underline">please let me know</Link>.
+                  I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="hover:underline">please let me know</Link>.
               </p>
             </TabsContent>
             
@@ -220,7 +220,7 @@ export default function Home() {
                     ))}
                 </ol>
                  <p className="mt-8 text-base text-foreground">
-                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-muted-foreground hover:underline">please let me know</Link>.
+                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="hover:underline">please let me know</Link>.
                 </p>
             </TabsContent>
 
@@ -238,7 +238,7 @@ export default function Home() {
                     ))}
                 </ol>
                  <p className="mt-8 text-base text-foreground">
-                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-muted-foreground hover:underline">please let me know</Link>.
+                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="hover:underline">please let me know</Link>.
                 </p>
             </TabsContent>
           </div>
