@@ -135,7 +135,7 @@ function Clock() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col justify-between p-8 md:p-12 text-foreground/80">
+    <div className="min-h-screen flex flex-col justify-between p-8 md:p-12">
       <main className="flex-grow">
         <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-20">
           <TabsList className="flex-row md:flex-col h-auto items-start bg-transparent p-0 border-none space-x-4 md:space-x-0 md:space-y-2 mb-8 md:mb-0 md:w-40">
@@ -211,7 +211,7 @@ export default function Home() {
                         {person.twitterHandle && (
                         <>
                             {' — '}
-                            <Link href={`https://x.com/${person.twitterHandle}`} target="_blank" rel="noopener noreferrer" className="hover:underline text-muted-foreground">
+                            <Link href={`https://x.com/${person.twitterHandle}`} target="_blank" rel="noopener noreferrer" className="hover:underline">
                             @{person.twitterHandle}
                             </Link>
                         </>
