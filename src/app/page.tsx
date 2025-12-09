@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useEffect, useState } from 'react';
 
 const BELIEFS = [
     { id: 'belief-14', text: 'The universe defaults to scarcity; the mission is to engineer sustainable abundance.' },
@@ -106,12 +109,39 @@ const LIBRARY_LINKS = [
     { id: 'library-50', title: 'Reflections on OpenAI', url: 'https://perch.app/post/ddb4fe67-9bfd-4548-95ab-ac08b342a9c6', description: 'by Calvin French-Owen' },
 ];
 
+function Clock() {
+  const [time, setTime] = useState<Date | null>(null);
+
+  useEffect(() => {
+    const updateClock = () => {
+      setTime(new Date());
+    };
+    updateClock();
+    const timerId = setInterval(updateClock, 1000);
+    return () => clearInterval(timerId);
+  }, []);
+
+  const formatTime = (date: Date | null) => {
+    if (!date) return '...';
+    return date.toLocaleTimeString('en-US', {
+      timeZone: 'Asia/Jakarta', // WIB
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+    });
+  };
+
+  return (
+    <p>{formatTime(time)} WIB</p>
+  );
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col p-4 md:p-8">
       <main className="flex-grow">
         <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-12">
-          <TabsList className="flex-col h-auto items-start bg-transparent p-0 border-none space-y-2 mb-8 md:mb-0 md:w-40">
+          <TabsList className="flex-row md:flex-col h-auto items-start bg-transparent p-0 border-none space-x-4 md:space-x-0 md:space-y-2 mb-8 md:mb-0 md:w-40">
             <TabsTrigger value="about" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">About</TabsTrigger>
             <TabsTrigger value="beliefs" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">Beliefs</TabsTrigger>
             <TabsTrigger value="people" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">People</TabsTrigger>
@@ -136,17 +166,9 @@ export default function Home() {
                   most users still can’t hold a basic conversation. Masterclass sells inspiration
                   without mastery. Coursera and Udemy reached millions, yet video courses average only
                   4–10 percent completion. Creator platforms scaled quickly but too often optimized
-                  for sales over outcomes. Engagement grew, but learning did not.{' '}
-                  <Link
-                    href="https://plajar.com"
-                    className="text-primary hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Plajar
-                  </Link>{' '}
-                  is my response: building Edtech 2.0, where education delivers real outcomes with
-                  high engagement, and where learning feels less like consuming content and more like a
+                  for sales over outcomes. Engagement grew, but learning did not. Plajar is my
+                  response: building Edtech 2.0, where education delivers real outcomes with high
+                  engagement, and where learning feels less like consuming content and more like a
                   multiplayer system: people learning, building, and advancing together. The world is
                   entering the largest reskilling and upskilling demand in modern history, and old
                   tools will not be enough.
@@ -159,17 +181,8 @@ export default function Home() {
                   that powers abundance works. My thesis is that true abundance can only be achieved
                   through three pillars: cognitive intelligence (AI that thinks), physical
                   intelligence (machines that act), and governance (the systems that align and
-                  distribute).{' '}
-                  <Link
-                    href="https://plajar.com"
-                    className="text-primary hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Plajar
-                  </Link>{' '}
-                  is my immediate vehicle in this journey, but the larger direction is clear: building
-                  governance for universal abundance.
+                  distribute). Plajar is my immediate vehicle in this journey, but the larger direction
+                  is clear: building governance for universal abundance.
                 </p>
               </div>
             </TabsContent>
@@ -234,7 +247,7 @@ export default function Home() {
 
       <footer className="max-w-5xl mx-auto px-4 py-8 w-full mt-16">
          <div className="flex justify-between items-center text-muted-foreground text-sm">
-            <p>&copy; {new Date().getFullYear()} Haris Farrasi</p>
+            <Clock />
             <div className="flex items-center space-x-4">
               <Link href="mailto:harisfarrasi@gmail.com" className="hover:text-primary transition-colors">Email</Link>
               <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">X/Twitter</Link>
