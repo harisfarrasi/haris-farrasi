@@ -195,8 +195,8 @@ export default function Home() {
                   </li>
                   ))}
               </ol>
-              <p className="mt-8 text-base text-muted-foreground">
-                  I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-foreground hover:underline">please let me know</Link>.
+              <p className="mt-8 text-base text-foreground">
+                  I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-muted-foreground hover:underline">please let me know</Link>.
               </p>
             </TabsContent>
             
@@ -219,8 +219,8 @@ export default function Home() {
                     </li>
                     ))}
                 </ol>
-                 <p className="mt-8 text-base text-muted-foreground">
-                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-foreground hover:underline">please let me know</Link>.
+                 <p className="mt-8 text-base text-foreground">
+                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-muted-foreground hover:underline">please let me know</Link>.
                 </p>
             </TabsContent>
 
@@ -237,8 +237,8 @@ export default function Home() {
                     </li>
                     ))}
                 </ol>
-                 <p className="mt-8 text-base text-muted-foreground">
-                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-foreground hover:underline">please let me know</Link>.
+                 <p className="mt-8 text-base text-foreground">
+                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-muted-foreground hover:underline">please let me know</Link>.
                 </p>
             </TabsContent>
           </div>
