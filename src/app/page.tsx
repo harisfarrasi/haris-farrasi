@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { PEOPLE_LINKS, LIBRARY_LINKS } from '@/lib/data';
 
 const BELIEFS = [
     { id: 'belief-14', text: 'The universe defaults to scarcity; the mission is to engineer sustainable abundance.' },
@@ -19,98 +18,187 @@ const BELIEFS = [
     { id: 'belief-13', text: 'Everything is sales. The teacher sells, the leader sells, the orator sells.' },
 ];
 
+const PEOPLE_LINKS = [
+    { id: 'person-1', name: 'Muhammad ﷺ', twitterHandle: null },
+    { id: 'person-2', name: 'Muhammad Al-Fatih', twitterHandle: null },
+    { id: 'person-3', name: 'Ahmad Bahauddin Nursalim (Gus Baha)', twitterHandle: null },
+    { id: 'person-4', name: 'Adi Hidayat', twitterHandle: null },
+    { id: 'person-5', name: 'Elon Musk', twitterHandle: 'elonmusk' },
+    { id: 'person-6', name: 'Sam Altman', twitterHandle: 'sama' },
+    { id: 'person-7', name: 'Peter Thiel', twitterHandle: null },
+    { id: 'person-8', name: 'Jensen Huang', twitterHandle: 'jensenhuang' },
+    { id: 'person-9', name: 'Patrick Collison', twitterHandle: 'patrickc' },
+    { id: 'person-10', name: 'Andrej Karpathy', twitterHandle: 'karpathy' },
+    { id: 'person-11', name: 'Demis Hassabis', twitterHandle: 'demishassabis' },
+    { id: 'person-12', name: 'Alexandr Wang', twitterHandle: 'alexandr_wang' },
+    { id: 'person-13', name: 'Marc Andreessen', twitterHandle: 'pmarca' },
+    { id: 'person-14', name: 'Balaji Srinivasan', twitterHandle: 'balajis' },
+    { id: 'person-15', name: 'Paul Graham', twitterHandle: 'paulg' },
+    { id: 'person-16', name: 'Naval Ravikant', twitterHandle: 'naval' },
+    { id: 'person-17', name: 'Elad Gil', twitterHandle: 'eladgil' },
+    { id: 'person-18', name: 'Ray Dalio', twitterHandle: 'RayDalio' },
+    { id: 'person-19', name: 'Warren Buffett', twitterHandle: null },
+    { id: 'person-20', name: 'Charlie Munger', twitterHandle: null },
+    { id: 'person-21', name: 'Jeff Bezos', twitterHandle: 'JeffBezos' },
+    { id: 'person-22', name: 'Larry Page', twitterHandle: null },
+    { id: 'person-23', name: 'Sergey Brin', twitterHandle: null },
+    { id: 'person-24', name: 'Mark Zuckerberg', twitterHandle: null },
+    { id: 'person-25', name: 'Reed Hastings', twitterHandle: null },
+    { id: 'person-26', name: 'Brian Chesky', twitterHandle: 'bchesky' },
+    { id: 'person-27', name: 'Pavel Durov', twitterHandle: 'durov' },
+    { id: 'person-28', name: 'Masayoshi Son', twitterHandle: null },
+    { id: 'person-29', name: 'Tim Urban', twitterHandle: 'waitbutwhy' },
+    { id: 'person-30', name: 'Timothy Ronald', twitterHandle: 'timothyronald22' },
+    { id: 'person-31', name: 'Steve Jobs', twitterHandle: null },
+    { id: 'person-32', name: 'Jack Dorsey', twitterHandle: 'jack' },
+];
+
+const LIBRARY_LINKS = [
+    { id: 'library-1', title: '100 Blocks a Day', url: 'https://perch.app/post/826cc63a-198b-44d0-9fda-545fdb3b90e6', description: 'by Wait But Why' },
+    { id: 'library-2', title: 'Good and Bad Procrastination', url: 'https://perch.app/post/1ed4bbc9-a34e-43e3-8194-7adbf9a6ed31', description: 'by Paul Graham' },
+    { id: 'library-3', title: 'Life is lived in the arena', url: 'https://perch.app/post/1f38f233-46a2-4449-83e6-9560fe5acbf7', description: 'by Naval Ravikant' },
+    { id: 'library-4', title: 'Very Bad Advice', url: 'https://perch.app/post/653c7e9f-2222-417a-adb9-7a2978d49788', description: 'by Morgan Housel' },
+    { id: 'library-5', title: 'Principles for Lifelong Meaningful Relationships', url: 'https://perch.app/post/0ff5537c-2330-4965-8008-4efb46ad9180', description: 'by Ray Dalio' },
+    { id: 'library-6', title: 'How to Pick Your Life Partner (Part 2)', url: 'https://perch.app/post/3d6a454c-bd6c-44e5-95e6-7efd835f9b04', description: 'by Wait But Why' },
+    { id: 'library-7', title: 'If You Want to Learn, Do', url: 'https://perch.app/post/d83d5919-a386-4597-99df-ba6d862af654', description: 'by Naval Ravikant' },
+    { id: 'library-8', title: 'Find Your Specific Knowledge Through Action', url: 'https://perch.app/post/6e3b89a2-264e-4f1b-b019-dc1c476e86fa', description: 'by Naval Ravikant' },
+    { id: 'library-9', title: 'In Most Difficult Things, The Solution is Indirect', url: 'https://perch.app/post/a8428c1a-58bf-4c2e-9db0-41c4ec92d495', description: 'by Naval Ravikant' },
+    { id: 'library-10', title: 'Eventually You Will Get What You Deserve', url: 'https://perch.app/post/cf31851f-7ab0-4dfe-b75c-ad992d4fdd6a', description: 'by Naval Ravikant' },
+    { id: 'library-11', title: 'Optimism Shapes Reality', url: 'https://perch.app/post/ac474ea8-47a9-4831-b887-cdd1a050a0b7', description: 'by Alexandr Wang' },
+    { id: 'library-12', title: 'Digital Hygiene', url: 'https://perch.app/post/be3d4e7f-4c3b-4b63-8289-dc6f32f0969d', description: 'by Andrej Karpathy' },
+    { id: 'library-13', title: 'I Love Calculator', url: 'https://perch.app/post/a2975370-d887-4463-abea-a1d66ecd9cdb', description: 'by Andrej Karpathy' },
+    { id: 'library-14', title: 'Advice for ambitious 19 year olds', url: 'https://perch.app/post/da0638f9-e41e-4ced-b4e7-204a716ad583', description: 'by Sam Altman' },
+    { id: 'library-15', title: 'The days are long but the decades are short', url: 'https://perch.app/post/80ea2532-f643-4122-91ad-1821f9b63840', description: 'by Sam Altman' },
+    { id: 'library-16', title: 'Value is created by doing', url: 'https://perch.app/post/e19a7e75-9826-444c-8fc8-3785df8388d3', description: 'by Sam Altman' },
+    { id: 'library-17', title: 'Productivity', url: 'https://perch.app/post/f506403c-21f8-4e26-9262-76203e6c9aa6', description: 'by Sam Altman' },
+    { id: 'library-18', title: 'How To Be Successful', url: 'https://perch.app/post/a39d2a17-8e24-4cee-a68d-356a659280fc', description: 'by Sam Altman' },
+    { id: 'library-19', title: 'The Strength of Being Misunderstood', url: 'https://perch.app/post/4d81e14b-ef52-4275-8520-1cd15ba35084', description: 'by Sam Altman' },
+    { id: 'library-20', title: 'Relentlessly Resourceful', url: 'https://perch.app/post/b658ab48-f5a-4cf4-93c8-376cc2ef630c', description: 'by Paul Graham' },
+    { id: 'library-21', title: 'Startup = Growth', url: 'https://perch.app/post/4a062d5a-14fd-43f5-bfc5-4579cae935f9', description: 'by Paul Graham' },
+    { id: 'library-22', title: '18 Mistakes That Kill Startups', url: 'https://perch.app/post/ab1d7fcc-812b-4700-9a86-3ba893423f70', description: 'by Paul Graham' },
+    { id: 'library-23', title: 'Startups in 13 Sentences', url: 'https://perch.app/post/1f405161-603d-4f5d-afba-e638fb5b43a1', description: 'by Paul Graham' },
+    { id: 'library-24', title: 'What I’ve Learned from Users', url: 'https://perch.app/post/29c47516-1b96-44f3-b7b7-79ee945841ed', description: 'by Paul Graham' },
+    { id: 'library-25', title: 'Researchers and Founders', url: 'https://perch.app/post/e318e005-26b0-4a3b-8ddc-4274b58c8ce3', description: 'by Sam Altman' },
+    { id: 'library-26', title: '9 things the best founders do', url: 'https://perch.app/post/488e8785-6dc3-4e5a-b133-7c6525a5020f', description: 'by Sam Altman' },
+    { id: 'library-27', title: 'The Only Way to Grow Huge', url: 'https://perch.app/post/dedb6b9b-7794-43d8-8f14-a013075fc891', description: 'by Sam Altman' },
+    { id: 'library-28', title: 'Before Growth', url: 'https://perch.app/post/f3ea81d8-cec8-4469-8525-26b59e6d525f', description: 'by Sam Altman' },
+    { id: 'library-29', title: 'Super successful companies', url: 'https://perch.app/post/56d227e0-d6bc-4553-91b7-22a8fc61b6ed', description: 'by Sam Altman' },
+    { id: 'library-30', title: 'Seek out negative feedback', url: 'https://perch.app/post/cf59b04d-f832-4ba5-8da0-76ca71f7854e', description: 'by Elon Musk' },
+    { id: 'library-31', title: 'How to be Elon Musk (Justine Musk)', url: 'https://perch.app/post/f9638d21-2c00-4bab-a97f-14c4e6ca0d1d', description: 'by The Founders’ Tribune' },
+    { id: 'library-32', title: 'CEO as Chief Editor', url: 'https://perch.app/post/4ea0878f-07e8-410f-8e4a-c21e20f4d114', description: 'by Jack Dorsey' },
+    { id: 'library-33', title: '12 Leadership Habits', url: 'https://perch.app/post/4f407382-8fd5-498a-8851-e6dedd28f6e9', description: 'by Jack Dorsey' },
+    { id: 'library-34', title: 'The Power of Great Storytelling', url: 'https://perch.app/post/45cc5b7f-c873-4a8e-8fb8-fc0b1b3e2b9d', description: 'by Jack Dorsey' },
+    { id: 'library-35', title: 'Culture Lessons from Bill Walsh', url: 'https://perch.app/post/38e347f5-1ab8-4de3-99ea-d7544ebfe249', description: 'by Jack Dorsey' },
+    { id: 'library-36', title: 'Balancing performance and loyalty', url: 'https://perch.app/post/d8c6f974-7f2f-4c42-89c6-99c07fef2a1f', description: 'by Reed Hastings' },
+    { id: 'library-37', title: 'Amp It Up!', url: 'https://perch.app/post/2adced28-c613-4479-ae52-0ab0ac8bd6df', description: 'by Frank Slootman' },
+    { id: 'library-38', title: 'Performance Culture', url: 'https://perch.app/post/5c283f38-a15f-4270-a2d6-e78a72485bce', description: 'by Frank Slootman' },
+    { id: 'library-39', title: 'From Coding to Leadership', url: 'https://perch.app/post/685e1b32-992b-43bd-8044-7cfe7856e26f', description: 'by Max Levchin' },
+    { id: 'library-40', title: 'Marketing is a Transfer of Enthusiasm', url: 'https://perch.app/post/ce994418-4cde-4fab-bfe4-f4444e1a1ac6', description: 'by Jason Fried' },
+    { id: 'library-41', title: 'Entrepreneurs are Typically Polymaths', url: 'https://perch.app/post/65fbda29-277a-4980-b383-2f0d454899b7', description: 'by Peter Thiel' },
+    { id: 'library-42', title: 'Lessons from Peter Thiel', url: 'https://perch.app/post/e914ea51-56bb-476a-aacd-725b9f8d8efd', description: 'by Joe Lonsdale' },
+    { id: 'library-43', title: 'Be Less Precious', url: 'https://perch.app/post/99ddf7f0-bb5b-447c-9f67-bd840ec0c9d7', description: 'by David Heinemeier Hansson' },
+    { id: 'library-44', title: 'Elon Musk', url: 'https://perch.app/post/275781d8-5c8a-44f8-8149-eaec70634933', description: 'by David Senra' },
+    { id: 'library-45', title: 'Make Something Wonderful', url: 'https://perch.app/post/ebf85540-449a-43bc-84af-21fcfddd26f4', description: 'by Steve Jobs' },
+    { id: 'library-46', title: 'The Struggle', url: 'https://perch.app/post/ce6b9324-d1c8-4be2-a2c7-c3233d98e3a9', description: 'by Ben Horowitz' },
+    { id: 'library-47', title: 'Product/Market Fit at Pinterest', url: 'https://perch.app/post/c9a3195b-1906-4121-888b-d64581b3d799', description: 'by Ben Silbermann' },
+    { id: 'library-48', title: 'DO TOO MUCH', url: 'https://perch.app/post/f13313f1-054d-49bc-93ff-2abf5af63b30', description: 'by Alexandr Wang' },
+    { id: 'library-49', title: 'Hire people who give a shit', url: 'https://perch.app/post/06a64b9f-31c2-43f5-a492-8bc9b2052986', description: 'by Alexandr Wang' },
+    { id: 'library-50', title: 'Reflections on OpenAI', url: 'https://perch.app/post/ddb4fe67-9bfd-4548-95ab-ac08b342a9c6', description: 'by Calvin French-Owen' },
+];
+
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex-grow max-w-5xl mx-auto px-4 py-16 sm:py-24 w-full">
-        <div className="text-lg text-muted-foreground space-y-4 mb-12">
-          <p>
-            My name is Haris Farrasi. I’m the CEO and founder of{' '}
-            <Link
-              href="https://plajar.com"
-              className="text-primary hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Plajar
-            </Link>
-            , built as an answer to the failures of Edtech 1.0. The dirty secret is that most
-            platforms never cared if people actually learned: Duolingo became a $14B giant but
-            most users still can’t hold a basic conversation. Masterclass sells inspiration
-            without mastery. Coursera and Udemy reached millions, yet video courses average only
-            4–10 percent completion. Creator platforms scaled quickly but too often optimized
-            for sales over outcomes. Engagement grew, but learning did not.{' '}
-            <Link
-              href="https://plajar.com"
-              className="text-primary hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Plajar
-            </Link>{' '}
-            is my response: building Edtech 2.0, where education delivers real outcomes with
-            high engagement, and where learning feels less like consuming content and more like a
-            multiplayer system: people learning, building, and advancing together. The world is
-            entering the largest reskilling and upskilling demand in modern history, and old
-            tools will not be enough.
-          </p>
-          <p>
-            The long-term vision is to create the operating system of civilization that makes
-            mastery across every field from the oldest sciences to the newest skills not only
-            possible, but faster, fairer, and massively scalable. Education is the first proof
-            point: if we can redesign how knowledge is mastered, we can redesign how every system
-            that powers abundance works. My thesis is that true abundance can only be achieved
-            through three pillars: cognitive intelligence (AI that thinks), physical
-            intelligence (machines that act), and governance (the systems that align and
-            distribute).{' '}
-            <Link
-              href="https://plajar.com"
-              className="text-primary hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Plajar
-            </Link>{' '}
-            is my immediate vehicle in this journey, but the larger direction is clear: building
-            governance for universal abundance.
-          </p>
-        </div>
-
-        <Tabs defaultValue="beliefs" className="flex flex-col md:flex-row md:space-x-8">
-          <TabsList className="flex-col h-auto justify-start items-stretch bg-transparent p-0 border-b md:border-l md:border-b-0 md:w-40">
-            <TabsTrigger value="beliefs" className="justify-start data-[state=active]:bg-accent data-[state=active]:shadow-none rounded-none md:rounded-r-none md:rounded-l-md text-base px-4 py-2">Beliefs</TabsTrigger>
-            <TabsTrigger value="people" className="justify-start data-[state=active]:bg-accent data-[state=active]:shadow-none rounded-none md:rounded-r-none md:rounded-l-md text-base px-4 py-2">People</TabsTrigger>
-            <TabsTrigger value="read" className="justify-start data-[state=active]:bg-accent data-[state=active]:shadow-none rounded-none md:rounded-r-none md:rounded-l-md text-base px-4 py-2">Read</TabsTrigger>
+    <div className="min-h-screen flex flex-col p-4 md:p-8">
+      <main className="flex-grow">
+        <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-12">
+          <TabsList className="flex-col h-auto items-start bg-transparent p-0 border-none space-y-2 mb-8 md:mb-0 md:w-40">
+            <TabsTrigger value="about" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">About</TabsTrigger>
+            <TabsTrigger value="beliefs" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">Beliefs</TabsTrigger>
+            <TabsTrigger value="people" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">People</TabsTrigger>
+            <TabsTrigger value="read" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">Read</TabsTrigger>
           </TabsList>
           
-          <div className="flex-1 mt-6 md:mt-0">
-            <TabsContent value="beliefs">
-                <h2 className="text-2xl font-bold mb-4">Beliefs</h2>
-                <ul className="list-disc list-outside pl-5 space-y-3 text-lg text-muted-foreground">
+          <div className="flex-1 max-w-2xl">
+            <TabsContent value="about" className="mt-0">
+              <div className="text-base text-foreground space-y-4">
+                <p>
+                  My name is Haris Farrasi. I’m the CEO and founder of{' '}
+                  <Link
+                    href="https://plajar.com"
+                    className="text-primary hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Plajar
+                  </Link>
+                  , built as an answer to the failures of Edtech 1.0. The dirty secret is that most
+                  platforms never cared if people actually learned: Duolingo became a $14B giant but
+                  most users still can’t hold a basic conversation. Masterclass sells inspiration
+                  without mastery. Coursera and Udemy reached millions, yet video courses average only
+                  4–10 percent completion. Creator platforms scaled quickly but too often optimized
+                  for sales over outcomes. Engagement grew, but learning did not.{' '}
+                  <Link
+                    href="https://plajar.com"
+                    className="text-primary hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Plajar
+                  </Link>{' '}
+                  is my response: building Edtech 2.0, where education delivers real outcomes with
+                  high engagement, and where learning feels less like consuming content and more like a
+                  multiplayer system: people learning, building, and advancing together. The world is
+                  entering the largest reskilling and upskilling demand in modern history, and old
+                  tools will not be enough.
+                </p>
+                <p>
+                  The long-term vision is to create the operating system of civilization that makes
+                  mastery across every field from the oldest sciences to the newest skills not only
+                  possible, but faster, fairer, and massively scalable. Education is the first proof
+                  point: if we can redesign how knowledge is mastered, we can redesign how every system
+                  that powers abundance works. My thesis is that true abundance can only be achieved
+                  through three pillars: cognitive intelligence (AI that thinks), physical
+                  intelligence (machines that act), and governance (the systems that align and
+                  distribute).{' '}
+                  <Link
+                    href="https://plajar.com"
+                    className="text-primary hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Plajar
+                  </Link>{' '}
+                  is my immediate vehicle in this journey, but the larger direction is clear: building
+                  governance for universal abundance.
+                </p>
+              </div>
+            </TabsContent>
+            
+            <TabsContent value="beliefs" className="mt-0">
+                <ul className="space-y-3 text-base text-foreground">
                     {BELIEFS.map((item) => (
                     <li key={item.id}>
                         <span>{item.text}</span>
                     </li>
                     ))}
                 </ul>
-                <p className="mt-8 text-lg text-muted-foreground">
+                <p className="mt-8 text-base text-muted-foreground">
                     I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">please let me know</Link>.
                 </p>
             </TabsContent>
             
-            <TabsContent value="people">
-                <h2 className="text-2xl font-bold mb-4">People</h2>
-                <p className="mb-4 text-lg text-muted-foreground">
+            <TabsContent value="people" className="mt-0">
+                <p className="mb-4 text-base text-foreground">
                   A list of thinkers and writers on the internet that I learn from regularly. They cover a broad range of topics.
                 </p>
-                <ul className="list-disc list-outside pl-5 space-y-3 text-lg text-muted-foreground">
+                <ul className="space-y-3 text-base text-foreground">
                     {PEOPLE_LINKS.map((person) => (
                     <li key={person.id}>
-                        <span className="text-primary">{person.name}</span>
+                        <span>{person.name}</span>
                         {person.twitterHandle && (
                         <>
                             {' — '}
-                            <Link href={`https://x.com/${person.twitterHandle}`} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                            <Link href={`https://x.com/${person.twitterHandle}`} target="_blank" rel="noopener noreferrer" className="hover:underline text-muted-foreground">
                             @{person.twitterHandle}
                             </Link>
                         </>
@@ -118,36 +206,34 @@ export default function Home() {
                     </li>
                     ))}
                 </ul>
-                 <p className="mt-8 text-lg text-muted-foreground">
+                 <p className="mt-8 text-base text-muted-foreground">
                     I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">please let me know</Link>.
                 </p>
             </TabsContent>
 
-            <TabsContent value="read">
-                 <h2 className="text-2xl font-bold mb-4">Read</h2>
-                 <p className="mb-4 text-lg text-muted-foreground">
+            <TabsContent value="read" className="mt-0">
+                 <p className="mb-4 text-base text-foreground">
                     A collection of articles, essays, and books that have significantly influenced my perspective and shaped my thinking.
                 </p>
-                <ul className="list-disc list-outside pl-5 space-y-3 text-lg text-muted-foreground">
+                <ul className="space-y-3 text-base text-foreground">
                     {LIBRARY_LINKS.map((item) => (
                     <li key={item.id}>
-                        <Link href={item.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                        <Link href={item.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
                         <span>{item.title}</span>
                         </Link>
                     </li>
                     ))}
                 </ul>
-                 <p className="mt-8 text-lg text-muted-foreground">
+                 <p className="mt-8 text-base text-muted-foreground">
                     I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">please let me know</Link>.
                 </p>
             </TabsContent>
           </div>
         </Tabs>
-
       </main>
 
-      <footer className="max-w-5xl mx-auto px-4 py-8 w-full">
-         <div className="flex justify-between items-center text-muted-foreground">
+      <footer className="max-w-5xl mx-auto px-4 py-8 w-full mt-16">
+         <div className="flex justify-between items-center text-muted-foreground text-sm">
             <p>&copy; {new Date().getFullYear()} Haris Farrasi</p>
             <div className="flex items-center space-x-4">
               <Link href="mailto:harisfarrasi@gmail.com" className="hover:text-primary transition-colors">Email</Link>
