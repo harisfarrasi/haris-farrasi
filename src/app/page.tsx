@@ -129,7 +129,7 @@ function Clock() {
   }, []);
 
   return (
-    <p>it&apos;s {time || '...'} for Haris in 🇮🇩</p>
+    <p className="font-bold">it&apos;s {time || '...'} for Haris in 🇮🇩</p>
   );
 }
 
@@ -152,7 +152,7 @@ export default function Home() {
                   My name is Haris Farrasi. I’m the CEO and founder of{' '}
                   <Link
                     href="https://plajar.com"
-                    className="text-primary hover:underline"
+                    className="text-foreground hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -196,7 +196,7 @@ export default function Home() {
                   ))}
               </ul>
               <p className="mt-8 text-base text-muted-foreground">
-                  I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">please let me know</Link>.
+                  I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-foreground hover:underline">please let me know</Link>.
               </p>
             </TabsContent>
             
@@ -220,7 +220,7 @@ export default function Home() {
                     ))}
                 </ul>
                  <p className="mt-8 text-base text-muted-foreground">
-                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">please let me know</Link>.
+                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-foreground hover:underline">please let me know</Link>.
                 </p>
             </TabsContent>
 
@@ -238,7 +238,7 @@ export default function Home() {
                     ))}
                 </ul>
                  <p className="mt-8 text-base text-muted-foreground">
-                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">please let me know</Link>.
+                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-foreground hover:underline">please let me know</Link>.
                 </p>
             </TabsContent>
           </div>
@@ -249,9 +249,9 @@ export default function Home() {
          <div className="flex justify-between items-center text-muted-foreground text-sm">
             <Clock />
             <div className="flex items-center space-x-4">
-              <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">X/Twitter</Link>
-              <Link href="https://www.instagram.com/haris.farrasi/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Instagram</Link>
-              <Link href="mailto:harisfarrasi@gmail.com" className="hover:text-primary transition-colors">Email</Link>
+              <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">X</Link>
+              <Link href="https://www.instagram.com/haris.farrasi/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Instagram</Link>
+              <Link href="mailto:harisfarrasi@gmail.com" className="hover:text-foreground transition-colors">Email</Link>
             </div>
           </div>
       </footer>
