@@ -135,9 +135,9 @@ function Clock() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col p-4 md:p-8">
+    <div className="min-h-screen flex flex-col justify-between p-8 md:p-12">
       <main className="flex-grow">
-        <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-12">
+        <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-20">
           <TabsList className="flex-row md:flex-col h-auto items-start bg-transparent p-0 border-none space-x-4 md:space-x-0 md:space-y-2 mb-8 md:mb-0 md:w-40">
             <TabsTrigger value="about" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">About</TabsTrigger>
             <TabsTrigger value="beliefs" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">Beliefs</TabsTrigger>
@@ -242,7 +242,7 @@ export default function Home() {
         </Tabs>
       </main>
 
-      <footer className="max-w-5xl mx-auto px-4 py-8 w-full mt-16">
+      <footer className="w-full">
          <div className="flex justify-between items-center text-muted-foreground text-sm">
             <Clock />
             <div className="flex items-center space-x-4">
