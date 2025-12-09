@@ -129,7 +129,7 @@ function Clock() {
   }, []);
 
   return (
-    <p className="font-bold">it&apos;s {time || '...'} for Haris in 🇮🇩</p>
+    <p>it&apos;s <span className="font-bold">{time || '...'}</span> for Haris in 🇮🇩</p>
   );
 }
 
