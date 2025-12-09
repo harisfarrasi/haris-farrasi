@@ -135,7 +135,7 @@ function Clock() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col justify-between p-8 md:p-12">
+    <div className="min-h-screen flex flex-col justify-between p-8 md:p-12 text-foreground/80">
       <main className="flex-grow">
         <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-20">
           <TabsList className="flex-row md:flex-col h-auto items-start bg-transparent p-0 border-none space-x-4 md:space-x-0 md:space-y-2 mb-8 md:mb-0 md:w-40">
@@ -249,9 +249,9 @@ export default function Home() {
          <div className="flex justify-between items-center text-muted-foreground text-sm">
             <Clock />
             <div className="flex items-center space-x-4">
-              <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">X</Link>
-              <Link href="https://www.instagram.com/haris.farrasi/" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Instagram</Link>
-              <Link href="mailto:harisfarrasi@gmail.com" className="hover:text-black transition-colors">Email</Link>
+              <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-black transition-colors">X</Link>
+              <Link href="https://www.instagram.com/haris.farrasi/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-black transition-colors">Instagram</Link>
+              <Link href="mailto:harisfarrasi@gmail.com" className="text-muted-foreground hover:text-black transition-colors">Email</Link>
             </div>
           </div>
       </footer>
