@@ -129,23 +129,23 @@ function Clock() {
   }, []);
 
   return (
-    <p>it&apos;s <span className="font-bold">{time || '...'}</span> for Haris in 🇮🇩</p>
+    <p>it's <span className="font-bold">{time || '...'}</span> for Haris in 🇮🇩</p>
   );
 }
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col justify-between p-8 md:p-12">
+    <div className="min-h-screen flex flex-col justify-between max-w-3xl mx-auto px-6 sm:px-8 py-8 sm:py-16">
       <main className="flex-grow">
-        <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-20">
-          <TabsList className="flex-row md:flex-col h-auto items-start bg-transparent p-0 border-none space-x-4 md:space-x-0 md:space-y-2 mb-8 md:mb-0 md:w-40">
+        <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-16">
+          <TabsList className="flex-row md:flex-col h-auto items-start bg-transparent p-0 border-none space-x-4 md:space-x-0 md:space-y-2 mb-8 md:mb-0 md:w-32">
             <TabsTrigger value="about" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">About</TabsTrigger>
             <TabsTrigger value="beliefs" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Beliefs</TabsTrigger>
             <TabsTrigger value="people" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">People</TabsTrigger>
             <TabsTrigger value="read" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Read</TabsTrigger>
           </TabsList>
           
-          <div className="flex-1 max-w-2xl">
+          <div className="flex-1">
             <TabsContent value="about" className="mt-0">
               <div className="text-base space-y-4">
                 <p>
