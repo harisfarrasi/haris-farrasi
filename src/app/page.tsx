@@ -185,16 +185,19 @@ export default function Home() {
             </TabsContent>
             
             <TabsContent value="beliefs" className="mt-0">
-                <ul className="space-y-3 text-base text-foreground">
-                    {BELIEFS.map((item) => (
-                    <li key={item.id}>
-                        <span>{item.text}</span>
-                    </li>
-                    ))}
-                </ul>
-                <p className="mt-8 text-base text-muted-foreground">
-                    I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">please let me know</Link>.
-                </p>
+              <p className="mb-4 text-base text-foreground">
+                A curated collection of principles and values that guide my work, decisions, and approach to life.
+              </p>
+              <ul className="space-y-3 text-base text-foreground list-disc list-inside">
+                  {BELIEFS.map((item) => (
+                  <li key={item.id}>
+                      <span>{item.text}</span>
+                  </li>
+                  ))}
+              </ul>
+              <p className="mt-8 text-base text-muted-foreground">
+                  I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-primary hover:underline">please let me know</Link>.
+              </p>
             </TabsContent>
             
             <TabsContent value="people" className="mt-0">
