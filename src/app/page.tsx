@@ -139,20 +139,20 @@ export default function Home() {
       <main className="flex-grow">
         <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-20">
           <TabsList className="flex-row md:flex-col h-auto items-start bg-transparent p-0 border-none space-x-4 md:space-x-0 md:space-y-2 mb-8 md:mb-0 md:w-40">
-            <TabsTrigger value="about" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">About</TabsTrigger>
-            <TabsTrigger value="beliefs" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">Beliefs</TabsTrigger>
-            <TabsTrigger value="people" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">People</TabsTrigger>
-            <TabsTrigger value="read" className="justify-start data-[state=active]:font-bold data-[state=active]:text-foreground text-muted-foreground p-0 text-base">Read</TabsTrigger>
+            <TabsTrigger value="about" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">About</TabsTrigger>
+            <TabsTrigger value="beliefs" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Beliefs</TabsTrigger>
+            <TabsTrigger value="people" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">People</TabsTrigger>
+            <TabsTrigger value="read" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Read</TabsTrigger>
           </TabsList>
           
           <div className="flex-1 max-w-2xl">
             <TabsContent value="about" className="mt-0">
-              <div className="text-base text-foreground space-y-4">
+              <div className="text-base space-y-4">
                 <p>
                   My name is Haris Farrasi. I’m the CEO and founder of{' '}
                   <Link
                     href="https://plajar.com"
-                    className="text-foreground hover:underline"
+                    className="hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -185,10 +185,10 @@ export default function Home() {
             </TabsContent>
             
             <TabsContent value="beliefs" className="mt-0">
-              <p className="mb-4 text-base text-foreground">
+              <p className="mb-4 text-base">
                 A curated collection of principles and values that guide my work, decisions, and approach to life.
               </p>
-              <ol className="space-y-3 text-base text-foreground list-decimal list-outside pl-5">
+              <ol className="space-y-3 text-base list-decimal list-outside pl-5">
                   {BELIEFS.map((item) => (
                   <li key={item.id}>
                       <span>{item.text}</span>
@@ -201,10 +201,10 @@ export default function Home() {
             </TabsContent>
             
             <TabsContent value="people" className="mt-0">
-                <p className="mb-4 text-base text-foreground">
+                <p className="mb-4 text-base">
                   A list of thinkers and writers on the internet that I learn from regularly. They cover a broad range of topics.
                 </p>
-                <ol className="space-y-3 text-base text-foreground list-decimal list-outside pl-5">
+                <ol className="space-y-3 text-base list-decimal list-outside pl-5">
                     {PEOPLE_LINKS.map((person) => (
                     <li key={person.id}>
                         <span>{person.name}</span>
@@ -225,10 +225,10 @@ export default function Home() {
             </TabsContent>
 
             <TabsContent value="read" className="mt-0">
-                 <p className="mb-4 text-base text-foreground">
+                 <p className="mb-4 text-base">
                     A collection of articles, essays, and books that have significantly influenced my perspective and shaped my thinking.
                 </p>
-                <ol className="space-y-3 text-base text-foreground list-decimal list-outside pl-5">
+                <ol className="space-y-3 text-base list-decimal list-outside pl-5">
                     {LIBRARY_LINKS.map((item) => (
                     <li key={item.id}>
                         <Link href={item.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
@@ -249,9 +249,9 @@ export default function Home() {
          <div className="flex justify-between items-center text-muted-foreground text-sm">
             <Clock />
             <div className="flex items-center space-x-4">
-              <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">X</Link>
-              <Link href="https://www.instagram.com/haris.farrasi/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Instagram</Link>
-              <Link href="mailto:harisfarrasi@gmail.com" className="hover:text-foreground transition-colors">Email</Link>
+              <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">X</Link>
+              <Link href="https://www.instagram.com/haris.farrasi/" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Instagram</Link>
+              <Link href="mailto:harisfarrasi@gmail.com" className="hover:text-black transition-colors">Email</Link>
             </div>
           </div>
       </footer>
