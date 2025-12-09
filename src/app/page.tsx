@@ -110,29 +110,26 @@ const LIBRARY_LINKS = [
 ];
 
 function Clock() {
-  const [time, setTime] = useState<Date | null>(null);
+  const [time, setTime] = useState<string | null>(null);
 
   useEffect(() => {
     const updateClock = () => {
-      setTime(new Date());
+      const date = new Date();
+      const formattedTime = date.toLocaleTimeString('en-US', {
+        timeZone: 'Asia/Jakarta', // WIB
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false,
+      });
+      setTime(formattedTime);
     };
     updateClock();
     const timerId = setInterval(updateClock, 1000);
     return () => clearInterval(timerId);
   }, []);
 
-  const formatTime = (date: Date | null) => {
-    if (!date) return '...';
-    return date.toLocaleTimeString('en-US', {
-      timeZone: 'Asia/Jakarta', // WIB
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: false,
-    });
-  };
-
   return (
-    <p>{formatTime(time)} WIB</p>
+    <p>it&apos;s {time || '...'} for Haris in 🇮🇩</p>
   );
 }
 
@@ -249,9 +246,9 @@ export default function Home() {
          <div className="flex justify-between items-center text-muted-foreground text-sm">
             <Clock />
             <div className="flex items-center space-x-4">
-              <Link href="mailto:harisfarrasi@gmail.com" className="hover:text-primary transition-colors">Email</Link>
               <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">X/Twitter</Link>
               <Link href="https://www.instagram.com/haris.farrasi/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Instagram</Link>
+              <Link href="mailto:harisfarrasi@gmail.com" className="hover:text-primary transition-colors">Email</Link>
             </div>
           </div>
       </footer>
