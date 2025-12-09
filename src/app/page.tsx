@@ -188,13 +188,13 @@ export default function Home() {
               <p className="mb-4 text-base text-foreground">
                 A curated collection of principles and values that guide my work, decisions, and approach to life.
               </p>
-              <ul className="space-y-3 text-base text-foreground list-disc list-inside">
+              <ol className="space-y-3 text-base text-foreground list-decimal list-outside pl-5">
                   {BELIEFS.map((item) => (
                   <li key={item.id}>
                       <span>{item.text}</span>
                   </li>
                   ))}
-              </ul>
+              </ol>
               <p className="mt-8 text-base text-muted-foreground">
                   I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-foreground hover:underline">please let me know</Link>.
               </p>
@@ -204,7 +204,7 @@ export default function Home() {
                 <p className="mb-4 text-base text-foreground">
                   A list of thinkers and writers on the internet that I learn from regularly. They cover a broad range of topics.
                 </p>
-                <ul className="space-y-3 text-base text-foreground">
+                <ol className="space-y-3 text-base text-foreground list-decimal list-outside pl-5">
                     {PEOPLE_LINKS.map((person) => (
                     <li key={person.id}>
                         <span>{person.name}</span>
@@ -218,7 +218,7 @@ export default function Home() {
                         )}
                     </li>
                     ))}
-                </ul>
+                </ol>
                  <p className="mt-8 text-base text-muted-foreground">
                     I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-foreground hover:underline">please let me know</Link>.
                 </p>
@@ -228,7 +228,7 @@ export default function Home() {
                  <p className="mb-4 text-base text-foreground">
                     A collection of articles, essays, and books that have significantly influenced my perspective and shaped my thinking.
                 </p>
-                <ul className="space-y-3 text-base text-foreground">
+                <ol className="space-y-3 text-base text-foreground list-decimal list-outside pl-5">
                     {LIBRARY_LINKS.map((item) => (
                     <li key={item.id}>
                         <Link href={item.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
@@ -236,7 +236,7 @@ export default function Home() {
                         </Link>
                     </li>
                     ))}
-                </ul>
+                </ol>
                  <p className="mt-8 text-base text-muted-foreground">
                     I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="text-foreground hover:underline">please let me know</Link>.
                 </p>
