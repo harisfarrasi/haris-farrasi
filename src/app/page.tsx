@@ -245,7 +245,7 @@ export default function Home() {
         </Tabs>
       </main>
 
-      <footer className="w-full">
+      <footer className="w-full mt-12">
          <div className="flex justify-between items-center text-muted-foreground text-sm">
             <Clock />
             <div className="flex items-center space-x-4">
