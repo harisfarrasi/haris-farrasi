@@ -156,19 +156,18 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Plajar
+                    Aksa
                   </Link>
-                  , built as an answer to the failures of Edtech 1.0. The dirty secret is that most
+                  , a living multidimensional growth platform. The dirty secret is that most
                   platforms never cared if people actually learned: Duolingo became a $14B giant but
                   most users still can’t hold a basic conversation. Masterclass sells inspiration
                   without mastery. Coursera and Udemy reached millions, yet video courses average only
                   4–10 percent completion. Creator platforms scaled quickly but too often optimized
-                  for sales over outcomes. Engagement grew, but learning did not. Plajar is my
-                  response: building Edtech 2.0, where education delivers real outcomes with high
-                  engagement, and where learning feels less like consuming content and more like a
-                  multiplayer system: people learning, building, and advancing together. The world is
-                  entering the largest reskilling and upskilling demand in modern history, and old
-                  tools will not be enough.
+                  for sales over outcomes. Engagement grew, but learning did not. Aksa is my
+                  response: where education delivers real outcomes with high engagement, and where
+                  learning feels less like consuming content and more like a multiplayer system:
+                  people learning, building, and advancing together. The world is entering the largest
+                  reskilling and upskilling demand in modern history, and old tools will not be enough.
                 </p>
                 <p>
                   The long-term vision is to create the operating system of civilization that makes
@@ -178,7 +177,7 @@ export default function Home() {
                   that powers abundance works. My thesis is that true abundance can only be achieved
                   through three pillars: cognitive intelligence (AI that thinks), physical
                   intelligence (machines that act), and governance (the systems that align and
-                  distribute). Plajar is my immediate vehicle in this journey, but the larger direction
+                  distribute). Aksa is my immediate vehicle in this journey, but the larger direction
                   is clear: building governance for universal abundance.
                 </p>
               </div>

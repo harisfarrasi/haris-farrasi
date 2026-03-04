@@ -7,7 +7,7 @@ const inter = Inter_Tight({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Alwan Haris Farrasi',
-  description: 'My name is Alwan Haris Farrasi. I’m the CEO and founder of Plajar, where we build systems that help people adopt new knowledge and skills faster',
+  description: 'My name is Alwan Haris Farrasi. I’m the CEO and founder of Aksa, a living multidimensional growth platform.',
 };
 
 export default function RootLayout({
