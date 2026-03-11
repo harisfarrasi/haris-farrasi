@@ -249,7 +249,6 @@ export default function Home() {
             <Clock />
             <div className="flex items-center space-x-4">
               <Link href="https://x.com/harisfarrasi" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-black transition-colors">X</Link>
-              <Link href="https://www.instagram.com/haris.farrasi/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-black transition-colors">Instagram</Link>
               <Link href="mailto:harisfarrasi@gmail.com" className="text-muted-foreground hover:text-black transition-colors">Email</Link>
             </div>
           </div>
