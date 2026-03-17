@@ -140,10 +140,10 @@ export default function Home() {
         <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-16">
           <TabsList className="flex-row md:flex-col h-auto items-start bg-transparent p-0 border-none space-x-4 md:space-x-0 md:space-y-2 mb-8 md:mb-0 md:w-32">
             <TabsTrigger value="about" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">About</TabsTrigger>
-            <TabsTrigger value="bio" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Bio</TabsTrigger>
             <TabsTrigger value="beliefs" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Beliefs</TabsTrigger>
             <TabsTrigger value="people" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">People</TabsTrigger>
             <TabsTrigger value="read" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Read</TabsTrigger>
+            <TabsTrigger value="bio" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Bio</TabsTrigger>
           </TabsList>
           
           <div className="flex-1">
@@ -179,26 +179,6 @@ export default function Home() {
               </div>
             </TabsContent>
 
-            <TabsContent value="bio" className="mt-0">
-              <div className="text-base space-y-4">
-                <p>
-                  The skill I have taken to an extreme is what I call “engineering the best way” an obsessive drive to find the most effective method for anything, then rebuild it from scratch until it works better.
-                </p>
-                <p>
-                  At 13, I entered a boarding school with no devices, minimal food, physical punishment as discipline, and a 4 AM wake-up every morning. I slept at 1 or 2 AM. To stay awake during late study sessions I rubbed harsh aromatic oil directly onto my eyes not because anyone told me to, but because I needed a system that worked when willpower alone could not. I became the fastest Quran memorizer in the school and ranked first academically out of 1,500 students.
-                </p>
-                <p>
-                  The environment forced me to master 30+ disciplines simultaneously: Mantiq, Ushul Fiqih, Balaghoh, mathematics, economics. Fields that look completely unrelated until you realize each one is a different lens on the same question: how do humans actually process, retain, and apply knowledge? That question never left me. It followed me into economics, then into self-taught software engineering, and eventually into building Aksa.
-                </p>
-                <p>
-                  Every domain I touched became raw material for the same obsession. Mantiq taught me how to structure reasoning. Ushul Fiqih taught me how frameworks scale. Economics taught me how incentives shape behavior. Engineering taught me how to ship.
-                </p>
-                <p>
-                  Steve Jobs once said the secret behind most great things is someone who cared an unreasonable amount. The Quran calls this quality harīṣ (care so intense it defines a person entirely). That word is my name, and it appears in the most sacred book in the world. It is the only way I know how to build.
-                </p>
-              </div>
-            </TabsContent>
-            
             <TabsContent value="beliefs" className="mt-0">
               <p className="mb-4 text-base">
                 A curated collection of principles and values that guide my work, decisions, and approach to life.
@@ -255,6 +235,26 @@ export default function Home() {
                  <p className="mt-8 text-base text-foreground">
                     I'm always learning and unlearning. If you have a recommendation, <Link href="mailto:harisfarrasi@gmail.com" className="hover:underline">please let me know</Link>.
                 </p>
+            </TabsContent>
+
+            <TabsContent value="bio" className="mt-0">
+              <div className="text-base space-y-4">
+                <p>
+                  The skill I have taken to an extreme is what I call “engineering the best way” an obsessive drive to find the most effective method for anything, then rebuild it from scratch until it works better.
+                </p>
+                <p>
+                  At 13, I entered a boarding school with no devices, minimal food, physical punishment as discipline, and a 4 AM wake-up every morning. I slept at 1 or 2 AM. To stay awake during late study sessions I rubbed harsh aromatic oil directly onto my eyes not because anyone told me to, but because I needed a system that worked when willpower alone could not. I became the fastest Quran memorizer in the school and ranked first academically out of 1,500 students.
+                </p>
+                <p>
+                  The environment forced me to master 30+ disciplines simultaneously: Mantiq, Ushul Fiqih, Balaghoh, mathematics, economics. Fields that look completely unrelated until you realize each one is a different lens on the same question: how do humans actually process, retain, and apply knowledge? That question never left me. It followed me into economics, then into self-taught software engineering, and eventually into building Aksa.
+                </p>
+                <p>
+                  Every domain I touched became raw material for the same obsession. Mantiq taught me how to structure reasoning. Ushul Fiqih taught me how frameworks scale. Economics taught me how incentives shape behavior. Engineering taught me how to ship.
+                </p>
+                <p>
+                  Steve Jobs once said the secret behind most great things is someone who cared an unreasonable amount. The Quran calls this quality harīṣ (care so intense it defines a person entirely). That word is my name, and it appears in the most sacred book in the world. It is the only way I know how to build.
+                </p>
+              </div>
             </TabsContent>
           </div>
         </Tabs>
