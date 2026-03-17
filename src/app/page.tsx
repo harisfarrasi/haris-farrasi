@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useEffect, useState } from 'react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const BELIEFS = [
     { id: 'belief-14', text: 'The universe defaults to scarcity; the mission is to engineer sustainable abundance.' },
@@ -140,6 +141,7 @@ export default function Home() {
         <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-16">
           <TabsList className="flex-row md:flex-col h-auto items-start bg-transparent p-0 border-none space-x-4 md:space-x-0 md:space-y-2 mb-8 md:mb-0 md:w-32">
             <TabsTrigger value="about" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">About</TabsTrigger>
+            <TabsTrigger value="projects" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Projects</TabsTrigger>
             <TabsTrigger value="beliefs" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Beliefs</TabsTrigger>
             <TabsTrigger value="people" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">People</TabsTrigger>
             <TabsTrigger value="read" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Read</TabsTrigger>
@@ -182,12 +184,43 @@ export default function Home() {
                 </p>
               </div>
             </TabsContent>
+
+            <TabsContent value="projects" className="mt-0">
+              <div className="space-y-6">
+                <Card className="border-none shadow-none p-0">
+                  <CardHeader className="p-0 mb-2">
+                    <CardTitle className="text-lg">Aksa Learning</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0 text-base">
+                    A multiplayer learning system designed for mastery and real outcomes. Focusing on high engagement and peer-to-peer building.
+                  </CardContent>
+                </Card>
+                
+                <Card className="border-none shadow-none p-0">
+                  <CardHeader className="p-0 mb-2">
+                    <CardTitle className="text-lg">Cognitive AI Layer</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0 text-base">
+                    Researching how AI can augment human intelligence and accelerate the mastery of complex fields.
+                  </CardContent>
+                </Card>
+
+                <Card className="border-none shadow-none p-0">
+                  <CardHeader className="p-0 mb-2">
+                    <CardTitle className="text-lg">Governance of Abundance</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0 text-base">
+                    Building the systems that align and distribute the benefits of a post-scarcity civilization.
+                  </CardContent>
+                </Card>
+              </div>
+            </TabsContent>
             
             <TabsContent value="beliefs" className="mt-0">
               <p className="mb-4 text-base">
                 A curated collection of principles and values that guide my work, decisions, and approach to life.
               </p>
-              <ol className="space-y-3 text-base list-decimal list-outside pl-5">
+              <ol className="space-y-1 text-base list-decimal list-outside pl-5">
                   {BELIEFS.map((item) => (
                   <li key={item.id}>
                       <span>{item.text}</span>
@@ -203,7 +236,7 @@ export default function Home() {
                 <p className="mb-4 text-base">
                   A list of thinkers and writers on the internet that I learn from regularly. They cover a broad range of topics.
                 </p>
-                <ol className="space-y-3 text-base list-decimal list-outside pl-5">
+                <ol className="space-y-1 text-base list-decimal list-outside pl-5">
                     {PEOPLE_LINKS.map((person) => (
                     <li key={person.id}>
                         <span>{person.name}</span>
@@ -227,7 +260,7 @@ export default function Home() {
                  <p className="mb-4 text-base">
                     A collection of articles, essays, and books that have significantly influenced my perspective and shaped my thinking.
                 </p>
-                <ol className="space-y-3 text-base list-decimal list-outside pl-5">
+                <ol className="space-y-1 text-base list-decimal list-outside pl-5">
                     {LIBRARY_LINKS.map((item) => (
                     <li key={item.id}>
                         <Link href={item.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
