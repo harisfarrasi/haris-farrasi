@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useEffect, useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const BELIEFS = [
     { id: 'belief-14', text: 'The universe defaults to scarcity; the mission is to engineer sustainable abundance.' },
@@ -117,7 +116,7 @@ function Clock() {
     const updateClock = () => {
       const date = new Date();
       const formattedTime = date.toLocaleTimeString('en-US', {
-        timeZone: 'Asia/Jakarta', // WIB
+        timeZone: 'Asia/Jakarta',
         hour: '2-digit',
         minute: '2-digit',
         hour12: false,
@@ -141,7 +140,7 @@ export default function Home() {
         <Tabs defaultValue="about" className="flex flex-col md:flex-row md:space-x-16">
           <TabsList className="flex-row md:flex-col h-auto items-start bg-transparent p-0 border-none space-x-4 md:space-x-0 md:space-y-2 mb-8 md:mb-0 md:w-32">
             <TabsTrigger value="about" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">About</TabsTrigger>
-            <TabsTrigger value="projects" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Projects</TabsTrigger>
+            <TabsTrigger value="bio" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Bio</TabsTrigger>
             <TabsTrigger value="beliefs" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Beliefs</TabsTrigger>
             <TabsTrigger value="people" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">People</TabsTrigger>
             <TabsTrigger value="read" className="justify-start data-[state=active]:font-bold data-[state=active]:text-black text-muted-foreground p-0 text-base">Read</TabsTrigger>
@@ -160,16 +159,11 @@ export default function Home() {
                   >
                     Aksa
                   </Link>
-                  , a living multidimensional growth platform. The dirty secret is that most
-                  platforms never cared if people actually learned: Duolingo became a $14B giant but
-                  most users still can’t hold a basic conversation. Masterclass sells inspiration
-                  without mastery. Coursera and Udemy reached millions, yet video courses average only
-                  4–10 percent completion. Creator platforms scaled quickly but too often optimized
-                  for sales over outcomes. Engagement grew, but learning did not. Aksa is my
-                  response: where education delivers real outcomes with high engagement, and where
-                  learning feels less like consuming content and more like a multiplayer system:
-                  people learning, building, and advancing together. The world is entering the largest
+                  , a living multidimensional growth platform. The world is entering the largest
                   reskilling and upskilling demand in modern history, and old tools will not be enough.
+                  Aksa is my response: where education delivers real outcomes with high engagement, and where
+                  learning feels less like consuming content and more like a multiplayer system:
+                  people learning, building, and advancing together.
                 </p>
                 <p>
                   The long-term vision is to create the operating system of civilization that makes
@@ -185,34 +179,23 @@ export default function Home() {
               </div>
             </TabsContent>
 
-            <TabsContent value="projects" className="mt-0">
-              <div className="space-y-6">
-                <Card className="border-none shadow-none p-0">
-                  <CardHeader className="p-0 mb-2">
-                    <CardTitle className="text-lg">Aksa Learning</CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-0 text-base">
-                    A multiplayer learning system designed for mastery and real outcomes. Focusing on high engagement and peer-to-peer building.
-                  </CardContent>
-                </Card>
-                
-                <Card className="border-none shadow-none p-0">
-                  <CardHeader className="p-0 mb-2">
-                    <CardTitle className="text-lg">Cognitive AI Layer</CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-0 text-base">
-                    Researching how AI can augment human intelligence and accelerate the mastery of complex fields.
-                  </CardContent>
-                </Card>
-
-                <Card className="border-none shadow-none p-0">
-                  <CardHeader className="p-0 mb-2">
-                    <CardTitle className="text-lg">Governance of Abundance</CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-0 text-base">
-                    Building the systems that align and distribute the benefits of a post-scarcity civilization.
-                  </CardContent>
-                </Card>
+            <TabsContent value="bio" className="mt-0">
+              <div className="text-base space-y-4">
+                <p>
+                  The skill I have taken to an extreme is what I call “engineering the best way” an obsessive drive to find the most effective method for anything, then rebuild it from scratch until it works better.
+                </p>
+                <p>
+                  At 13, I entered a boarding school with no devices, minimal food, physical punishment as discipline, and a 4 AM wake-up every morning. I slept at 1 or 2 AM. To stay awake during late study sessions I rubbed harsh aromatic oil directly onto my eyes not because anyone told me to, but because I needed a system that worked when willpower alone could not. I became the fastest Quran memorizer in the school and ranked first academically out of 1,500 students.
+                </p>
+                <p>
+                  The environment forced me to master 30+ disciplines simultaneously: Mantiq, Ushul Fiqih, Balaghoh, mathematics, economics. Fields that look completely unrelated until you realize each one is a different lens on the same question: how do humans actually process, retain, and apply knowledge? That question never left me. It followed me into economics, then into self-taught software engineering, and eventually into building Aksa.
+                </p>
+                <p>
+                  Every domain I touched became raw material for the same obsession. Mantiq taught me how to structure reasoning. Ushul Fiqih taught me how frameworks scale. Economics taught me how incentives shape behavior. Engineering taught me how to ship.
+                </p>
+                <p>
+                  Steve Jobs once said the secret behind most great things is someone who cared an unreasonable amount. The Quran calls this quality harīṣ (care so intense it defines a person entirely). That word is my name, and it appears in the most sacred book in the world. It is the only way I know how to build.
+                </p>
               </div>
             </TabsContent>
             
