@@ -69,3 +69,64 @@
     @apply font-semibold;
   }
 }
+
+@layer components {
+  .skripsi-content h1 {
+    @apply text-3xl font-semibold text-foreground;
+  }
+  .skripsi-content h2 {
+    @apply mt-8 text-2xl font-semibold text-foreground;
+  }
+  .skripsi-content h3 {
+    @apply mt-6 text-xl font-semibold text-foreground;
+  }
+  .skripsi-content p {
+    @apply mb-4 text-base leading-relaxed text-foreground/90;
+  }
+  .skripsi-content ul {
+    @apply mb-4 list-disc space-y-1 pl-6 text-foreground/90;
+  }
+  .skripsi-content ol {
+    @apply mb-4 list-decimal space-y-1 pl-6 text-foreground/90;
+  }
+  .skripsi-content li {
+    @apply leading-relaxed;
+  }
+  .skripsi-content img {
+    @apply my-6 w-full rounded-2xl border border-border/60 shadow-[0_14px_30px_-18px_rgba(15,23,42,0.45)];
+  }
+  .skripsi-content code {
+    @apply rounded bg-muted px-1 py-0.5 text-[0.9em];
+  }
+  .skripsi-content a {
+    @apply text-foreground underline-offset-4 hover:underline;
+  }
+
+  .wiki-content h1 {
+    @apply text-2xl font-semibold text-foreground;
+  }
+  .wiki-content h2 {
+    @apply mt-6 text-xl font-semibold text-foreground;
+  }
+  .wiki-content h3 {
+    @apply mt-4 text-lg font-semibold text-foreground;
+  }
+  .wiki-content p {
+    @apply mb-4 text-base leading-relaxed text-foreground/90;
+  }
+  .wiki-content ul {
+    @apply mb-4 list-disc space-y-1 pl-6 text-foreground/90;
+  }
+  .wiki-content ol {
+    @apply mb-4 list-decimal space-y-1 pl-6 text-foreground/90;
+  }
+  .wiki-content li {
+    @apply leading-relaxed;
+  }
+  .wiki-content code {
+    @apply rounded bg-muted px-1 py-0.5 text-[0.9em];
+  }
+  .wiki-content a {
+    @apply text-foreground underline-offset-4 hover:underline;
+  }
+}

@@ -7,6 +7,20 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/skripsi',
+        destination: '/works/skripsi',
+        permanent: true,
+      },
+      {
+        source: '/belief',
+        destination: '/beliefs',
+        permanent: true,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {

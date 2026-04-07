@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 9002",
-    "build": "NODE_ENV=production next build",
+    "dev": "npm run sync-wiki && next dev -p 9002",
+    "build": "npm run sync-wiki && NODE_ENV=production next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "sync-wiki": "node scripts/sync-wiki.mjs"
   },
   "dependencies": {
     "@genkit-ai/google-genai": "^1.20.0",
