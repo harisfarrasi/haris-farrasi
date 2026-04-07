@@ -1,0 +1,6 @@
+{
+  "title": "Ringkasan Koefisien (Placeholder)",
+  "labels": ["BQS", "HHI", "SIZE", "GROWTH"],
+  "values": [0.28, 0.14, 0.06, -0.03],
+  "notes": "Angka placeholder. Ganti dengan hasil regresi aktual."
+}
