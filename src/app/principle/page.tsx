@@ -2,15 +2,15 @@ import TabbedShell from '@/components/tabbed-shell';
 import { getWikiContent } from '@/lib/wiki';
 
 export const metadata = {
-  title: 'Bio — Haris Farrasi',
-  description: 'Perjalanan pribadi, obsesi, dan akar dari cara berpikir.',
+  title: 'Principle — Haris Farrasi',
+  description: 'Beliefs, people, and reading list in a single place.',
 };
 
-export default function BioPage() {
-  const { html } = getWikiContent('bio');
+export default function PrinciplePage() {
+  const { html } = getWikiContent('principle');
 
   return (
-    <TabbedShell active="bio">
+    <TabbedShell active="principle">
       <article className="wiki-content" dangerouslySetInnerHTML={{ __html: html }} />
     </TabbedShell>
   );

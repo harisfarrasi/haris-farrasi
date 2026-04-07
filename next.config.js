@@ -10,8 +10,48 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/about',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/works',
+        destination: '/projects',
+        permanent: true,
+      },
+      {
+        source: '/works/:path*',
+        destination: '/projects/:path*',
+        permanent: true,
+      },
+      {
         source: '/skripsi',
-        destination: '/works/skripsi',
+        destination: '/projects/skripsi',
+        permanent: true,
+      },
+      {
+        source: '/beliefs',
+        destination: '/principle',
+        permanent: true,
+      },
+      {
+        source: '/people',
+        destination: '/principle',
+        permanent: true,
+      },
+      {
+        source: '/read',
+        destination: '/principle',
+        permanent: true,
+      },
+      {
+        source: '/belief',
+        destination: '/principle',
+        permanent: true,
+      },
+      {
+        source: '/subject',
+        destination: '/bio',
         permanent: true,
       },
       {

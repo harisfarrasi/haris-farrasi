@@ -7,3 +7,28 @@ The environment forced me to master 30+ disciplines simultaneously: Mantiq, Ushu
 Every domain I touched became raw material for the same obsession. Mantiq taught me how to structure reasoning. Ushul Fiqih taught me how frameworks scale. Economics taught me how incentives shape behavior. Engineering taught me how to ship.
 
 Steve Jobs once said the secret behind most great things is someone who cared an unreasonable amount. The Quran calls this quality harīṣ (care so intense it defines a person entirely). That word is my name, and it appears in the most sacred book in the world. It is the only way I know how to build.
+
+## Subjects
+A summary of the subjects that shaped how I think and work, from pondok to university to software.
+
+### Pondok foundations
+- Qur’an memorization and tafsir
+- Mantiq (logic)
+- Ushul Fiqih (methodology)
+- Balaghoh (rhetoric)
+- Adab and discipline systems
+
+### University foundations
+- Economics and incentives
+- Mathematics and statistics
+- Research methods and empirical rigor
+- Market structure and industry dynamics
+
+### Coding foundations
+- Software engineering and systems thinking
+- Product design and iteration
+- Data, AI, and applied experimentation
+- Building teams, shipping, and scaling
+
+### The synthesis
+Each domain is a different lens on the same problem: how humans process, retain, and apply knowledge. Pondok gave me structure and endurance, university sharpened rigor and evidence, and coding turned ideas into working systems.

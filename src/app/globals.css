@@ -63,7 +63,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
   a {
-    @apply text-black hover:underline;
+    @apply text-black no-underline hover:font-semibold;
   }
   h1, h2, h3 {
     @apply font-semibold;
@@ -71,37 +71,6 @@
 }
 
 @layer components {
-  .skripsi-content h1 {
-    @apply text-3xl font-semibold text-foreground;
-  }
-  .skripsi-content h2 {
-    @apply mt-8 text-2xl font-semibold text-foreground;
-  }
-  .skripsi-content h3 {
-    @apply mt-6 text-xl font-semibold text-foreground;
-  }
-  .skripsi-content p {
-    @apply mb-4 text-base leading-relaxed text-foreground/90;
-  }
-  .skripsi-content ul {
-    @apply mb-4 list-disc space-y-1 pl-6 text-foreground/90;
-  }
-  .skripsi-content ol {
-    @apply mb-4 list-decimal space-y-1 pl-6 text-foreground/90;
-  }
-  .skripsi-content li {
-    @apply leading-relaxed;
-  }
-  .skripsi-content img {
-    @apply my-6 w-full rounded-2xl border border-border/60 shadow-[0_14px_30px_-18px_rgba(15,23,42,0.45)];
-  }
-  .skripsi-content code {
-    @apply rounded bg-muted px-1 py-0.5 text-[0.9em];
-  }
-  .skripsi-content a {
-    @apply text-foreground underline-offset-4 hover:underline;
-  }
-
   .wiki-content h1 {
     @apply text-2xl font-semibold text-foreground;
   }
@@ -127,6 +96,37 @@
     @apply rounded bg-muted px-1 py-0.5 text-[0.9em];
   }
   .wiki-content a {
-    @apply text-foreground underline-offset-4 hover:underline;
+    @apply text-foreground hover:font-semibold;
+  }
+
+  .thesis-content h1 {
+    @apply text-3xl font-semibold text-foreground;
+  }
+  .thesis-content h2 {
+    @apply mt-8 text-2xl font-semibold text-foreground;
+  }
+  .thesis-content h3 {
+    @apply mt-6 text-xl font-semibold text-foreground;
+  }
+  .thesis-content p {
+    @apply mb-4 text-base leading-relaxed text-foreground/90;
+  }
+  .thesis-content ul {
+    @apply mb-4 list-disc space-y-1 pl-6 text-foreground/90;
+  }
+  .thesis-content ol {
+    @apply mb-4 list-decimal space-y-1 pl-6 text-foreground/90;
+  }
+  .thesis-content li {
+    @apply leading-relaxed;
+  }
+  .thesis-content img {
+    @apply my-6 w-full rounded-2xl border border-border/60 shadow-[0_14px_30px_-18px_rgba(15,23,42,0.45)];
+  }
+  .thesis-content code {
+    @apply rounded bg-muted px-1 py-0.5 text-[0.9em];
+  }
+  .thesis-content a {
+    @apply text-foreground hover:font-semibold;
   }
 }

@@ -1,3 +1,64 @@
+A single place for the principles I live by, the people I learn from, and the reading list that shaped my thinking.
+
+## Beliefs
+A curated collection of principles and values that guide my work, decisions, and approach to life.
+
+1. The universe defaults to scarcity; the mission is to engineer sustainable abundance.
+1. Value comes only from solving real problems.
+1. Iteration beats everything. Keep cycling until reality bends.
+1. Benchmark the best. Compete with the top or die average.
+1. Leverage compounds. Always chase code, content, connection, capital, company, etc.
+1. Being a machine learner beats being smart. Curiosity compounds.
+1. Always ask your question. Find the right question to ask is key.
+1. Extreme people achieve extreme results. Work so hard it feels unnatural.
+1. Extreme discomfort means you’re exactly where you should be.
+1. It’s hard to be wildly successful at anything you aren’t obsessed with.
+1. Status quo bias is the enemy. >70% live in permanent slight suffering because they never take a big swing.
+1. Delete until nothing is left. In fact, if you don’t end up adding back at least 10%, you didn’t delete enough.
+1. Wanting to be liked is weakness. Fulfillment must come from within.
+1. Everything is sales. The teacher sells, the leader sells, the orator sells.
+
+I'm always learning and unlearning. If you have a recommendation, please let me know.
+
+## People
+A list of thinkers and writers on the internet that I learn from regularly. They cover a broad range of topics.
+
+1. Muhammad ﷺ
+1. Muhammad Al-Fatih
+1. Ahmad Bahauddin Nursalim (Gus Baha)
+1. Adi Hidayat
+1. Elon Musk — [@elonmusk](https://x.com/elonmusk)
+1. Sam Altman — [@sama](https://x.com/sama)
+1. Peter Thiel
+1. Jensen Huang — [@jensenhuang](https://x.com/jensenhuang)
+1. Patrick Collison — [@patrickc](https://x.com/patrickc)
+1. Andrej Karpathy — [@karpathy](https://x.com/karpathy)
+1. Demis Hassabis — [@demishassabis](https://x.com/demishassabis)
+1. Alexandr Wang — [@alexandr_wang](https://x.com/alexandr_wang)
+1. Marc Andreessen — [@pmarca](https://x.com/pmarca)
+1. Balaji Srinivasan — [@balajis](https://x.com/balajis)
+1. Paul Graham — [@paulg](https://x.com/paulg)
+1. Naval Ravikant — [@naval](https://x.com/naval)
+1. Elad Gil — [@eladgil](https://x.com/eladgil)
+1. Ray Dalio — [@RayDalio](https://x.com/RayDalio)
+1. Warren Buffett
+1. Charlie Munger
+1. Jeff Bezos — [@JeffBezos](https://x.com/JeffBezos)
+1. Larry Page
+1. Sergey Brin
+1. Mark Zuckerberg
+1. Reed Hastings
+1. Brian Chesky — [@bchesky](https://x.com/bchesky)
+1. Pavel Durov — [@durov](https://x.com/durov)
+1. Masayoshi Son
+1. Tim Urban — [@waitbutwhy](https://x.com/waitbutwhy)
+1. Timothy Ronald — [@timothyronald22](https://x.com/timothyronald22)
+1. Steve Jobs
+1. Jack Dorsey — [@jack](https://x.com/jack)
+
+I'm always learning and unlearning. If you have a recommendation, please let me know.
+
+## Read
 A collection of articles, essays, and books that have significantly influenced my perspective and shaped my thinking.
 
 1. [100 Blocks a Day](https://perch.app/post/826cc63a-198b-44d0-9fda-545fdb3b90e6) — by Wait But Why
