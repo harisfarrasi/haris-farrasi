@@ -40,7 +40,7 @@ export default function WorksPage() {
                   target={work.href.startsWith('http') ? '_blank' : undefined}
                   rel={work.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                 >
-                  <span className="font-semibold group-hover:font-bold">{work.title}</span>
+                  <span className="font-semibold">{work.title}</span>
                   {`: ${work.description}`}
                 </Link>
               ) : (
