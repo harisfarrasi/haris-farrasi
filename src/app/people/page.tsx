@@ -2,15 +2,14 @@ import TabbedShell from '@/components/tabbed-shell';
 import { getWikiContent } from '@/lib/wiki';
 
 export const metadata = {
-  title: 'Principle — Haris Farrasi',
-  description: 'Beliefs, people, and reading list in a single place.',
+  title: 'People — Haris Farrasi',
 };
 
-export default function PrinciplePage() {
-  const { html } = getWikiContent('principle');
+export default function PeoplePage() {
+  const { html } = getWikiContent('people');
 
   return (
-    <TabbedShell active="principle">
+    <TabbedShell active="people">
       <article className="wiki-content" dangerouslySetInnerHTML={{ __html: html }} />
     </TabbedShell>
   );

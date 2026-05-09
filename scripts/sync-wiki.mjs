@@ -3,9 +3,9 @@ import path from 'path';
 
 const siteDir = process.cwd();
 const rootDir = path.resolve(siteDir, '..');
-const sourceDir = path.join(rootDir, 'wiki');
+const sourceDir = path.join(rootDir, 'studio-docs');
 const targetDir = path.join(siteDir, 'content', 'wiki');
-const thesisSourceDir = path.join(rootDir, 'thesis');
+const thesisSourceDir = path.join(rootDir, 'studio-thesis');
 const thesisTargetDir = path.join(siteDir, 'content', 'thesis');
 
 async function ensureDir(dir) {
@@ -55,6 +55,16 @@ async function syncWiki() {
         fs.copyFile(path.join(thesisSourceDir, file), path.join(thesisTargetDir, file))
       )
     );
+
+    const pdfSource = path.join(thesisSourceDir, 'latex', 'out', 'skripsi.pdf');
+    const pdfTarget = path.join(siteDir, 'public', 'skripsi.pdf');
+    try {
+      await fs.copyFile(pdfSource, pdfTarget);
+      console.log(`Synced thesis PDF to ${pdfTarget}`);
+    } catch (e) {
+      console.warn(`Could not sync thesis PDF: ${e.message}`);
+    }
+
     console.log(`Synced thesis assets to ${thesisTargetDir}`);
   } catch (error) {
     console.warn(`Thesis folder not found or missing files at ${thesisSourceDir}.`);

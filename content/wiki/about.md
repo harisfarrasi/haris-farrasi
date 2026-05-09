@@ -1,3 +1,7 @@
-My name is Haris Farrasi. I’m the CEO and founder of Aksa, a living multidimensional growth platform. The world is entering the largest reskilling and upskilling demand in modern history, and old tools will not be enough. Aksa is my response: where education delivers real outcomes with high engagement, and where learning feels less like consuming content and more like a multiplayer system: people learning, building, and advancing together.
+I am currently lived in Indonesia and building Aksa, a social network for human becoming. I grew up in islamic boarding school and previously studying economics in Universitas Diponegoro.
 
-The long-term vision is to create the operating system of civilization that makes mastery across every field from the oldest sciences to the newest skills not only possible, but faster, fairer, and massively scalable. Education is the first proof point: if we can redesign how knowledge is mastered, we can redesign how every system that powers abundance works. My thesis is that true abundance can only be achieved through three pillars: cognitive intelligence (AI that thinks), physical intelligence (machines that act), and governance (the systems that align and distribute). Aksa is my immediate vehicle in this journey, but the larger direction is clear: building governance for universal abundance.
+Things I'm involved with and areas of interest:
+- **Empowerment**: [Aksa's core mission](https://joinaksa.com/about).
+- **Technology**: Building the [Aksa Platform](https://joinaksa.com) for human becoming.
+- **Economics**: [Research on corporate profitability](/thesis) in microeconomics during my studies at Universitas Diponegoro.
+- **Islamic Studies**: Classical logic and methodology at pondok tahfiz yanbuul quran remaja.

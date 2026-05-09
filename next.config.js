@@ -15,48 +15,38 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/works',
-        destination: '/projects',
+        source: '/principle',
+        destination: '/beliefs',
         permanent: true,
       },
       {
-        source: '/works/:path*',
-        destination: '/projects/:path*',
+        source: '/bio',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/projects',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/projects/skripsi',
+        destination: '/thesis',
         permanent: true,
       },
       {
         source: '/skripsi',
-        destination: '/projects/skripsi',
-        permanent: true,
-      },
-      {
-        source: '/beliefs',
-        destination: '/principle',
-        permanent: true,
-      },
-      {
-        source: '/people',
-        destination: '/principle',
-        permanent: true,
-      },
-      {
-        source: '/read',
-        destination: '/principle',
-        permanent: true,
-      },
-      {
-        source: '/belief',
-        destination: '/principle',
-        permanent: true,
-      },
-      {
-        source: '/subject',
-        destination: '/bio',
+        destination: '/thesis',
         permanent: true,
       },
       {
         source: '/belief',
         destination: '/beliefs',
+        permanent: true,
+      },
+      {
+        source: '/works/:path*',
+        destination: '/',
         permanent: true,
       },
     ];
