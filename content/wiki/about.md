@@ -1,7 +1,8 @@
-I am currently lived in Indonesia and building Aksa, a social network for human becoming. I grew up in islamic boarding school and previously studying economics in Universitas Diponegoro.
+I'm Haris Farrasi, based in Indonesia. I'm building [Aksa](https://joinaksa.com), an environment that helps people see clearly and act correctly.
 
-Things I'm involved with and areas of interest:
-- **Empowerment**: [Aksa's core mission](https://joinaksa.com/about).
-- **Technology**: Building the [Aksa Platform](https://joinaksa.com) for human becoming.
-- **Economics**: [Research on corporate profitability](/thesis) in microeconomics during my studies at Universitas Diponegoro.
-- **Islamic Studies**: Classical logic and methodology at pondok tahfiz yanbuul quran remaja.
+I grew up in an Islamic boarding school, where I spent years studying the Quran alongside classical Islamic methodology. Later I studied economics at [Universitas Diponegoro](https://www.undip.ac.id), while becoming increasingly interested in technology, systems, and entrepreneurship.
+
+I believe we need better maps to see reality clearly, because clearer perception leads to better judgment. Better judgment leads to better action, and a life is ultimately measured by what it leaves behind through narratives, artifacts, and movements.
+
+Find me on [X](https://x.com/harisfarrasi) or reach out by [email](mailto:harisfarrasi@gmail.com).
+

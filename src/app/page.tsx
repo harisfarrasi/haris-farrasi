@@ -1,12 +1,22 @@
 import TabbedShell from '@/components/tabbed-shell';
+import HomeClient from '@/components/home-client';
 import { getWikiContent } from '@/lib/wiki';
 
 export default function Home() {
-  const { html } = getWikiContent('about');
+  const { html: aboutHtml } = getWikiContent('about');
+  const { html: beliefsHtml } = getWikiContent('beliefs');
+  const { html: peopleHtml } = getWikiContent('people');
+  const { html: readHtml } = getWikiContent('read');
 
   return (
-    <TabbedShell active="home">
-      <article className="wiki-content" dangerouslySetInnerHTML={{ __html: html }} />
+    <TabbedShell>
+      <HomeClient
+        aboutHtml={aboutHtml}
+        beliefsHtml={beliefsHtml}
+        peopleHtml={peopleHtml}
+        readHtml={readHtml}
+        defaultTab="beliefs"
+      />
     </TabbedShell>
   );
 }

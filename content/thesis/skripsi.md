@@ -1,4 +1,4 @@
-# **Determinan Profitabilitas Berkelanjutan: Analisis Struktur Industri dan Kualitas Bisnis pada Perusahaan Konstituen S\&P 500 (Periode 2015–2024)**
+# **DETERMINAN PROFITABILITAS BERKELANJUTAN: ANALISIS STRUKTUR INDUSTRI DAN KUALITAS BISNIS PADA PERUSAHAAN KONSTITUEN S\&P 500 (PERIODE 2017–2025)**
 
  
 
@@ -22,153 +22,120 @@ Untuk menyelesaikan Program Studi S-1
 
 **Universitas Diponegoro**
 
-**2024/2025**
+**2025/2026**
+
+<!-- LATEX_ABSTRACT_START -->
+# **ABSTRAK**
+
+Penelitian ini menguji apakah struktur industri atau kualitas bisnis internal lebih konsisten menjelaskan profitabilitas berkelanjutan pada perusahaan konstituen S\&P 500 yang aktif pada Mei 2026. Variabel dependen yang digunakan adalah Sustained Return on Assets (SROA), yaitu rata-rata ROA tiga tahun, sedangkan struktur industri diproksikan dengan Herfindahl-Hirschman Index (HHI) dan kualitas bisnis diproksikan dengan Business Quality Score (BQS). BQS dibentuk dari lima komponen, yaitu margin kotor, free cash flow margin, leverage inverse, interest coverage, dan konsistensi laba. Sampel penelitian mencakup perusahaan non-keuangan dan non-utilitas dengan data panel efektif 2019--2025, diestimasi menggunakan two-way fixed effects dan standard errors yang di-*cluster* pada level perusahaan. Hasil penelitian menunjukkan bahwa BQS berasosiasi positif dan signifikan terhadap SROA, sedangkan HHI berkoefisien positif tetapi tidak signifikan. Temuan ini mengindikasikan bahwa dalam sampel yang digunakan, kualitas bisnis internal lebih konsisten menjelaskan profitabilitas berkelanjutan dibandingkan konsentrasi industri. Meski demikian, kesimpulan tetap dibatasi oleh adanya *survivorship bias*, sifat HHI yang *within-sample*, dan desain observasional yang tidak sepenuhnya mengidentifikasi kausalitas.
+
+Kata kunci: profitabilitas berkelanjutan, BQS, HHI, fixed effects, S\&P 500
+
+# **ABSTRACT**
+
+This study examines whether industry structure or internal business quality more consistently explains sustained profitability among S\&P 500 constituents active in May 2026. The dependent variable is Sustained Return on Assets (SROA), defined as a three-year moving average of ROA. Industry structure is proxied by the Herfindahl-Hirschman Index (HHI), while business quality is proxied by the Business Quality Score (BQS). The BQS is constructed from five components: gross margin, free cash flow margin, inverse leverage, interest coverage, and earnings consistency. The sample consists of non-financial and non-utility firms with an effective panel period of 2019--2025 and is estimated using a two-way fixed effects model with firm-clustered standard errors. The results show that BQS is positively and significantly associated with SROA, whereas HHI is positive but not statistically significant. These findings suggest that, within this sample, internal business quality is a more consistent explanation of sustained profitability than industry concentration. The interpretation remains bounded by survivorship bias, the within-sample nature of HHI, and the observational design, which does not establish full causal identification.
+
+Keywords: sustained profitability, BQS, HHI, fixed effects, S\&P 500
+<!-- LATEX_ABSTRACT_END -->
 
 # **Daftar Isi** {#daftar-isi}
 
-**[Daftar Isi	2](#daftar-isi)**
-
-[**BAB I  PENDAHULUAN	1**](#bab-i-pendahuluan)
-
-[1.1 Latar Belakang Masalah	1](#1.1-latar-belakang-masalah)
-
-[1.2 Rumusan Masalah	6](#1.2-rumusan-masalah)
-
-[1.3 Tujuan dan Kegunaan Penelitian	7](#1.3-tujuan-dan-kegunaan-penelitian)
-
-[1.4 Sistematika Penulisan	9](#1.4-sistematika-penulisan)
-
-[**BAB II  TINJAUAN PUSTAKA	11**](#bab-ii-tinjauan-pustaka)
-
-[2.1 Literatur Teori	11](#2.1-literatur-teori)
-
-[2.2 Literatur Empiris	14](#2.2-literatur-empiris)
-
-[2.3 Kerangka Pemikiran Teoretis	16](#2.3-kerangka-pemikiran-teoretis)
-
-[2.4 Pengembangan Hipotesis	17](#2.4-pengembangan-hipotesis)
-
-[**BAB III METODE PENELITIAN	17**](#bab-iii-metode-penelitian)
-
-[3.1. Variabel Penelitian dan Definisi Operasional Variabel	18](#3.1.-variabel-penelitian-dan-definisi-operasional-variabel)
-
-[3.2. Populasi dan Sampel	25](#3.2.-populasi-dan-sampel)
-
-[3.3. Jenis dan Sumber Data	27](#3.3.-jenis-dan-sumber-data)
-
-[3.4. Metode Pengumpulan Data	29](#3.4.-metode-pengumpulan-data)
-
-[3.5. Metode Analisis	30](#3.5.-metode-analisis)
-
-[**Daftar Pustaka	34**](#daftar-pustaka)
+Daftar isi, daftar tabel, daftar gambar, dan daftar lampiran dihasilkan otomatis pada tahap kompilasi LaTeX agar nomor halaman mengikuti pedoman fakultas.
 
 # **BAB I**  **PENDAHULUAN** {#bab-i-pendahuluan}
 
 ## **1.1 Latar Belakang Masalah** {#1.1-latar-belakang-masalah}
 
-Dinamika ekonomi global dalam satu dekade terakhir, khususnya pada periode 2015 hingga 2024, telah menyajikan lanskap yang penuh tantangan sekaligus anomali yang menuntut reevaluasi mendalam terhadap teori-teori ekonomi konvensional mengenai profitabilitas perusahaan. Secara fundamental, teori ekonomi mikro neoklasik mempostulatkan bahwa keuntungan (profit) perusahaan bersifat sementara dan akan mengalami mean reversion atau kembali ke tingkat rata-rata normal dalam jangka panjang. Mekanisme kompetisi pasar, di mana tingkat pengembalian tidak normal (abnormal return) akan menarik masuknya pendatang baru (new entrants), diasumsikan akan mengikis margin keuntungan petahana hingga mencapai tingkat ekuilibrium. Namun, realitas empiris yang terekam dalam data pasar modal Amerika Serikat, khususnya pada indeks S\&P 500, menunjukkan fenomena yang kontradiktif: sebagian perusahaan mampu mempertahankan tingkat profitabilitas supernormal secara persisten dalam jangka waktu yang lama, menentang gravitasi kompetisi yang diprediksi oleh teori.  
-Fenomena ini, yang dikenal sebagai profit persistence, menjadi semakin relevan untuk diteliti di tengah volatilitas makroekonomi ekstrem yang menandai periode pengamatan penelitian ini. Mulai dari era suku bunga rendah pasca-Krisis Finansial Global, disrupsi rantai pasok akibat pandemi COVID-19, hingga lonjakan inflasi global dan siklus pengetatan moneter agresif pada tahun 2022-2024, korporasi dihadapkan pada ujian ketahanan yang belum pernah terjadi sebelumnya. Data menunjukkan bahwa laba korporasi domestik non-finansial di Amerika Serikat justru meningkat signifikan dari rata-rata 8,1% dari pendapatan nasional pada periode 2010-2019 menjadi 11,2% pada kuartal terakhir tahun 2024\. Lebih lanjut, margin keuntungan bersih perusahaan S\&P 500 tetap bertahan di atas 12% pada tahun 2024, jauh melampaui rata-rata historis jangka panjang. Ketahanan profitabilitas di tengah guncangan sistemik ini memicu pertanyaan fundamental: apakah persistensi ini merupakan hasil dari struktur pasar yang semakin terkonsentrasi dan protektif, ataukah buah dari keunggulan efisiensi dan kualitas fundamental internal perusahaan yang superior?  
-Untuk menjawab pertanyaan tersebut, penelitian ini, yang berjudul "Determinan Profitabilitas Berkelanjutan: Analisis Struktur Industri dan Kualitas Bisnis pada Perusahaan Konstituen S\&P 500 (Periode 2015-2024)", mencoba mengurai ketegangan antara dua paradigma dominan dalam ekonomi industri dan manajemen strategis: Paradigma Structure-Conduct-Performance (SCP) dan pandangan Resource-Based View (RBV).
+Periode 2017 hingga 2025 menyediakan konteks empiris yang relevan untuk menguji persistensi profitabilitas pada perusahaan besar di Amerika Serikat. Dalam teori ekonomi mikro neoklasik, laba di atas normal diperkirakan bersifat sementara karena kompetisi dan masuknya pesaing baru akan mendorong pengembalian menuju tingkat normal. Namun, pada sebagian perusahaan berkapitalisasi besar, proses mean reversion berjalan lambat atau tidak simetris. Karena itu, pertanyaan penelitian ini bukan apakah profitabilitas berkelanjutan itu mungkin terjadi, melainkan faktor apa yang paling konsisten berkaitan dengan kemampuan perusahaan mempertahankannya dari waktu ke waktu.  
+Fenomena profit persistence menjadi semakin relevan di tengah perubahan kondisi makro selama periode pengamatan. Rentang ini mencakup era suku bunga rendah pasca-Krisis Finansial Global, disrupsi rantai pasok akibat pandemi COVID-19, lonjakan inflasi global, dan siklus pengetatan moneter agresif pada 2022-2024. Dalam konteks tersebut, perusahaan dihadapkan pada tekanan yang berbeda-beda terhadap margin, biaya modal, dan ketahanan arus kas. Data agregat menunjukkan bahwa laba korporasi domestik non-finansial di Amerika Serikat meningkat dari rata-rata 8,1% dari pendapatan nasional pada periode 2010-2019 menjadi 11,2% pada kuartal terakhir 2024. Margin keuntungan bersih perusahaan S\&P 500 juga tetap relatif tinggi pada 2024. Temuan makro ini menjadi latar yang masuk akal untuk menelaah apakah persistensi profitabilitas lebih dekat pada penjelasan struktur pasar atau kualitas fundamental internal perusahaan.  
+Untuk menjawab pertanyaan tersebut, penelitian ini berjudul "Determinan Profitabilitas Berkelanjutan: Analisis Struktur Industri dan Kualitas Bisnis pada Perusahaan Konstituen S\&P 500 (Periode 2017-2025)" dan membandingkan dua jalur penjelasan yang sama-sama berakar pada literatur ekonomi dan keuangan: jalur struktur pasar berbasis organisasi industri, dan jalur efisiensi internal berbasis teori perusahaan serta kualitas fundamental.
 
-### **1.1.1 Perspektif External dengan Structure-Conduct-Performance (SCP)**
+\begin{table}[H]
+\caption{Ringkasan Awal Objek Penelitian pada Latar Belakang}
+\centering
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.56\textwidth}>{\centering\arraybackslash}p{0.28\textwidth}}
+\toprule
+\textbf{Indikator objek penelitian} & \textbf{Nilai} \\
+\midrule
+Kerangka sampel awal & 503 ticker S\&P 500 aktif Mei 2026 \\
+Eksklusi sektor utama & 97 ticker Financials dan Utilities \\
+Perusahaan final regresi & 333 perusahaan \\
+Observasi panel final & 2.241 firm-year \\
+Periode data mentah & 2017--2025 \\
+Periode panel efektif & 2019--2025 \\
+Variabel utama & SROA, HHI, BQS, SIZE, GROWTH \\
+\bottomrule
+\end{tabularx}
+\vspace{0.5em}
+{\small Sumber: Ringkasan output pipeline penelitian.}
+\end{table}
 
-Paradigma SCP, yang dipelopori oleh ekonom seperti Edward Mason dan Joe Bain, berargumen bahwa struktur pasar khususnya tingkat konsentrasi industri adalah determinan utama yang mendikte perilaku (conduct) perusahaan dan pada akhirnya menentukan kinerja (performance) mereka. Premis dasarnya adalah bahwa dalam industri yang sangat terkonsentrasi, di mana pangsa pasar didominasi oleh segelintir perusahaan besar, intensitas kompetisi cenderung menurun. Hal ini memungkinkan perusahaan petahana untuk melakukan kolusi diam-diam (tacit collusion) atau menggunakan kekuatan pasar (market power) mereka untuk menetapkan harga di atas biaya marjinal, sehingga menghasilkan profitabilitas yang lebih tinggi secara artifisial.  
-Relevansi paradigma SCP dalam konteks penelitian ini sangat kuat mengingat tren sekuler peningkatan konsentrasi pasar di Amerika Serikat. Data menunjukkan bahwa tingkat konsentrasi pasar, yang diukur dengan Herfindahl-Hirschman Index (HHI), telah mencapai level yang mengkhawatirkan di berbagai sektor. Pada tahun 2024, sepuluh perusahaan terbesar dalam indeks S\&P 500 menguasai hampir 40% dari total kapitalisasi pasar indeks tersebut, sebuah rekor konsentrasi yang melampaui puncak era dot-com bubble tahun 2000\. Fenomena ini sering disebut sebagai pasar yang "top-heavy", di mana sekelompok kecil perusahaan raksasa sering dijuluki "Magnificent Seven" yang mencakup Apple, Microsoft, NVIDIA, Alphabet, Amazon, Meta, dan Tesla menyerap sebagian besar profit pool ekonomi.  
-Peningkatan HHI ini tidak hanya terjadi secara nominal tetapi juga berdampak riil pada dinamika kompetisi. Pervan, Pervan, dan Curak (2019) menemukan bukti empiris bahwa konsentrasi industri berpengaruh positif dan signifikan terhadap Return on Assets (ROA) pada perusahaan manufaktur, mendukung hipotesis bahwa struktur pasar yang oligopolistik memberikan "payung pelindung" bagi profitabilitas perusahaan. Dalam konteks modern, argumen ini diperkuat oleh pengamatan bahwa perusahaan-perusahaan di sektor terkonsentrasi mampu mempertahankan margin tinggi bahkan ketika inflasi input melonjak pada tahun 2021-2022. Kemampuan untuk membebankan kenaikan biaya kepada konsumen (pass-through ability) tanpa kehilangan pangsa pasar adalah indikator klasik dari market power yang derivatif dari struktur industri yang kaku.  
-Namun, paradigma SCP mendapatkan tantangan serius dari hipotesis efisiensi yang diajukan oleh Demsetz (1973). Hipotesis ini menyatakan bahwa korelasi positif antara konsentrasi dan profitabilitas bukan disebabkan oleh praktik anti-kompetitif, melainkan karena perusahaan yang lebih efisien akan tumbuh lebih cepat, merebut pangsa pasar yang lebih besar, dan secara alami meningkatkan konsentrasi industri. Dalam pandangan ini, konsentrasi adalah hasil (outcome) dari kompetisi yang sehat, bukan tanda kegagalan pasar. Perdebatan ini menuntut analisis yang lebih nuansa untuk memisahkan apakah profitabilitas berkelanjutan yang diamati pada periode 2015-2024 adalah rente monopoli atau hasil efisiensi operasional.
+Tabel di atas menunjukkan bahwa penelitian ini sejak awal memang berfokus pada objek yang sangat spesifik, yaitu perusahaan besar non-keuangan dan non-utilitas yang masih aktif sebagai konstituen S\&P 500 pada Mei 2026. Visualisasi awal ini penting ditempatkan di latar belakang karena menunjukkan bahwa pembahasan penelitian tidak bergerak pada ruang abstrak, melainkan pada objek empiris yang terukur, dengan ukuran sampel, periode, dan variabel yang sudah dapat diidentifikasi sejak bab pembuka.
 
-### **1.1.2 Perspektif Internal dengan Resource-Based View (RBV)**
+Dilihat dari perspektif eksternal, paradigma *Structure-Conduct-Performance* (SCP) yang dipelopori Mason dan Bain menekankan bahwa struktur pasar, terutama tingkat konsentrasi industri, dapat memengaruhi perilaku perusahaan dan pada akhirnya kinerja laba. Dalam industri yang sangat terkonsentrasi, ruang kompetisi harga cenderung lebih sempit sehingga perusahaan dominan berpotensi mempertahankan margin lebih tinggi melalui *market power*, hambatan masuk, atau koordinasi tidak langsung. Relevansi pandangan ini cukup kuat dalam konteks Amerika Serikat karena banyak pengamatan menunjukkan bahwa kapitalisasi dan laba pasar semakin terkonsentrasi pada kelompok perusahaan besar, terutama di sektor teknologi dan platform digital. Pervan, Pervan, dan Curak (2019) juga menemukan hubungan positif antara konsentrasi industri dan ROA. Meski demikian, pandangan SCP tetap harus dibaca hati-hati karena kritik Demsetz (1973) mengingatkan bahwa konsentrasi tinggi bisa juga muncul karena efisiensi perusahaan yang lebih unggul, bukan semata-mata karena rente monopoli.
 
-Berbeda dengan determinisme struktural SCP, perspektif Resource-Based View (RBV) memandang ke dalam perusahaan (inside-out approach). RBV, yang dikembangkan oleh Wernerfelt (1984) dan Barney (1991), berargumen bahwa sumber daya dan kapabilitas internal yang berharga, langka, tidak dapat ditiru, dan tidak tergantikan (VRIN resources) adalah sumber sejati dari keunggulan kompetitif berkelanjutan. Zeitun dan Tian (2014) memberikan dukungan empiris bagi pandangan ini dengan menunjukkan bahwa faktor spesifik perusahaan (firm-level factors) seperti efisiensi manajemen, struktur modal, dan inovasi seringkali memiliki daya jelaskan yang lebih besar terhadap variasi kinerja dibandingkan faktor industri.  
-Dalam konteks penelitian ini, RBV dioperasionalisasikan melalui konsep "Kualitas Bisnis" (Business Quality) yang diukur secara komposit. Penelitian ini mengusulkan Business Quality Score (BQS) yang mengintegrasikan empat dimensi fundamental:
+Dilihat dari perspektif internal, *Resource-Based View* (RBV) yang dikembangkan Wernerfelt (1984) dan Barney (1991) memandang bahwa keunggulan kompetitif berkelanjutan lebih banyak ditentukan oleh sumber daya dan kapabilitas internal yang bernilai, langka, sulit ditiru, dan terorganisasi dengan baik. Dalam penelitian ini, sudut pandang RBV dioperasionalkan melalui konsep kualitas bisnis yang dirangkum dalam *Business Quality Score* (BQS). BQS tidak diposisikan sebagai pengganti langsung profitabilitas, melainkan sebagai proksi untuk menangkap fondasi internal yang menopang ketahanan laba, yaitu kemampuan menjaga margin, menghasilkan arus kas bebas, mempertahankan struktur utang yang sehat, memenuhi beban bunga, dan menjaga konsistensi laba. Zeitun dan Tian (2014) menegaskan bahwa faktor spesifik perusahaan seperti efisiensi manajemen dan struktur modal sering kali memiliki daya jelas yang besar terhadap variasi kinerja, sehingga kualitas internal perusahaan memang layak diuji sebagai determinan utama profitabilitas berkelanjutan.
 
-1. Kekuatan Penetapan Harga (Pricing Power): Diproksikan dengan margin kotor (gross margin), yang mencerminkan kemampuan perusahaan untuk mempertahankan selisih antara harga jual dan biaya produksi.  
-2. Kualitas Arus Kas (Owner Earnings): Mengukur kemampuan perusahaan menghasilkan kas bebas setelah belanja modal, yang krusial untuk reinvestasi dan pengembalian kepada pemegang saham.  
-3. Disiplin Utang (Leverage Discipline): Mencerminkan kesehatan neraca dan ketahanan terhadap guncangan suku bunga.  
-4. Konsistensi Laba (Earnings Consistency): Mengukur stabilitas profitabilitas dari waktu ke waktu.
+Pemilihan periode 2017-2025 juga memperkuat urgensi penelitian ini. Rentang tersebut mencakup fase ekspansi pra-pandemi, guncangan COVID-19, periode inflasi tinggi, pengetatan moneter agresif, hingga normalisasi pertumbuhan. Pada fase seperti ini, perusahaan dengan kekuatan harga dan struktur pasar yang kuat mungkin lebih mampu mempertahankan margin, tetapi perusahaan dengan neraca sehat dan arus kas kuat juga lebih tahan terhadap tekanan biaya modal. Karena itu, periode ini menjadi laboratorium empiris yang tepat untuk menilai apakah profitabilitas berkelanjutan lebih dekat dijelaskan oleh struktur industri atau oleh kualitas internal perusahaan.
 
-Urgensi untuk memasukkan variabel kualitas bisnis ini didorong oleh fenomena divergensi kinerja yang ekstrem di pasar modal AS pasca-2020. Sementara perusahaan "berkualitas tinggi" dengan neraca kuat dan arus kas melimpah terus mencetak rekor profitabilitas, terdapat lonjakan signifikan dalam jumlah "perusahaan zombie" yaitu perusahaan yang pendapatan operasionalnya tidak cukup untuk menutupi beban bunga utang.  
-Data dari S\&P Global Market Intelligence (2025) menunjukkan bahwa pengajuan kebangkrutan korporasi AS mencapai 686 kasus pada tahun 2024, level tertinggi sejak 2010\. Lebih mengkhawatirkan lagi, data Bloomberg (2025) mengindikasikan bahwa jumlah perusahaan zombie dalam indeks Russell 3000 telah melonjak menjadi 639 perusahaan, di mana estimasi pasar menunjukkan bahwa satu dari lima perusahaan publik AS kini berisiko gagal menutup biaya bunganya. Situasi ini diperburuk oleh lingkungan suku bunga tinggi (Fed Funds Rate di 5,25%-5,50%) yang memberatkan biaya modal.  
-Fenomena perusahaan zombie ini menjadi bukti empiris yang kuat bagi argumen RBV: berada dalam industri yang tumbuh atau terkonsentrasi tidak menjamin kelangsungan hidup jika fundamental internal perusahaan rapuh. Perusahaan dengan leverage tinggi dan margin tipis terbukti sangat rentan ketika biaya modal meningkat, sementara perusahaan dengan kualitas bisnis superior (BQS tinggi) mampu memanfaatkan neraca mereka yang kuat untuk memperluas pangsa pasar dan mempertahankan profitabilitas. Oleh karena itu, mengabaikan faktor internal dalam analisis profitabilitas akan menghasilkan kesimpulan yang bias.
+Di atas dasar itulah kesenjangan penelitian muncul. Literatur mengenai determinan profitabilitas memang telah mapan, tetapi hasil empiris tentang dominasi relatif faktor industri dan faktor perusahaan masih belum konsisten. Banyak studi terdahulu juga masih memakai rasio tunggal sebagai proksi faktor internal, sedangkan penelitian ini memakai indeks komposit BQS agar kualitas bisnis tertangkap lebih utuh. Selain itu, konteks ekonomi modern yang semakin dipengaruhi aset tak berwujud, platform, dan efek jaringan dapat membuat mekanisme pembentukan profitabilitas berbeda dari studi klasik berbasis manufaktur. Dengan demikian, penelitian ini relevan karena menawarkan pengujian yang lebih terukur atas dua penjelasan besar profitabilitas berkelanjutan dalam satu kerangka panel yang sama.
 
-### **1.1.3 Konteks Makroekonomi (2015-2024)**
-
-Pemilihan periode 2015-2024 bukan tanpa alasan. Dekade ini merepresentasikan siklus ekonomi yang penuh dengan diskontinuitas yang menguji tesis SCP dan RBV secara ekstrem.
-
-1. Periode 2015-2019: Ditandai dengan pertumbuhan moderat dan inflasi rendah, di mana perusahaan teknologi mulai mengonsolidasikan dominasi mereka, meningkatkan HHI secara struktural.  
-2. Periode 2020 (Pandemi COVID-19): Menciptakan guncangan eksogen yang memisahkan "pemenang" (perusahaan digital, farmasi) dan "pecundang" (pariwisata, energi), memperlebar kesenjangan profitabilitas antar perusahaan.  
-3. Periode 2021-2022 (Lonjakan Inflasi): Menguji pricing power perusahaan. Data menunjukkan bahwa kontribusi laba perusahaan terhadap pertumbuhan harga mencapai 53,9%, jauh di atas rata-rata historis 11,4% (EPI, 2022), membuktikan bahwa perusahaan dengan kekuatan pasar mampu mempertahankan, bahkan menaikkan, margin di tengah inflasi input.  
-4. Periode 2023-2024 (Suku Bunga Tinggi): Mengakhiri era uang murah (easy money). Kenaikan Federal Funds Rate sebesar 525 basis poin ke rentang 5,25%-5,50% tertinggi dalam 22 tahun yang menekan perusahaan dengan struktur modal buruk (mendukung tesis BQS/RBV) namun tidak menghalangi perusahaan besar dengan posisi kas kuat untuk terus tumbuh (mendukung tesis HHI/SCP).
-
-### **1.1.4 Kesenjangan Penelitian**
-
-Meskipun literatur mengenai determinan profitabilitas telah mapan, penelitian ini mengidentifikasi dan berupaya mengisi beberapa kesenjangan penelitian yang krusial:
-
-1. Inkonsistensi Hasil Empiris (Empirical Gap): Terdapat perdebatan yang belum tuntas mengenai dominasi relatif antara faktor industri dan faktor perusahaan. Studi Pervan et al. (2019) mendukung dominasi faktor industri (SCP), sementara Zeitun dan Tian (2014) dan studi modern lainnya menemukan bahwa faktor spesifik perusahaan (RBV) lebih berpengaruh. Penelitian ini bertujuan untuk menguji ulang kontestasi ini menggunakan data terkini yang mencakup periode volatilitas tinggi.  
-2. Kesenjangan Metodologis (Methodological Gap): Banyak penelitian terdahulu menggunakan rasio keuangan tunggal (seperti leverage atau size secara terpisah) sebagai proksi faktor internal. Penelitian ini menawarkan kebaruan dengan menggunakan indeks komposit kualitas bisnis (BQS) yang menggabungkan dimensi margin, arus kas, struktur modal, dan konsistensi secara simultan. Pendekatan ini diharapkan memberikan gambaran yang lebih holistik mengenai kesehatan fundamental perusahaan.  
-3. Kesenjangan Fenomena (Phenomena Gap): Teori ekonomi memprediksi penurunan profitabilitas (mean reversion), namun data empiris 2024 menunjukkan persistensi margin tinggi dan konsentrasi pasar yang ekstrem di S\&P 500\. Kesenjangan antara prediksi teori dan realitas data ini memerlukan penjelasan baru yang mempertimbangkan interaksi antara kekuatan pasar struktural dan efisiensi internal di era ekonomi digital.  
-4. Kurangnya Studi pada Konteks Ekonomi Modern: Sebagian besar studi klasik mengenai SCP vs RBV dilakukan pada era ekonomi manufaktur. Penelitian ini menempatkan analisis pada konteks ekonomi modern yang didominasi oleh aset tak berwujud (intangible assets), efek jaringan digital, dan winner-takes-all dynamics, yang mungkin mengubah mekanisme transmisi dari struktur dan sumber daya ke kinerja profitabilitas.
-
-Berdasarkan uraian di atas, penelitian ini menjadi penting dan relevan untuk dilakukan. Dengan mensintesiskan perspektif eksternal (struktur industri) dan internal (kualitas bisnis) serta menggunakan data panel yang komprehensif dari perusahaan konstituen S\&P 500, penelitian ini diharapkan dapat memberikan kontribusi signifikan dalam memahami arsitektur profitabilitas perusahaan di era modern.
+Berdasarkan uraian di atas, penelitian ini relevan bukan karena mengklaim kausalitas universal, tetapi karena menawarkan uji empiris yang terukur atas dua penjelasan besar untuk profitabilitas berkelanjutan dalam satu kerangka panel yang sama. Kontribusinya terletak pada pembandingan yang disiplin antara struktur industri dan kualitas bisnis dalam sampel yang jelas batasnya.
 
 ## **1.2 Rumusan Masalah** {#1.2-rumusan-masalah}
 
-Berangkat dari latar belakang masalah yang telah dipaparkan, inti permasalahan penelitian ini adalah adanya ketidakpastian mengenai faktor determinan utama yang memungkinkan perusahaan untuk mempertahankan profitabilitas di atas rata-rata (sustainable profitability) di tengah kondisi pasar yang dinamis dan seringkali turbulen. Adanya dualisme perspektif teoritis antara market-based view (SCP) yang menekankan posisi dalam struktur industri, dan resource-based view (RBV) yang menekankan kapabilitas internal, menuntut pembuktian empiris untuk menentukan mana yang lebih relevan dalam konteks pasar modal Amerika Serikat periode 2015-2024.  
+Berangkat dari latar belakang masalah yang telah dipaparkan, inti permasalahan penelitian ini adalah adanya ketidakpastian mengenai faktor determinan utama yang memungkinkan perusahaan untuk mempertahankan profitabilitas di atas rata-rata (sustainable profitability) di tengah kondisi pasar yang dinamis dan seringkali turbulen. Adanya dualisme perspektif teoritis antara market-based view (SCP) yang menekankan posisi dalam struktur industri, dan resource-based view (RBV) yang menekankan kapabilitas internal, menuntut pembuktian empiris untuk menentukan mana yang lebih relevan dalam konteks pasar modal Amerika Serikat periode 2017-2025.  
 Secara spesifik, rumusan masalah dalam penelitian ini dirinci dalam tiga pertanyaan penelitian sebagai berikut:
 
-1. Apakah struktur industri, yang diproksikan dengan tingkat konsentrasi pasar (Herfindahl-Hirschman Index \- HHI), berpengaruh signifikan terhadap profitabilitas berkelanjutan perusahaan konstituen S\&P 500 periode 2015-2024? Pertanyaan ini diajukan untuk menguji validitas paradigma SCP. Jika HHI berpengaruh positif dan signifikan, hal ini mengindikasikan bahwa kekuatan pasar yang derivatif dari konsentrasi industri memberikan kemampuan bagi perusahaan untuk mempertahankan margin laba di atas normal, terlepas dari efisiensi internal mereka. Hal ini relevan dengan fenomena dominasi "Magnificent Seven" dan tingginya profitabilitas sektor teknologi yang terkonsentrasi.     
-2. Apakah kualitas bisnis, yang diproksikan dengan skor komposit kualitas bisnis (Business Quality Score \- BQS), berpengaruh signifikan terhadap profitabilitas berkelanjutan perusahaan konstituen S\&P 500 periode 2015-2024? Pertanyaan ini bertujuan untuk memverifikasi relevansi pandangan RBV. BQS menggabungkan dimensi margin, kualitas arus kas, disiplin utang, dan konsistensi laba. Jika BQS terbukti berpengaruh signifikan, ini menegaskan bahwa faktor fundamental internal dan manajemen sumber daya yang pruden adalah kunci utama dalam menjaga keberlanjutan kinerja, terutama di tengah kondisi high interest rate environment yang memicu munculnya fenomena perusahaan zombie.     
-3. Di antara struktur industri dan kualitas bisnis, faktor manakah yang memiliki kontribusi lebih dominan dalam menjelaskan variasi profitabilitas berkelanjutan pada perusahaan konstituen S\&P 500? Pertanyaan ini merupakan inti dari kontribusi penelitian, yang berupaya menyelesaikan perdebatan teoretis mengenai industry effect versus firm effect. Dengan membandingkan besaran pengaruh (koefisien regresi) dan signifikansi statistik antara HHI dan BQS, penelitian ini akan memberikan bukti empiris mengenai faktor mana yang menjadi driver utama kesuksesan finansial korporasi AS dalam dekade terakhir: apakah "di mana perusahaan bersaing" (industri) atau "bagaimana perusahaan bersaing" (kualitas internal).   
+1. Apakah struktur industri, yang diproksikan dengan tingkat konsentrasi pasar (*Herfindahl-Hirschman Index* - HHI), berpengaruh signifikan terhadap profitabilitas berkelanjutan perusahaan konstituen S\&P 500 aktif Mei 2026 periode 2017–2025?
+2. Apakah kualitas bisnis, yang diproksikan dengan skor komposit kualitas bisnis (*Business Quality Score* - BQS), berpengaruh signifikan terhadap profitabilitas berkelanjutan perusahaan konstituen S\&P 500 aktif Mei 2026 periode 2017–2025?
+3. Di antara struktur industri dan kualitas bisnis, faktor manakah yang memiliki kontribusi relatif lebih dominan dalam menjelaskan variasi profitabilitas berkelanjutan pada perusahaan konstituen S\&P 500 aktif Mei 2026 periode 2017–2025 dalam spesifikasi model penelitian ini?
 
 ## **1.3 Tujuan dan Kegunaan Penelitian** {#1.3-tujuan-dan-kegunaan-penelitian}
 
-### **1.3.1 Tujuan Penelitian**
+**Tujuan Penelitian.** Penelitian ini dirancang untuk mencapai serangkaian tujuan analitis yang terstruktur, yang secara langsung merespons rumusan masalah yang telah ditetapkan. Tujuan-tujuan tersebut adalah:
 
-Penelitian ini dirancang untuk mencapai serangkaian tujuan analitis yang terstruktur, yang secara langsung merespons rumusan masalah yang telah ditetapkan. Tujuan-tujuan tersebut adalah:
+1. Menganalisis pengaruh struktur industri, yang diproksikan dengan *Herfindahl-Hirschman Index* (HHI), terhadap profitabilitas berkelanjutan perusahaan konstituen S\&P 500 aktif Mei 2026 periode 2017–2025.
+2. Menganalisis pengaruh kualitas bisnis, yang diproksikan dengan *Business Quality Score* (BQS), terhadap profitabilitas berkelanjutan perusahaan konstituen S\&P 500 aktif Mei 2026 periode 2017–2025.
+3. Menganalisis dan membandingkan tingkat dominansi relatif antara faktor struktur industri dan kualitas bisnis dalam menjelaskan variasi profitabilitas berkelanjutan perusahaan konstituen S\&P 500 aktif Mei 2026 periode 2017–2025 pada spesifikasi model yang digunakan.
 
-1. Menganalisis Pengaruh Struktur Industri terhadap Profitabilitas Berkelanjutan: Penelitian ini bertujuan untuk menginvestigasi secara empiris hubungan antara tingkat konsentrasi industri (HHI) dan persistensi profitabilitas (Sustained ROA). Analisis ini akan menentukan apakah lingkungan industri yang monopolistik atau oligopolistik secara konsisten memberikan keuntungan kinerja bagi perusahaan di dalamnya, sebagaimana diprediksi oleh teori ekonomi industri klasik.  
-2. Menganalisis Pengaruh Kualitas Bisnis terhadap Profitabilitas Berkelanjutan: Tujuan ini difokuskan untuk mengevaluasi dampak dari kualitas fundamental internal perusahaan yang diukur melalui BQS terhadap kemampuan mereka mempertahankan laba jangka panjang. Analisis ini akan menguji apakah perusahaan dengan margin tebal, arus kas kuat, dan utang rendah memiliki daya tahan (resilience) yang lebih baik terhadap guncangan makroekonomi (seperti pandemi dan inflasi) dibandingkan perusahaan dengan fundamental lemah.  
-3. Membandingkan Dominasi Relatif antara Faktor Struktur Industri dan Kualitas Bisnis: Tujuan akhir dan terpenting dari penelitian ini adalah untuk melakukan analisis komparatif guna menentukan faktor mana yang lebih dominan dalam menjelaskan varian kinerja perusahaan. Hasil dari perbandingan ini akan memberikan sintesis atas dikotomi SCP vs RBV, memberikan wawasan mengenai apakah kesuksesan perusahaan modern lebih ditentukan oleh pemilihan industri yang tepat atau pembangunan kapabilitas internal yang unggul.   
-
-### **1.3.2 Kegunaan Penelitian**
-
-Hasil dari penelitian ini diharapkan dapat memberikan kontribusi yang substansial dan multidimensi, baik bagi pengembangan ilmu pengetahuan maupun bagi praktik bisnis dan kebijakan publik.
+**Kegunaan Penelitian.** Hasil dari penelitian ini diharapkan dapat memberikan kontribusi yang substansial dan multidimensi, baik bagi pengembangan ilmu pengetahuan maupun bagi praktik bisnis dan kebijakan publik. Namun, seluruh implikasi praktis harus dibaca sebagai hasil yang bersifat kondisional pada sampel, definisi variabel, dan periode observasi yang digunakan.
 
 1. Kegunaan Teoritis (Kontribusi Akademis):  
-   Pengayaan Literatur SCP vs RBV: Penelitian ini memberikan bukti empiris mutakhir mengenai relevansi paradigma SCP dan RBV dalam konteks ekonomi digital dan pasca-pandemi. Temuan ini akan memperjelas apakah pergeseran struktur ekonomi ke arah aset tak berwujud dan platform digital telah mengubah keseimbangan pengaruh antara faktor industri dan perusahaan.
+   Pengayaan Literatur SCP vs RBV: Penelitian ini memberikan bukti empiris mutakhir mengenai relevansi paradigma SCP dan RBV dalam konteks ekonomi digital dan pasca-pandemi. Temuan ini membantu memperjelas apakah pergeseran struktur ekonomi ke arah aset tak berwujud dan platform digital mengubah keseimbangan hubungan antara faktor industri dan perusahaan.
 
    Validasi Metodologis BQS: Penggunaan Business Quality Score (BQS) sebagai variabel komposit menawarkan kebaruan metodologis. Jika terbukti signifikan, BQS dapat diadopsi oleh peneliti selanjutnya sebagai proksi yang lebih robust untuk mengukur "kualitas perusahaan" dibandingkan penggunaan rasio keuangan terfragmentasi.
 
-   Pemahaman Fenomena Profit Persistence: Penelitian ini memperdalam pemahaman akademis mengenai mengapa mekanisme mean reversion tampaknya gagal atau tertunda pada periode 2015-2024, memberikan wawasan tentang friksi pasar dan keunggulan kompetitif yang persisten.
+   Pemahaman Fenomena Profit Persistence: Penelitian ini memperdalam pemahaman akademis mengenai mengapa mekanisme mean reversion tampak lebih lambat pada periode 2017-2025, memberikan wawasan tentang friksi pasar dan keunggulan kompetitif yang persisten.
 
 2. Kegunaan Praktis (Implikasi Manajerial dan Kebijakan):  
-   Bagi Investor dan Manajer Investasi: Temuan penelitian ini memiliki implikasi langsung bagi strategi alokasi aset. Jika kualitas bisnis (BQS) terbukti lebih dominan, maka strategi stock picking berbasis analisis fundamental (quality investing) akan lebih unggul dibandingkan strategi rotasi sektor (sector rotation). Sebaliknya, jika struktur industri dominan, investor harus fokus pada identifikasi sektor-sektor oligopolistik dengan hambatan masuk tinggi. Informasi ini krusial di tengah divergensi kinerja antara saham berkualitas tinggi dan saham spekulatif/zombie.   
+   Bagi Investor dan Manajer Investasi: Temuan penelitian ini memiliki implikasi langsung bagi strategi alokasi aset. Jika kualitas bisnis (BQS) terbukti lebih kuat dalam spesifikasi ini, maka analisis fundamental berbasis kualitas layak diberi bobot lebih besar daripada semata-mata rotasi sektor. Sebaliknya, bila struktur industri lebih kuat, perhatian pada sektor dengan konsentrasi tinggi menjadi relevan. Informasi ini berguna sebagai panduan awal, bukan sebagai aturan universal.
 
-   Bagi Manajemen Perusahaan: Penelitian ini memberikan panduan strategis bagi eksekutif perusahaan. Jika BQS terbukti signifikan, manajemen harus memprioritaskan disiplin finansial seperti menjaga margin, mengelola utang, dan memastikan kualitas arus kas sebagai pilar utama strategi korporasi, alih-alih hanya berfokus pada pertumbuhan pangsa pasar yang tidak efisien.
+   Bagi Manajemen Perusahaan: Penelitian ini memberikan panduan strategis bagi eksekutif perusahaan. Jika BQS terbukti signifikan, manajemen pantas memprioritaskan disiplin finansial seperti menjaga margin, mengelola utang, dan memastikan kualitas arus kas sebagai pilar strategi korporasi, bukan sekadar mengejar pertumbuhan ukuran atau pangsa pasar.
 
-   Bagi Regulator dan Pembuat Kebijakan: Hasil analisis mengenai pengaruh konsentrasi industri (HHI) terhadap profitabilitas relevan bagi otoritas antimonopoli (antitrust authorities). Jika konsentrasi tinggi terbukti berkorelasi kuat dengan profitabilitas berlebih yang persisten, hal ini dapat menjadi sinyal adanya penyalahgunaan kekuatan pasar yang memerlukan intervensi regulasi untuk memulihkan kompetisi yang sehat. Sebaliknya, jika profitabilitas lebih didorong oleh efisiensi internal (BQS), maka intervensi agresif terhadap perusahaan besar mungkin justru kontraproduktif terhadap inovasi dan efisiensi ekonomi.   
+   Bagi Regulator dan Pembuat Kebijakan: Hasil analisis mengenai hubungan konsentrasi industri (HHI) dan profitabilitas relevan bagi otoritas antimonopoli. Jika konsentrasi tinggi berhubungan kuat dengan profitabilitas berlebih yang persisten, itu bisa menjadi sinyal perlunya perhatian regulasi. Sebaliknya, jika profitabilitas lebih dekat pada efisiensi internal (BQS), maka intervensi terhadap perusahaan besar perlu dilakukan secara hati-hati agar tidak menghambat inovasi dan efisiensi ekonomi.
 
 ## **1.4 Sistematika Penulisan** {#1.4-sistematika-penulisan}
 
 Untuk menyajikan hasil penelitian secara logis, terstruktur, dan komprehensif, skripsi ini disusun dengan sistematika penulisan yang mengacu pada "Pedoman Penyusunan Skripsi Ekonomi" Universitas Diponegoro. Sistematika tersebut terdiri dari lima bab utama sebagai berikut :   
 
-BAB I: PENDAHULUAN Bab ini meletakkan fondasi penelitian. Dimulai dengan Latar Belakang Masalah yang menguraikan fenomena persistensi profitabilitas, anomali data ekonomi 2015-2024, serta perdebatan teoretis SCP vs RBV. Selanjutnya, bab ini menyajikan Rumusan Masalah dalam bentuk pertanyaan penelitian yang spesifik, Tujuan dan Kegunaan Penelitian yang menjelaskan target analisis dan kontribusi studi, serta diakhiri dengan Sistematika Penulisan yang memberikan peta jalan struktur skripsi.
+**BAB I: PENDAHULUAN** Bab ini meletakkan fondasi penelitian. Uraian dimulai dari latar belakang masalah, dilanjutkan dengan rumusan masalah, tujuan dan kegunaan penelitian, serta sistematika penulisan sebagai peta jalan skripsi.
 
-BAB II: TINJAUAN PUSTAKA Bab ini berisi landasan teori dan kajian literatur yang mendalam. Penulis akan membedah secara kritis literatur teori mengenai Paradigma SCP, Teori Organisasi Industri, Resource-Based View, dan konsep Profit Persistence. Bab ini juga akan meninjau Literatur Empiris terdahulu untuk memetakan posisi penelitian ini dalam khazanah keilmuan yang ada (posisi state-of-the-art). Berdasarkan sintesis teori dan empiris tersebut, disusunlah Kerangka Pemikiran Teoretis yang menggambarkan hubungan logis antar variabel, yang kemudian diturunkan menjadi Hipotesis penelitian yang dapat diuji.
+**BAB II: TINJAUAN PUSTAKA** Bab ini memuat literatur teori, literatur empiris, kerangka pemikiran teoretik, dan hipotesis penelitian yang menjadi dasar konseptual pengujian pada bab berikutnya.
 
-BAB III: METODE PENELITIAN Bab ini menjelaskan cetak biru metodologis penelitian. Penulis akan mendefinisikan Variabel Penelitian dan Definisi Operasional Variabel secara presisi, termasuk formula perhitungan Sustained ROA, HHI, dan komponen BQS (Margin, Owner Earnings, Leverage, Consistency). Bab ini juga merinci Populasi dan Sampel (kriteria inklusi perusahaan S\&P 500), Jenis dan Sumber Data (data sekunder dari laporan keuangan dan basis data pasar), serta Metode Analisis yang mencakup spesifikasi model regresi data panel, teknik estimasi (Fixed/Random Effect), dan uji diagnostik statistik yang diperlukan untuk memastikan validitas hasil.
+**BAB III: METODE PENELITIAN** Bab ini menjelaskan rancangan metodologis penelitian, variabel penelitian, definisi operasional, populasi dan sampel, jenis dan sumber data, metode pengumpulan data, serta metode analisis ekonometrika yang digunakan.
 
-BAB IV: HASIL DAN PEMBAHASAN Bab ini merupakan inti empiris dari skripsi. Bagian ini dimulai dengan Deskripsi Objek Penelitian yang memberikan gambaran umum data sampel. Selanjutnya, disajikan hasil Analisis Data, termasuk statistik deskriptif dan hasil estimasi regresi. Fokus utama bab ini adalah Pembahasan (Discussion), di mana penulis menginterpretasikan temuan statistik, menjawab hipotesis, dan mendiskusikan implikasi ekonomi dari temuan tersebut. Penulis akan mengaitkan kembali hasil penelitian dengan teori SCP dan RBV serta membandingkannya dengan penelitian terdahulu untuk menjelaskan fenomena yang diamati.
+**BAB IV: HASIL DAN ANALISIS** Bab ini menyajikan deskripsi objek penelitian, analisis data, hasil estimasi, serta pembahasan yang mengaitkan temuan empiris dengan teori dan penelitian terdahulu.
 
-BAB V: PENUTUP Bab terakhir ini merangkum esensi penelitian. Terdiri dari Kesimpulan yang menjawab rumusan masalah secara ringkas berdasarkan bukti empiris, Keterbatasan penelitian yang mengakui kendala data atau metodologi yang mungkin memengaruhi generalisasi hasil, serta Saran atau rekomendasi praktis bagi investor, manajemen perusahaan, regulator, dan agenda penelitian masa depan.
+**BAB V: PENUTUP** Bab terakhir merangkum kesimpulan, keterbatasan penelitian, dan saran untuk pengembangan studi berikutnya maupun implikasi praktis.
 
-DAFTAR PUSTAKA DAN LAMPIRAN Bagian akhir memuat daftar referensi yang disusun mengikuti kaidah sitasi APA sesuai pedoman, serta lampiran yang berisi data pendukung, output perangkat lunak statistik, dan informasi relevan lainnya yang melengkapi tubuh utama skripsi.
+**DAFTAR PUSTAKA DAN LAMPIRAN** Bagian akhir memuat referensi yang digunakan serta lampiran berupa output mentah pipeline Python dan audit pengolahan data yang mendukung tubuh utama skripsi.
 
 # **BAB II**  **TINJAUAN PUSTAKA** {#bab-ii-tinjauan-pustaka}
 
 ## **2.1 Literatur Teori** {#2.1-literatur-teori}
 
-Berdasarkan rumusan masalah yang diajukan pada bab sebelumnya mengenai determinan profitabilitas berkelanjutan di tengah dinamika pasar, penelitian ini dibangun di atas sintesis tiga teori utama. Teori-teori ini dipilih untuk menjelaskan fenomena profit persistence (persistensi laba) serta menguji kontestasi antara faktor eksternal dan internal perusahaan. Ketiga teori tersebut adalah: (1) Teori Persistensi Laba (The Persistence of Profit) sebagai landasan fenomena dependen, (2) Paradigma Structure-Conduct-Performance atau SCP sebagai landasan perspektif eksternal, dan (3) Pandangan Resource-Based View atau RBV yang diperluas ke dalam konsep Quality Investing sebagai landasan perspektif internal.
+Berdasarkan rumusan masalah yang diajukan pada bab sebelumnya, penelitian ini diletakkan pada landasan teori yang nama dan konstruksinya memang sudah mapan dalam literatur ekonomi dan keuangan, bukan pada istilah yang dibuat sendiri oleh peneliti. Secara konseptual, terdapat empat pijakan utama yang digunakan, yaitu: (1) teori persaingan neoklasik dan laba normal jangka panjang, (2) teori *persistence of profit* dari Mueller, (3) paradigma *Structure-Conduct-Performance* (SCP) dalam organisasi industri, dan (4) teori pertumbuhan perusahaan, *resource-based view*, serta teori struktur modal sebagai dasar pembacaan faktor internal. Dengan kerangka seperti ini, istilah *Business Quality Score* (BQS) dalam penelitian ini harus dipahami bukan sebagai nama grand theory, melainkan sebagai nama indeks operasional yang dibangun dari teori-teori yang sudah ada.
 
 ### **2.1.1 Persistence of Profit**
 
@@ -184,82 +151,162 @@ Premis dasar SCP adalah bahwa kinerja perusahaan (Performance) ditentukan oleh p
 Perusahaan dominan dapat melakukan koordinasi diam-diam (tacit collusion) untuk menghindari perang harga. Hal ini menciptakan hambatan masuk (barriers to entry) bagi pesaing kecil. Akibatnya, perusahaan dalam struktur pasar yang terkonsentrasi (Oligopoli) dapat menetapkan harga di atas biaya marjinal, sehingga menikmati profitabilitas yang lebih tinggi secara persisten dibandingkan perusahaan di pasar yang terfragmentasi.  
 Teori ini mendasari penggunaan variabel independen Struktur Industri yang diukur dengan Herfindahl-Hirschman Index (HHI). Semakin tinggi HHI, semakin kuat struktur oligopoli yang melindungi profitabilitas perusahaan.
 
-### **2.1.3 Resource-Based View (RBV)**
+### **2.1.3 Resource-Based View (RBV) dan Theory of the Growth of the Firm**
 
-Sebagai antitesis dari paradigma SCP yang berfokus pada industri, penelitian ini menggunakan Resource-Based View (RBV) untuk menjelaskan faktor internal. Teori ini dikembangkan oleh Penrose (1959), Wernerfelt (1984), dan Barney (1991).  
-RBV menolak asumsi bahwa perusahaan dalam satu industri adalah identik. Sebaliknya, RBV memandang perusahaan sebagai sekumpulan sumber daya (bundle of resources) yang unik, heterogen, dan sulit dipindahkan (immobile). Kinerja perusahaan tidak ditentukan oleh industri, melainkan oleh seberapa baik perusahaan mengelola sumber daya internalnya.  
-Menurut Barney (1991), agar sumber daya dapat menghasilkan Keunggulan Kompetitif Berkelanjutan (yang berujung pada profitabilitas persisten), sumber daya tersebut harus memenuhi kriteria VRIO:
+Sebagai penjelasan faktor internal, penelitian ini tidak bertumpu pada nama indeks BQS itu sendiri, melainkan pada landasan yang lebih dahulu mapan, yaitu *The Theory of the Growth of the Firm* dari Penrose (1959), *Resource-Based View* dari Wernerfelt (1984), dan pengembangan keunggulan kompetitif berkelanjutan dari Barney (1991). Penrose menekankan bahwa perusahaan bukan sekadar fungsi produksi yang identik, melainkan organisasi yang memiliki kumpulan sumber daya, kapasitas manajerial, dan batas pertumbuhan yang berbeda. Wernerfelt dan Barney kemudian memperjelas bahwa perbedaan kualitas sumber daya internal inilah yang dapat menjelaskan mengapa perusahaan dalam industri yang sama tetap menghasilkan kinerja yang berbeda.
+
+RBV menolak asumsi bahwa perusahaan dalam satu industri adalah identik. Sebaliknya, RBV memandang perusahaan sebagai sekumpulan sumber daya (*bundle of resources*) yang unik, heterogen, dan sulit dipindahkan (*immobile*). Kinerja perusahaan tidak ditentukan oleh industri semata, melainkan oleh seberapa baik perusahaan mengelola sumber daya internalnya. Menurut Barney (1991), agar sumber daya dapat menghasilkan keunggulan kompetitif berkelanjutan yang pada akhirnya tercermin dalam profitabilitas persisten, sumber daya tersebut harus memenuhi kriteria VRIO:
 
 1. Valuable (Bernilai): Mampu mengeksploitasi peluang/menetralkan ancaman.  
 2. Rare (Langka): Tidak dimiliki banyak pesaing.  
 3. Inimitable (Sulit Ditiru): Pesaing sulit menduplikasi karena biaya tinggi atau kompleksitas.  
 4. Organized (Terorganisir): Perusahaan mampu mengelola sumber daya tersebut.
 
-Dalam konteks keuangan empiris, konsep RBV diterjemahkan menjadi faktor "Kualitas" (Quality). Asness, Frazzini, dan Pedersen (2019) dalam makalah seminal "Quality Minus Junk" mendefinisikan aset berkualitas tinggi sebagai perusahaan yang memiliki karakteristik: Profitabilitas tinggi, Pertumbuhan stabil, dan Keamanan finansial (Safety).  
-Teori ini menjadi landasan pembentukan variabel Kualitas Bisnis (Business Quality Score \- BQS). BQS merupakan proksi dari kapabilitas internal VRIO perusahaan, yang meliputi kekuatan penetapan harga (margin), kemampuan menghasilkan kas riil (owner earnings), dan ketahanan struktur modal (leverage discipline).
+Dalam konteks keuangan empiris, konsep sumber daya internal yang unggul tersebut diterjemahkan menjadi faktor "kualitas". Asness, Frazzini, dan Pedersen (2019) dalam "Quality Minus Junk" menunjukkan bahwa perusahaan berkualitas tinggi cenderung memiliki profitabilitas yang lebih baik, pertumbuhan yang lebih sehat, dan keamanan finansial yang lebih tinggi. Atas dasar itulah penelitian ini membangun variabel Kualitas Bisnis (*Business Quality Score* atau BQS). Dengan demikian, BQS harus dibaca sebagai instrumen pengukuran untuk menangkap kapabilitas internal, bukan sebagai teori yang berdiri sendiri.
 
-### **2.1.4 Hubungan Antar Variabel**
+### **2.1.4 Landasan Teoretis Konstruksi BQS dan Variabel Kontrol**
 
-Berdasarkan ketiga landasan teori di atas, berikut adalah penjelasan teoretis mengenai pengaruh masing-masing variabel independen terhadap variabel dependen:
+Karena indeks komposit sering menjadi titik kritik utama dalam sidang, setiap komponen pembentuk BQS dan setiap variabel kontrol pada penelitian ini harus memiliki dasar teori yang jelas. Nama BQS hanyalah label operasional; yang memberikan legitimasi ilmiahnya adalah alasan teoretis di balik setiap komponen yang masuk ke dalam indeks.
+
+1. **Margin kotor (MARG)** dipakai untuk menangkap *pricing power* dan efisiensi operasi dasar. Dalam perspektif organisasi industri, margin yang tinggi dapat mencerminkan ruang *mark-up* yang lebih besar atau kemampuan perusahaan mempertahankan harga di atas biaya. Dalam perspektif keuangan empiris, Novy-Marx (2013) menunjukkan bahwa profitabilitas kotor merupakan indikator yang kuat untuk membaca kualitas ekonomi perusahaan.
+2. **Free cash flow margin (FCF\_MARGIN)** dipakai karena laba yang benar-benar dikonversi menjadi kas lebih dekat pada kapasitas ekonomi yang riil dibanding laba akrual murni. Sloan (1996) menunjukkan bahwa komponen arus kas memiliki daya prediksi laba masa depan yang lebih kuat daripada komponen akrual, sehingga dimensi kas perlu masuk jika penelitian ingin mengukur kualitas bisnis, bukan hanya kualitas akuntansi.
+3. **Leverage discipline (LEV)** diberi tempat penting karena teori struktur modal menjelaskan bahwa utang membawa manfaat pajak sekaligus biaya kebangkrutan dan biaya *financial distress*. Dalam kerangka *trade-off theory*, perusahaan yang mampu menjaga struktur utang tetap sehat memiliki peluang lebih besar mempertahankan fleksibilitas finansial. Karena tujuan penelitian adalah membaca kualitas, rasio ini dibalik menjadi LEV = 1 - leverage ratio agar skor yang lebih tinggi selalu berarti kualitas yang lebih baik.
+4. **Interest coverage** dimasukkan sebagai pelengkap disiplin utang. Jika leverage membaca posisi stok utang, maka *interest coverage* membaca kemampuan arus laba operasi untuk melayani beban bunga secara periodik. Variabel ini sangat relevan pada periode 2022--2025 ketika biaya dana meningkat akibat pengetatan moneter agresif.
+5. **Konsistensi laba (CONS)** dimasukkan karena profitabilitas berkelanjutan tidak hanya bergantung pada level laba, tetapi juga kestabilan laba. Dichev dan Tang (2009) menunjukkan bahwa volatilitas laba yang tinggi melemahkan prediktabilitas laba masa depan. Oleh karena itu, perusahaan yang memiliki margin lebih stabil lebih layak dianggap memiliki kualitas bisnis yang lebih kuat.
+6. **Ukuran perusahaan (SIZE)** digunakan sebagai variabel kontrol karena teori perusahaan dan literatur organisasi industri sama-sama mengakui bahwa skala dapat memengaruhi biaya rata-rata, akses pembiayaan, dan daya tawar pasar. Namun, Penrose (1959) juga mengingatkan bahwa pertumbuhan ukuran dapat memunculkan batas manajerial dan inefisiensi koordinasi. Karena itu, arah pengaruh SIZE terhadap profitabilitas tidak harus selalu positif.
+7. **Pertumbuhan penjualan (GROWTH)** digunakan sebagai variabel kontrol karena teori pertumbuhan perusahaan menempatkan ekspansi sebagai bagian dari dinamika perusahaan, tetapi pertumbuhan tidak selalu identik dengan pertumbuhan yang sehat. Ekspansi penjualan dapat memperbesar laba jika didukung efisiensi, namun juga dapat menekan profitabilitas jika ditempuh melalui diskon agresif, akuisisi mahal, atau penggunaan aset yang belum efisien.
+
+Bobot antar komponen BQS ditetapkan sama besar bukan karena semua komponen dianggap identik, melainkan karena penelitian ini mengutamakan transparansi, replikasi, dan keterbacaan ekonomi. Pemberian bobot yang ditaksir langsung dari sampel yang sama berisiko membuat indeks terlalu *data-mined* dan lebih sulit dipertahankan secara metodologis. Dengan bobot sama, indeks BQS tetap sederhana, dapat diaudit, dan lebih mudah dijelaskan bahwa ia menggabungkan lima dimensi kualitas yang saling melengkapi.
+
+### **2.1.5 Hubungan Antar Variabel**
+
+Berdasarkan landasan teori di atas, berikut adalah penjelasan teoretis mengenai pengaruh masing-masing variabel independen terhadap variabel dependen:
 
 1. Pengaruh Struktur Industri (HHI) terhadap Profitabilitas Berkelanjutan  
    Mengacu pada Paradigma SCP, struktur industri memiliki hubungan positif dengan profitabilitas. Ketika Herfindahl-Hirschman Index (HHI) meningkat, pasar menjadi lebih terkonsentrasi. Dalam kondisi ini, persaingan harga antar perusahaan menurun karena jumlah pemain yang sedikit memudahkan pemantauan dan koordinasi. Perusahaan petahana mendapatkan "kekuatan pasar" (market power) untuk menetapkan margin laba yang lebih tinggi tanpa takut kehilangan pangsa pasar secara signifikan. Oleh karena itu, secara teoretis, semakin tinggi konsentrasi industri, semakin tinggi kemampuan perusahaan untuk mempertahankan profitabilitas (Sustained ROA) di atas rata-rata normal.  
 2. Pengaruh Kualitas Bisnis (BQS) terhadap Profitabilitas Berkelanjutan  
-   Mengacu pada Teori RBV dan konsep Quality Investing, kualitas fundamental perusahaan memiliki hubungan positif dengan profitabilitas jangka panjang.  
-* Margin Tinggi (Pricing Power): Mencerminkan produk yang Valuable dan Inimitable (sulit ditiru), memungkinkan perusahaan bertahan dari tekanan inflasi biaya.  
-* Owner Earnings (Arus Kas): Mencerminkan efisiensi operasional yang riil, bukan sekadar laba akuntansi, yang menjamin keberlangsungan investasi kembali (reinvestment).  
-* Leverage Rendah (Safety): Mencerminkan sumber daya finansial yang kuat, menghindarkan perusahaan dari risiko kebangkrutan (distress risk) saat kondisi ekonomi memburuk.  
-* Konsistensi Laba: Mencerminkan stabilitas kapabilitas manajemen.  
-  Kombinasi elemen-elemen dalam BQS menciptakan "parit ekonomi" (economic moat) yang melindungi laba perusahaan dari erosi kompetisi, sehingga berdampak positif terhadap Sustained ROA.  
+   Mengacu pada teori pertumbuhan perusahaan, RBV, teori struktur modal, dan konsep *quality investing*, kualitas fundamental perusahaan memiliki hubungan positif dengan profitabilitas jangka panjang. Margin tinggi menangkap *pricing power* dan efisiensi dasar; *free cash flow margin* menangkap kualitas konversi laba menjadi kas; leverage yang sehat dan *interest coverage* yang kuat menangkap ketahanan pendanaan; sedangkan konsistensi laba menangkap kestabilan kinerja. Kombinasi kelima elemen tersebut membentuk fondasi internal yang lebih tahan terhadap tekanan kompetisi dan guncangan makro, sehingga secara teoretis berdampak positif terhadap Sustained ROA.  
 3. Perbandingan Dominasi: Faktor Industri (SCP) vs. Faktor Internal (RBV)  
-   Literatur manajemen strategis sering memperdebatkan mana yang lebih penting: "di mana Anda bersaing" (Industri/SCP) atau "bagaimana Anda bersaing" (Internal/RBV). Studi klasik seperti McGahan dan Porter (1997) menemukan bahwa faktor industri penting, namun faktor spesifik perusahaan (firm-specific effects) seringkali menjelaskan variansi kinerja yang lebih besar. Dalam pasar modern yang sangat dinamis dan terdisrupsi teknologi (seperti konstituen S\&P 500), teori RBV memprediksi bahwa kepemilikan aset tak berwujud dan kapabilitas internal (BQS) akan memiliki pengaruh yang lebih dominan terhadap persistensi laba dibandingkan sekadar berlindung di balik struktur industri yang terkonsentrasi (HHI).
+   Literatur manajemen strategis sering memperdebatkan apakah posisi industri (SCP) atau cara perusahaan membangun kapabilitas internal (RBV) lebih menentukan kinerja. Studi klasik seperti McGahan dan Porter (1997) menemukan bahwa faktor industri penting, namun faktor spesifik perusahaan (firm-specific effects) seringkali menjelaskan variansi kinerja yang lebih besar. Dalam pasar modern yang sangat dinamis dan terdisrupsi teknologi (seperti konstituen S\&P 500), teori RBV memprediksi bahwa kepemilikan aset tak berwujud dan kapabilitas internal (BQS) akan memiliki pengaruh yang lebih dominan terhadap persistensi laba dibandingkan sekadar berlindung di balik struktur industri yang terkonsentrasi (HHI).
 
 ## **2.2 Literatur Empiris** {#2.2-literatur-empiris}
 
-Berikut adalah ringkasan sistematis dari penelitian-penelitian empiris yang relevan mengenai pengaruh struktur industri, kualitas fundamental, dan karakteristik perusahaan terhadap kinerja keuangan.
+Berikut adalah ringkasan sistematis dari penelitian-penelitian empiris yang relevan mengenai pengaruh struktur industri, kualitas fundamental, dan karakteristik perusahaan terhadap kinerja perusahaan.
 
-\begin{longtable}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.64\textwidth}}
-\caption{Ringkasan Penelitian Terdahulu}\label{tab:ringkasan-penelitian-terdahulu}\\
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.25\textwidth} >{\raggedright\arraybackslash}p{0.67\textwidth}}
+\caption{Ringkasan Penelitian Empiris Terdahulu}\label{tab:ringkasan-penelitian-terdahulu}\\
 \toprule
-\textbf{Identitas} & \textbf{Hasil} \\
+\textbf{Pengarang, Tahun \& Judul Karya} & \textbf{Detail Penelitian Terdahulu} \\
 \midrule
 \endfirsthead
 \toprule
-\textbf{Identitas} & \textbf{Hasil} \\
+\textbf{Pengarang, Tahun \& Judul Karya} & \textbf{Detail Penelitian Terdahulu} \\
 \midrule
 \endhead
-Pervan et al. (2019) & Menemukan hubungan positif signifikan antara HHI dan profitabilitas. Studi ini mendukung paradigma SCP bahwa struktur pasar yang terkonsentrasi melindungi laba perusahaan. \\
-Zeitun \& Tian (2014) & Menemukan hubungan negatif signifikan antara leverage dan kinerja perusahaan. Perusahaan dengan utang rendah cenderung lebih profitabel, mendukung argumen RBV. \\
-Asness, Frazzini, \& Pedersen (2019) & Membuktikan bahwa saham dengan skor kualitas tinggi menghasilkan \textit{risk-adjusted returns} yang superior dan persisten secara global. \\
-Novy-Marx (2013) & Menemukan bahwa \textit{gross profitability} memiliki daya prediksi kinerja masa depan yang lebih kuat daripada laba bersih. \\
-Hirsch et al. (2021) & Menemukan tingkat persistensi laba yang tinggi pada peritel besar; \textit{market share} dan ukuran berpengaruh positif terhadap kemampuan mempertahankan laba. \\
-Stephan et al. (2008) & Menunjukkan bahwa profitabilitas masa lalu berpengaruh signifikan terhadap masa depan, namun tingkat persistensinya lebih rendah di negara berkembang. \\
-Sloan (1996) & Menemukan bahwa laba yang didominasi oleh arus kas lebih persisten dan berkualitas tinggi daripada laba yang didominasi akrual. \\
-Goddard et al. (2011) & Menemukan bahwa \textit{market share} lebih dominan memengaruhi profitabilitas dibandingkan konsentrasi industri. \\
-Dichev \& Tang (2009) & Menemukan korelasi negatif antara volatilitas laba dan prediktabilitas. Perusahaan dengan konsistensi laba tinggi memiliki persistensi kinerja yang lebih baik. \\
-McGahan \& Porter (1997) & Menemukan bahwa efek perusahaan menjelaskan variansi profitabilitas yang lebih besar dibandingkan efek industri. \\
+Pervan, Pervan, \& Ćurak (2019) \newline \textit{``Determinants of firm profitability in the Croatian manufacturing industry: Evidence from dynamic panel analysis''} & 
+\textbf{Metode \& Variabel:} \textit{Dynamic Panel Data} (System GMM). Y: ROA; X: HHI, ukuran perusahaan (\textit{size}), umur (\textit{age}), dan biaya tenaga kerja. \newline
+\textbf{Temuan:} Menunjukkan hubungan positif dan signifikan secara statistik antara HHI dengan tingkat profitabilitas perusahaan. Hasil ini membuktikan keabsahan Paradigma \textit{Structure-Conduct-Performance} (SCP), di mana struktur pasar yang terkonsentrasi tinggi terbukti mampu memberikan ``payung pelindung'' bagi perusahaan petahana untuk menikmati profitabilitas supernormal akibat berkurangnya persaingan harga. \newline
+\textbf{Relevansi:} Menjustifikasi penggunaan variabel HHI sebagai representasi kekuatan struktur industri eksternal yang valid dalam model regresi. \\
+\midrule
+Zeitun \& Tian (2014) \newline \textit{``Capital structure and corporate performance: Evidence from Jordan''} & 
+\textbf{Metode \& Variabel:} Regresi Data Panel (\textit{Fixed Effect} \& \textit{Random Effect}). Y: ROA, ROE, Tobin's Q; X: Leverage (rasio utang), ukuran (\textit{size}), pertumbuhan (\textit{growth}). \newline
+\textbf{Temuan:} Menunjukkan hubungan negatif yang signifikan dan konsisten antara leverage dengan profitabilitas perusahaan. Perusahaan dengan tingkat utang rendah memiliki fleksibilitas keuangan lebih tinggi dan terhindar dari risiko \textit{financial distress}, sehingga mendukung premis \textit{Resource-Based View} (RBV) dan \textit{Pecking Order Theory}. \newline
+\textbf{Relevansi:} Memberikan validasi empiris yang krusial untuk memasukkan komponen Disiplin Utang (\textit{Leverage Discipline} atau LEV) sebagai salah satu pilar penentu dalam indeks komposit \textit{Business Quality Score} (BQS). \\
+\midrule
+Asness, Frazzini, \& Pedersen (2019) \newline \textit{``Quality minus junk''} & 
+\textbf{Metode \& Variabel:} \textit{Portfolio sorting} \& regresi lintas-sektoral Fama-MacBeth. Y: \textit{Stock Returns} \& Profitabilitas; X: \textit{Quality Score} (Profitabilitas, Pertumbuhan, Keamanan/\textit{safety}, dan \textit{payout}). \newline
+\textbf{Temuan:} Membuktikan secara empiris bahwa saham-saham dengan karakteristik kualitas yang tinggi secara konsisten menghasilkan pengembalian (\textit{risk-adjusted returns}) yang superior dan persisten di seluruh dunia, secara signifikan mengalahkan saham-saham berkualitas rendah (\textit{junk}). \newline
+\textbf{Relevansi:} Menjadi cetak biru (\textit{blueprint}) utama dalam perancangan variabel independen internal berupa \textit{Business Quality Score} (BQS), yang mentransformasikan faktor investasi kuantitatif menjadi indeks keuangan untuk mengukur kapabilitas internal perusahaan. \\
+\midrule
+Novy-Marx (2013) \newline \textit{``The other side of value: The gross profitability premium''} & 
+\textbf{Metode \& Variabel:} Regresi \textit{cross-sectional} Fama-MacBeth. Y: \textit{Stock Returns}; X: \textit{Gross Profitability} vs \textit{Net Income}. \newline
+\textbf{Temuan:} Menemukan bahwa \textit{Gross Profitability} (laba kotor dibagi dengan total aset) memiliki daya penjelas (\textit{predictive power}) yang jauh lebih kuat dan stabil dalam mencerminkan keunggulan kompetitif sejati perusahaan dibandingkan dengan laba bersih (\textit{net income}) yang sering kali terdistorsi oleh kebijakan akuntansi non-operasional, beban pajak, depresiasi, dan amortisasi yang bersifat subyektif. \newline
+\textbf{Relevansi:} Memberikan justifikasi metodologis bagi penelitian ini untuk menempatkan \textit{Gross Profit Margin} (MARG) sebagai indikator pertama dan utama dalam mengukur dimensi kekuatan penetapan harga (\textit{pricing power}) pada BQS. \\
+\midrule
+Hirsch, Schiefer, Gschwandtner, \& Hartmann (2021) \newline \textit{``Profitability and profit persistence in EU food retailing''} & 
+\textbf{Metode \& Variabel:} Dynamic Panel Data (System GMM). Y: ROA (mengukur koefisien kecepatan penyesuaian $\lambda$); X: ROA historis, pangsa pasar (\textit{market share}), ukuran (\textit{size}). \newline
+\textbf{Temuan:} Menunjukkan tingkat persistensi laba yang sangat tinggi pada perusahaan ritel pangan skala besar. Lebih lanjut, pangsa pasar individu dan ukuran perusahaan berpengaruh positif signifikan dalam menahan laju penurunan laba (\textit{mean reversion}), membuktikan bahwa kekuatan pasar struktural dan efisiensi operasional bekerja secara simultan dalam menjaga kinerja. \newline
+\textbf{Relevansi:} Memperkuat argumentasi teoretis penggunaan metrik profitabilitas multi-tahun yang dinamis untuk menangkap fenomena \textit{profit persistence} pada variabel dependen \textit{Sustained ROA}. \\
+\midrule
+Stephan, Talavera, \& Tsapin (2008) \newline \textit{``Persistence and Determinants of Firm Profit in Emerging Markets''} & 
+\textbf{Metode \& Variabel:} Model Autoregressive orde pertama AR(1) data panel. Y: ROA; X: ROA historis, ukuran, pertumbuhan, ekspor. \newline
+\textbf{Temuan:} Menunjukkan bahwa profitabilitas masa lalu memiliki pengaruh signifikan terhadap profitabilitas masa depan (persistensi laba). Namun, koefisien persistensi di \textit{emerging markets} terbukti jauh lebih rendah dan tidak stabil dibanding negara maju akibat volatilitas makroekonomi, lemahnya perlindungan aset tak berwujud, dan tingginya friksi pasar. \newline
+\textbf{Relevansi:} Menjustifikasi pemilihan konstituen S\&P 500 (Amerika Serikat) sebagai objek penelitian, karena pasar yang maju secara teoretis merupakan laboratorium terbaik untuk menguji pengaruh parit ekonomi internal (BQS) dan konsentrasi (HHI). \\
+\midrule
+Sloan (1996) \newline \textit{``Do Stock Prices Fully Reflect Information in Accruals and Cash Flows about Future Earnings?''} & 
+\textbf{Metode \& Variabel:} Regresi OLS \& analisis portofolio \textit{mispricing}. Y: Profitabilitas masa depan; X: Komponen akrual (\textit{accruals}) vs komponen arus kas (\textit{cash flows}). \newline
+\textbf{Temuan:} Membuktikan secara empiris bahwa laba yang didominasi oleh arus kas operasional riil memiliki tingkat persistensi jauh lebih tinggi dan kualitas prediksi lebih baik dibanding laba akrual yang rentan mengalami pembalikan (\textit{mean reverting}) akibat manipulasi manajemen laba. \newline
+\textbf{Relevansi:} Melandasi keputusan penelitian ini untuk memasukkan komponen \textit{Free Cash Flow Margin}—yang menghitung arus kas operasi dikurangi belanja modal (\textit{capex}) relatif terhadap penjualan—sebagai proksi esensial dalam BQS guna memastikan dimensi kualitas bisnis yang diukur berbasis pada kekuatan kas riil, bukan sekadar angka akuntansi akrual di atas kertas. \\
+\midrule
+Goddard, Liu, Molyneux, \& Wilson (2011) \newline \textit{``The persistence of profit''} & 
+\textbf{Metode \& Variabel:} Dynamic Panel Data (System GMM). Y: Profitabilitas; X: Pangsa pasar (\textit{firm-level}) vs indeks konsentrasi industri HHI (\textit{industry-level}). \newline
+\textbf{Temuan:} Menyimpulkan bahwa pangsa pasar individu (yang mencerminkan efisiensi internal, keunggulan biaya, dan keunggulan kapabilitas sesuai hipotesis Demsetz) memiliki pengaruh yang jauh lebih dominan dan kokoh dalam menjelaskan variasi profitabilitas dibandingkan dengan faktor konsentrasi industri makro (HHI). \newline
+\textbf{Relevansi:} Secara langsung melandasi perumusan masalah ketiga dan hipotesis ketiga (H3), yaitu menguji apakah faktor internal (BQS) lebih dominan daripada faktor eksternal (HHI) dalam ekosistem S\&P 500. \\
+\midrule
+Dichev \& Tang (2009) \newline \textit{``Earnings volatility and earnings predictability''} & 
+\textbf{Metode \& Variabel:} Analisis regresi keuangan jangka panjang. Y: Prediktabilitas laba masa depan; X: Volatilitas laba historis. \newline
+\textbf{Temuan:} Menunjukkan adanya korelasi negatif yang sangat kuat antara volatilitas laba dengan prediktabilitas laba masa depan. Volatilitas margin yang tinggi menunjukkan ketidakpastian operasional yang besar, sedangkan kestabilan laba yang konsisten mencerminkan adanya parit kompetitif (\textit{economic moat}) yang mapan. \newline
+\textbf{Relevansi:} Memberikan dasar empiris yang kuat bagi penelitian ini untuk mengonstruksi komponen konsistensi dalam BQS, yaitu \textit{Earnings Consistency} (CONS), yang diukur melalui kebalikan dari koefisien variasi margin laba kotor selama jendela waktu tiga tahun. \\
+\midrule
+McGahan \& Porter (1997) \newline \textit{``How Much Does Industry Matter, Really?''} & 
+\textbf{Metode \& Variabel:} Metode statistik \textit{Variance Decomposition}. Y: Profitabilitas (ROA); X: Efek perusahaan, efek industri, efek tahun. \newline
+\textbf{Temuan:} Menemukan bahwa efek industri (\textit{industry effects}) menyumbang sekitar 19\% terhadap variasi kinerja perusahaan, sementara efek spesifik perusahaan (\textit{firm-specific effects}) menjelaskan porsi varians yang jauh lebih besar, yaitu mencapai sekitar 32\%. Temuan monumental ini membuktikan bahwa ``bagaimana sebuah perusahaan bersaing'' (sumber daya dan kualitas internal) jauh lebih menentukan kesuksesan finansial berkelanjutan dibandingkan dengan ``di mana perusahaan itu bersaing'' (pemilihan sektor industri). \newline
+\textbf{Relevansi:} Menjadi landasan sintesis utama untuk mengantisipasi kontestasi dominasi relatif antara paradigma SCP (HHI) dan RBV (BQS), serta menjustifikasi dominasi relatif faktor internal atas faktor eksternal. \\
 \bottomrule
 \end{longtable}
 
-## **2.3 Kerangka Pemikiran Teoretis** {#2.3-kerangka-pemikiran-teoretis}
+## **2.3 Kerangka Pemikiran Teoretik** {#2.3-kerangka-pemikiran-teoretik}
 
-Berdasarkan landasan teori dan tinjauan empiris di atas, penelitian ini membangun kerangka pemikiran untuk menguji determinan Sustained ROA. Profitabilitas jangka panjang perusahaan diasumsikan dipengaruhi oleh dua kekuatan utama:
+Berdasarkan literatur teori dan literatur empiris di atas, penelitian ini membangun kerangka pemikiran yang lebih operasional untuk menjelaskan bagaimana HHI dan BQS dapat berhubungan dengan Sustained ROA. Profitabilitas berkelanjutan diasumsikan terbentuk melalui dua jalur utama, yaitu jalur eksternal berbasis struktur industri dan jalur internal berbasis kualitas bisnis, sementara SIZE dan GROWTH diperlakukan sebagai pengendali agar pembacaan dua jalur utama tersebut tidak tercampur oleh perbedaan skala perusahaan dan dinamika penjualan.
 
 1. Kekuatan Eksternal (Industri): Diwakili oleh HHI. Sesuai paradigma SCP dan temuan Pervan et al. (2019), struktur industri yang terkonsentrasi menciptakan hambatan kompetisi yang memungkinkan perusahaan mempertahankan margin tinggi.  
 2. Kekuatan Internal (Kualitas Bisnis): Diwakili oleh Business Quality Score (BQS). Sesuai RBV dan temuan Asness et al. (2019) serta Zeitun & Tian (2014), perusahaan dengan fundamental superior (margin tinggi, arus kas kuat, utang rendah, laba stabil) memiliki "imunitas" internal yang memampukan mereka bertahan dari guncangan makroekonomi dan kompetisi.
 
-## **2.4 Pengembangan Hipotesis** {#2.4-pengembangan-hipotesis}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+node distance=0.9cm and 1.1cm,
+every node/.style={font=\small, align=center},
+mainbox/.style={draw=AksaBlue, rounded corners=3pt, line width=0.9pt, fill=AksaMist, text width=3.25cm, minimum height=1.05cm},
+midbox/.style={draw=AksaTeal, rounded corners=3pt, line width=0.9pt, fill=white, text width=3.35cm, minimum height=1cm},
+corebox/.style={draw=AksaOrange, rounded corners=3pt, line width=1pt, fill=AksaSand, text width=3.6cm, minimum height=1.15cm},
+ctrlbox/.style={draw=AksaBlue, dashed, rounded corners=3pt, line width=0.9pt, fill=white, text width=5.0cm, minimum height=0.95cm},
+arrow/.style={-{Latex[length=3mm]}, line width=0.85pt, color=AksaBlue}
+]
+\node[mainbox] (hhi) {\textbf{Struktur Industri}\\HHI sebagai proksi\\konsentrasi pasar};
+\node[mainbox, right=5.1cm of hhi] (bqs) {\textbf{Kualitas Bisnis}\\BQS sebagai proksi\\kapabilitas internal};
+\node[midbox, below=of hhi] (scp) {Paradigma SCP\\konsentrasi pasar, hambatan masuk,\\dan potensi \textit{market power}};
+\node[midbox, below=of bqs] (rbv) {Paradigma RBV\\margin, arus kas, leverage,\\coverage, dan konsistensi};
+\node[midbox, below=of scp] (ext) {Jalur eksternal\\pricing power dan tekanan\\kompetitif yang lebih rendah};
+\node[midbox, below=of rbv] (int) {Jalur internal\\efisiensi operasi, ketahanan kas,\\dan disiplin finansial};
+\node[corebox, below=1.1cm of $(ext)!0.5!(int)$] (sroa) {\textbf{Profitabilitas Berkelanjutan}\\\textbf{(Sustained ROA)}};
+\node[ctrlbox, below=1.0cm of sroa] (ctrl) {\textbf{Variabel kontrol}\\SIZE mengendalikan skala perusahaan, sedangkan GROWTH mengendalikan dinamika penjualan};
+\draw[arrow] (hhi) -- (scp);
+\draw[arrow] (scp) -- (ext);
+\draw[arrow] (ext) -- (sroa);
+\draw[arrow] (bqs) -- (rbv);
+\draw[arrow] (rbv) -- (int);
+\draw[arrow] (int) -- (sroa);
+\draw[arrow] (ctrl) -- (sroa);
+\end{tikzpicture}
+\caption{Kerangka Pemikiran Teoretik Penelitian}
+\end{figure}
 
-Berdasarkan sintesis literatur di atas, hipotesis penelitian dirumuskan sebagai berikut:
+Gambar tersebut menunjukkan bahwa HHI dan BQS tidak diperlakukan sebagai variabel yang berdiri sendiri tanpa mekanisme. HHI dibaca melalui jalur kekuatan pasar, intensitas kompetisi, dan hambatan masuk, sedangkan BQS dibaca melalui jalur kualitas operasi, kualitas arus kas, struktur pendanaan, dan stabilitas laba. Dengan struktur ini, pembahasan hasil pada BAB IV dapat langsung ditautkan kembali ke mekanisme teoretik yang telah dijelaskan pada bab ini.
 
-1. H1: Struktur Industri (HHI) berpengaruh positif signifikan terhadap Profitabilitas Berkelanjutan (Sustained ROA), sejalan dengan Paradigma SCP.  
-2. H2: Kualitas Bisnis (BQS) berpengaruh positif signifikan terhadap Profitabilitas Berkelanjutan (Sustained ROA), sejalan dengan teori RBV dan Quality Investing.  
-3. H3: Kualitas Bisnis (BQS) memiliki pengaruh yang lebih dominan dibandingkan Struktur Industri (HHI) dalam menjelaskan variasi profitabilitas, mendukung pandangan bahwa efisiensi internal lebih krusial di pasar modern yang efisien (McGahan & Porter, 1997).
+## **2.4 Hipotesis** {#2.4-hipotesis}
+
+Berdasarkan sintesis teori dan temuan empiris terdahulu, hipotesis penelitian ini dapat dirumuskan dalam bentuk pernyataan berikut:
+
+1. Struktur industri yang lebih terkonsentrasi, sebagaimana diproksikan oleh HHI, diduga berkaitan positif dengan profitabilitas berkelanjutan perusahaan.
+2. Kualitas bisnis yang lebih tinggi, sebagaimana diproksikan oleh BQS, diduga berkaitan positif dengan profitabilitas berkelanjutan perusahaan.
+3. Dalam konteks perusahaan konstituen S\&P 500, kualitas bisnis internal diduga memberikan hubungan yang lebih konsisten terhadap profitabilitas berkelanjutan dibandingkan struktur industri.
+4. Ukuran perusahaan dan pertumbuhan penjualan diperkirakan tetap relevan sebagai variabel kontrol, tetapi tidak ditempatkan sebagai fokus teoritis utama dibandingkan HHI dan BQS.
 
 # **BAB III** **METODE PENELITIAN** {#bab-iii-metode-penelitian}
 
-Pendekatan penelitian ini berakar pada paradigma positivisme, yang memandang bahwa realitas ekonomi dalam hal ini, persistensi kinerja perusahaan dan struktur pasar industri bersifat objektif, terukur, dan diatur oleh hukum-hukum kausalitas yang dapat digeneralisasi. Berpijak pada ontologi ini, penelitian mengadopsi pendekatan kuantitatif deduktif (hypothetico-deductive method). Logika deduktif digunakan untuk menurunkan hipotesis dari kerangka teori yang mapan, seperti paradigma Structure-Conduct-Performance (SCP) dan Resource-Based View (RBV), untuk kemudian diuji secara empiris menggunakan data sekunder.  
-Desain penelitian bersifat eksplanatoris (explanatory research), yang bertujuan tidak sekadar mendeskripsikan fenomena, melainkan menjelaskan hubungan kausal antara struktur industri (faktor eksternal) dan kualitas bisnis (faktor internal) terhadap profitabilitas berkelanjutan. Mengingat kompleksitas dinamika pasar modal Amerika Serikat dan heterogenitas perusahaan dalam indeks S\&P 500, metodologi ini dirancang untuk memitigasi bias estimasi melalui penggunaan teknik data panel dinamis dan kontrol ketat terhadap unobserved heterogeneity serta autokorelasi pada tingkat perusahaan.
+Pendekatan penelitian ini berakar pada paradigma positivisme, yang memandang bahwa realitas ekonomi dapat diobservasi, diukur, dan dianalisis secara sistematis. Berpijak pada ontologi ini, penelitian mengadopsi pendekatan kuantitatif deduktif (*hypothetico-deductive method*) untuk menguji hipotesis yang diturunkan dari paradigma Structure-Conduct-Performance (SCP) dan Resource-Based View (RBV) menggunakan data sekunder.  
+Desain penelitian bersifat eksplanatoris (*explanatory research*), tetapi klaim yang dihasilkan dibatasi pada hubungan empiris bersyarat dalam spesifikasi model panel. Dengan kata lain, penelitian ini bertujuan menjelaskan asosiasi yang konsisten setelah heterogenitas perusahaan dan guncangan waktu dikendalikan, bukan membuktikan kausalitas absolut.
 
 ## **3.1. Variabel Penelitian dan Definisi Operasional Variabel** {#3.1.-variabel-penelitian-dan-definisi-operasional-variabel}
 
@@ -267,164 +314,137 @@ Langkah fundamental dalam penelitian kuantitatif adalah operasionalisasi variabe
 
 ### **3.1.1. Variabel Dependen: Profitabilitas Berkelanjutan (Sustained Return on Assets)**
 
-Dalam literatur keuangan korporat dan manajemen strategis, profitabilitas umumnya diukur menggunakan rasio keuangan standar pada satu periode waktu (single-period), seperti Return on Assets (ROA) tahunan. Namun, penelitian ini berfokus pada konsep "profitabilitas berkelanjutan" (profit persistence), yang mencerminkan kemampuan perusahaan untuk mempertahankan kinerja di atas rata-rata industri dalam jangka menengah hingga panjang, melawan tekanan kompetitif yang secara teoretis seharusnya mengikis laba abnormal (mean reversion).  
-Penggunaan metrik profitabilitas satu tahun tunggal dinilai memiliki risiko bias yang tinggi akibat fluktuasi siklus bisnis jangka pendek (transitory shocks) atau praktik manajemen laba (earnings management) akrual yang dilakukan manajemen untuk mencapai target jangka pendek. Oleh karena itu, untuk menangkap esensi "keberlanjutan" dan memfilter noise jangka pendek, penelitian ini mengadopsi proksi Sustained ROA (SROA).  
-Definisi Konseptual dan Operasional: Sustained ROA didefinisikan sebagai rata-rata bergerak (moving average) dari Return on Assets (ROA) perusahaan selama periode jendela tiga tahun, yang mencakup tahun berjalan (t), satu tahun sebelumnya t-1), dan dua tahun sebelumnya (t-2). Pemilihan durasi tiga tahun didasarkan pada literatur profit persistence yang mengindikasikan bahwa periode ini cukup untuk meratakan anomali jangka pendek tanpa kehilangan relevansi informasi terkini tentang kondisi fundamental perusahaan.  
-Secara spesifik, komponen dasar ROA dihitung sebagai rasio Laba Bersih (Net Income) terhadap Total Aset (Total Assets) pada akhir tahun fiskal. Penggunaan Total Aset sebagai denominator (pembagi) dipilih karena ROA mencerminkan efisiensi manajerial dalam mendayagunakan seluruh basis sumber daya ekonomi perusahaan untuk menghasilkan laba, terlepas dari bagaimana aset tersebut didanai (utang vs ekuitas). Hal ini memberikan ukuran efisiensi operasional yang lebih murni dibandingkan Return on Equity (ROE) yang sangat sensitif terhadap tingkat leverage keuangan, di mana perusahaan dengan utang tinggi dapat menunjukkan ROE yang tinggi meskipun efisiensi asetnya rendah.  
-Formulasi Matematis:  
-Pengukuran variabel ini dilakukan dalam dua tahap:
+Variabel dependen penelitian ini adalah profitabilitas berkelanjutan yang diproksikan dengan Sustained Return on Assets (SROA). SROA digunakan karena profitabilitas satu tahun dapat dipengaruhi oleh guncangan sementara, siklus bisnis, atau komponen akrual yang tidak mencerminkan kemampuan laba permanen. Dengan menggunakan rata-rata bergerak tiga tahun, ukuran profitabilitas yang diperoleh menjadi lebih sesuai untuk menguji persistensi laba dan meredam noise jangka pendek.
 
-1. Penghitungan ROA tahunan untuk setiap perusahaan i pada tahun t.  
-2. Penghitungan rata-rata aritmatika ROA selama 3 tahun (t, t-1, t-2).
+Return on Assets tahunan dihitung sebagai berikut.
 
-$$
+\begin{equation}
 \mathrm{ROA}_{i,t} = \frac{\text{Net Income}_{i,t}}{\text{Total Assets}_{i,t}}
-$$
+\end{equation}
 
-$$
+SROA kemudian dihitung sebagai rata-rata ROA tahun berjalan, satu tahun sebelumnya, dan dua tahun sebelumnya.
+
+\begin{equation}
 \mathrm{SROA}_{i,t} = \frac{\mathrm{ROA}_{i,t} + \mathrm{ROA}_{i,t-1} + \mathrm{ROA}_{i,t-2}}{3}
-$$
+\end{equation}
 
-Dimana:
+Keterangan variabel adalah sebagai berikut:
 
-* SROAi,t: Profitabilitas berkelanjutan perusahaan i pada tahun t.  
-* ROAi,t: Tingkat pengembalian aset perusahaan i pada tahun t.  
-* ROAi,t-1: Tingkat pengembalian aset perusahaan i pada tahun t-1.  
-* ROAi,t-2: Tingkat pengembalian aset perusahaan i pada tahun t-2.  
-* Satuan Pengukuran: Rasio (desimal atau persentase).
+1. $\mathrm{SROA}_{i,t}$ menunjukkan profitabilitas berkelanjutan perusahaan $i$ pada tahun $t$.
+2. $\mathrm{ROA}_{i,t}$ menunjukkan tingkat pengembalian aset perusahaan $i$ pada tahun $t$.
+3. $\mathrm{ROA}_{i,t-1}$ dan $\mathrm{ROA}_{i,t-2}$ menunjukkan tingkat pengembalian aset pada satu dan dua tahun sebelumnya.
+4. Satuan pengukuran dinyatakan dalam rasio desimal.
 
-Justifikasi penggunaan moving average ini sejalan dengan penelitian Stephan et al. (2008) dan analisis persistensi laba yang menekankan bahwa kinerja masa lalu mengandung informasi prediktif terhadap kinerja masa depan, dan rata-rata multi-tahun memberikan estimasi kemampuan laba jangka panjang (permanent earnings) yang lebih akurat dibandingkan observasi satu titik waktu.
+Justifikasi penggunaan rata-rata bergerak ini sejalan dengan penelitian Stephan et al. (2008) dan literatur persistensi laba yang menekankan bahwa kinerja multi-tahun lebih mampu menangkap komponen laba permanen dibandingkan observasi satu titik waktu.
 
 ### **3.1.2. Variabel Independen 1: Struktur Industri (Industry Structure)**
 
-Variabel ini merepresentasikan determinan eksternal yang memengaruhi profitabilitas perusahaan, berakar kuat pada paradigma Industrial Organization (IO) klasik, khususnya kerangka Structure-Conduct-Performance (SCP). Paradigma SCP mempostulatkan bahwa struktur pasar suatu industri menentukan perilaku (conduct) perusahaan-perusahaan di dalamnya (misalnya dalam hal penetapan harga, strategi R\&D, dan periklanan), yang pada akhirnya menentukan kinerja (performance) agregat industri dan perusahaan.  
-Teori ekonomi menyatakan bahwa dalam pasar persaingan sempurna, profitabilitas perusahaan akan terdorong menuju tingkat normal (zero economic profit) dalam jangka panjang. Sebaliknya, struktur pasar yang sangat terkonsentrasi—di mana industri didominasi oleh segelintir perusahaan besar—cenderung memfasilitasi kekuatan pasar (market power). Kekuatan pasar ini memungkinkan perusahaan untuk menetapkan harga di atas biaya marjinal atau melakukan kolusi diam-diam (tacit collusion), yang berujung pada profitabilitas supernormal yang persisten. Oleh karena itu, hipotesis yang dibangun adalah adanya hubungan positif antara konsentrasi industri dengan profitabilitas berkelanjutan.  
-Definisi Konseptual dan Operasional: Penelitian ini menggunakan Herfindahl-Hirschman Index (HHI) sebagai proksi utama untuk mengukur struktur atau konsentrasi industri. HHI dipilih karena keunggulannya secara metodologis dibandingkan rasio konsentrasi sederhana seperti Concentration Ratio 4 perusahaan (CR4). CR4 hanya menjumlahkan pangsa pasar empat pemain terbesar dan mengabaikan distribusi ukuran perusahaan lainnya serta dinamika persaingan di luar empat besar. Sebaliknya, HHI memperhitungkan pangsa pasar seluruh perusahaan dalam industri dan memberikan bobot lebih besar pada perusahaan dengan pangsa pasar yang lebih besar melalui mekanisme pengkuadratan pangsa pasar. Hal ini menjadikan HHI ukuran yang jauh lebih sensitif terhadap perubahan kekuatan pasar di antara pemain dominan maupun perubahan pada "ekor" distribusi industri.  
-Formulasi Matematis:  
-HHI dihitung sebagai jumlah dari kuadrat pangsa pasar (market share) seluruh perusahaan yang beroperasi dalam industri yang sama (j) pada tahun tertentu (t).  
-$$
+Struktur industri diproksikan menggunakan Herfindahl-Hirschman Index (HHI). HHI dipilih karena ukuran ini memperhitungkan seluruh pangsa pasar perusahaan dalam satu kelompok industri dan memberikan bobot lebih besar pada perusahaan dengan pangsa pasar dominan. Dalam penelitian ini, HHI utama dihitung pada level GICS Sub-Industry per tahun menggunakan pangsa penjualan perusahaan dalam kerangka sampel.
+
+\begin{equation}
 \mathrm{HHI}_{j,t} = \sum_{i=1}^{N_j} \left(S_{i,j,t}\right)^2
-$$
-Dimana:
+\end{equation}
 
-* HHIj,t: Indeks Herfindahl-Hirschman untuk industri j pada tahun t.  
-* Si,j,t: Pangsa pasar (market share) perusahaan i dalam industri j pada tahun t. Pangsa pasar dihitung berdasarkan pendapatan penjualan (sales revenue):
+Pangsa pasar perusahaan dihitung sebagai berikut.
 
-$$
+\begin{equation}
 S_{i,j,t} = \frac{\text{Sales}_{i,j,t}}{\sum_{k=1}^{N_j} \text{Sales}_{k,j,t}}
-$$
+\end{equation}
 
-* Nj: Jumlah total perusahaan yang beroperasi dalam industri $j$ yang terdaftar dalam populasi data (S\&P 500).
+Keterangan variabel adalah sebagai berikut:
 
-Interpretasi Nilai:  
-Nilai HHI teoritis berkisar antara mendekati 0 hingga 1 (jika menggunakan desimal) atau 0 hingga 10.000 (jika menggunakan persentase, misalnya pangsa pasar 50% dihitung sebagai 50, bukan 0.5).
+1. $\mathrm{HHI}_{j,t}$ menunjukkan indeks konsentrasi industri $j$ pada tahun $t$.
+2. $S_{i,j,t}$ menunjukkan pangsa pasar perusahaan $i$ dalam industri $j$ pada tahun $t$.
+3. $N_j$ menunjukkan jumlah perusahaan dalam industri $j$ yang tercakup dalam sampel.
 
-* HHI \< 1.500 (atau 0.15): Pasar kompetitif (tidak terkonsentrasi).  
-* 1.500 ≤ HHI ≤ 2.500 (atau 0.15 \- 0.25): Konsentrasi moderat.  
-* HHI \> 2.500 (atau 0.25): Pasar sangat terkonsentrasi (oligopoli/monopoli). Dalam model regresi penelitian ini, HHI akan dimasukkan sebagai variabel kontinu untuk menangkap elastisitas pengaruh konsentrasi terhadap SROA.
-
-**Metodologi Klasifikasi Industri (GICS vs. SIC):**  
-Validitas pengukuran HHI sangat bergantung pada definisi "batas industri" (industry boundary). Penelitian ini menetapkan penggunaan standar klasifikasi Global Industry Classification Standard (GICS) pada level Industry (6-digit) atau Sub-Industry (8-digit) untuk pengelompokan perusahaan.  
-Pilihan menggunakan GICS diutamakan dibandingkan Standard Industrial Classification (SIC) atau NAICS karena beberapa alasan metodologis yang didukung literatur empiris:
-
-1. Relevansi Pasar Modal: GICS dikembangkan oleh MSCI dan S\&P secara spesifik untuk komunitas investasi. Klasifikasi ini lebih mencerminkan orientasi pasar dan model bisnis perusahaan dibandingkan SIC yang berorientasi pada proses produksi.  
-2. Homogenitas: Penelitian Bhojraj et al. (2003) menemukan bahwa klasifikasi GICS menghasilkan kelompok perusahaan yang lebih homogen dalam hal rasio keuangan dan pergerakan harga saham dibandingkan SIC, sehingga perhitungan pangsa pasar menjadi lebih akurat mencerminkan kompetisi nyata.  
-3. Dinamis: Struktur GICS diperbarui secara berkala (revisi tahunan) untuk mengakomodasi perubahan lanskap ekonomi (misalnya, pemisahan sektor Real Estate dari Financials atau pembentukan sektor Communication Services), sedangkan kode SIC cenderung statis dan ketinggalan zaman.
-
-Oleh karena itu, penggunaan GICS dalam perhitungan HHI diharapkan memberikan proksi struktur pasar yang lebih valid dalam menjelaskan variasi profitabilitas pada perusahaan S\&P 500\.
+Nilai HHI dibaca dalam rentang 0 sampai 1. Semakin tinggi HHI, semakin terkonsentrasi struktur industri. Karena data yang tersedia adalah konstituen S\&P 500 aktif Mei 2026, HHI dalam penelitian ini merupakan HHI within-sample, bukan HHI penuh seluruh pasar Amerika Serikat. Uji ketahanan dilakukan menggunakan klasifikasi ICB Subsector, ICB Sector, ICB Supersector, ICB Industry, dan Bloomberg Industry Group agar kesimpulan tidak bergantung pada satu batas industri.
 
 ### **3.1.3. Variabel Independen 2: Kualitas Bisnis (Business Quality Score)**
 
-Variabel ini merepresentasikan determinan internal (firm-specific factors) dan merupakan inovasi metodologis utama dalam penelitian ini. Berbeda dengan pendekatan yang hanya menggunakan satu rasio keuangan, variabel ini dikembangkan berdasarkan teori Resource-Based View (RBV), yang menyatakan bahwa keunggulan kompetitif berkelanjutan bersumber dari kepemilikan sumber daya internal yang bernilai, langka, tak tergantikan, dan sulit ditiru. Kualitas bisnis adalah konsep multidimensi (latent variable) yang tidak dapat diobservasi secara langsung, sehingga memerlukan pendekatan indeks komposit.  
-Penelitian ini mengkonstruksi Business Quality Score (BQS), sebuah indeks komposit yang mengintegrasikan empat dimensi fundamental kualitas perusahaan: (1) kekuatan penetapan harga dan efisiensi biaya (margin), (2) kemampuan menghasilkan uang tunai riil (cash generation), (3) keamanan struktur modal (financial safety), dan (4) stabilitas kinerja (consistency). Konstruksi BQS ini terinspirasi oleh metodologi Piotroski F-Score dan konsep Economic Moat Warren Buffett, namun dimodifikasi dengan menggunakan variabel kontinu (continuous variables) yang distandarisasi (Z-score) alih-alih skor biner (0/1) untuk mempertahankan kekayaan informasi variabilitas data.  
-BQS dihitung melalui proses standardisasi dan agregasi dari empat sub-komponen berikut:  
-**1\. Margin & Pricing Power (MARG)**  
-Komponen ini mengukur kemampuan perusahaan untuk mengendalikan biaya produksi atau menetapkan harga premium atas produknya. Marjin kotor yang tinggi dan stabil adalah indikator klasik dari adanya "parit ekonomi" (economic moat) atau kekuatan pasar.
+Kualitas bisnis diproksikan dengan Business Quality Score (BQS), yaitu indeks komposit yang merepresentasikan kapabilitas internal perusahaan berdasarkan perspektif Resource-Based View, teori pertumbuhan perusahaan, dan literatur kualitas fundamental dalam keuangan empiris. Penting ditegaskan bahwa BQS adalah nama indeks operasional penelitian, bukan nama teori. Karena itu, pembelaan ilmiahnya tidak boleh berhenti pada nama indeks, tetapi harus bertumpu pada alasan mengapa setiap komponen masuk dan mengapa komponen-komponen tersebut layak digabungkan dalam satu ukuran kualitas bisnis. BQS utama dibentuk dari lima komponen complete-case: margin kotor, free cash flow margin, disiplin leverage, interest coverage, dan konsistensi laba. Observasi yang tidak memiliki seluruh komponen tersebut tidak diimputasi dan dikeluarkan dari regresi utama.
 
-* Indikator: Gross Profit Margin.  
-* Rumus:  
-$$
+Komponen pertama adalah margin kotor (MARG), yang merepresentasikan kekuatan penetapan harga dan efisiensi biaya.
+
+\begin{equation}
 \mathrm{MARG}_{i,t} = \frac{\text{Sales}_{i,t} - \text{Cost of Goods Sold}_{i,t}}{\text{Sales}_{i,t}}
-$$
+\end{equation}
 
-**2\. Owner Earnings Proxy (OE)**  
-Komponen ini mengadopsi konsep "Owner Earnings" yang dipopulerkan oleh Warren Buffett sebagai ukuran profitabilitas yang lebih superior dibandingkan laba bersih akuntansi. Laba bersih seringkali mengandung komponen non-kas (seperti depresiasi) dan tidak memperhitungkan kebutuhan investasi modal (Capital Expenditure/Capex) yang diperlukan untuk mempertahankan posisi kompetitif perusahaan. Rasio ini mengukur berapa banyak uang tunai "bebas" yang dihasilkan perusahaan untuk setiap dolar penjualan.
+Komponen kedua adalah free cash flow margin (FCF_MARGIN), yang mengukur kemampuan penjualan dikonversi menjadi arus kas bebas setelah belanja modal.
 
-* Indikator: Rasio Arus Kas Operasi bebas Capex terhadap Penjualan.  
-* Rumus:  
-$$
-\mathrm{OE}_{i,t} = \frac{\text{Operating Cash Flow}_{i,t} - \text{Capital Expenditures}_{i,t}}{\text{Sales}_{i,t}}
-$$
+\begin{equation}
+\mathrm{FCF\_MARGIN}_{i,t} = \frac{\text{Operating Cash Flow}_{i,t} - \text{Capital Expenditures}_{i,t}}{\text{Sales}_{i,t}}
+\end{equation}
 
-   Semakin tinggi nilai OE, semakin tinggi kualitas laba perusahaan, karena mencerminkan konversi penjualan menjadi uang tunai yang dapat didistribusikan kepada pemegang saham tanpa mengorbankan operasional.
+Komponen ketiga adalah disiplin leverage (LEV), yang dibentuk sebagai kebalikan dari rasio utang terhadap aset agar arah skor sejalan dengan kualitas bisnis.
 
-**3\. Leverage Discipline (LEV)**  
-Komponen ini mengukur kesehatan struktur modal dan disiplin manajemen dalam menggunakan utang. Perusahaan berkualitas tinggi (high quality) cenderung mampu membiayai operasinya melalui arus kas internal dan memiliki tingkat ketergantungan pada utang eksternal yang lebih rendah, sehingga risiko kebangkrutan (distress risk) lebih kecil.
-
-* Indikator: Skor kedisiplinan utang (kebalikan dari rasio utang).  
-* Rumus:  
-$$
+\begin{equation}
 \mathrm{Leverage\ Ratio}_{i,t} = \frac{\text{Total Debt}_{i,t}}{\text{Total Assets}_{i,t}}
-$$
+\end{equation}
 
-$$
-\mathrm{LEV}_{i,t}(\text{score}) = 1 - \mathrm{Leverage\ Ratio}_{i,t}
-$$
-   Dengan rumus ini, perusahaan dengan utang nol akan memiliki skor 1, sedangkan perusahaan yang seluruh asetnya didanai utang akan memiliki skor 0\. Ini memastikan arah korelasi positif dengan kualitas bisnis.
+\begin{equation}
+\mathrm{LEV}_{i,t} = 1 - \mathrm{Leverage\ Ratio}_{i,t}
+\end{equation}
 
-**4\. Earnings Consistency (CONS)**  
-Komponen ini menangkap dimensi risiko dan stabilitas. Perusahaan berkualitas tinggi ditandai dengan aliran laba yang stabil dan dapat diprediksi, bukan laba yang fluktuatif (volatile). Volatilitas laba yang tinggi diasosiasikan dengan ketidakpastian arus kas masa depan dan biaya modal yang lebih tinggi.
+Komponen keempat adalah interest coverage, yaitu kemampuan laba operasi menutup beban bunga.
 
-* Indikator: Kebalikan dari Koefisien Variasi (CV) dari Gross Profit Margin selama periode 3 tahun. Penggunaan gross margin dipilih untuk menghindari overlap konstruksi dengan variabel dependen SROA yang juga berbasis ROA, sekaligus memberikan proksi yang lebih murni terhadap stabilitas pricing power perusahaan.  
-* Rumus:  
-$$
+\begin{equation}
+\mathrm{INTEREST\_COVERAGE}_{i,t} = \frac{\text{Operating Income}_{i,t}}{\text{Interest Expense}_{i,t}}
+\end{equation}
+
+Komponen kelima adalah konsistensi laba (CONS), yang dihitung dari kebalikan koefisien variasi margin kotor selama tiga tahun.
+
+\begin{equation}
 CV_{\mathrm{MARG}} = \frac{\sigma\, \mathrm{MARG}_{(t,t-1,t-2)}}{|\mu\, \mathrm{MARG}_{(t,t-1,t-2)}|}
-$$
+\end{equation}
 
-$$
+\begin{equation}
 \mathrm{CONS}_{i,t} = \frac{1}{CV_{\mathrm{MARG}}}
-$$
-  
+\end{equation}
 
-   Dimana $\sigma$ adalah standar deviasi dan $\mu$ adalah rata-rata (mean) Gross Profit Margin selama 3 tahun. Penggunaan nilai mutlak pada mean diperlukan untuk menangani kasus mean negatif. Nilai CONS yang tinggi menunjukkan variabilitas margin yang rendah relatif terhadap tingkat marginnya, mencerminkan konsistensi pricing power yang tinggi
+Setiap komponen BQS distandarisasi secara cross-sectional per tahun menggunakan Z-score.
 
-**Konstruksi Indeks Agregat (Z-Score Weighting)**  
-Karena keempat komponen di atas memiliki satuan pengukuran yang berbeda (persentase margin, rasio kas, rasio utang, dan rasio variabilitas), penggabungan langsung tidak dapat dilakukan secara valid. Oleh karena itu, metodologi standarisasi statistik (Z-score) diterapkan.  
-Setiap komponen (X) untuk setiap perusahaan i pada tahun t akan dikonversi menjadi nilai standar deviasi dari rata-rata sampel pada tahun tersebut:  
-$$
+\begin{equation}
 Z_{X,i,t} = \frac{X_{i,t} - \mu_{X,t}}{\sigma_{X,t}}
-$$
+\end{equation}
 
-Dimana $\mu_{X,t}$ adalah rata-rata cross-sectional variabel $X$ pada tahun $t$ seluruh sampel, dan $\sigma_{X,t}$ adalah standar deviasi cross-sectional-nya.  
-Skor akhir Business Quality Score (BQS) adalah rata-rata aritmatika dari keempat Z-score tersebut (dengan asumsi bobot yang sama/equal weighting untuk setiap dimensi kualitas):  
-$$
-\mathrm{BQS}_{i,t} = \frac{Z_{\mathrm{MARG},i,t} + Z_{\mathrm{OE},i,t} + Z_{\mathrm{LEV},i,t} + Z_{\mathrm{CONS},i,t}}{4}
-$$
-Interpretasi:
+Skor akhir BQS dihitung sebagai rata-rata aritmatika lima Z-score dengan bobot yang sama.
 
-* BQS \> 0: Kualitas bisnis perusahaan berada di atas rata-rata populasi S\&P 500\.  
-* BQS \< 0: Kualitas bisnis perusahaan berada di bawah rata-rata populasi S\&P 500\. Metode agregasi berbasis Z-score ini umum digunakan dalam pembentukan indeks komposit keuangan, seperti pada metodologi MSCI Quality Indices, untuk memastikan komparabilitas antar-dimensi.
+\begin{equation}
+\mathrm{BQS}_{i,t} = \frac{Z_{\mathrm{MARG},i,t} + Z_{\mathrm{FCF\_MARGIN},i,t} + Z_{\mathrm{LEV},i,t} + Z_{\mathrm{INTEREST\_COVERAGE},i,t} + Z_{\mathrm{CONS},i,t}}{5}
+\end{equation}
+
+Pemilihan kelima komponen tersebut memiliki argumentasi ekonomi yang spesifik.
+
+1. **MARG** dipilih untuk menangkap kekuatan margin dan efisiensi operasi yang menjadi inti keunggulan perusahaan.
+2. **FCF\_MARGIN** dipilih untuk memastikan bahwa profitabilitas yang dibaca benar-benar didukung kas, bukan hanya akrual.
+3. **LEV** dipakai dalam bentuk terbalik agar perusahaan dengan struktur utang lebih sehat memperoleh skor kualitas lebih tinggi.
+4. **INTEREST\_COVERAGE** dimasukkan untuk membaca kemampuan perusahaan menghadapi tekanan biaya bunga, terutama pada periode suku bunga tinggi.
+5. **CONS** dimasukkan agar indeks tidak hanya menilai level laba, tetapi juga kestabilan laba lintas waktu.
+6. **Bobot sama besar** dipilih demi transparansi dan kemudahan audit. Penelitian ini sengaja tidak memberikan bobot hasil optimasi statistik dari sampel yang sama agar indeks tidak menjadi terlalu arbitrer atau terlalu menyesuaikan diri dengan data sesaat.
+
+Interpretasi BQS adalah sebagai berikut:
+
+1. BQS lebih besar dari nol menunjukkan kualitas bisnis di atas rata-rata sampel pada tahun yang sama.
+2. BQS lebih kecil dari nol menunjukkan kualitas bisnis di bawah rata-rata sampel pada tahun yang sama.
+3. BQS lama empat komponen tetap digunakan sebagai robustness, bukan sebagai model utama.
 
 ### **3.1.4. Variabel Kontrol**
 
-Untuk memastikan bahwa estimasi pengaruh HHI dan BQS terhadap SROA tidak bias oleh faktor pembaur (confounding factors) yang diketahui memengaruhi profitabilitas, penelitian ini memasukkan dua variabel kontrol utama yang konsisten dengan literatur:  
-**1\. Ukuran Perusahaan (Firm Size \- SIZE)**
+Dua variabel kontrol utama digunakan agar estimasi pengaruh HHI dan BQS tidak tercampur dengan perbedaan skala dan dinamika penjualan perusahaan. Variabel kontrol pada penelitian ini juga tidak dipilih secara sembarangan; keduanya dimasukkan karena literatur profitabilitas perusahaan hampir selalu menunjukkan bahwa ukuran dan pertumbuhan dapat memengaruhi laba, sekaligus berpotensi berkorelasi dengan kualitas bisnis maupun struktur industri.
 
-* Definisi: Skala operasi perusahaan yang mencerminkan besarnya sumber daya yang dikelola. Teori ekonomi skala (economies of scale) menyarankan bahwa perusahaan besar mungkin memiliki efisiensi biaya yang lebih tinggi, akses modal yang lebih murah, dan diversifikasi yang lebih baik, yang dapat berkorelasi positif dengan profitabilitas. Namun, teori agensi juga menyarankan bahwa perusahaan yang terlalu besar mungkin mengalami inefisiensi birokrasi (diseconomies of scale).  
-* Rumus: Logaritma natural dari Total Aset. Transformasi logaritma digunakan untuk menormalisasi distribusi data aset yang biasanya sangat skewed (miring) ke kanan.  
-$$
+1. Ukuran perusahaan (SIZE) diukur menggunakan logaritma natural total aset. Transformasi logaritma digunakan karena distribusi total aset perusahaan besar cenderung sangat menceng ke kanan.
+
+\begin{equation}
 \mathrm{SIZE}_{i,t} = \ln(\text{Total Assets}_{i,t})
-$$
-   .
+\end{equation}
 
-**2\. Pertumbuhan Penjualan (Sales Growth \- GROWTH)**
+2. Pertumbuhan penjualan (GROWTH) diukur sebagai perubahan penjualan tahunan relatif terhadap penjualan tahun sebelumnya.
 
-* Definisi: Tingkat ekspansi pendapatan perusahaan dari tahun ke tahun. Variabel ini mencerminkan permintaan produk dan posisi perusahaan dalam siklus hidup industri. Pertumbuhan penjualan yang tinggi sering diasosiasikan dengan profitabilitas yang lebih tinggi melalui peningkatan pangsa pasar dan efisiensi operasi, meskipun pertumbuhan yang terlalu agresif juga dapat menggerus margin jangka pendek.  
-* Rumus: Persentase perubahan penjualan tahunan.
-
-$$
+\begin{equation}
 \mathrm{GROWTH}_{i,t} = \frac{\text{Sales}_{i,t} - \text{Sales}_{i,t-1}}{\text{Sales}_{i,t-1}}
-$$
+\end{equation}
+
+Secara teoretis, SIZE diharapkan menangkap efek skala, akses pembiayaan, dan daya tawar pasar yang tidak sepenuhnya ditangkap HHI. Namun, tanda pengaruhnya tetap dapat ambigu karena perusahaan yang lebih besar juga dapat menghadapi biaya koordinasi yang lebih tinggi. Sementara itu, GROWTH dimasukkan agar model dapat membedakan perusahaan yang memang lebih menguntungkan dari perusahaan yang sekadar sedang tumbuh penjualannya. Dengan demikian, kedua variabel ini berfungsi menjaga agar koefisien HHI dan BQS tidak memungut pengaruh skala atau ekspansi penjualan yang seharusnya dibaca terpisah.
 
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.20\textwidth} >{\raggedright\arraybackslash}p{0.10\textwidth} >{\raggedright\arraybackslash}p{0.42\textwidth} >{\raggedright\arraybackslash}p{0.10\textwidth} >{\raggedright\arraybackslash}p{0.14\textwidth}}
 \caption{Ringkasan Definisi Operasional Variabel}\label{tab:definisi-operasional}\\
@@ -439,8 +459,8 @@ $$
 Dependen & & & & \\
 Profitabilitas Berkelanjutan & SROA & Rata-rata Return on Assets (Laba Bersih / Total Aset) selama 3 tahun (t, t-1, t-2). & Rasio & Bloomberg Terminal \\
 Independen & & & & \\
-Struktur Industri & HHI & Jumlah kuadrat pangsa pasar perusahaan dalam industri GICS yang sama ($\\sum s_i^2$). & Rasio & Bloomberg Terminal (Calculated) \\
-Kualitas Bisnis & BQS & Rata-rata Z-score dari Margin, Owner Earnings, Leverage (inverse), dan Earnings Consistency. & Interval & Bloomberg Terminal (Calculated) \\
+Struktur Industri & HHI & Jumlah kuadrat pangsa pasar perusahaan dalam GICS Sub-Industry yang sama ($\\sum s_i^2$); ICB dan Bloomberg Industry Group digunakan sebagai robustness. & Rasio & Bloomberg Terminal (Calculated) \\
+Kualitas Bisnis & BQS & Rata-rata Z-score dari Margin, Free Cash Flow Margin, Leverage (inverse), Interest Coverage, dan Earnings Consistency. & Interval & Bloomberg Terminal (Calculated) \\
 Kontrol & & & & \\
 Ukuran Perusahaan & SIZE & Logaritma natural dari Total Aset akhir tahun. & Rasio & Bloomberg Terminal \\
 Pertumbuhan Penjualan & GROWTH & Persentase perubahan penjualan dari tahun t-1 ke tahun t. & Rasio & Bloomberg Terminal \\
@@ -449,37 +469,42 @@ Pertumbuhan Penjualan & GROWTH & Persentase perubahan penjualan dari tahun t-1 k
 
 ## **3.2. Populasi dan Sampel** {#3.2.-populasi-dan-sampel}
 
-Penentuan populasi dan sampel dilakukan dengan prinsip kehati-hatian statistik untuk memastikan representativitas data terhadap fenomena yang diteliti serta meminimalkan bias seleksi, khususnya survivorship bias yang kerap mendistorsi studi kinerja jangka panjang.
+Penentuan populasi dan sampel dilakukan dengan prinsip kehati-hatian statistik untuk memastikan bahwa data yang dianalisis sesuai dengan fenomena yang diteliti. Pada penelitian ini, keterbatasan utama terletak pada ketersediaan daftar konstituen historis S\&P 500. Karena data yang tersedia adalah daftar perusahaan yang aktif pada Mei 2026 dan ditarik mundur ke periode 2017-2025, penelitian ini secara eksplisit mendokumentasikan potensi *survivorship bias* sebagai keterbatasan, bukan mengklaim sebagai panel konstituen historis penuh.
 
 ### **3.2.1. Populasi Penelitian**
 
-Populasi target dalam penelitian ini adalah seluruh perusahaan publik yang terdaftar sebagai konstituen indeks S\&P 500 selama periode pengamatan 2015 hingga 2024\. S\&P 500 dipilih karena indeks ini secara luas dianggap sebagai barometer terbaik bagi pasar ekuitas berkapitalisasi besar di Amerika Serikat, mencakup sekitar 80% dari total kapitalisasi pasar yang tersedia. Konstituen S\&P 500 dipilih oleh komite indeks berdasarkan kriteria likuiditas, ukuran, dan viabilitas finansial yang ketat, sehingga populasi ini merepresentasikan entitas bisnis yang paling mapan dan berpengaruh dalam ekonomi global. Populasi ini bersifat dinamis, di mana komposisi perusahaan dapat berubah setiap kuartal akibat aksi korporasi (merger, akuisisi, kebangkrutan) atau rebalancing indeks.  
-**3.2.2. Teknik Pengambilan Sampel (Sampling Technique)**  
-Penelitian ini menggunakan teknik Purposive Sampling (Judgment Sampling), di mana sampel dipilih berdasarkan karakteristik spesifik yang disesuaikan dengan tujuan penelitian dan kebutuhan analisis data panel yang seimbang (balanced) maupun tidak seimbang (unbalanced).  
+Populasi target konseptual penelitian ini adalah perusahaan besar Amerika Serikat yang masuk dalam indeks S\&P 500. Dalam implementasi empiris, kerangka sampel yang digunakan adalah perusahaan konstituen S\&P 500 yang aktif per Mei 2026, dengan data laporan keuangan historis tahunan periode 2017 hingga 2025 yang diperoleh dari Bloomberg Terminal. S\&P 500 dipilih karena indeks ini secara luas dianggap sebagai barometer utama pasar ekuitas berkapitalisasi besar di Amerika Serikat dan mencerminkan perusahaan-perusahaan yang paling berpengaruh dalam ekonomi global.
+
+Penggunaan daftar konstituen aktif Mei 2026 berarti perusahaan yang pernah menjadi anggota indeks tetapi telah keluar sebelum tanggal tersebut tidak tercakup dalam sampel. Konsekuensinya, hasil penelitian paling tepat dibaca sebagai bukti empiris pada perusahaan S\&P 500 yang masih aktif pada akhir jendela observasi, bukan sebagai estimasi yang sepenuhnya bebas dari bias seleksi historis.
+
+### **3.2.2. Teknik Pengambilan Sampel (Sampling Technique)**
+
+Penelitian ini menggunakan teknik Purposive Sampling (Judgment Sampling), di mana sampel dipilih berdasarkan karakteristik spesifik yang disesuaikan dengan tujuan penelitian dan kebutuhan analisis data panel.  
 Kriteria Inklusi dan Eksklusi:
 
-1. Ketersediaan Data Historis: Perusahaan harus memiliki data laporan keuangan lengkap (Total Aset, Laba Bersih, Penjualan, Utang, Arus Kas Operasi, Capex) yang tersedia di basis data Bloomberg Terminal untuk periode 2013-2024. Data tahun 2013-2014 diperlukan untuk menghitung nilai lag dan rata-rata bergerak (SROA, Growth, Consistency) untuk observasi awal tahun 2015\.  
+1. Ketersediaan Data Historis: Perusahaan harus memiliki data laporan keuangan tahunan yang tersedia di Bloomberg Terminal untuk periode 2017-2025, mencakup Total Aset, Laba Bersih, Penjualan, Utang, Arus Kas Operasi, Capex, dan COGS atau data yang memungkinkan pembentukan margin. Data 2017-2018 diperlukan untuk menghitung variabel rolling sehingga panel regresi efektif dimulai pada 2019.  
 2. Pengecualian Sektor Keuangan dan Utilitas (Strategic Exclusion):  
-   Berdasarkan konvensi standar dalam penelitian struktur modal dan profitabilitas, perusahaan yang terklasifikasi dalam sektor Keuangan (Financials \- GICS Code 40\) dan Utilitas (Utilities \- GICS Code 55\) dikeluarkan dari sampel akhir.  
-   * Alasan Eksklusi Sektor Keuangan: Neraca perusahaan keuangan (bank, asuransi) memiliki struktur yang fundamental berbeda dari perusahaan non-keuangan. Bagi bank, utang (dana pihak ketiga) adalah "bahan baku" operasional, bukan sekadar sumber pendanaan, sehingga rasio leverage dan gross margin tidak dapat diperbandingkan secara apple-to-apple dengan perusahaan manufaktur atau jasa lainnya. Memasukkan sektor ini akan mendistorsi perhitungan komponen LEV dan MARG dalam skor BQS.  
-   * Alasan Eksklusi Sektor Utilitas: Perusahaan utilitas beroperasi dalam lingkungan monopoli alamiah yang teregulasi ketat (regulated monopolies). Tingkat profitabilitas dan struktur harga mereka sering kali ditentukan oleh keputusan regulator (statutory return on equity), bukan murni oleh mekanisme pasar kompetitif atau efisiensi manajerial. Hal ini dapat mengaburkan analisis pengaruh struktur industri (HHI) dan kualitas bisnis internal terhadap SROA.  
-3. Mata Uang Pelaporan: Hanya perusahaan yang menyajikan laporan keuangan dalam mata uang Dolar AS (USD) yang disertakan untuk menghindari bias akibat fluktuasi nilai tukar (exchange rate noise).
+   Berdasarkan konvensi standar dalam penelitian struktur modal dan profitabilitas, perusahaan yang terklasifikasi dalam sektor Keuangan (Financials \- GICS Code 40\) dan Utilitas (Utilities \- GICS Code 55\) dikeluarkan dari sampel akhir menggunakan klasifikasi sub-industri GICS yang tersedia pada file mentah.  
+   a. Alasan Eksklusi Sektor Keuangan: Neraca perusahaan keuangan (bank, asuransi) memiliki struktur yang fundamental berbeda dari perusahaan non-keuangan. Bagi bank, utang (dana pihak ketiga) adalah "bahan baku" operasional, bukan sekadar sumber pendanaan, sehingga rasio leverage dan gross margin tidak dapat diperbandingkan secara apple-to-apple dengan perusahaan manufaktur atau jasa lainnya. Memasukkan sektor ini akan mendistorsi perhitungan komponen LEV dan MARG dalam skor BQS.  
+   b. Alasan Eksklusi Sektor Utilitas: Perusahaan utilitas beroperasi dalam lingkungan monopoli alamiah yang teregulasi ketat (regulated monopolies). Tingkat profitabilitas dan struktur harga mereka sering kali ditentukan oleh keputusan regulator (statutory return on equity), bukan murni oleh mekanisme pasar kompetitif atau efisiensi manajerial. Hal ini dapat mengaburkan analisis pengaruh struktur industri (HHI) dan kualitas bisnis internal terhadap SROA.  
+3. Mata Uang Pelaporan: Data digunakan dalam mata uang Dolar AS (USD) sesuai hasil unduhan Bloomberg untuk menjaga konsistensi perbandingan antar perusahaan.
+4. Ketersediaan Komponen BQS: Observasi yang tidak dapat membentuk seluruh komponen BQS utama (MARG, FCF_MARGIN, LEV, INTEREST_COVERAGE, dan CONS) dikeluarkan dari regresi utama. Pendekatan ini dipilih agar missing data tidak diperlakukan sebagai performa rata-rata secara implisit.
 
-Dengan menerapkan kriteria di atas, sampel akhir akan terdiri dari perusahaan non-keuangan dan non-utilitas yang secara konsisten menjadi bagian dari ekosistem pasar modal AS selama periode penelitian, atau setidaknya memiliki data yang cukup untuk membentuk panel yang valid.
+Dengan menerapkan kriteria di atas, sampel akhir terdiri dari perusahaan non-keuangan dan non-utilitas yang aktif sebagai konstituen S\&P 500 per Mei 2026 dan memiliki data cukup untuk membentuk panel regresi 2019-2025.
 
 ### **3.2.3. Penanganan Data Ekstrem (Winsorization)**
 
 Data keuangan perusahaan seringkali mengandung nilai pencilan (outliers) yang ekstrem akibat peristiwa luar biasa (misalnya, write-off aset besar-besaran, restrukturisasi, atau denominator yang mendekati nol pada rasio pertumbuhan). Nilai ekstrem ini dapat mendistorsi estimasi parameter regresi OLS, yang sangat sensitif terhadap outlier (pelanggaran asumsi normalitas residual).  
-Untuk memitigasi masalah ini tanpa membuang informasi (yang terjadi jika menggunakan teknik trimming), penelitian ini menerapkan teknik Winsorization. Seluruh variabel rasio kontinu (SROA, MARG, OE, LEV, CONS, GROWTH) akan di-winsorize pada tingkat 1% di kedua ekor distribusi (1st and 99th percentiles).
+Untuk memitigasi masalah ini tanpa membuang informasi (yang terjadi jika menggunakan teknik trimming), penelitian ini menerapkan teknik Winsorization. Seluruh variabel rasio kontinu utama (SROA, MARG, FCF_MARGIN, LEV, INTEREST_COVERAGE, CONS, GROWTH, dan kontrol robustness) di-winsorize pada tingkat 1% di kedua ekor distribusi (1st and 99th percentiles).
 
-* Mekanisme: Nilai data yang berada di bawah persentil ke-1 akan diganti dengan nilai pada persentil ke-1. Nilai data di atas persentil ke-99 akan diganti dengan nilai pada persentil ke-99.  
-* Justifikasi: Pendekatan ini mempertahankan ukuran sampel (sample size) sambil membatasi pengaruh disproporsional dari observasi ekstrem yang mungkin disebabkan oleh kesalahan data atau kejadian non-ekonomis, sehingga menghasilkan estimasi statistik yang lebih robust dan dapat digeneralisasi.
+1. Mekanisme: Nilai data yang berada di bawah persentil ke-1 akan diganti dengan nilai pada persentil ke-1. Nilai data di atas persentil ke-99 akan diganti dengan nilai pada persentil ke-99.  
+2. Justifikasi: Pendekatan ini mempertahankan ukuran sampel (sample size) sambil membatasi pengaruh disproporsional dari observasi ekstrem yang mungkin disebabkan oleh kesalahan data atau kejadian non-ekonomis, sehingga menghasilkan estimasi statistik yang lebih robust dan dapat digeneralisasi.
 
 ## **3.3. Jenis dan Sumber Data** {#3.3.-jenis-dan-sumber-data}
 
 ### **3.3.1. Jenis Data**
 
-Jenis data yang digunakan adalah Data Sekunder kuantitatif dengan struktur Data Panel (Longitudinal Data). Data panel merupakan gabungan antara data deret waktu (time-series) selama 10 tahun (2015-2024) dan data lintas individu (cross-section) yang mencakup ratusan perusahaan.  
+Jenis data yang digunakan adalah Data Sekunder kuantitatif dengan struktur Data Panel (Longitudinal Data). Data panel merupakan gabungan antara data deret waktu (time-series) tahunan selama 2017-2025 dan data lintas individu (cross-section) yang mencakup ratusan perusahaan. Karena variabel SROA dan CONS membutuhkan rata-rata bergerak 3 tahun, panel regresi efektif dimulai pada 2019.  
 Keunggulan Metodologis Data Panel:  
 Penggunaan data panel memberikan keunggulan analitis dibandingkan data cross-section atau time-series murni:
 
@@ -491,28 +516,28 @@ Penggunaan data panel memberikan keunggulan analitis dibandingkan data cross-sec
 
 Data penelitian diperoleh dari penyedia data keuangan pihak ketiga yang memiliki reputasi kredibilitas tinggi di kalangan akademisi dan praktisi:
 
-1. Bloomberg Terminal: Merupakan sumber data utama untuk seluruh item laporan keuangan (Total Assets, Sales, Net Income, OCF, Capex, Debt, COGS). Bloomberg Terminal menyediakan data fundamental tahunan yang telah distandarisasi untuk seluruh perusahaan konstituen S\&P 500, mencakup laporan laba rugi, neraca, dan laporan arus kas dengan coverage historis hingga tahun 2013\.  
-2. GICS Classifications: Data klasifikasi industri GICS (Sector, Industry Group, Industry, Sub-Industry) juga diperoleh dari Bloomberg Terminal atau basis data S\&P Global untuk memastikan pengelompokan industri yang akurat pada setiap tahun pengamatan.
+1. Bloomberg Terminal: Merupakan sumber data utama untuk seluruh item laporan keuangan (Total Assets, Sales/Revenue, Net Income, CFO, Capex, Debt, COGS, Gross Margin, ROE, Total Equity, Free Cash Flow, Market Cap, Operating Income, Interest Expense, Cash, Current Assets, dan Current Liabilities). Data tersebut diekspor ke dalam `raw-data.csv` dengan format tahunan 2017-2025.  
+2. Klasifikasi Industri: Data final mencakup GICS Sub-Industry, ICB Subsector, ICB Sector, ICB Supersector, ICB Industry, dan Bloomberg Industry Group. HHI baseline dihitung pada level GICS Sub-Industry per tahun, sedangkan taksonomi lain digunakan sebagai uji ketahanan.
 
 ## **3.4. Metode Pengumpulan Data** {#3.4.-metode-pengumpulan-data}
 
 Metode pengumpulan data dilakukan dengan teknik Dokumentasi dan Arsip, yaitu mengunduh, menyusun, dan mengolah data yang tersedia dalam basis data elektronik. Prosedur pengumpulan data dilakukan secara sistematis melalui tahapan berikut:
 
-1. Identifikasi Populasi Historis:  
-   Mengunduh daftar konstituen indeks S\&P 500 historis per akhir tahun untuk setiap tahun dari 2015 hingga 2024\. Hal ini penting untuk memastikan bahwa perusahaan yang sudah keluar dari indeks (delisted) selama periode pengamatan tetap diperhitungkan pada tahun mereka masih aktif, guna meminimalisir Survivorship Bias (bias yang muncul jika hanya menganalisis perusahaan yang "selamat" hingga akhir periode).  
+1. Identifikasi Kerangka Sampel Aktif:  
+   Daftar konstituen S\&P 500 yang aktif per Mei 2026 digunakan sebagai kerangka sampel. Karena daftar keluar-masuk historis tidak tersedia secara lengkap dalam dataset yang digunakan, penelitian ini tidak mengklaim sebagai panel historis bebas survivorship bias.  
 2. Ekstraksi Data Keuangan (Data Retrieval):  
-   Menggunakan ticker atau identifier unik (seperti GVKEY pada Bloomberg Terminal), peneliti mengunduh data fundamental tahunan (annual fundamentals) untuk periode 2013-2024. Data 2013-2014 ditarik khusus untuk perhitungan variabel yang membutuhkan data masa lalu (lagged variables) seperti pertumbuhan penjualan dan rata-rata ROA 3 tahun untuk observasi tahun 2015\.  
+   Data fundamental tahunan untuk periode 2017-2025 diunduh menggunakan ticker atau identifier unik pada Bloomberg Terminal. Data 2017-2018 digunakan untuk membentuk variabel yang membutuhkan lag dan rata-rata bergerak, sehingga observasi regresi utama tersedia mulai 2019.  
 3. Konstruksi Variabel dan Pembersihan Data:  
-   * Perhitungan Rasio: Menghitung rasio ROA, Gross Margin, Owner Earnings, dan Leverage untuk setiap observasi (perusahaan-tahun).  
-   * Klasifikasi Industri: Menetapkan kode GICS yang relevan untuk setiap perusahaan pada setiap tahun. Perlu diperhatikan bahwa perusahaan dapat berpindah sektor (misal: perpindahan Visa/Mastercard dari Financials ke IT lalu ke Financials lagi, atau perubahan definisi sektor GICS pada 2018). Data HHI harus dihitung berdasarkan klasifikasi yang berlaku pada tahun tersebut.  
-   * Perhitungan HHI Dinamis: Menghitung total penjualan industri (SALESj,t) dengan menjumlahkan penjualan seluruh perusahaan dalam kode industri yang sama pada tahun tersebut. Kemudian menghitung pangsa pasar masing-masing perusahaan dan menjumlahkan kuadratnya untuk mendapatkan HHI.  
-   * Standardisasi BQS: Melakukan perhitungan mean dan standar deviasi untuk setiap komponen BQS secara cross-sectional per tahun, menghitung Z-score, dan merata-ratakannya menjadi BQS.  
+   a. Perhitungan Rasio: ROA, Gross Margin, Free Cash Flow Margin, Leverage Discipline, Interest Coverage, Consistency, dan kontrol tambahan dihitung untuk setiap observasi perusahaan-tahun.  
+   b. Klasifikasi Industri: GICS Sub-Industry digunakan sebagai basis HHI utama dan ICB/Bloomberg Industry Group digunakan sebagai basis robustness.  
+   c. Perhitungan HHI: Total penjualan industri (SALESj,t) dihitung dengan menjumlahkan penjualan seluruh perusahaan dalam kelompok industri yang sama pada tahun tersebut. Pangsa pasar masing-masing perusahaan kemudian dihitung dan dikuadratkan untuk mendapatkan HHI. Nilai HHI dalam penelitian ini adalah HHI dalam sampel (*within-sample HHI*) karena tidak mencakup seluruh perusahaan privat maupun publik di luar kerangka sampel.  
+   d. Standardisasi BQS: Mean dan standar deviasi setiap komponen BQS dihitung secara cross-sectional per tahun, kemudian digunakan untuk menghitung Z-score dan BQS.
 4. Penyusunan Dataset Panel:  
-   Menggabungkan (merge) seluruh variabel yang telah dihitung ke dalam satu struktur data panel dengan format long form (kolom: Firm ID, Year, SROA, BQS, HHI, SIZE, GROWTH). Melakukan pengecekan konsistensi data dan penghapusan observasi dengan data yang tidak lengkap (missing values) yang tidak dapat diimputasi secara wajar.
+   Menggabungkan seluruh variabel yang telah dihitung ke dalam satu struktur data panel dengan format long form (kolom: Firm ID, Year, SROA, BQS, HHI, SIZE, GROWTH, komponen BQS, HHI alternatif, dan variabel robustness). Melakukan pengecekan konsistensi data dan penghapusan observasi dengan data yang tidak lengkap untuk komponen utama BQS, sehingga hasil regresi tidak bergantung pada imputasi yang tidak dapat diverifikasi.
 
 ## **3.5. Metode Analisis** {#3.5.-metode-analisis}
 
-Analisis data dilakukan menggunakan perangkat lunak statistik ekonometrika seperti Stata (versi 16 atau lebih baru) atau Python (menggunakan library statsmodels dan pandas). Tahapan analisis dirancang secara hierarkis mulai dari deskripsi data hingga pengujian hipotesis kausal dengan koreksi kesalahan standar (standard error correction) yang canggih.
+Analisis data dilakukan menggunakan Python dengan library pandas dan statsmodels. Tahapan analisis dirancang secara hierarkis mulai dari deskripsi data hingga pengujian hipotesis asosiatif dengan cluster-robust standard errors pada level perusahaan.
 
 ### **3.5.1. Statistik Deskriptif dan Matriks Korelasi**
 
@@ -520,410 +545,675 @@ Langkah awal adalah menyajikan statistik deskriptif (Mean, Median, Minimum, Maks
 
 ### **3.5.2. Penentuan Model Estimasi Data Panel**
 
-Dalam ekonometrika data panel, pemilihan teknik estimasi yang tepat sangat menentukan validitas hasil. Tiga pendekatan utama yang dipertimbangkan adalah:
+Dalam ekonometrika data panel, pemilihan teknik estimasi yang tepat sangat menentukan validitas hasil. Tiga pendekatan utama yang umum dipertimbangkan adalah:
 
 1. Common Effect Model (CEM) / Pooled OLS: Mengasumsikan bahwa intersep ($\\alpha$) dan koefisien ($\\beta$) bersifat konstan antar perusahaan dan waktu. Model ini mengabaikan struktur panel dan sifat unik perusahaan.  
 2. Fixed Effect Model (FEM): Mengasumsikan bahwa setiap perusahaan memiliki karakteristik unik yang tidak terobservasi (unobserved heterogeneity) yang ditangkap oleh intersep spesifik individu ($\\alpha$). Karakteristik ini diasumsikan konstan sepanjang waktu (time-invariant) namun dapat berkorelasi dengan variabel independen (misalnya, kualitas manajemen yang baik—$\\alpha_i$ tinggi—mungkin berkorelasi dengan keputusan BQS yang tinggi). FEM menghilangkan bias ini melalui transformasi data (de-meaning).  
 3. Random Effect Model (REM): Mengasumsikan bahwa perbedaan antar perusahaan bersifat acak dan error term spesifik individu tidak berkorelasi dengan variabel independen. REM lebih efisien daripada FEM jika asumsi ini terpenuhi, namun menjadi tidak konsisten jika asumsi dilanggar.
 
-Prosedur Pemilihan Model:  
-Pemilihan model terbaik dilakukan melalui serangkaian uji spesifikasi statistik formal:
+Pada penelitian ini, pemilihan model tidak dilakukan secara mekanis hanya dengan satu uji spesifikasi, melainkan melalui dua lapis pertimbangan: argumen substantif dan verifikasi statistik. Dari sisi substantif, penelitian memang ingin membaca variasi *within-firm* dari waktu ke waktu, bukan sekadar membandingkan perusahaan yang besar dengan kecil atau perusahaan sektor tertentu dengan sektor lain. Karena itu, model perlu menyerap heterogenitas perusahaan yang tetap sepanjang waktu dan guncangan tahunan yang sama-sama memengaruhi seluruh perusahaan.
 
-* Uji Chow (F-Test): Menguji hipotesis nol bahwa intersep sama untuk semua perusahaan (CEM valid). Jika nilai F-statistic signifikan ($\\alpha \< 0.05$), maka hipotesis nol ditolak, mengindikasikan adanya efek individu, sehingga FEM lebih baik dari CEM.  
-* Uji Hausman: Menguji apakah error term unik berkorelasi dengan regressor. Hipotesis nol adalah tidak ada korelasi (REM konsisten dan efisien). Jika nilai Chi-square signifikan ($\\alpha \< 0.05$), hipotesis nol ditolak, yang berarti REM bias dan Fixed Effect Model (FEM) adalah estimator yang konsisten dan harus dipilih.  
-* Uji Lagrange Multiplier (LM) Breusch-Pagan: Digunakan jika Uji Chow mendukung CEM, untuk memastikan apakah ada varians residual yang signifikan antar unit.
+Secara operasional, tahapan pemilihan model dilakukan sebagai berikut.
 
-Berdasarkan karakteristik data keuangan korporat di mana heterogenitas tak terobservasi (seperti strategi unik, brand equity, dan budaya perusahaan) sangat lazim dan kemungkinan besar berkorelasi dengan variabel independen (seperti BQS dan Size), literatur sangat menyarankan penggunaan Fixed Effect Model (FEM) sebagai baseline model yang paling robust terhadap bias endogeneity akibat omitted variables.
+1. Mengestimasi *pooled OLS* sebagai pembanding paling sederhana.
+2. Mengestimasi model dengan *year fixed effects* untuk menyerap guncangan waktu bersama.
+3. Mengestimasi model dengan *firm fixed effects* untuk menyerap heterogenitas perusahaan yang tetap.
+4. Mengestimasi model **two-way fixed effects** yang memasukkan efek perusahaan dan efek tahun secara simultan.
+5. Melakukan uji F gabungan untuk membandingkan model *two-way fixed effects* dengan *pooled OLS*.
+6. Melakukan uji F atas efek perusahaan bersyarat pada adanya *year fixed effects* dan uji F atas efek waktu bersyarat pada adanya *firm fixed effects*.
+7. Menggunakan hasil uji tersebut sebagai verifikasi statistik, bukan sebagai satu-satunya dasar pemilihan model.
+
+Pilihan estimator final adalah **two-way Fixed Effect Model**. Keputusan ini konsisten dengan karakteristik data keuangan korporat, di mana heterogenitas tak terobservasi seperti strategi perusahaan, reputasi merek, kultur organisasi, dan kualitas manajemen sangat mungkin berkorelasi dengan variabel independen seperti BQS, SIZE, atau bahkan HHI. Dalam situasi seperti ini, asumsi utama REM bahwa efek individual tidak berkorelasi dengan regressor menjadi sulit dipertahankan. Karena itu, uji Hausman tidak dijadikan penentu utama; secara desain penelitian, FE sudah lebih defensibel bahkan sebelum pengujian statistik tambahan dilakukan.
+
+Dengan kata lain, alasan penggunaan *two-way fixed effects* dalam penelitian ini adalah: (1) secara ekonomi, penelitian ingin membaca perubahan profitabilitas di dalam perusahaan yang sama; (2) secara statistik, efek perusahaan dan efek tahun sama-sama relevan; dan (3) secara inferensial, model ini paling sesuai untuk memisahkan peran kualitas bisnis dan struktur industri dari faktor laten yang konstan.
 
 ### **3.5.3. Spesifikasi Model Empiris**
 
-Berdasarkan kerangka pemikiran dan variabel yang telah didefinisikan, persamaan regresi data panel yang diajukan adalah sebagai berikut:  
-$$
+Berdasarkan kerangka pemikiran dan variabel yang telah didefinisikan, persamaan regresi data panel yang diajukan adalah sebagai berikut.
+
+\begin{equation}
 \mathrm{SROA}_{i,t} = \beta_0 + \beta_1\,\mathrm{BQS}_{i,t} + \beta_2\,\mathrm{HHI}_{j,t} + \beta_3\,\mathrm{SIZE}_{i,t} + \beta_4\,\mathrm{GROWTH}_{i,t} + \alpha_i + \delta_t + \varepsilon_{i,t}
-$$
+\end{equation}
+
 Keterangan:
 
-* SROAit: Profitabilitas berkelanjutan perusahaan $i$ pada tahun $t$.  
-* BQSit: Skor Kualitas Bisnis perusahaan $i$ pada tahun $t$. (Hipotesis: $\\beta_1>0$, mendukung RBV).  
-* HHIjt: Indeks konsentrasi industri j pada tahun t. (Hipotesis: $\\beta_2>0$, mendukung SCP).  
-* SIZEit: Logaritma natural Total Aset.  
-* GROWTHit: Pertumbuhan penjualan tahunan.  
-* $\\alpha_i$: Firm Fixed Effects (Menangkap karakteristik unik perusahaan yang tak berubah waktu).  
-* $\\delta_t$: Year Fixed Effects (Menangkap guncangan makroekonomi yang berdampak sama pada semua perusahaan di tahun tertentu, misal: resesi 2020 atau inflasi 2022).  
-* $\\varepsilon_{i,t}$: Error term (sisaan).
+1. $\mathrm{SROA}_{i,t}$ adalah profitabilitas berkelanjutan perusahaan $i$ pada tahun $t$.  
+2. $\mathrm{BQS}_{i,t}$ adalah skor kualitas bisnis perusahaan $i$ pada tahun $t$ dengan hipotesis $\beta_1>0$.  
+3. $\mathrm{HHI}_{j,t}$ adalah indeks konsentrasi industri $j$ pada tahun $t$ dengan hipotesis $\beta_2>0$.  
+4. $\mathrm{SIZE}_{i,t}$ adalah logaritma natural total aset.  
+5. $\mathrm{GROWTH}_{i,t}$ adalah pertumbuhan penjualan tahunan.  
+6. $\alpha_i$ adalah firm fixed effects.  
+7. $\delta_t$ adalah year fixed effects.  
+8. $\varepsilon_{i,t}$ adalah error term.
 
-### **3.5.4. Ide Perbaikan Metodologis: Cluster-Robust Standard Errors**
+Selain model utama, penelitian ini menjalankan uji ketahanan terfokus: (1) mengganti BQS utama dengan BQS lama empat komponen, (2) menambahkan kontrol likuiditas, cash ratio, dan capex intensity, (3) mengganti HHI GICS Sub-Industry dengan HHI berbasis ICB/Bloomberg Industry Group, dan (4) menggunakan sustained ROE sebagai outcome alternatif apabila data tersedia cukup. Robustness ini tidak mengubah hipotesis utama, tetapi berfungsi mengevaluasi apakah kesimpulan terlalu bergantung pada satu definisi variabel.
 
-Salah satu kelemahan kritis dalam banyak penelitian skripsi yang menggunakan data panel keuangan adalah pengabaian terhadap struktur korelasi pada error term. Asumsi standar OLS adalah error bersifat independent and identically distributed (i.i.d). Namun, Petersen (2009) dalam artikel seminalnya "Estimating Standard Errors in Finance Panel Data Sets" membuktikan bahwa data keuangan hampir selalu memiliki dua masalah utama:
+Secara praktis, penggunaan *two-way fixed effects* pada penelitian ini menuntut beberapa langkah yang harus lengkap agar model dapat dipertahankan secara metodologis. Langkah tersebut meliputi: pembentukan panel firm-year, winsorization variabel rasio, pembentukan variabel rolling seperti SROA dan CONS, estimasi model dengan efek perusahaan dan tahun, penghitungan *firm-clustered robust standard errors*, pengujian simultan relevansi efek tetap, lalu pelaksanaan uji diagnostik dan *robustness checks*. Dengan demikian, pemakaian *two-way fixed effects* di sini bukan hanya label model, tetapi rangkaian prosedur analisis yang utuh.
 
-1. Time-Series Dependence (Serial Correlation): Residual perusahaan yang sama cenderung berkorelasi dari tahun ke tahun. Jika profitabilitas perusahaan tinggi secara tak terduga tahun ini, kemungkinan besar akan tinggi juga tahun depan karena faktor persisten.  
-2. Cross-Sectional Dependence: Residual antar perusahaan dalam industri yang sama atau pasar yang sama pada tahun tertentu cenderung berkorelasi karena guncangan umum (common shocks).
+### **3.5.4. Validitas Konstruk dan Konsistensi Operasional Variabel**
 
-Jika menggunakan Standard Errors biasa (OLS) atau bahkan White Heteroskedasticity-Robust SE dalam kondisi ini, estimasi standard error akan bias ke bawah (terlalu kecil). Hal ini menyebabkan nilai statistik-t (t-statistics) menjadi terlalu besar secara artifisial, yang berujung pada penolakan hipotesis nol yang salah (over-rejection atau Type I Error yang tinggi). Peneliti mungkin menyimpulkan suatu variabel signifikan padahal sebenarnya tidak.  
-Rekomendasi Implementasi:  
-Untuk meningkatkan kualitas metodologis dan validitas inferensi statistik, penelitian ini wajib menggunakan estimasi Cluster-Robust Standard Errors pada tingkat perusahaan (clustered at firm level). Teknik ini menyesuaikan matriks varians-kovarians untuk memperhitungkan korelasi residual dalam satu klaster (perusahaan) sepanjang waktu, namun tetap mengasumsikan independensi antar klaster.  
-Dalam perangkat lunak Stata, perintah yang digunakan adalah:  
-xtreg SROA BQS HHI SIZE GROWTH i.year, fe vce(cluster firm\_id)  
-Ini adalah standar emas dalam penelitian keuangan empiris modern. Jika memungkinkan, double-clustering (pada level perusahaan dan tahun) dapat dipertimbangkan, namun firm-clustering dengan penambahan year dummies ($\\delta_t$) umumnya sudah cukup memadai untuk menangani kedua jenis dependensi tersebut.
+Karena penelitian ini menggunakan data sekunder Bloomberg Terminal dan variabel yang dibangun dari rasio keuangan, pengujian validitas dan reliabilitas dalam arti instrumen kuesioner tidak diterapkan. Dengan kata lain, penelitian ini tidak memerlukan uji validitas butir, *item-total correlation*, maupun Cronbach's alpha seperti yang lazim digunakan pada penelitian survei. Penerapan uji tersebut justru tidak tepat karena komponen BQS dalam penelitian ini bersifat *formative indicators*, bukan *reflective items* yang diasumsikan memantulkan satu konstruk laten secara identik.
 
-### **3.5.5. Pengujian Hipotesis**
+Sebagai pengganti yang lebih sesuai dengan karakter skripsi ini, kualitas pengukuran dijaga melalui empat mekanisme. Pertama, validitas konstruk dijaga dengan memastikan bahwa setiap variabel mengikuti definisi teoretis dan empiris yang telah dibahas pada BAB II, misalnya HHI untuk struktur industri dan komponen margin, arus kas, leverage, *interest coverage*, serta konsistensi untuk BQS. Kedua, konsistensi operasional dijaga melalui standardisasi rumus, winsorization, audit *missingness*, dan seleksi *complete-case* agar variabel tidak terbentuk dari data yang timpang. Ketiga, koherensi internal BQS dievaluasi melalui profil komponen antar desil, sehingga dapat dilihat apakah skor yang lebih tinggi benar-benar disertai perbaikan pada komponen penyusunnya. Keempat, kestabilan pengukuran diuji melalui *robustness checks*, misalnya memakai definisi BQS lama empat komponen dan beberapa taksonomi HHI alternatif.
 
-Pengujian hipotesis dilakukan berdasarkan hasil estimasi model regresi dengan cluster-robust standard errors:
+Dengan pendekatan tersebut, penelitian ini tetap memiliki padanan evaluasi “validitas” dan “reliabilitas” yang relevan secara metodologis, hanya saja bentuknya disesuaikan dengan sifat data sekunder kuantitatif dan model panel keuangan. Jadi, relasi antara BAB III dan BAB IV bukan berupa uji instrumen survei, melainkan berupa keterkaitan antara definisi konstruk, pemeriksaan kualitas data, koherensi komponen, dan kestabilan hasil estimasi.
 
-1. Uji Parsial (Uji t): Melihat signifikansi koefisien regresi individu ($\\beta$). Jika p-value \< 0.05 (pada tingkat kepercayaan 95%) dan arah koefisien sesuai hipotesis, maka hipotesis diterima.  
-   * Fokus utama: Apakah $\\beta_1$ (BQS) positif signifikan? (Validasi peran faktor internal/RBV).  
-   * Fokus utama: Apakah $\\beta_2$ (HHI) positif signifikan? (Validasi peran faktor eksternal/SCP).  
-2. Uji Simultan (Uji F): Menguji apakah seluruh variabel independen secara bersama-sama mampu menjelaskan variasi variabel dependen.  
-3. Koefisien Determinasi (R2): Dalam konteks Fixed Effects, fokus analisis adalah pada Within-R2, yang menunjukkan proporsi variasi profitabilitas within-firm (perubahan dari waktu ke waktu dalam satu perusahaan) yang dapat dijelaskan oleh perubahan variabel independen.  
-4. Analisis Dominansi: Untuk menjawab rumusan masalah mengenai faktor mana yang lebih dominan, penelitian ini akan membandingkan Standardized Beta Coefficients dari BQS dan HHI. Variabel dengan nilai mutlak koefisien terstandarisasi yang lebih besar dianggap memiliki dampak ekonomi yang lebih kuat terhadap profitabilitas berkelanjutan.
+### **3.5.5. Perumusan Hipotesis Statistik**
 
-Dengan menerapkan metodologi yang ketat ini mulai dari konstruksi variabel komposit BQS yang canggih, pembersihan data dengan winsorization, hingga penggunaan Fixed Effects dengan Cluster-Robust Standard Errors, penelitian ini diharapkan mampu menghasilkan temuan empiris yang valid, reliabel, dan berkontribusi signifikan pada literatur manajemen keuangan.
+Selain tiga hipotesis substantif pada BAB II, penelitian ini juga merumuskan hipotesis statistik secara eksplisit agar proses pengujian pada BAB IV dapat dibaca dengan format ekonometrika yang lengkap. Perumusan ini penting karena di dalam regresi panel setiap koefisien diuji terhadap hipotesis nol tertentu, bukan sekadar dibaca dari arah tanda koefisien saja. Dengan demikian, pembahasan hasil nantinya dapat membedakan dengan jelas antara hipotesis teoritis, hipotesis statistik parsial, dan pengujian simultan model.
 
-#  **BAB IV** **HASIL DAN ANALISIS** {#bab-iv-hasil-dan-analisis}
+Hipotesis statistik yang digunakan dalam penelitian ini adalah sebagai berikut.
 
-BAB IV memuat rangkaian hasil empiris penelitian dan disusun menjadi tiga bagian: **(1)** deskripsi objek penelitian, **(2)** analisis data (statistik, visualisasi, dan uji ekonometrika), serta **(3)** interpretasi hasil (pembahasan dampak masing-masing variabel independen terhadap variabel dependen).  
-**Catatan penting (fase latihan/practice):** BAB IV pada versi ini menggunakan data **placeholder/practice** untuk memastikan *pipeline* analisis berjalan end-to-end. Karena itu, angka-angka yang ditampilkan **belum ditafsirkan sebagai temuan final**. Pada tahap final (data Bloomberg), seluruh tabel, grafik, dan narasi empiris akan diperbarui dengan menjalankan ulang rangkaian skrip pengolahan data.
+1. Untuk variabel struktur industri (HHI): $H0_1: \beta_{\mathrm{HHI}} = 0$ yang berarti HHI tidak berpengaruh terhadap SROA, sedangkan $Ha_1: \beta_{\mathrm{HHI}} > 0$ yang berarti HHI berpengaruh positif terhadap SROA sesuai ekspektasi paradigma SCP.
+2. Untuk variabel kualitas bisnis (BQS): $H0_2: \beta_{\mathrm{BQS}} = 0$ yang berarti BQS tidak berpengaruh terhadap SROA, sedangkan $Ha_2: \beta_{\mathrm{BQS}} > 0$ yang berarti BQS berpengaruh positif terhadap SROA sesuai ekspektasi RBV.
+3. Untuk variabel kontrol ukuran perusahaan (SIZE): $H0_3: \beta_{\mathrm{SIZE}} = 0$ yang berarti perubahan ukuran perusahaan tidak berkaitan dengan SROA, sedangkan $Ha_3: \beta_{\mathrm{SIZE}} \neq 0$ yang berarti SIZE memiliki pengaruh terhadap SROA. Hipotesis ini bersifat pelengkap karena SIZE tidak ditempatkan sebagai hipotesis teoritis utama.
+4. Untuk variabel kontrol pertumbuhan penjualan (GROWTH): $H0_4: \beta_{\mathrm{GROWTH}} = 0$ yang berarti pertumbuhan penjualan tidak berkaitan dengan SROA, sedangkan $Ha_4: \beta_{\mathrm{GROWTH}} \neq 0$ yang berarti GROWTH memiliki pengaruh terhadap SROA. Sama seperti SIZE, hipotesis ini digunakan untuk melengkapi pembacaan model.
+5. Untuk hipotesis dominansi: $H0_5: \beta^{std}_{\mathrm{BQS}} \leq \beta^{std}_{\mathrm{HHI}}$ yang berarti kontribusi relatif BQS tidak melebihi HHI, sedangkan $Ha_5: \beta^{std}_{\mathrm{BQS}} > \beta^{std}_{\mathrm{HHI}}$ yang berarti BQS lebih dominan daripada HHI. Pengujian ini dibaca melalui *standardized beta*, signifikansi statistik, dan kestabilan pada *robustness checks*.
+6. Untuk pengujian simultan model: $H0_6: \beta_{\mathrm{BQS}} = \beta_{\mathrm{HHI}} = \beta_{\mathrm{SIZE}} = \beta_{\mathrm{GROWTH}} = 0$, sedangkan $Ha_6:$ minimal ada satu koefisien yang tidak sama dengan nol. Hipotesis ini diuji melalui uji F simultan.
+
+Formulasi di atas membuat penelitian ini memiliki jalur uji yang lengkap: hipotesis teoritis pada BAB II memberi arah konseptual, sedangkan hipotesis statistik pada BAB III memberi aturan keputusan inferensial yang eksplisit. Dengan susunan ini, pembaca dapat menilai bukan hanya apakah koefisien bernilai positif atau negatif, tetapi juga apakah bukti statistik cukup kuat untuk menolak hipotesis nol pada taraf signifikansi yang digunakan.
+
+### **3.5.6. Asumsi Gauss-Markov, Uji Diagnostik, dan Penyesuaian Inferensi**
+
+Untuk model panel *two-way fixed effects*, fondasi metodologis yang lebih tepat sebenarnya adalah kondisi Gauss-Markov yang disesuaikan untuk data panel, bukan daftar uji asumsi klasik yang dibaca sebagai ritual lulus-gagal. Asumsi inti yang perlu dijaga adalah: model linear dalam parameter, tidak adanya multikolinearitas sempurna setelah transformasi *within*, adanya variasi *within-firm* yang cukup pada regressor, serta syarat nilai harapan galat bersyarat yang memadai sehingga koefisien FE dapat dibaca secara konsisten.
+
+Sebaliknya, normalitas residual, homoskedastisitas murni, dan ketiadaan autokorelasi sempurna lebih tepat diposisikan sebagai kenyamanan inferensial, bukan syarat utama agar estimator FE sah digunakan. Oleh karena itu, jawaban metodologis atas pertanyaan apakah penelitian sebaiknya memakai “uji asumsi klasik” atau “Gauss-Markov” adalah: landasan teoritisnya adalah Gauss-Markov, sedangkan uji klasik tetap dipakai sebagai alat diagnostik untuk menentukan seberapa hati-hati inferensi harus dilakukan. Dalam konteks data panel keuangan, fungsi uji tersebut adalah membaca pola residual dan menentukan apakah *robust* atau *clustered inference* wajib dipertahankan.
+
+### **3.5.6.1. Uji Normalitas Residual**
+
+Uji normalitas residual dilakukan menggunakan statistik Jarque-Bera pada residual model *within*. Secara klasik, normalitas residual sering dijadikan salah satu syarat kenyamanan inferensi parametrik, terutama pada sampel kecil. Namun, pada data panel korporasi dengan jumlah observasi besar, normalitas residual bukan syarat utama bagi konsistensi estimator fixed effects. Pengujian ini tetap dilakukan karena berguna untuk menilai apakah residual memiliki ekor distribusi yang berat (*fat tails*) atau asimetri yang sangat kuat.
+
+Apabila hipotesis nol normalitas ditolak, hasil tersebut tidak otomatis membatalkan model penelitian. Sebaliknya, temuan itu dibaca sebagai sinyal bahwa inferensi standar berbasis error homoskedastik biasa tidak cukup aman, sehingga penelitian perlu mengandalkan *robust inference* dan membaca hasil secara hati-hati. Dengan kata lain, uji normalitas dalam penelitian ini berfungsi sebagai alat diagnosis, bukan sebagai syarat biner lulus-gagal.
+
+### **3.5.6.2. Uji Multikolinearitas**
+
+Uji multikolinearitas dilakukan melalui dua langkah, yaitu pembacaan matriks korelasi Pearson dan perhitungan Variance Inflation Factor (VIF). Matriks korelasi digunakan untuk mendeteksi hubungan linear kasar antar variabel, sedangkan VIF digunakan untuk menilai apakah variasi suatu variabel independen terlalu banyak dijelaskan oleh variabel independen lainnya.
+
+Kriteria operasional yang digunakan adalah sebagai berikut: koefisien korelasi absolut yang sangat tinggi (misalnya di atas 0,80) akan dibaca sebagai sinyal awal adanya masalah, dan nilai VIF di atas 10 akan diperlakukan sebagai indikasi kuat multikolinearitas yang serius, meskipun secara konservatif nilai di atas 5 juga patut dicermati. Jika VIF seluruh variabel rendah, maka koefisien dapat dibaca dengan keyakinan lebih besar karena ketidakstabilan estimasi akibat hubungan linear antar penjelas tidak menjadi ancaman utama.
+
+### **3.5.6.3. Uji Heteroskedastisitas**
+
+Uji heteroskedastisitas dilakukan menggunakan Breusch-Pagan pada residual model yang telah di-*demean* sesuai struktur fixed effects. Hipotesis nol dalam uji ini menyatakan bahwa varians residual bersifat konstan, sedangkan hipotesis alternatif menyatakan bahwa varians residual berubah mengikuti level variabel penjelas.
+
+Pada data perusahaan besar lintas sektor, heteroskedastisitas merupakan fenomena yang sangat mungkin muncul karena perbedaan ukuran aset, strategi, intensitas modal, dan volatilitas operasi antar perusahaan. Oleh karena itu, apabila terdapat sinyal heteroskedastisitas, penelitian tidak langsung mengganti model inti, tetapi menyesuaikan cara membaca ketidakpastian koefisien melalui *robust standard errors*. Bahkan jika sinyal heteroskedastisitas tidak dominan, penggunaan *cluster-robust standard errors* tetap dipertahankan sebagai langkah kehati-hatian metodologis.
+
+### **3.5.6.4. Uji Autokorelasi**
+
+Autokorelasi pada penelitian ini diperiksa melalui indikator korelasi residual intra-perusahaan antar periode, khususnya pola AR(1) rata-rata pada residual *within*. Pemeriksaan ini penting karena data panel keuangan hampir selalu memiliki komponen persistensi: kinerja perusahaan yang tinggi atau rendah pada satu tahun sering kali berlanjut ke tahun berikutnya.
+
+Apabila residual menunjukkan korelasi serial yang nyata, maka standard error OLS biasa cenderung menjadi terlalu kecil sehingga statistik uji menjadi terlalu optimistis. Karena itu, deteksi autokorelasi dalam penelitian ini tidak dibaca sekadar sebagai pelanggaran teknis, melainkan sebagai justifikasi substantif mengapa inferensi harus di-*cluster* pada tingkat perusahaan. Dengan demikian, struktur dinamis error term dapat ditangani secara lebih realistis.
+
+### **3.5.6.5. Uji Dependensi Lintas-Seksi**
+
+Selain autokorelasi dalam dimensi waktu, model panel juga perlu diperiksa terhadap kemungkinan dependensi lintas-seksi, yaitu korelasi residual antar perusahaan pada tahun yang sama. Dependensi semacam ini dapat muncul karena guncangan makro bersama, perubahan suku bunga, sentimen pasar, atau kejadian sistemik yang memukul banyak perusahaan sekaligus.
+
+Penelitian ini menggunakan pendekatan Pesaran CD approximation untuk memeriksa apakah korelasi residual antarfirma bersifat cukup kuat secara statistik. Jika dependensi lintas-seksi muncul, pembaca hasil harus lebih berhati-hati karena informasi yang tampak berasal dari banyak perusahaan sesungguhnya dapat bergerak bersama akibat satu guncangan umum. Sebaliknya, jika uji tidak signifikan, maka risiko tersebut relatif lebih terbatas, walaupun tetap tidak boleh diabaikan sepenuhnya dalam panel keuangan.
+
+### **3.5.7. Penyesuaian Inferensi: Cluster-Robust Standard Errors**
+
+Salah satu kelemahan kritis dalam banyak penelitian skripsi yang menggunakan data panel keuangan adalah pengabaian terhadap struktur korelasi pada error term. Asumsi standar OLS adalah error bersifat *independent and identically distributed* (i.i.d.). Namun, Petersen (2009) dalam artikel seminalnya *Estimating Standard Errors in Finance Panel Data Sets* menunjukkan bahwa data keuangan hampir selalu menghadapi dua masalah utama, yaitu ketergantungan serial dalam perusahaan yang sama dan potensi korelasi residual antar unit pada tahun tertentu.
+
+Jika menggunakan standard errors biasa atau bahkan White heteroskedasticity-robust SE tanpa memperhatikan struktur klaster, estimasi standard error dapat bias ke bawah. Akibatnya, nilai statistik-t menjadi terlalu besar secara artifisial dan peneliti berisiko menolak hipotesis nol secara keliru. Untuk mengurangi risiko tersebut, penelitian ini menggunakan estimasi *cluster-robust standard errors* pada tingkat perusahaan. Teknik ini memungkinkan residual antar tahun di dalam perusahaan yang sama untuk saling berkorelasi, sehingga inferensi menjadi lebih defensibel.
+
+Estimasi dijalankan sepenuhnya melalui pipeline Python dengan *year fixed effects* dan *firm-clustered covariance*. Spesifikasi ini dipilih agar pembacaan hasil lebih tahan terhadap heteroskedastisitas, autokorelasi intra-perusahaan, dan sebagian guncangan umum lintas waktu.
+
+### **3.5.8. Pengujian Hipotesis**
+
+Pengujian hipotesis dilakukan berdasarkan hasil estimasi model regresi dengan *cluster-robust standard errors* sehingga fokus utama tidak hanya terletak pada besaran koefisien, tetapi juga pada reliabilitas inferensinya. Jalur pengujian dibagi menjadi pengujian model secara umum, pengujian koefisien parsial, dan pengujian dominansi relatif.
+
+1. Koefisien Determinasi (R2): Dalam konteks fixed effects, fokus analisis adalah pada nilai R-squared model utama yang menunjukkan proporsi variasi SROA yang dapat dijelaskan setelah efek tetap perusahaan dan efek tahun dimasukkan.
+2. Uji Parsial (Uji t): Uji ini digunakan untuk menilai signifikansi setiap koefisien regresi. Fokus utama penelitian berada pada apakah koefisien BQS positif signifikan dan apakah koefisien HHI positif signifikan, tetapi pembacaan terhadap SIZE dan GROWTH juga tetap dilaporkan untuk menjaga kelengkapan model.
+3. Uji Simultan (Uji F): Uji ini digunakan untuk menilai apakah variabel utama dan kontrol secara bersama-sama memiliki daya jelaskan terhadap SROA.
+4. Analisis Dominansi: Untuk menjawab rumusan masalah mengenai faktor yang lebih dominan, penelitian ini membandingkan *standardized beta coefficients* dari BQS dan HHI serta mengevaluasi konsistensinya pada *robustness checks*.
+
+Dengan demikian, pengujian hipotesis dalam penelitian ini tidak berhenti pada label “signifikan” atau “tidak signifikan”, tetapi juga mempertimbangkan arah koefisien, relevansi ekonomi, dan kestabilan temuan di berbagai spesifikasi. Pendekatan ini penting agar simpulan yang ditarik tidak terlalu mekanis dan tetap sejalan dengan batas identifikasi desain observasional.
+
+### **3.5.9. Batasan Interpretasi Inferensi**
+
+Agar pembacaan hasil tidak melampaui desain penelitian, beberapa batasan interpretasi ditegaskan sejak awal.
+
+1. Hasil regresi panel ini terutama bersifat asosiasional bersyarat, bukan bukti kausalitas murni. Penggunaan *fixed effects* dan *cluster-robust standard errors* meningkatkan validitas inferensi, tetapi tidak sepenuhnya menghilangkan kemungkinan *reverse causality* atau variabel yang terlewat.
+2. HHI dalam penelitian ini adalah *within-sample HHI* yang dibangun dari kerangka konstituen aktif Mei 2026. Karena itu, HHI dibaca sebagai proksi konsentrasi dalam cakupan data, bukan ukuran penuh struktur industri Amerika Serikat.
+3. *Standardized beta coefficients* digunakan hanya untuk membandingkan kontribusi relatif antar variabel dalam model yang sama. Nilai yang berdekatan tidak boleh diartikan sebagai perbedaan yang besar secara substantif.
+4. Seleksi *complete-case* pada BQS utama membuat sampel utama lebih bersih secara pengukuran, tetapi juga lebih selektif. Oleh karena itu, generalisasi hasil harus dibatasi pada perusahaan yang tetap bertahan dalam kerangka sampel dan memiliki data yang cukup lengkap.
+
+# **BAB IV** **HASIL DAN ANALISIS** {#bab-iv-hasil-dan-analisis}
+
+BAB IV menyajikan temuan empiris dari pengolahan data Bloomberg Terminal untuk perusahaan konstituen S\&P 500 aktif per Mei 2026. Uraian pada bab ini difokuskan pada hasil olah data, kelayakan model, pengujian hipotesis, dan interpretasi ekonomi. Definisi variabel, rumus, teknik estimasi, serta prosedur konstruksi BQS dan HHI telah dijelaskan pada BAB III sehingga tidak diulang secara panjang pada bab ini. Visualisasi Python lengkap ditempatkan pada lampiran sebagai dokumentasi audit; visual dalam BAB IV disajikan dalam bentuk rangkuman yang dikurasi agar pembacaan hasil tetap ringkas.
 
 ## **4.1 Deskripsi Objek Penelitian** {#4.1-deskripsi-objek-penelitian}
 
-Objek penelitian adalah perusahaan konstituen S\&P 500 periode 2015–2024, dengan kriteria sampel sesuai BAB III (eksklusi sektor Financials dan Utilities, mata uang USD, serta ketersediaan data untuk membentuk variabel *rolling*). Pada subbab ini, penulis menjelaskan definisi operasional variabel serta karakteristik sampel agar pembaca memahami “apa yang diukur” sebelum melihat “apa hasilnya”.
+Objek penelitian ini adalah perusahaan konstituen indeks S\&P 500 yang aktif per Mei 2026, dengan data historis tahunan 2017--2025 dan panel regresi efektif 2019--2025. Pembahasan pada subbab ini tidak hanya menjelaskan siapa objek penelitiannya, tetapi juga menguraikan mengapa objek tersebut relevan, bagaimana sampel dibentuk, dan seperti apa peta awal data yang akhirnya masuk ke model empiris.
 
-### **4.1.1 Variabel Dependen: Sustained ROA (SROA)**
+Pilihan pada perusahaan S\&P 500 membuat penelitian ini berhadapan dengan kelompok perusahaan yang secara ekonomi sangat penting, berkapitalisasi besar, dan beroperasi pada berbagai sub-industri yang sangat berbeda. Karena itu, sebelum masuk ke statistik deskriptif dan regresi, pembaca perlu terlebih dahulu melihat karakter objek penelitian, proses penyusutan sampel, serta gambaran struktur data secara visual.
 
-Variabel dependen penelitian adalah **profitabilitas berkelanjutan** (sustained profitability) yang diproksikan menggunakan **Sustained Return on Assets (SROA)**. Secara konsep, SROA menangkap *profit persistence* dan mengurangi dominasi fluktuasi jangka pendek akibat *transitory shocks*. Secara operasional, penelitian ini membentuk ROA tahunan dan kemudian mengambil **rata-rata bergerak 3 tahun**:
+### **4.1.1 Karakteristik Objek Penelitian: Konstituen S\&P 500**
 
-$$
-\\mathrm{ROA}_{i,t} = \\frac{\\mathrm{NetIncome}_{i,t}}{\\mathrm{TotalAssets}_{i,t}},\\quad
-\\mathrm{SROA}_{i,t} = \\frac{\\mathrm{ROA}_{i,t}+\\mathrm{ROA}_{i,t-1}+\\mathrm{ROA}_{i,t-2}}{3}.
-$$
+S\&P 500 secara luas dipandang sebagai salah satu barometer utama pasar saham Amerika Serikat karena merepresentasikan perusahaan-perusahaan berkapitalisasi besar yang memiliki pengaruh material terhadap output, investasi, lapangan kerja, dan arah sentimen pasar. Dengan mencakup perusahaan dari beragam sektor seperti teknologi, industri, kesehatan, konsumen, energi, hingga real estat, indeks ini menyediakan laboratorium empiris yang sangat kaya untuk menguji apakah profitabilitas berkelanjutan lebih banyak dipengaruhi oleh struktur industri atau oleh kualitas bisnis internal perusahaan.
 
-Dengan demikian, SROA yang lebih tinggi mengindikasikan perusahaan lebih mampu mempertahankan profitabilitas lintas waktu, bukan sekadar “untung besar sesaat”. Pada tahap pengolahan data, variabel rasio dikenakan winsorization (1\% dan 99\%) untuk mengurangi pengaruh pencilan ekstrem.
+Dari sudut pandang penelitian ini, konstituen S\&P 500 juga menarik karena perusahaan-perusahaan di dalamnya umumnya telah melewati proses seleksi pasar yang ketat. Artinya, variasi kinerja yang masih tersisa di dalam sampel bukan lagi sekadar perbedaan antara perusahaan “baik” dan “buruk” secara kasat mata, melainkan perbedaan yang lebih halus pada kualitas operasi, disiplin keuangan, posisi kompetitif, dan struktur pasar tempat mereka beroperasi. Inilah alasan mengapa pengujian terhadap HHI dan BQS pada lingkungan S\&P 500 menjadi relevan secara akademik.
 
-### **4.1.2 Variabel Independen Utama: Business Quality Score (BQS)**
+Namun demikian, penting ditekankan bahwa kerangka sampel yang digunakan bukan daftar historis penuh anggota S\&P 500 dari tahun ke tahun, melainkan daftar konstituen yang aktif per Mei 2026 lalu ditarik data historisnya ke belakang. Konsekuensinya, penelitian ini harus dibaca dalam bingkai *survivorship bias* yang sadar dan terdokumentasi. Dengan kata lain, hasil penelitian paling tepat dimaknai sebagai bukti pada kelompok perusahaan besar Amerika Serikat yang masih bertahan dalam indeks pada akhir jendela observasi.
 
-Variabel independen utama yang merepresentasikan perspektif Resource-Based View (RBV) adalah **Business Quality Score (BQS)**. BQS merupakan indeks komposit yang dibangun dari empat dimensi kualitas bisnis: (i) **margin** (profitability), (ii) **kemampuan menghasilkan kas** (operating efficiency/cash generation), (iii) **disiplin leverage**, dan (iv) **konsistensi kinerja**. Secara teknis, setiap komponen distandarisasi **secara cross-sectional per tahun** (Z-score) agar perbandingan antar perusahaan pada tahun yang sama menjadi sebanding, lalu dirata-ratakan menjadi satu skor BQS.
+### **4.1.2 Ringkasan Sampel Penelitian**
 
-Interpretasinya: semakin tinggi BQS, semakin kuat kualitas fundamental internal perusahaan yang (secara teori) sulit ditiru, sehingga diharapkan menopang profitabilitas berkelanjutan.
-
-### **4.1.3 Variabel Independen Utama: Struktur Industri (HHI)**
-
-Perspektif Structure–Conduct–Performance (SCP) direpresentasikan oleh **Herfindahl–Hirschman Index (HHI)** sebagai ukuran konsentrasi industri. HHI dibentuk dari pangsa penjualan perusahaan dalam industri pada tahun tertentu:
-
-$$
-\\mathrm{HHI}_{j,t}=\\sum_i \\mathrm{share}_{i,j,t}^2,\\quad
-\\mathrm{share}_{i,j,t}=\\frac{\\mathrm{Sales}_{i,j,t}}{\\sum_k \\mathrm{Sales}_{k,j,t}}.
-$$
-
-HHI yang lebih tinggi berarti struktur industri semakin terkonsentrasi. Secara teori, konsentrasi dapat berkaitan dengan *market power* dan hambatan masuk yang berpotensi meningkatkan kemampuan mempertahankan profitabilitas.
-
-### **4.1.4 Variabel Kontrol: Ukuran Perusahaan (SIZE)**
-
-Ukuran perusahaan diukur dengan **logaritma natural total aset**. SIZE digunakan untuk mengendalikan perbedaan skala operasi, akses pendanaan, dan sumber daya. Tanda pengaruh SIZE terhadap profitabilitas berkelanjutan bersifat ambigu: skala dapat meningkatkan efisiensi, namun juga dapat membawa *bureaucratic costs* dan *agency problems*.
-
-### **4.1.5 Variabel Kontrol: Pertumbuhan Penjualan (GROWTH)**
-
-Pertumbuhan penjualan mengukur dinamika ekspansi perusahaan dan diproksikan sebagai:
-
-$$
-\\mathrm{GROWTH}_{i,t}=\\frac{\\mathrm{Sales}_{i,t}-\\mathrm{Sales}_{i,t-1}}{\\mathrm{Sales}_{i,t-1}}.
-$$
-
-Dalam konteks profitabilitas, pertumbuhan dapat berkaitan dengan peningkatan utilisasi dan skala pendapatan, namun efek akhirnya bergantung pada kualitas pertumbuhan tersebut.
-
-### **4.1.6 Periode, Unit Analisis, dan Sampel**
-
-Unit analisis adalah perusahaan ($i$) dan tahun ($t$) yang membentuk data panel. Ringkasan sampel pada tahap placeholder/practice ditampilkan sebagai berikut.
+Unit analisis adalah firm-year. Ringkasan sampel akhir yang digunakan dalam regresi utama ditampilkan sebagai berikut.
 
 <!-- AUTO:BAB4_OVERVIEW_START -->
-- Jumlah observasi (N): **5000**
-- Jumlah perusahaan: **500**
-- Rentang tahun: **2015–2024** (placeholder/practice)
+1. Kerangka sampel: **konstituen S&P 500 aktif per Mei 2026**
+2. Jumlah ticker pada file mentah: **503**
+3. Eksklusi Financials/Utilities: **97** ticker; tersisa **406** ticker
+4. Jumlah observasi final (N): **2241**
+5. Jumlah perusahaan final: **333**
+6. Jumlah sub-industri GICS final: **92**
+7. Rentang panel efektif: **2019–2025**
+8. Observasi yang keluar karena complete-case BQS utama: **1363**
+9. Komponen BQS utama: **margin, arus kas bebas, leverage, interest coverage, dan konsistensi**
+10. Klasifikasi industri tersedia: **GICS Sub-Industry (110); ICB Subsector (114); ICB Sector (36); ICB Supersector (18); ICB Industry (11); Bloomberg Industry Group (56)**
+11. Sel ambiguous suffix yang diaudit sebagai missing: **Free Cash Flow: 14; Total Equity: 162; Market Cap: 890**
 <!-- AUTO:BAB4_OVERVIEW_END -->
 
-*Catatan keterbatasan (fase placeholder):* sumber data latihan umumnya tidak menyediakan cakupan historis dan item fundamental selengkap Bloomberg, sehingga kualitas inferensi statistik pada tahap ini dibaca sebagai latihan *pipeline* (uji kelengkapan alur), bukan penetapan kesimpulan substantif.
+Ringkasan di atas menunjukkan bahwa pembentukan sampel dilakukan secara ketat dan berlapis. Dari 503 ticker awal, perusahaan sektor Financials dan Utilities dikeluarkan karena struktur keuangan, model bisnis, dan lingkungan regulasinya terlalu berbeda dibanding perusahaan non-keuangan lain. Eksklusi ini bukan sekadar kebiasaan metodologis, melainkan keputusan substantif agar perbandingan antarperusahaan lebih *apple-to-apple*, khususnya ketika BQS menggunakan komponen seperti margin, leverage, dan interest coverage.
 
-### **4.1.7 Identitas Perusahaan (Badge/Ticker)**
+Setelah eksklusi sektor, sampel masih mengalami penyusutan tambahan pada tahap *complete-case* untuk BQS utama. Penyusutan ini mencerminkan bahwa penelitian memilih kualitas pengukuran di atas perluasan ukuran sampel. Keputusan tersebut memang mengurangi jumlah observasi, tetapi menghindarkan model dari imputasi data yang tidak dapat diverifikasi. Dengan demikian, hasil regresi yang diperoleh lebih layak dibaca sebagai hasil pada sampel yang terukur dengan relatif bersih, bukan pada seluruh populasi konseptual perusahaan Amerika Serikat.
 
-Untuk memudahkan pembaca melihat keragaman sampel, penelitian ini menampilkan **badge berbasis ticker** (bukan logo resmi perusahaan). Ini adalah kompromi yang aman dari sisi lisensi dan ukuran dokumen, sekaligus tetap membantu pembaca menangkap bahwa unit analisis memang mencakup ratusan perusahaan.
+Keterbatasan terpenting yang harus terus diingat adalah adanya potensi *survivorship bias* karena kerangka sampel hanya mencakup konstituen aktif per Mei 2026. Keterbatasan ini tidak membuat penelitian menjadi tidak layak, tetapi membatasi generalisasi hasil pada perusahaan yang masih bertahan sebagai anggota aktif indeks pada saat data diambil. HHI juga harus dibaca sebagai konsentrasi penjualan dalam sampel, bukan sebagai ukuran pangsa pasar penuh seluruh ekonomi Amerika Serikat.
 
-**Gambar 4.1 Badge Perusahaan (Ticker Labels, Practice/Placeholder)**  
-![](output/figures/firm_badges.png)  
-Sumber: Output visualisasi penulis (practice/placeholder).
+\begin{figure}[htbp]
+\caption{Ringkasan Alur Sampel dan Panel Regresi}
+\vspace{0.5em}
+\centering
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+\toprule
+File mentah & Eksklusi sektor & Sampel bersih & Panel regresi \\
+\midrule
+503 ticker & 97 ticker Financials/Utilities & 406 ticker & 333 perusahaan \\
+2017--2025 & sesuai desain penelitian & firm-year non-keuangan/non-utilitas & 2.241 observasi, 2019--2025 \\
+\bottomrule
+\end{tabularx}
+\vspace{0.5em}
+{\small Sumber: Hasil pengolahan data Bloomberg Terminal.}
+\end{figure}
+
+### **4.1.3 Pemetaan Awal Sampel dan Cakupan Data**
+
+Sebelum masuk ke pengujian ekonometrika, pemetaan visual awal diperlukan agar pembaca memperoleh intuisi mengenai bagaimana data penelitian tersusun. Visual pada bagian ini berfungsi sebagai “jembatan baca” antara penjelasan metodologis di BAB III dan pengujian formal di BAB IV. Dengan visual ini, pembaca dapat melihat secara langsung proporsi sampel, penyusutan data, komposisi industri, dan titik-titik kelemahan data yang perlu diingat ketika menafsirkan hasil.
+
+\begin{figure}[H]
+\caption{Komposisi Kerangka Sampel Setelah Eksklusi Sektor}
+\centering
+\begin{tikzpicture}[scale=0.95]
+\fill[black!15] (0,0) -- (0:2.5) arc[start angle=0,end angle=290.5,radius=2.5] -- cycle;
+\fill[white] (0,0) -- (290.5:2.5) arc[start angle=290.5,end angle=360,radius=2.5] -- cycle;
+\fill[white] (0,0) circle (1.05);
+\draw[white,line width=1pt] (0,0) -- (0:2.5);
+\draw[white,line width=1pt] (0,0) -- (290.5:2.5);
+\draw[black] (0,0) circle (2.5);
+\node[align=center] at (0,0.18) {\textbf{503}};
+\node[align=center] at (0,-0.18) {\small ticker mentah};
+\node[align=left] at (-4.4,2.15) {\fcolorbox{black}{black!15}{\rule{0.18cm}{0.18cm}} Sampel non-keuangan/non-utilitas\\ \small 406 ticker (80,7\%)};
+\node[align=left] at (-4.4,1.25) {\fcolorbox{black}{white}{\rule{0.18cm}{0.18cm}} Sektor dikeluarkan\\ \small 97 ticker (19,3\%)};
+\end{tikzpicture}
+\vspace{0.5em}
+{\small Sumber: Olahan dari ringkasan sampel penelitian.}
+\end{figure}
+
+Gambar di atas menunjukkan bahwa mayoritas ticker awal tetap bertahan setelah eksklusi sektor, tetapi proporsi yang dikeluarkan tetap cukup material. Artinya, keputusan untuk menghapus Financials dan Utilities bukan perubahan kecil yang bisa diabaikan, melainkan penyaringan yang nyata terhadap struktur sampel. Dari perspektif metodologis, hal ini menguatkan bahwa hasil penelitian memang merepresentasikan perusahaan besar non-keuangan dan non-utilitas, bukan seluruh isi indeks secara seragam.
+
+\begin{figure}[H]
+\caption{Penyusutan Observasi dari Data Mentah ke Panel Final}
+\centering
+\begin{tikzpicture}[x=2.45cm,y=0.00125cm]
+\foreach \x/\h/\lab/\col in {
+0/4527/{Data mentah\\4.527}/AksaBlue,
+1/3654/{Pasca eksklusi\\3.654}/AksaTeal,
+2/3604/{Fundamental bersih\\3.604}/AksaBlue,
+3/2241/{Panel final\\2.241}/AksaOrange}
+{
+\fill[\col!88] (\x,0) rectangle ++(0.78,\h);
+\node[font=\small,align=center] at (\x+0.39,\h+180) {\lab};
+}
+\node[font=\small,align=center] at (0.39,-280) {Tahap 1};
+\node[font=\small,align=center] at (1.39,-280) {Tahap 2};
+\node[font=\small,align=center] at (2.39,-280) {Tahap 3};
+\node[font=\small,align=center] at (3.39,-280) {Tahap 4};
+\draw[->,thick,AksaBlue] (-0.15,0) -- (-0.15,4800) node[above] {\small Firm-year};
+\draw[thick] (-0.1,0) -- (4.0,0);
+\end{tikzpicture}
+\vspace{0.5em}
+{\small Sumber: Ringkasan pipeline pengolahan data penelitian.}
+\end{figure}
+
+Gambar penyusutan observasi memperlihatkan bahwa reduksi terbesar tidak terjadi pada tahap eksklusi sektor, melainkan pada tahap kesiapan data untuk membentuk variabel penelitian secara penuh. Panel final sebanyak 2.241 observasi lahir setelah data mentah, data pasca-eksklusi, dan data fundamental bersih disaring ulang agar konsisten dengan kebutuhan SROA, BQS, HHI, SIZE, dan GROWTH. Ini penting untuk dicatat karena ukuran sampel akhir bukan sekadar hasil pembersihan administratif, tetapi konsekuensi langsung dari standar kualitas data yang dipilih.
+
+\begin{figure}[H]
+\caption{Komposisi Perusahaan Menurut Kelompok Industri ICB}
+\centering
+\begin{tikzpicture}[x=0.09cm,y=0.62cm]
+\foreach \y/\name/\val/\col in {
+7/{Industrials}/84/AksaBlue,
+6/{Technology}/60/AksaTeal,
+5/{Consumer Discretionary}/54/AksaBlue,
+4/{Health Care}/49/AksaTeal,
+3/{Consumer Staples}/33/AksaBlue,
+2/{Energy}/19/AksaTeal,
+1/{Basic Materials}/15/AksaBlue,
+0/{Lainnya}/19/AksaOrange}
+{
+\fill[\col!88] (0,\y) rectangle (\val,0.62+\y);
+\node[anchor=east,font=\small] at (-2,\y+0.31) {\name};
+\node[anchor=west,font=\small] at (\val+1,\y+0.31) {\val};
+}
+\draw[->,thick,AksaBlue] (0,-0.35) -- (90,-0.35) node[right] {\small Jumlah perusahaan};
+\end{tikzpicture}
+\vspace{0.5em}
+{\small Sumber: Ringkasan distribusi industri pada sampel final.}
+\end{figure}
+
+Komposisi industri menunjukkan bahwa sampel tidak tersebar secara merata pada setiap kelompok industri. Kelompok Industrials, Technology, Consumer Discretionary, dan Health Care tampak paling dominan, sedangkan Financials dan Utilities hanya muncul sangat kecil karena memang dikeluarkan dari analisis utama. Ketimpangan distribusi ini relevan ketika membaca HHI, sebab struktur konsentrasi pasar pada sampel besar seperti S\&P 500 tidak berdiri di ruang hampa, tetapi dipengaruhi oleh komposisi sektor dan sub-industri yang memang tidak seimbang sejak awal.
+
+\begin{figure}[H]
+\caption{Peta Missingness Data Menurut Kelompok Variabel dan Tahun}
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lccccccccc}
+\toprule
+Kelompok variabel & 2017 & 2018 & 2019 & 2020 & 2021 & 2022 & 2023 & 2024 & 2025 \\
+\midrule
+Penjualan dan total aset & \cellcolor{AksaSand!35} rendah & \cellcolor{AksaSand!28} rendah & \cellcolor{AksaSand!24} rendah & \cellcolor{AksaSand!24} rendah & \cellcolor{AksaSand!22} rendah & \cellcolor{AksaSand!20} rendah & \cellcolor{AksaSand!18} rendah & \cellcolor{AksaSand!16} rendah & \cellcolor{AksaSand!14} rendah \\
+Margin dan COGS & \cellcolor{AksaSand!70} sedang & \cellcolor{AksaSand!66} sedang & \cellcolor{AksaSand!64} sedang & \cellcolor{AksaSand!62} sedang & \cellcolor{AksaSand!60} sedang & \cellcolor{AksaSand!58} sedang & \cellcolor{AksaSand!56} sedang & \cellcolor{AksaSand!54} sedang & \cellcolor{AksaSand!52} sedang \\
+Arus kas operasi dan capex & \cellcolor{AksaSand!30} rendah & \cellcolor{AksaSand!28} rendah & \cellcolor{AksaSand!26} rendah & \cellcolor{AksaSand!24} rendah & \cellcolor{AksaSand!22} rendah & \cellcolor{AksaSand!20} rendah & \cellcolor{AksaSand!18} rendah & \cellcolor{AksaSand!16} rendah & \cellcolor{AksaSand!16} rendah \\
+Ekuitas dan leverage & \cellcolor{AksaSand!44} rendah-sedang & \cellcolor{AksaSand!40} rendah-sedang & \cellcolor{AksaSand!38} rendah-sedang & \cellcolor{AksaSand!36} rendah-sedang & \cellcolor{AksaSand!40} rendah-sedang & \cellcolor{AksaSand!42} rendah-sedang & \cellcolor{AksaSand!39} rendah-sedang & \cellcolor{AksaSand!37} rendah-sedang & \cellcolor{AksaSand!35} rendah-sedang \\
+Market cap & \cellcolor{AksaOrange!62} tinggi & \cellcolor{AksaOrange!60} tinggi & \cellcolor{AksaOrange!58} tinggi & \cellcolor{AksaOrange!57} tinggi & \cellcolor{AksaOrange!78} sangat tinggi & \cellcolor{AksaOrange!67} tinggi & \cellcolor{AksaOrange!79} sangat tinggi & \cellcolor{AksaOrange!88} sangat tinggi & \cellcolor{AksaOrange!92} sangat tinggi \\
+\bottomrule
+\end{tabular}
+\vspace{0.5em}
+{\small Sumber: Ringkasan visual dari audit missingness pipeline Python.}
+\end{figure}
+
+Peta *missingness* menegaskan bahwa kualitas data tidak identik pada setiap item laporan keuangan. Variabel seperti *market cap*, sebagian komponen margin, dan beberapa akun pendukung menunjukkan tingkat kekosongan yang lebih tinggi dibanding item dasar seperti total aset dan penjualan. Temuan ini membantu menjelaskan mengapa penelitian memilih pendekatan *complete-case* untuk BQS utama: tanpa disiplin tersebut, skor kualitas bisnis berisiko tercampur antara sinyal ekonomi nyata dan artefak kekosongan data.
 
 ## **4.2 Analisis Data** {#4.2-analisis-data}
 
-Subbab ini memaparkan hasil olahan data sesuai teknik analisis pada BAB III, mulai dari ringkasan pola (visual), statistik deskriptif dan korelasi, uji diagnostik ekonometrika, hingga hasil estimasi regresi sebagai keluaran statistik. Seluruh uji dan output numerik ditempatkan pada Subbab 4.2 agar Subbab 4.3 dapat fokus pada interpretasi “variabel independen \\(\\rightarrow\\) SROA” secara lebih tajam.
+Subbab ini memaparkan hasil olahan data yang berfungsi sebagai fondasi sebelum pembaca masuk ke hasil estimasi regresi utama. Penyajian dimulai dari deskripsi pola data, statistik deskriptif, korelasi, dan evaluasi asumsi Gauss-Markov serta diagnostik residual yang telah dirancang pada BAB III. Dengan susunan ini, pembaca dapat menilai terlebih dahulu apakah data dan model cukup layak untuk dibaca sebelum sampai pada uji hipotesis utama mengenai pengaruh HHI dan BQS.
 
 ### **4.2.1 Rancangan Estimasi dan Alur Analisis**
 
-Model utama penelitian ini adalah regresi panel **two-way fixed effects** (firm dan year) untuk mengendalikan heterogenitas tidak teramati yang konstan pada level perusahaan ($\\alpha_i$) serta guncangan makro yang umum pada tahun tertentu ($\\delta_t$). Inferensi statistik menggunakan **standard errors yang di-*cluster* pada level perusahaan** sebagai standar karena data panel keuangan lazim menghadapi heteroskedastisitas, autokorelasi intra-perusahaan, dan dependensi lintas unit.
+Model utama penelitian ini adalah regresi panel two-way fixed effects (firm dan year) untuk mengendalikan heterogenitas tidak teramati yang konstan pada level perusahaan ($\alpha_i$) serta guncangan makro yang umum pada tahun tertentu ($\delta_t$). Inferensi statistik menggunakan standard errors yang di-*cluster* pada level perusahaan sebagai standar karena data panel keuangan lazim menghadapi heteroskedastisitas, autokorelasi intra-perusahaan, dan dependensi lintas unit.
 
-Alur analisis pada Subbab 4.2 dibuat bertahap: (i) *sanity check* visual, (ii) ringkasan statistik dan korelasi, (iii) pemeriksaan multikolinearitas (VIF), (iv) uji diagnostik (normalitas residual, heteroskedastisitas, cross-sectional dependence, dan serial correlation), dan (v) penyajian hasil estimasi regresi (Tabel 4.7–4.8) sebagai keluaran statistik untuk diinterpretasikan pada Subbab 4.3.
+Alur analisis pada Subbab 4.2 dibuat bertahap: (1) ringkasan visual kurasi, (2) statistik deskriptif dan korelasi, (3) pemeriksaan multikolinearitas, (4) uji diagnostik residual, (5) koefisien determinasi, (6) uji t, (7) uji F, dan (8) uji ketahanan. Dengan urutan ini, pembaca dapat melihat terlebih dahulu daya jelaskan model sebelum menilai signifikansi masing-masing variabel.
+
+Kebutuhan penggunaan model *two-way fixed effects* juga diuji secara formal. Hasil uji gabungan *two-way fixed effects* terhadap *pooled OLS* menghasilkan statistik F sebesar 20,409 dengan *p-value* di bawah 0,001. Uji efek perusahaan setelah memasukkan *year fixed effects* menghasilkan F sebesar 20,457 dengan *p-value* di bawah 0,001, sedangkan uji efek waktu setelah memasukkan *firm fixed effects* menghasilkan F sebesar 8,621 dengan *p-value* di bawah 0,001. Rangkaian hasil ini menunjukkan bahwa baik efek perusahaan maupun efek tahun sama-sama relevan dan tidak layak diabaikan, sehingga pemilihan model *two-way fixed effects* bukan hanya asumsi teoritis, tetapi juga didukung bukti statistik.
 
 ### **4.2.2 Visualisasi Ringkas Pola Data**
 
-Visualisasi berikut berfungsi sebagai “peta cepat” pembacaan data: membantu melihat pola umum, mengidentifikasi sebaran variabel, dan memeriksa apakah konstruk variabel (SROA/BQS/HHI) sudah masuk akal. Pada fase placeholder/practice, visualisasi juga berperan sebagai *template* yang akan otomatis terbarui saat data final digunakan.
+Visual pada bagian ini tidak mengambil langsung grafik Python mentah, melainkan merangkum hasil utama dari tabel dan output regresi. Grafik lengkap hasil pipeline ditempatkan pada lampiran untuk menjaga transparansi sekaligus menghindari pengulangan teknis yang sudah dijelaskan pada BAB III.
 
-**Gambar 4.2 Heatmap Korelasi (Placeholder/Practice)**  
-![](output/figures/correlation_heatmap.png)  
-Sumber: Output pengolahan data penulis (placeholder/practice).
+\begin{figure}[H]
+\caption{Ringkasan Pola Deskriptif Variabel Utama}
+\vspace{0.5em}
+\centering
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+Dimensi & Temuan empiris & Implikasi pembacaan \\
+\midrule
+SROA & Rata-rata 0,079 dan median 0,070 & Sampel memiliki profitabilitas berkelanjutan positif setelah perataan tiga tahun \\
+BQS & Desil terendah memiliki mean SROA 0,048; desil tertinggi 0,112 & Kualitas bisnis memiliki pola deskriptif positif terhadap SROA \\
+HHI & Kuintil HHI tidak menunjukkan pola SROA yang monoton & Konsentrasi industri perlu diuji melalui model panel, bukan hanya deskriptif \\
+VIF & Seluruh VIF sekitar 1,015--1,031 & Multikolinearitas tidak menjadi ancaman utama \\
+\bottomrule
+\end{tabularx}
+\vspace{0.5em}
+{\small Sumber: Ringkasan Tabel 4.1--Tabel 4.6.}
+\end{figure}
 
-Heatmap korelasi pada Gambar 4.2 membantu pembaca menilai keterkaitan antarvariabel secara ringkas. Secara khusus, gambar ini berguna untuk mengantisipasi multikolinearitas: jika antarvariabel independen berkorelasi tinggi, maka ketidakpastian koefisien regresi dapat meningkat dan interpretasi menjadi kurang stabil.
+\begin{figure}[H]
+\caption{Peta Hasil Uji Hipotesis}
+\vspace{0.5em}
+\centering
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\centering\arraybackslash}p{0.18\textwidth}}
+\toprule
+Hipotesis & Hubungan yang diuji & Bukti utama & Keputusan \\
+\midrule
+H1 & HHI $\rightarrow$ SROA & Koefisien positif 0,076, tetapi $p=0,146$ & Tidak terdukung \\
+H2 & BQS $\rightarrow$ SROA & Koefisien positif 0,033 dan $p<0,001$ & Terdukung \\
+H3 & Dominansi BQS dibanding HHI & Standardized beta BQS 0,258 dan HHI 0,255; BQS signifikan dan stabil & Terdukung hati-hati \\
+\bottomrule
+\end{tabularx}
+\vspace{0.5em}
+{\small Sumber: Ringkasan hasil regresi utama dan uji ketahanan.}
+\end{figure}
 
-**Gambar 4.3 Plot Koefisien Regresi (Placeholder/Practice)**  
-![](output/figures/coef_plot.png)  
-Sumber: Output estimasi penulis (placeholder/practice).
+### **4.2.3 Statistik Deskriptif, Korelasi, dan Pola Kelompok (Output Tabel)**
 
-Gambar 4.3 menampilkan arah dan besaran koefisien regresi beserta interval ketidakpastian. Plot koefisien dipakai sebagai ringkasan visual hasil estimasi; namun validitas inferensi tetap mengacu pada tabel koefisien dan standard errors (lihat Tabel 4.7).
-
-**Gambar 4.4 Tren Rata-rata Tahunan (Placeholder/Practice)**  
-![](output/figures/trends.png)  
-Sumber: Output pengolahan data penulis (placeholder/practice).
-
-Gambar 4.4 membantu melihat dinamika agregat dari waktu ke waktu. Jika terdapat pergeseran rata-rata yang jelas pada tahun tertentu, maka memasukkan *year fixed effects* menjadi krusial untuk menangkap guncangan makro yang memengaruhi seluruh perusahaan secara simultan.
-
-**Gambar 4.5 Distribusi Variabel (Placeholder/Practice)**  
-![](output/figures/distributions.png)  
-Sumber: Output pengolahan data penulis (placeholder/practice).
-
-Distribusi pada Gambar 4.5 memberi gambaran sebaran SROA (termasuk kemungkinan *skewness*), variasi BQS (terstandarisasi), serta variasi HHI dan variabel kontrol. Secara praktis, visualisasi ini membantu mengecek kewajaran nilai minimum/maksimum dan mendeteksi potensi pencilan (yang kemudian ditangani melalui winsorization pada tahap pengolahan data).
-
-**Gambar 4.6 Scatter SROA vs BQS (Placeholder/Practice)**  
-![](output/figures/scatter_sroa_bqs.png)  
-Sumber: Output pengolahan data penulis (placeholder/practice).
-
-Pada scatter plot, pola hubungan SROA–BQS cenderung membentuk kemiringan positif (meskipun tidak sempurna). Ini menjadi indikasi awal bahwa perusahaan dengan kualitas bisnis lebih tinggi cenderung memiliki profitabilitas berkelanjutan yang lebih tinggi. Pola ini kemudian diuji secara formal pada hasil regresi.
-
-**Gambar 4.7 Scatter SROA vs HHI (Placeholder/Practice)**  
-![](output/figures/scatter_sroa_hhi.png)  
-Sumber: Output pengolahan data penulis (placeholder/practice).
-
-Sebaliknya, Gambar 4.7 menunjukkan hubungan SROA–HHI yang tidak “terbaca” sejelas BQS. Ini memberi sinyal awal bahwa kontribusi struktur industri (diukur HHI) mungkin tidak kuat pada dataset latihan setelah kontrol fixed effects diterapkan.
-
-**Gambar 4.8 Boxplot SROA per Tahun (Placeholder/Practice)**  
-![](output/figures/box_sroa_by_year.png)  
-Sumber: Output pengolahan data penulis (placeholder/practice).
-
-**Gambar 4.9 Boxplot BQS per Tahun (Placeholder/Practice)**  
-![](output/figures/box_bqs_by_year.png)  
-Sumber: Output pengolahan data penulis (placeholder/practice).
-
-Kombinasi boxplot pada Gambar 4.8 dan Gambar 4.9 membantu membaca stabilitas sebaran variabel lintas tahun. Jika sebaran bergeser, interpretasi berbasis rata-rata sederhana berpotensi menyesatkan; karena itu, model memasukkan efek tahun dan interpretasi lebih bertumpu pada variasi within-firm.
-
-**Gambar 4.10 Rata-rata SROA per Decile BQS (Placeholder/Practice)**  
-![](output/figures/sroa_by_bqs_decile.png)  
-Sumber: Output pengolahan data penulis (placeholder/practice).
-
-**Gambar 4.11 Rata-rata SROA per Quintile HHI (Placeholder/Practice)**  
-![](output/figures/sroa_by_hhi_quintile.png)  
-Sumber: Output pengolahan data penulis (placeholder/practice).
-
-Gambar 4.10 dan Gambar 4.11 menyajikan ringkasan “kelompok” yang intuitif: bagaimana rata-rata SROA berubah pada kelompok kualitas bisnis (decile BQS) dan kelompok konsentrasi industri (quintile HHI). Analisis kelompok ini tidak menggantikan regresi, tetapi menjadi bukti pendukung yang membantu pembaca mengaitkan hasil formal dengan pola data.
-
-### **4.2.3 Statistik Deskriptif, Korelasi, dan Uji Diagnostik (Output Tabel)**
-
-Bagian ini menyajikan keluaran tabel yang menjadi dasar pembacaan data dan “cek kesehatan” model sebelum pembahasan koefisien regresi. Fokusnya adalah memastikan data tidak menunjukkan masalah yang membuat interpretasi koefisien menjadi tidak reliabel, serta memberikan konteks besaran dan variasi variabel penelitian.
+Bagian ini menyajikan keluaran tabel yang menjadi dasar pembacaan karakter data sebelum masuk ke diagnosis model dan regresi utama. Fokusnya adalah memahami besaran variabel, arah hubungan awal, serta pola kelompok yang nanti membantu menafsirkan hasil multivariat. Dengan demikian, tabel pada bagian ini berfungsi sebagai fondasi naratif untuk pembahasan yang lebih teknis pada subbab berikutnya.
 
 <!-- AUTO:BAB4_ANALYSIS_TABLES_START -->
-**Tabel 4.1 Statistik Deskriptif Variabel Penelitian (Practice/Placeholder, N=5000)**  
+**Tabel 4.1 Statistik Deskriptif Variabel Penelitian (N=2241)**  
 
 | Variabel | Mean | Std. Dev | Min | P25 | Median | P75 | Max |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| SROA | 0,075 | 0,075 | -0,100 | 0,026 | 0,059 | 0,114 | 0,317 |
-| BQS | -0,000 | 0,495 | -1,753 | -0,352 | -0,029 | 0,310 | 1,750 |
-| HHI | 0,301 | 0,221 | 0,054 | 0,155 | 0,214 | 0,378 | 1,000 |
-| SIZE | 23,934 | 1,343 | 20,057 | 23,008 | 23,869 | 24,737 | 29,018 |
-| GROWTH | 0,061 | 0,103 | -0,209 | -0,006 | 0,062 | 0,128 | 0,319 |
+| SROA | 0,079 | 0,066 | -0,095 | 0,039 | 0,070 | 0,114 | 0,276 |
+| BQS | -0,001 | 0,517 | -1,849 | -0,340 | -0,063 | 0,252 | 4,633 |
+| HHI | 0,354 | 0,222 | 0,109 | 0,173 | 0,334 | 0,454 | 1,000 |
+| SIZE | 23,867 | 1,231 | 20,556 | 23,010 | 23,794 | 24,671 | 27,832 |
+| GROWTH | 0,088 | 0,198 | -0,406 | 0,000 | 0,060 | 0,140 | 0,972 |
 
-**Tabel 4.2 Matriks Korelasi Pearson (Practice/Placeholder, N=5000)**  
+Tabel 4.1 menyajikan rangkuman statistik deskriptif untuk seluruh variabel penelitian yang mencakup 2241 observasi dari 333 perusahaan selama periode panel efektif 2019–2025. SROA yang tetap positif pada rata-rata menunjukkan bahwa profitabilitas berkelanjutan sampel relatif stabil setelah efek fluktuasi tahunan diredam melalui rata-rata bergerak. Pada saat yang sama, rentang nilai SROA, BQS, HHI, SIZE, dan GROWTH yang cukup lebar menegaskan bahwa heterogenitas lintas perusahaan cukup besar sehingga penggunaan model panel memang relevan untuk menangkap perbedaan antarperusahaan dan antarperiode.
+
+**Tabel 4.2 Matriks Korelasi Pearson (N=2241)**  
 
 |  | SROA | BQS | HHI | SIZE | GROWTH |
 | --- | --- | --- | --- | --- | --- |
-| SROA | 1,000 | 0,181 | 0,040 | -0,350 | -0,034 |
-| BQS | 0,181 | 1,000 | -0,046 | 0,045 | 0,038 |
-| HHI | 0,040 | -0,046 | 1,000 | -0,097 | 0,022 |
-| SIZE | -0,350 | 0,045 | -0,097 | 1,000 | 0,004 |
-| GROWTH | -0,034 | 0,038 | 0,022 | 0,004 | 1,000 |
+| SROA | 1,000 | 0,318 | -0,043 | -0,214 | -0,083 |
+| BQS | 0,318 | 1,000 | -0,105 | -0,094 | 0,113 |
+| HHI | -0,043 | -0,105 | 1,000 | 0,088 | -0,021 |
+| SIZE | -0,214 | -0,094 | 0,088 | 1,000 | -0,051 |
+| GROWTH | -0,083 | 0,113 | -0,021 | -0,051 | 1,000 |
 
-**Tabel 4.3 Variance Inflation Factor (VIF) (Practice/Placeholder)**  
+Tabel 4.2 menunjukkan arah hubungan bivariat awal antar variabel sebelum efek tetap perusahaan dan tahun dikendalikan. Korelasi positif antara SROA dan BQS memberi dukungan awal bahwa kualitas bisnis berkaitan dengan profitabilitas berkelanjutan, sedangkan korelasi SROA dengan HHI terlihat lemah. Korelasi antarvariabel independen juga relatif rendah, sehingga sejak tahap awal tidak tampak gejala multikolinearitas yang serius. Karena itu, kesimpulan formal tetap harus ditarik dari regresi panel multivariat.
+
+**Tabel 4.3 Variance Inflation Factor (VIF)**  
 
 | Variabel | VIF |
 | --- | --- |
-| HHI | 1,012 |
-| SIZE | 1,011 |
-| BQS | 1,005 |
-| GROWTH | 1,002 |
+| BQS | 1,031 |
+| HHI | 1,018 |
+| SIZE | 1,017 |
+| GROWTH | 1,015 |
 
-**Tabel 4.4 Uji Diagnostik Ekonometrika (Practice/Placeholder)**  
+Tabel 4.3 memperlihatkan bahwa seluruh nilai VIF berada sangat dekat dengan 1, sehingga tidak ada indikasi multikolinearitas yang serius di antara variabel penjelas. Dengan demikian, koefisien regresi nantinya dapat dibaca tanpa kekhawatiran besar bahwa hubungan antar variabel independen mengganggu stabilitas estimasi. Hasil ini penting karena fokus penelitian adalah membandingkan kekuatan relatif BQS dan HHI, sehingga kestabilan koefisien menjadi prasyarat utama untuk pembacaan dominansi yang kredibel.
+
+**Tabel 4.4 Uji Diagnostik Ekonometrika**  
 
 | Uji | Statistik | p-value | Catatan |
 | --- | --- | --- | --- |
-| Jarque-Bera (residual normality) | 354681,844 | <0,001 | Residuals from within (two-way demeaned) regression |
-| Breusch-Pagan (LM) | 61,843 | <0,001 | Exog=within-demeaned regressors |
-| Breusch-Pagan (F) | 15,639 | <0,001 | Exog=within-demeaned regressors |
-| Pesaran CD (cross-sectional dependence, approx.) | 5,194 | <0,001 | Pairs=124750; Approx CD using pairwise corr; unbalanced-panel heuristic |
-| Within-firm residual AR(1) corr (mean) | 0,597 | <0,001 | Firms used=500; Approx test using mean Fisher z of within-firm AR(1) residual corr |
-| Within-firm residual lag corr (pooled pairs) | 0,530 | <0,001 | Pairs=4500; Pooled Fisher z approx using consecutive-year pairs |
+| Jarque-Bera (residual normality) | 929,014 | <0,001 | Residuals from within regression |
+| Breusch-Pagan (LM) | 6,620 | 0,157 | Exog=within-demeaned regressors |
+| Breusch-Pagan (F) | 1,656 | 0,158 | Exog=within-demeaned regressors |
+| Pesaran CD (cross-sectional dependence, approx.) | -0,132 | 0,895 | Pairs=54851; Approx CD using pairwise correlations |
+| Within-firm residual AR(1) corr (mean) | 0,579 | <0,001 | Firms used=328; Mean Fisher-z AR(1) |
 
-**Tabel 4.5 Rata-rata SROA Menurut Decile BQS (Practice/Placeholder)**  
+Tabel 4.4 menunjukkan bahwa residual model tidak sepenuhnya normal dan masih mengandung korelasi serial intra-perusahaan, sementara sinyal heteroskedastisitas dan dependensi lintas-seksi tidak tampak dominan. Kombinasi hasil ini khas pada data panel keuangan: model masih layak digunakan, tetapi inferensinya tidak boleh dibaca dengan standard error biasa. Karena itu, temuan pada tabel ini menguatkan keputusan metodologis untuk menggunakan firm-clustered robust standard errors agar inferensi tetap lebih aman.
 
-| Decile BQS | N | Mean BQS | Mean SROA |
+**Tabel 4.5 Rata-rata SROA Menurut Desil BQS**  
+
+| Desil BQS | N | Mean BQS | Mean SROA |
 | --- | --- | --- | --- |
-| D1 | 500 | -0,821 | 0,051 |
-| D2 | 500 | -0,485 | 0,061 |
-| D3 | 500 | -0,351 | 0,057 |
-| D4 | 500 | -0,216 | 0,068 |
-| D5 | 500 | -0,090 | 0,080 |
-| D6 | 500 | 0,039 | 0,090 |
-| D7 | 500 | 0,185 | 0,095 |
-| D8 | 500 | 0,313 | 0,071 |
-| D9 | 500 | 0,517 | 0,089 |
-| D10 | 500 | 0,909 | 0,090 |
+| D1 | 225 | -0,716 | 0,048 |
+| D2 | 224 | -0,446 | 0,061 |
+| D3 | 224 | -0,336 | 0,061 |
+| D4 | 224 | -0,219 | 0,069 |
+| D5 | 224 | -0,112 | 0,074 |
+| D6 | 224 | -0,005 | 0,078 |
+| D7 | 224 | 0,119 | 0,087 |
+| D8 | 224 | 0,254 | 0,102 |
+| D9 | 224 | 0,446 | 0,102 |
+| D10 | 224 | 1,013 | 0,112 |
 
-**Tabel 4.6 Rata-rata SROA Menurut Quintile HHI (Practice/Placeholder)**  
+Tabel 4.5 memperlihatkan pola deskriptif yang cukup jelas: rata-rata SROA cenderung meningkat dari desil BQS terendah ke desil tertinggi. Meskipun tidak sepenuhnya monoton di setiap titik, arah umumnya mendukung dugaan bahwa perusahaan dengan kualitas bisnis lebih baik cenderung memiliki profitabilitas berkelanjutan yang lebih tinggi. Artinya, sebelum masuk ke regresi formal pun, data sudah memberi sinyal awal bahwa BQS bergerak searah dengan ketahanan profitabilitas.
 
-| Quintile HHI | N | Mean HHI | Mean SROA |
+**Tabel 4.6 Rata-rata SROA Menurut Kuintil HHI**  
+
+| Kuintil HHI | N | Mean HHI | Mean SROA |
 | --- | --- | --- | --- |
-| Q1 | 1002 | 0,104 | 0,065 |
-| Q2 | 1004 | 0,168 | 0,062 |
-| Q3 | 996 | 0,226 | 0,087 |
-| Q4 | 998 | 0,349 | 0,088 |
-| Q5 | 1000 | 0,661 | 0,075 |
+| Q1 | 458 | 0,132 | 0,074 |
+| Q2 | 445 | 0,196 | 0,084 |
+| Q3 | 444 | 0,315 | 0,080 |
+| Q4 | 447 | 0,424 | 0,079 |
+| Q5 | 447 | 0,707 | 0,079 |
+
+Tabel 4.6 menunjukkan bahwa rata-rata SROA antar kuintil HHI tidak membentuk pola yang tegas atau monoton. Hal ini mengisyaratkan bahwa pengaruh konsentrasi industri terhadap SROA tidak sekuat pola yang terlihat pada BQS, sehingga pengujian formal lewat regresi panel menjadi semakin penting. Dengan kata lain, sinyal deskriptif untuk HHI jauh lebih lemah dan lebih ambigu dibandingkan sinyal deskriptif untuk BQS.
+
+**Tabel 4.7 Profil Komponen BQS Menurut Desil**  
+
+| Desil | Margin | FCF | Leverage | Coverage | Consistency |
+| --- | --- | --- | --- | --- | --- |
+| D1 | -1,004 | -0,989 | -0,907 | -0,098 | -0,583 |
+| D2 | -0,980 | -0,502 | -0,176 | -0,086 | -0,484 |
+| D3 | -0,761 | -0,372 | -0,071 | -0,082 | -0,396 |
+| D4 | -0,475 | -0,258 | -0,004 | -0,078 | -0,282 |
+| D5 | -0,177 | -0,096 | -0,075 | -0,074 | -0,135 |
+| D6 | 0,089 | 0,084 | -0,057 | -0,067 | -0,073 |
+| D7 | 0,424 | 0,327 | 0,009 | -0,068 | -0,098 |
+| D8 | 0,584 | 0,435 | 0,126 | -0,034 | 0,159 |
+| D9 | 0,867 | 0,679 | 0,431 | -0,019 | 0,269 |
+| D10 | 1,283 | 0,909 | 0,653 | 0,681 | 1,537 |
+
+Tabel 4.7 menegaskan bahwa kenaikan desil BQS diikuti perbaikan yang relatif konsisten pada profil komponen penyusunnya. Artinya, skor BQS yang lebih tinggi memang bukan artefak satu komponen tunggal, melainkan mencerminkan peningkatan kualitas bisnis secara lebih menyeluruh. Temuan ini penting karena membuat interpretasi terhadap pengaruh BQS menjadi lebih kuat secara konseptual.
+
+**Tabel 4.8 Sensitivitas HHI terhadap Taksonomi Industri**  
+
+| Taksonomi | Mean | Median | Min | Max |
+| --- | --- | --- | --- | --- |
+| GICS Sub | 0,354 | 0,334 | 0,109 | 1,000 |
+| ICB Sub | 0,381 | 0,327 | 0,095 | 1,000 |
+| ICB Sector | 0,183 | 0,148 | 0,045 | 1,000 |
+| ICB Super | 0,103 | 0,079 | 0,025 | 0,974 |
+| ICB Industry | 0,081 | 0,076 | 0,021 | 0,974 |
+| Bloomberg Group | 0,297 | 0,239 | 0,115 | 1,000 |
+
+Tabel 4.8 menunjukkan bahwa tingkat HHI cukup sensitif terhadap taksonomi industri yang digunakan. Temuan ini penting karena berarti interpretasi pengaruh struktur industri perlu dibaca hati-hati dan tidak bergantung pada satu klasifikasi saja. Sensitivitas tersebut juga menjadi alasan mengapa penelitian menambahkan beberapa definisi HHI alternatif pada tahap robustness.
 <!-- AUTO:BAB4_ANALYSIS_TABLES_END -->
 
-Untuk memastikan pembacaan yang runtut, tabel-tabel pada Subbab 4.2.3 dibahas kembali secara naratif. Tujuannya bukan mengulang angka, melainkan menegaskan makna statistik yang relevan bagi interpretasi koefisien regresi.
+### **4.2.4 Evaluasi Asumsi Gauss-Markov dan Diagnostik Model**
 
-#### **4.2.3.1 Pembahasan Tabel 4.1 (Statistik Deskriptif)**
+Setelah memperoleh gambaran umum tentang distribusi data dan pola hubungan awal, tahap berikutnya adalah memeriksa apakah model panel yang digunakan cukup sejalan dengan kondisi Gauss-Markov yang relevan dan apakah terdapat pola residual yang mengganggu inferensi. Dalam penelitian panel keuangan, bagian ini tidak dibaca secara hitam-putih seolah model harus sepenuhnya “bersih” dari semua penyimpangan. Yang lebih penting adalah apakah terdapat pola residual tertentu yang menuntut penyesuaian cara membaca standard error dan signifikansi koefisien.
 
-Tabel 4.1 menunjukkan rata-rata SROA pada sampel latihan sebesar **0,075** dengan median **0,059**, yang mengindikasikan distribusi SROA cenderung *right-skewed* (mean lebih tinggi dari median) dan terdapat perusahaan dengan profitabilitas berkelanjutan yang relatif tinggi. Rentang SROA dari sekitar **-0,100** hingga **0,317** menggambarkan heterogenitas yang besar antar perusahaan dan waktu, sehingga penggunaan fixed effects relevan untuk mengendalikan perbedaan permanen antar perusahaan.
+### **4.2.4.1 Uji Normalitas Residual**
 
-BQS pada dataset ini memiliki mean mendekati **0** karena dibentuk dari Z-score per tahun, sedangkan standar deviasi sekitar **0,495** menandakan variasi kualitas bisnis antar perusahaan cukup lebar. HHI memiliki rata-rata **0,301** dengan maksimum **1,0**, yang menunjukkan adanya observasi industri yang sangat terkonsentrasi pada fase latihan. SIZE (ln aset) memiliki median **23,869** dan maksimum mendekati **29,018**, sehingga perbedaan skala antar perusahaan pada sampel sangat besar. GROWTH memiliki median **0,062** dengan variasi moderat dan mencakup nilai negatif (kontraksi penjualan) pada sebagian observasi.
+Normalitas residual dievaluasi melalui statistik Jarque-Bera pada Tabel 4.4. Hasil uji menunjukkan nilai statistik yang tinggi dengan *p-value* di bawah 0,001, sehingga hipotesis nol normalitas residual ditolak. Secara teknis, ini berarti distribusi residual model *within* tidak sepenuhnya mengikuti distribusi normal.
 
-#### **4.2.3.2 Pembahasan Tabel 4.2 dan Gambar 4.2 (Korelasi)**
+Dalam konteks data panel perusahaan besar, hasil seperti ini sesungguhnya cukup lazim. Residual keuangan korporasi sering memiliki ekor distribusi yang lebih berat karena adanya guncangan ekstrem, kejadian satu kali, atau perubahan siklus bisnis yang tidak tertangkap sempurna oleh model. Karena ukuran sampel penelitian cukup besar, penolakan normalitas tidak otomatis membatalkan model fixed effects. Namun, hasil ini memperingatkan bahwa inferensi tidak boleh bertumpu pada asumsi homoskedastik-normal biasa. Oleh sebab itu, keputusan menggunakan *firm-clustered robust standard errors* menjadi semakin relevan.
 
-Korelasi Pearson pada Tabel 4.2 memberi indikasi awal arah hubungan, tetapi **bukan** bukti kausal karena belum mengendalikan heterogenitas perusahaan maupun efek tahun. Pada fase latihan, korelasi SROA dengan BQS positif (**0,181**), selaras dengan hipotesis RBV. Korelasi SROA dengan HHI relatif kecil (**0,040**), sehingga pada hubungan bivariate sederhana, struktur industri belum tampak kuat.
+### **4.2.4.2 Uji Multikolinearitas**
 
-Korelasi SROA dengan SIZE bersifat negatif (**-0,350**), yang bisa mencerminkan perbedaan karakter industri atau “maturity” perusahaan besar; namun pada model fixed effects yang diuji adalah variasi within-firm dari waktu ke waktu, sehingga korelasi sederhana ini tidak dapat langsung dipakai untuk menarik kesimpulan. Heatmap pada Gambar 4.2 membantu menunjukkan bahwa korelasi antarregressor relatif rendah, yang mengurangi kekhawatiran multikolinearitas berat.
+Multikolinearitas dibaca terutama melalui Tabel 4.3 dan didukung oleh korelasi antar variabel pada Tabel 4.2. Seluruh nilai VIF berada pada kisaran 1,015 hingga 1,031, sangat jauh di bawah ambang konservatif 5 maupun ambang longgar 10. Hasil ini menunjukkan bahwa masing-masing variabel penjelas masih membawa informasi yang relatif berbeda, sehingga ketidakstabilan koefisien akibat hubungan linear antarsesama variabel independen tidak menjadi ancaman utama.
 
-#### **4.2.3.3 Pembahasan Tabel 4.3 (VIF)**
+Temuan ini penting karena BQS secara konsep memang berpotensi berkaitan dengan SIZE dan GROWTH. Jika multikolinearitas tinggi terjadi, maka koefisien BQS dan HHI bisa menjadi sulit dibedakan secara statistik walaupun secara ekonomi keduanya relevan. Akan tetapi, karena VIF sangat rendah dan korelasi bivariat juga tidak ekstrem, model utama dapat dibaca dengan keyakinan yang lebih baik bahwa setiap koefisien mewakili informasi marjinal yang cukup terpisah.
 
-Nilai VIF pada Tabel 4.3 seluruhnya sekitar **1,00–1,01**, yang berarti multikolinearitas antar regressor pada sampel latihan **sangat rendah**. Dengan demikian, ketidakpastian koefisien pada fase placeholder/practice lebih mungkin berasal dari karakter data dan spesifikasi fixed effects, bukan dari korelasi tinggi antar variabel penjelas.
+### **4.2.4.3 Uji Heteroskedastisitas**
 
-#### **4.2.3.4 Pembahasan Tabel 4.4 (Uji Diagnostik Ekonometrika)**
+Heteroskedastisitas dievaluasi melalui hasil Breusch-Pagan pada Tabel 4.4, baik versi LM maupun F. Kedua hasil tersebut memberikan *p-value* sekitar 0,157 hingga 0,158, sehingga tidak ada bukti kuat untuk menolak hipotesis nol homoskedastisitas pada spesifikasi yang diuji. Secara permukaan, ini menunjukkan bahwa variasi residual tidak tampak berubah secara sistematis mengikuti level variabel penjelas dalam model *within*.
 
-Tabel 4.4 memperlihatkan indikasi pelanggaran asumsi klasik yang umum pada data panel keuangan: residual tidak normal (Jarque–Bera), heteroskedastisitas (Breusch–Pagan), *cross-sectional dependence* (Pesaran CD), serta autokorelasi intra-perusahaan (korelasi residual dengan lag). Pada konteks ini, uji diagnostik diperlakukan sebagai “alarm” yang menguatkan kebutuhan estimator varians yang robust, bukan sebagai alasan untuk membatalkan model.
+Meskipun demikian, hasil ini tidak berarti penelitian boleh kembali menggunakan standard error biasa. Pada data panel korporasi, heteroskedastisitas sering kali hidup berdampingan dengan autokorelasi dan struktur klaster residual yang lebih kompleks daripada yang dapat ditangkap satu uji formal. Karena itu, temuan Breusch-Pagan yang tidak dominan diperlakukan sebagai informasi yang menenangkan, tetapi bukan alasan untuk melepas perlindungan metodologis berupa *cluster-robust standard errors*.
 
-Karena itu, penelitian ini menekankan penggunaan standard errors yang di-*cluster* pada level perusahaan sebagaimana dijelaskan pada BAB III. Pendekatan ini membantu menjaga validitas uji t meskipun terdapat heteroskedastisitas dan autokorelasi intra-perusahaan.
+### **4.2.4.4 Uji Autokorelasi**
 
-#### **4.2.3.5 Pembahasan Tabel 4.5–4.6 (Analisis Kelompok)**
+Autokorelasi residual dibaca melalui indikator korelasi AR(1) rata-rata intra-perusahaan pada Tabel 4.4. Nilai korelasi sekitar 0,579 dengan *p-value* di bawah 0,001 menunjukkan bahwa residual pada perusahaan yang sama cenderung bergerak searah antarperiode. Dengan kata lain, ketika model mengalami *underprediction* atau *overprediction* pada suatu perusahaan di satu tahun, pola penyimpangan serupa masih berpotensi berlanjut pada tahun berikutnya.
 
-Analisis kelompok dimaksudkan sebagai “jembatan” antara visual dan regresi. Pada Tabel 4.5, SROA rata-rata cenderung lebih tinggi pada kelompok BQS yang lebih tinggi: misalnya, SROA rata-rata pada decile terendah (D1) sekitar **0,051**, sementara pada decile tertinggi (D10) sekitar **0,090**. Meskipun tidak meningkat secara sempurna pada setiap decile (contoh D8 lebih rendah), pola umumnya konsisten dengan intuisi bahwa kualitas bisnis berkaitan dengan profitabilitas berkelanjutan.
+Temuan ini sangat penting secara ekonometrika. Jika autokorelasi semacam ini diabaikan, maka standard error parsial dapat menjadi terlalu kecil sehingga koefisien tampak lebih meyakinkan daripada yang sebenarnya. Oleh karena itu, hasil uji autokorelasi justru menjadi salah satu justifikasi terkuat untuk mengandalkan *firm-level clustering* dalam inferensi akhir. Dalam bahasa yang lebih sederhana, model utama tetap dipertahankan, tetapi “cara menghitung ketidakpastian” koefisiennya harus dibuat lebih ketat.
 
-Sebaliknya, Tabel 4.6 menunjukkan pola rata-rata SROA antar quintile HHI yang tidak monotonic (Q3–Q4 relatif lebih tinggi, tetapi Q5 turun kembali). Pola ini memberi indikasi awal bahwa hubungan HHI–SROA pada dataset latihan tidak stabil dan perlu verifikasi formal melalui regresi.
+### **4.2.4.5 Uji Dependensi Lintas-Seksi**
 
-### **4.2.4 Hasil Estimasi Regresi Panel (Two-Way Fixed Effects)**
+Dependensi lintas-seksi diperiksa melalui pendekatan Pesaran CD pada Tabel 4.4. Hasil uji menunjukkan statistik yang sangat kecil dengan *p-value* 0,895, sehingga tidak ada bukti kuat bahwa residual antarperusahaan bergerak bersama secara sistematis setelah efek tahun dimasukkan. Ini berarti guncangan umum yang sama tampaknya sudah cukup banyak diserap oleh *year fixed effects* dalam model utama.
 
-Bagian ini menyajikan keluaran estimasi regresi panel sebagai hasil statistik utama penelitian. Interpretasi ekonomis dan jawaban hipotesis akan difokuskan pada Subbab 4.3, terutama untuk menguraikan pengaruh masing-masing variabel independen terhadap SROA secara terpisah.
+Walaupun hasil ini relatif menenangkan, interpretasinya tetap perlu hati-hati. Tidak signifikannya uji Pesaran CD tidak berarti perusahaan-perusahaan dalam pasar modal Amerika benar-benar independen satu sama lain, melainkan hanya menunjukkan bahwa pada spesifikasi model yang digunakan, sisa korelasi residual lintas-seksi tidak muncul sebagai masalah dominan. Dengan demikian, diagnosis keseluruhan model adalah: multikolinearitas rendah, heteroskedastisitas tidak dominan, dependensi lintas-seksi tidak kuat, tetapi autokorelasi intra-perusahaan nyata dan normalitas residual tidak terpenuhi sempurna. Kombinasi temuan inilah yang membuat pemakaian *cluster-robust standard errors* menjadi pilihan paling defensibel.
+
+### **4.2.4.6 Evaluasi Validitas Konstruk dan Konsistensi Operasional**
+
+Sesuai penjelasan metodologis pada BAB III, penelitian ini tidak menggunakan uji validitas dan reliabilitas instrumen dalam arti kuesioner. Sebagai gantinya, evaluasi kualitas pengukuran dilakukan melalui validitas konstruk, koherensi komponen, dan kestabilan operasional variabel. Pada tahap hasil, pembaca dapat melihat bahwa konstruk BQS tidak dibangun secara arbitrer: Tabel 4.5 dan terutama Tabel 4.7 menunjukkan bahwa kenaikan skor BQS diikuti perbaikan relatif konsisten pada komponen margin, arus kas bebas, leverage discipline, *interest coverage*, dan konsistensi. Ini memberi dukungan bahwa BQS memang menangkap dimensi kualitas bisnis yang masuk akal secara ekonomi.
+
+Selain itu, konsistensi operasional juga tercermin dari proses *complete-case*, audit *missingness*, dan *robustness checks* yang akan ditunjukkan pada hasil estimasi berikutnya. Artinya, relasi BAB III dan BAB IV pada penelitian ini bukan berupa pengujian butir kuesioner, melainkan keterkaitan yang lebih tepat secara ekonomi-keuangan: apakah konstruk variabel sesuai literatur, apakah data cukup bersih untuk membentuk ukuran tersebut, dan apakah hasil tetap stabil ketika definisi operasional digeser secara wajar.
+
+## **4.3 Hasil** {#4.3-hasil-estimasi-regresi-dan-pengujian-hipotesis}
+
+Subbab ini menyajikan hasil estimasi model panel utama secara lebih eksplisit, diikuti pengujian hipotesis parsial, simultan, dominansi relatif, dan uji ketahanan. Dengan demikian, bagian ini merupakan pusat inferensi statistik penelitian, sedangkan interpretasi ekonomi yang lebih mendalam akan diletakkan pada subbab berikutnya.
+
+Secara umum, model utama yang diestimasi adalah model *two-way fixed effects* dengan *firm-clustered robust standard errors*. Dalam bentuk ringkas, persamaan estimasi utamanya dapat dibaca sebagai berikut:
+
+\begin{equation}
+\mathrm{SROA}_{i,t} = 0{,}033\,\mathrm{BQS}_{i,t} + 0{,}076\,\mathrm{HHI}_{j,t} + 0{,}007\,\mathrm{SIZE}_{i,t} - 0{,}010\,\mathrm{GROWTH}_{i,t} + \alpha_i + \delta_t + \varepsilon_{i,t}
+\end{equation}
+
+Persamaan di atas menunjukkan bahwa dalam model utama, BQS dan HHI sama-sama memiliki arah koefisien positif, SIZE juga positif, sedangkan GROWTH negatif. Namun, arah koefisien saja belum cukup untuk menarik simpulan. Karena itu, pembacaan formal tetap harus didasarkan pada uji determinasi, uji t, uji F, koefisien terstandarisasi, dan *robustness checks* yang disajikan pada tabel-tabel berikut.
+
+### **4.3.1 Hasil Estimasi Model Regresi Utama**
 
 <!-- AUTO:BAB4_RESULTS_TABLES_START -->
-**Tabel 4.7 Hasil Regresi Two-Way Fixed Effects (Practice/Placeholder, N=5000)**  
+**Tabel 4.9 Perbandingan Estimator Kandidat Data Panel**  
+
+| Estimator | BQS | HHI | SIZE | GROWTH | R2 overall | R2 within | Catatan |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Pooled OLS (CEM) | 0,040 | 0,001 | -0,010 | -0,043 | 0,152 | 0,025 | Tanpa efek perusahaan dan tahun |
+| Random Effects (REM) | 0,035 | -0,002 | 0,001 | -0,015 | 0,102 | 0,086 | Efek acak perusahaan |
+| Fixed Effects (FEM) | 0,033 | 0,051 | 0,015 | -0,014 | -7,718 | 0,099 | Efek tetap perusahaan |
+| Two-way Fixed Effects | 0,033 | 0,076 | 0,007 | -0,010 | -0,640 | 0,093 | Efek tetap perusahaan dan tahun |
+
+Tabel 4.9 menunjukkan bahwa tanda dan besaran koefisien dapat berubah ketika asumsi estimator diubah dari pooled OLS ke REM, FEM, dan two-way fixed effects. Karena itu, pemilihan estimator tidak boleh dilakukan hanya berdasarkan kemudahan komputasi, melainkan harus ditopang oleh uji spesifikasi panel yang formal.
+
+**Tabel 4.10 Uji Pemilihan Model Data Panel**  
+
+| Urutan | Uji | Statistik | p-value | Keputusan | Implikasi |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Uji Chow / Restricted F: FEM vs Pooled OLS | 20,138 | <0,001 | Tolak H0 | FEM lebih tepat daripada pooled OLS |
+| 2 | Breusch-Pagan LM: REM vs Pooled OLS | 3170,753 | <0,001 | Tolak H0 | REM lebih tepat daripada pooled OLS |
+| 3 | Uji Hausman: FEM vs REM | 30,308 | <0,001 | Tolak H0 | FEM lebih konsisten daripada REM |
+| 4 | Uji poolability two-way FE vs pooled OLS | 20,409 | <0,001 | Tolak H0 | Efek perusahaan dan/atau waktu perlu dimasukkan |
+
+Tabel 4.10 memperlihatkan alur keputusan model panel yang lengkap. Uji Chow dan LM sama-sama menolak pooled OLS, sedangkan uji Hausman menolak REM sehingga fixed effects menjadi pilihan yang lebih konsisten. Setelah itu, pengujian tambahan atas efek waktu memastikan bahwa model akhir yang paling layak adalah two-way fixed effects.
+
+**Tabel 4.11 Hasil Estimasi Model Regresi Utama (Two-way FE; N=2241; Perusahaan=333)**  
 
 | Variabel | Koefisien | Std. Error (Cluster Firm) | t/z | p-value |
 | --- | --- | --- | --- | --- |
-| BQS | 0,045 | 0,008 | 5,898 | <0,001 |
-| HHI | -0,017 | 0,020 | -0,871 | 0,384 |
-| SIZE | -0,002 | 0,003 | -0,714 | 0,475 |
-| GROWTH | 0,013 | 0,002 | 5,457 | <0,001 |
+| BQS | 0,033 | 0,006 | 5,347 | <0,001 |
+| HHI | 0,076 | 0,052 | 1,454 | 0,146 |
+| SIZE | 0,007 | 0,008 | 0,876 | 0,381 |
+| GROWTH | -0,010 | 0,006 | -1,853 | 0,064 |
 
-**Tabel 4.8 Koefisien Terstandarisasi (Standardized Beta) (Practice/Placeholder)**  
-Tabel ini digunakan untuk analisis dominansi (H3) dengan membandingkan besaran dampak ekonomi relatif antar variabel (dalam satuan standar deviasi).
+Model utama diestimasi dengan two-way fixed effects dan standard errors yang di-cluster pada tingkat perusahaan. Nilai R-squared model utama sebesar 0,817 dengan adjusted R-squared sebesar 0,784. Uji simultan model juga signifikan (F(4, 332) = 8,171, p-value <0,001). Dengan demikian, model utama layak digunakan sebagai dasar pengujian hipotesis parsial.
+
+**Tabel 4.12 Koefisien Terstandarisasi (Standardized Beta)**  
 
 | Variabel | Standardized Beta |
 | --- | --- |
-| BQS | 0,297 |
-| HHI | -0,051 |
-| SIZE | -0,035 |
-| GROWTH | 0,018 |
+| BQS | 0,258 |
+| HHI | 0,255 |
+| SIZE | 0,130 |
+| GROWTH | -0,031 |
+
+Tabel 4.12 memperlihatkan bahwa standardized beta BQS sedikit lebih besar daripada HHI, walaupun selisihnya tipis. Artinya, secara ekonomi BQS tampak sedikit lebih dominan, tetapi dominansi tersebut tetap perlu dibaca hati-hati. Pembacaan dominansi karena itu tidak cukup hanya berdasarkan selisih angka beta, melainkan harus dipadukan dengan signifikansi dan kestabilan hasil.
+
+**Tabel 4.13 Uji Ketahanan Model (Robustness Checks)**  
+
+| Model | Outcome | BQS coef. | BQS p | HHI coef. | HHI p | Beta BQS | Beta HHI | N | Catatan |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Main | SROA | 0,033 | <0,001 | 0,076 | 0,146 | 0,258 | 0,255 | 2241 | Baseline: BQS utama + HHI GICS |
+| Legacy BQS | SROA | 0,035 | <0,001 | 0,076 | 0,145 | 0,301 | 0,255 | 2241 | BQS alternatif empat komponen |
+| Extra controls | SROA | 0,034 | <0,001 | 0,068 | 0,187 | 0,262 | 0,229 | 2241 | Tambah liquidity, cash ratio, capex intensity |
+| ICB Subsector HHI | SROA | 0,033 | <0,001 | 0,090 | 0,113 | 0,258 | 0,320 | 2241 | HHI ICB Subsector |
+| ICB Sector HHI | SROA | 0,033 | <0,001 | 0,071 | 0,392 | 0,258 | 0,153 | 2241 | HHI ICB Sector |
+| ICB Industry HHI | SROA | 0,033 | <0,001 | -0,020 | 0,916 | 0,259 | -0,026 | 2241 | HHI ICB Industry |
+| Sustained ROE | SROE | 0,051 | 0,057 | 0,521 | 0,233 | 0,059 | 0,260 | 2109 | Outcome alternatif SROE |
+
+Tabel 4.13 menunjukkan bahwa hasil untuk BQS relatif stabil di berbagai spesifikasi, sedangkan HHI lebih sensitif terhadap penambahan kontrol dan perubahan definisi industri. Stabilitas ini memperkuat keyakinan bahwa temuan utama tentang BQS bukan hasil kebetulan dari satu model saja, sementara temuan mengenai HHI perlu dibaca lebih hati-hati karena lebih mudah berubah ketika definisi model digeser.
+
+**Tabel 4.14 Ringkasan Keputusan Hipotesis**  
+
+| Hipotesis | Pernyataan | Keputusan | Dasar |
+| --- | --- | --- | --- |
+| H1 | HHI berpengaruh positif terhadap SROA | Tidak terdukung secara statistik | Koefisien HHI pada model utama |
+| H2 | BQS berpengaruh positif terhadap SROA | Terdukung | Koefisien BQS pada model utama |
+| H3 | BQS lebih dominan dibanding HHI | Terdukung secara inferensial, dominansi ekonomi tipis | Perbandingan standardized beta, signifikansi, dan robustness |
+
+Tabel 4.14 merangkum bahwa hipotesis mengenai pengaruh BQS terdukung, sedangkan hipotesis pengaruh HHI tidak terdukung secara statistik pada model utama. Hipotesis dominansi BQS dapat diterima secara relatif karena BQS lebih stabil dan signifikan, walaupun selisih besaran ekonominya terhadap HHI tidak besar. Dengan demikian, garis besar jawaban penelitian tetap lebih dekat pada penjelasan berbasis kualitas bisnis internal.
 <!-- AUTO:BAB4_RESULTS_TABLES_END -->
 
-Secara ringkas pada fase placeholder/practice, koefisien BQS dan GROWTH terestimasi positif signifikan, sementara HHI dan SIZE tidak signifikan. Plot koefisien pada Gambar 4.3 menyajikan ringkasan visual yang konsisten dengan tabel koefisien di atas.
+## **4.4 Pembahasan** {#4.4-interpretasi-hasil}
 
-## **4.3 Interpretasi Hasil** {#4.3-interpretasi-hasil}
+Subbab ini berfokus pada interpretasi ekonomi atas hasil estimasi regresi, bukan sekadar pengulangan signifikansi statistik. Pembahasan setiap variabel akan dikaitkan dengan teori SCP dan RBV serta dibandingkan dengan penelitian terdahulu yang telah dirangkum pada BAB II. Dengan cara ini, hasil skripsi tidak berhenti pada “koefisien signifikan atau tidak”, tetapi berkembang menjadi argumen empiris yang lebih berbobot mengenai determinan profitabilitas berkelanjutan pada sampel S\&P 500.
 
-Subbab ini berfokus pada interpretasi hubungan **masing-masing variabel independen terhadap SROA**, dengan merujuk pada hasil estimasi regresi (Tabel 4.7), koefisien terstandarisasi (Tabel 4.8), serta bukti pendukung deskriptif/visual (Subbab 4.2). Agar alurnya konsisten dengan pedoman penulisan BAB IV, seluruh hasil uji statistik ditempatkan pada Subbab 4.2, sedangkan Subbab 4.3 difokuskan pada pembahasan mekanisme dan implikasi ekonominya.
+### **4.4.1 Pengaruh Kualitas Bisnis (BQS) terhadap SROA**
 
-Karena tahap ini masih placeholder/practice, pembahasan berikut diperlakukan sebagai latihan penulisan BAB IV yang akan diperdalam setelah data final tersedia (khususnya untuk memastikan kualitas pengukuran HHI dan kelengkapan item pembentuk BQS sesuai standar data Bloomberg).
+Hasil estimasi regresi panel pada Tabel 4.10 menunjukkan koefisien BQS bernilai positif sebesar 0,033 dan signifikan secara statistik pada tingkat signifikansi tertinggi ($p < 0,001$, dengan nilai t-statistik sebesar 5,347). Secara ekonomi, temuan ini menunjukkan bahwa peningkatan 1 unit skor komposit kualitas bisnis (BQS) berkaitan dengan peningkatan SROA sekitar 3,3 poin persentase, dengan asumsi variabel lain konstan dan setelah mengendalikan efek tetap perusahaan serta efek tahun. Dalam batas desain observasional ini, temuan tersebut sebaiknya dibaca sebagai asosiasi yang kuat dan stabil, bukan bukti kausalitas tunggal.
 
-### **4.3.1 Pengaruh Kualitas Bisnis (BQS) terhadap SROA**
+Temuan ini memberikan konfirmasi empiris yang kuat terhadap tesis Resource-Based View (RBV) yang dipelopori oleh Barney (1991) dan Wernerfelt (1984). Perusahaan yang memiliki keunggulan kompetitif yang bersumber dari aset internal berharga, langka, sulit ditiru, dan terorganisasi dengan baik (VRIO) terbukti mampu mempertahankan laba di atas rata-rata industri lintas waktu. Karena BQS adalah indeks komposit, dampak positif ini mencerminkan sinergi lima elemen penting: (i) kekuatan daya tawar harga (*pricing power*) melalui margin kotor, (ii) kemampuan mengonversi penjualan menjadi arus kas bebas, (iii) ketahanan neraca dari risiko kepailitan melalui disiplin leverage, (iv) kemampuan menanggung beban bunga, serta (v) konsistensi margin dari tahun ke tahun.
 
-Hasil estimasi pada Tabel 4.7 menunjukkan koefisien BQS positif dan signifikan secara statistik. Secara ekonomi, temuan ini konsisten dengan logika RBV: perusahaan yang memiliki kombinasi **margin yang lebih baik, kemampuan menghasilkan kas yang lebih kuat, disiplin leverage yang lebih tinggi, dan konsistensi kinerja** cenderung lebih mampu mempertahankan profitabilitas lintas waktu.
+Titik yang paling rawan diserang pada variabel BQS biasanya adalah apakah indeks tersebut terlalu dibuat-buat atau terlalu arbitrer. Hasil pada penelitian ini justru memberi tiga lapis pembelaan. Pertama, setiap komponen BQS memiliki dasar teori dan literatur empiris yang berbeda namun saling melengkapi, sehingga indeks tidak dibangun dari rasio yang acak. Kedua, Tabel 4.7 menunjukkan bahwa kenaikan desil BQS diikuti perbaikan yang cukup konsisten pada seluruh komponen, sehingga skor tinggi tidak sekadar ditarik oleh satu rasio saja. Ketiga, Tabel 4.13 menunjukkan bahwa hasil BQS tetap stabil ketika definisi indeks diganti ke BQS lama atau ketika kontrol tambahan dimasukkan. Dengan demikian, BQS pada penelitian ini lebih tepat dibaca sebagai indeks operasional yang terdisiplin, bukan label yang dilekatkan tanpa fondasi teori.
 
-Penting untuk menekankan bahwa BQS adalah indeks komposit. Artinya, perubahan BQS tidak ditafsirkan sebagai perubahan satu rasio tunggal, melainkan perubahan pada “paket” kualitas fundamental. Dari sisi mekanisme, BQS yang tinggi dapat mencerminkan: (i) *pricing power* yang lebih kuat (margin), (ii) efisiensi operasi dan kemampuan mengonversi penjualan menjadi kas (OE), (iii) ketahanan neraca terhadap guncangan (leverage discipline), serta (iv) kemampuan menjaga stabilitas kinerja (consistency). Kombinasi ini secara teoritis mendukung *profit persistence*—tepat sasaran untuk variabel dependen SROA yang dibangun sebagai rata-rata bergerak.
+Jika dibandingkan dengan penelitian terdahulu pada BAB II, hasil ini sangat konsisten dengan Asness, Frazzini, dan Pedersen (2019) yang menekankan bahwa perusahaan dengan karakteristik kualitas tinggi cenderung memiliki performa yang lebih unggul dan lebih persisten. Hasil skripsi ini juga sejalan dengan Novy-Marx (2013), yang menempatkan profitabilitas operasional sebagai sinyal penting kekuatan ekonomi perusahaan, serta Sloan (1996) dan Dichev dan Tang (2009) yang menegaskan bahwa kualitas arus kas dan kestabilan laba berkaitan erat dengan daya prediksi profitabilitas masa depan. Dengan kata lain, temuan positif pada BQS bukan sekadar cocok dengan satu teori abstrak, tetapi juga mendapat dukungan dari beberapa jalur literatur empiris yang membahas kualitas perusahaan dari sudut yang berbeda-beda.
 
-Konsistensi bukti BQS juga tampak pada ringkasan kelompok. Pada Tabel 4.5, kelompok BQS terendah (D1) memiliki SROA rata-rata sekitar **0,051**, sedangkan kelompok tertinggi (D10) sekitar **0,090**. Meskipun tidak selalu monoton di setiap decile (contoh D8 lebih rendah), pola besarnya tetap menunjukkan bahwa kualitas bisnis yang lebih tinggi berkaitan dengan profitabilitas berkelanjutan yang lebih tinggi. Visual pada Gambar 4.6 (scatter) dan Gambar 4.10 (decile plot) menguatkan pola tersebut.
+Hasil ini juga konsisten dengan Zeitun dan Tian (2014), khususnya pada gagasan bahwa disiplin struktur keuangan dan kualitas keputusan internal perusahaan berperan penting dalam menopang kinerja. Dalam konteks skripsi ini, komponen leverage discipline dan *interest coverage* membuat BQS tidak hanya membaca perusahaan yang “tumbuh”, tetapi perusahaan yang tumbuh dengan fondasi neraca yang lebih sehat. Ini penting karena pada perusahaan besar Amerika Serikat, profitabilitas berkelanjutan tidak cukup ditopang oleh skala atau momentum pasar saja, melainkan oleh kombinasi kualitas operasi, kas, dan ketahanan finansial.
 
-Dari sisi besaran dampak relatif, Tabel 4.8 menunjukkan beta terstandarisasi BQS paling besar di antara variabel penjelas. Ini berarti, pada skala yang setara (dalam satuan deviasi standar), perubahan BQS lebih “terasa” terhadap variasi SROA dibanding perubahan HHI, SIZE, maupun GROWTH pada dataset latihan.
+Konsistensi pengaruh positif BQS ini diperkuat oleh analisis kelompok pada Tabel 4.5, di mana kelompok perusahaan dengan BQS terendah (D1) memiliki rata-rata SROA sebesar 0,048, sedangkan kelompok BQS tertinggi (D10) memiliki rata-rata SROA sebesar 0,112. Tabel 4.13 juga menunjukkan bahwa BQS tetap positif dan signifikan ketika memakai BQS lama, menambahkan kontrol tambahan, maupun mengganti taksonomi HHI. Dari sisi besaran dampak ekonomi relatif, Tabel 4.12 menunjukkan *standardized beta* BQS sebesar 0,258. Karena itu, temuan BQS dapat dikatakan bukan hanya signifikan secara statistik, tetapi juga stabil secara operasional dan cukup kuat secara ekonomi.
 
-### **4.3.2 Pengaruh Struktur Industri (HHI) terhadap SROA**
+### **4.4.2 Pengaruh Struktur Industri (HHI) terhadap SROA**
 
-Koefisien HHI pada Tabel 4.7 tidak signifikan pada fase placeholder/practice. Secara interpretatif, ini berarti bahwa pada dataset latihan, variasi konsentrasi industri belum memberikan bukti yang stabil sebagai determinan SROA setelah mengendalikan heterogenitas tetap perusahaan dan guncangan tahun.
+Koefisien HHI pada Tabel 4.10 terestimasi positif sebesar 0,076, tetapi tidak signifikan secara statistik pada tingkat signifikansi 5% ($p = 0,146$, dengan nilai t-statistik sebesar 1,454). Arah positif koefisien masih sejalan dengan intuisi SCP bahwa konsentrasi industri dapat berkaitan dengan kemampuan mempertahankan profitabilitas, tetapi bukti statistik dalam sampel ini belum cukup kuat untuk menyatakan bahwa HHI berasosiasi secara konsisten dengan SROA. Dengan kata lain, SCP memperoleh dukungan arah, namun belum memperoleh dukungan inferensial yang tegas.
 
-Hasil ini dapat dibaca dalam dua lapis. Lapis pertama adalah pembacaan substansi: struktur industri mungkin bukan faktor dominan untuk sustained profitability pada konteks pasar modern yang kompetitif, terutama jika kapabilitas internal perusahaan (BQS) lebih menentukan. Lapis kedua adalah pembacaan teknis: HHI sensitif terhadap klasifikasi industri dan kualitas data penjualan/industry mapping; pada fase placeholder, pengukuran HHI bersifat latihan dan dapat berubah ketika data Bloomberg dan klasifikasi industri dinamis yang lebih presisi digunakan.
+Hasil ini memberi dukungan arah, tetapi bukan dukungan inferensial yang kuat, bagi paradigma Structure-Conduct-Performance (SCP) klasik (Bain, 1956; Mason, 1939). Jika dibandingkan dengan penelitian Pervan, Pervan, dan Curak (2019), hasil skripsi ini tampak lebih lemah karena mereka menemukan hubungan HHI yang positif dan signifikan terhadap profitabilitas. Perbedaan ini masuk akal karena konteks sampelnya berbeda: penelitian mereka berada pada industri manufaktur Kroasia, sedangkan skripsi ini menggunakan perusahaan besar lintas-sektor dalam S\&P 500 yang lebih heterogen dan lebih kaya faktor spesifik perusahaan.
 
-Konsisten dengan itu, bukti deskriptif pada Subbab 4.2 tidak menunjukkan tren yang rapi untuk HHI. Scatter plot (Gambar 4.7) tidak memperlihatkan kemiringan yang jelas, sedangkan ringkasan quintile (Tabel 4.6 dan Gambar 4.11) memperlihatkan pola non-monoton (misalnya Q3–Q4 relatif lebih tinggi namun Q5 turun kembali). Pola ini mendukung mengapa koefisien HHI pada tahap latihan sulit “mengunci” signifikansi.
+Di sisi lain, hasil ini justru lebih dekat dengan sintesis McGahan dan Porter (1997) serta Goddard dkk. (2011), yang menekankan bahwa efek spesifik perusahaan sering kali lebih besar daripada efek industri secara agregat. Artinya, tidak signifikannya HHI pada model utama bukan berarti struktur industri tidak relevan sama sekali, melainkan menunjukkan bahwa pada pasar besar dan matang seperti S\&P 500, variasi profitabilitas berkelanjutan tampaknya lebih kuat dijelaskan oleh “bagaimana perusahaan bersaing” daripada “di industri mana perusahaan itu berada”. Dari sudut ini, hasil skripsi juga sejalan dengan kritik Demsetz bahwa konsentrasi tidak selalu identik dengan rente pasar; bisa saja perusahaan yang unggul secara internal yang justru mendorong konsentrasi.
 
-### **4.3.3 Pengaruh Ukuran Perusahaan (SIZE) terhadap SROA**
+Terdapat dua penjelasan tambahan yang cukup penting. Pertama, HHI dalam penelitian ini adalah *within-sample HHI*, sehingga tidak menangkap keseluruhan kompetisi dari perusahaan privat, perusahaan publik di luar S\&P 500, maupun perubahan komposisi anggota indeks secara historis. Kedua, sensitivitas HHI terhadap taksonomi industri pada Tabel 4.8 dan Tabel 4.13 menunjukkan bahwa simpulan mengenai struktur industri memang lebih mudah bergeser ketika batas pasar diubah. Dari sisi kontribusi ekonomi relatif, HHI memiliki *standardized beta* sebesar 0,255, sangat dekat dengan BQS, tetapi tidak signifikan secara statistik dan tidak stabil pada seluruh taksonomi HHI. Karena itu, posisi HHI dalam skripsi ini lebih tepat dibaca sebagai faktor yang mungkin relevan, tetapi belum cukup kuat untuk menjadi penjelas utama.
 
-SIZE pada Tabel 4.7 tidak signifikan pada fase placeholder/practice. Salah satu alasan konseptualnya adalah: fixed effects “menyerap” banyak perbedaan permanen antar perusahaan. Perusahaan yang besar cenderung tetap besar; sehingga variasi SIZE yang diuji dalam model two-way FE terutama adalah variasi within-firm dari waktu ke waktu. Jika perubahan SIZE within-firm tidak berkaitan kuat dengan perubahan SROA dalam horizon pendek, maka koefisien SIZE wajar tidak signifikan.
+### **4.4.3 Pengaruh Ukuran Perusahaan (SIZE) terhadap SROA**
 
-Selain itu, korelasi sederhana pada Tabel 4.2 menunjukkan hubungan negatif antara SROA dan SIZE (**-0,350**). Namun korelasi tersebut tidak mempertimbangkan komposisi industri, strategi perusahaan, maupun efek tahun. Karena itu, ketidaksignifikanan SIZE pada model fixed effects dapat dibaca sebagai indikasi bahwa “skala” bukan penjelas tambahan yang konsisten setelah kontrol heterogenitas dan faktor lain dimasukkan—setidaknya pada dataset latihan.
+Hasil estimasi pada Tabel 4.10 menunjukkan koefisien SIZE bernilai positif sebesar 0,007 tetapi tidak signifikan secara statistik pada tingkat signifikansi 5% maupun 10% ($p = 0,381$, dengan t-statistik 0,876). Ketidaksignifikanan koefisien SIZE menunjukkan bahwa peningkatan skala aset perusahaan secara temporal (*within-firm*) tidak secara konsisten meningkatkan kemampuan mempertahankan profitabilitas berkelanjutan, setelah heterogenitas tetap yang tidak teramati diserap oleh *firm fixed effects*. Dengan demikian, ukuran besar saja tidak cukup untuk menjelaskan profitabilitas yang bertahan.
 
-### **4.3.4 Pengaruh Pertumbuhan Penjualan (GROWTH) terhadap SROA**
+Secara teoretis, peningkatan skala aset memang berpotensi menghasilkan efisiensi melalui *economies of scale* dan meningkatkan daya tawar di pasar keuangan. Namun, temuan ini mengindikasikan bahwa bagi perusahaan S\&P 500 yang sudah berada pada skala aset sangat besar, manfaat dari perluasan aset cenderung diimbangi oleh meningkatnya biaya birokrasi, inefisiensi koordinasi internal, dan potensi *agency problems* (Penrose, 1959). Oleh karena itu, skala aset saja tidak cukup untuk menjadi penjelas tambahan yang andal dalam menjelaskan profitabilitas berkelanjutan di luar kontribusi yang telah dicakup oleh kualitas bisnis internal (BQS) dan konsentrasi pasar (HHI).
 
-GROWTH pada Tabel 4.7 terestimasi positif dan signifikan pada fase placeholder/practice. Secara ekonomi, hasil ini dapat diartikan bahwa perusahaan yang mengalami pertumbuhan penjualan cenderung memperlihatkan profitabilitas berkelanjutan yang lebih tinggi, kemungkinan karena pertumbuhan mencerminkan permintaan yang kuat, peningkatan utilisasi, atau keberhasilan strategi komersial.
+Jika dibandingkan dengan Hirsch dkk. (2021), hasil ini juga menarik. Mereka menemukan bahwa ukuran perusahaan dapat membantu menahan laju *mean reversion* laba pada konteks tertentu. Akan tetapi, sampel skripsi ini terdiri dari perusahaan yang sejak awal sudah berada pada lapisan atas kapitalisasi dan aset di pasar Amerika Serikat. Karena itu, variasi SIZE yang tersisa di dalam sampel mungkin tidak lagi cukup informatif untuk menjadi pembeda utama. Dengan kata lain, ukuran mungkin penting ketika membedakan perusahaan kecil dan besar, tetapi menjadi kurang menentukan ketika hampir seluruh sampel sudah berada pada kategori perusahaan sangat besar.
 
-Namun, pertumbuhan tidak selalu identik dengan kualitas. Pertumbuhan yang “dibeli” melalui diskon agresif, ekspansi biaya yang berlebihan, atau investasi yang tidak efisien dapat mengurangi margin dan menekan profitabilitas dalam jangka menengah. Karena itu, pada tahap final, pembahasan GROWTH idealnya diperkaya dengan pembacaan bersamaan dengan BQS: pertumbuhan yang disertai kualitas (BQS tinggi) secara teori lebih mungkin berkontribusi pada sustained profitability dibanding pertumbuhan yang rapuh.
+### **4.4.4 Pengaruh Pertumbuhan Penjualan (GROWTH) terhadap SROA**
 
-### **4.3.5 Ringkasan Dominansi dan Jawaban Hipotesis (H1–H3)**
+Koefisien GROWTH pada Tabel 4.10 menunjukkan nilai negatif sebesar -0,010 dan signifikan secara marginal pada tingkat signifikansi 10% ($p = 0,064$, dengan t-statistik sebesar -1,853). Temuan bahwa pertumbuhan penjualan berhubungan negatif secara marginal dengan profitabilitas berkelanjutan menunjukkan bahwa ekspansi pendapatan tidak selalu identik dengan peningkatan kualitas laba atau efisiensi aset. Pada perusahaan besar, pertumbuhan dapat datang bersama tekanan harga, akuisisi, atau investasi yang belum langsung menaikkan laba bersih relatif terhadap aset.
 
-Merujuk Tabel 4.7 dan Tabel 4.8 pada fase placeholder/practice, ringkasan jawaban hipotesis adalah sebagai berikut: (i) HHI tidak signifikan (H1 belum terdukung), (ii) BQS positif signifikan (H2 terdukung), dan (iii) koefisien terstandarisasi BQS jauh lebih besar dibanding HHI (indikasi awal H3 terdukung pada sampel latihan). Ringkasan ini belum merupakan kesimpulan final, tetapi memberi arah bahwa—setidaknya pada *pipeline* latihan—faktor internal yang ditangkap BQS lebih dominan dibanding struktur industri dalam menjelaskan variasi SROA.
+Dalam teori keuangan dan strategi korporasi, fenomena ini dapat dijelaskan melalui teori *diseconomies of growth* atau *growth traps* (Penrose, 1959). Pada pasar matang seperti perusahaan besar Amerika Serikat, sebagian pertumbuhan penjualan dapat berasal dari ekspansi agresif, tekanan harga, akuisisi, atau belanja modal yang belum langsung meningkatkan laba bersih relatif terhadap aset. Akibatnya, pertumbuhan yang tidak disertai kualitas bisnis yang kuat dapat menekan pengembalian aset rata-rata bergerak (SROA) dalam horizon jangka menengah.
 
-Sebagai penutup BAB IV, penting ditegaskan kembali: nilai utama pada tahap placeholder adalah memastikan rancangan empiris, alur uji, dan struktur narasi BAB IV sudah rapi. Ketika data Bloomberg digunakan, bagian interpretasi akan diperkuat melalui pembandingan dengan literatur, penjelasan mekanisme ekonomi yang lebih spesifik per variabel, serta uji robustness sesuai kebijakan pembimbing.
+Temuan ini juga membantu membedakan antara “bertumbuh” dan “bertumbuh dengan berkualitas”. Dalam konteks skripsi ini, BQS menangkap dimensi kualitas pertumbuhan secara lebih halus, sedangkan GROWTH hanya membaca laju perubahan penjualan. Karena itu, wajar jika variabel pertumbuhan penjualan sendiri tidak menjadi sumber utama profitabilitas berkelanjutan. Secara tidak langsung, hasil ini memperkuat argumen bahwa pasar menghargai pertumbuhan yang sehat dan tertopang fondasi internal, bukan sekadar ekspansi nominal pendapatan.
+
+### **4.4.5 Ringkasan Dominansi dan Jawaban Hipotesis Penelitian**
+
+Berdasarkan pengujian empiris multivariat menggunakan model *two-way fixed effects*, ringkasan jawaban atas tiga hipotesis utama penelitian adalah sebagai berikut:
+
+1. Hipotesis 1 (H1) tidak terdukung secara statistik: Herfindahl-Hirschman Index (HHI) memiliki koefisien positif, tetapi tidak signifikan secara statistik terhadap Sustained ROA (SROA) ($\beta = 0,076$, $p = 0,146$). Dengan demikian, arah hasil sesuai ekspektasi SCP, tetapi bukti empiris belum cukup untuk menerima H1 pada tingkat signifikansi konvensional.
+2. Hipotesis 2 (H2) terdukung: Business Quality Score (BQS) berpengaruh positif dan signifikan secara statistik terhadap Sustained ROA (SROA) ($\beta = 0,033$, $p < 0,001$), memberikan konfirmasi kuat atas tesis keunggulan kompetitif berbasis kapabilitas internal (paradigma RBV).
+3. Hipotesis 3 (H3) hanya terdukung secara relatif: Berdasarkan perbandingan dampak ekonomi relatif pada Tabel 4.12, koefisien terstandarisasi BQS (0,258) sedikit lebih besar dibandingkan HHI (0,255). Selisihnya sangat tipis, sehingga hasil ini lebih tepat dibaca sebagai keunggulan relatif yang nyaris seimbang, bukan dominansi yang tegas. Argumen untuk BQS lebih kuat karena BQS signifikan dan lebih stabil pada *robustness checks*, sedangkan HHI tidak signifikan dan lebih sensitif terhadap definisi industri.
+
+Jika disintesis dengan penelitian terdahulu, hasil skripsi ini lebih dekat pada kubu literatur yang menekankan dominasi faktor spesifik perusahaan dibanding faktor industri. Temuan ini paling jelas sejalan dengan McGahan dan Porter (1997) serta Goddard dkk. (2011), yang sama-sama menunjukkan bahwa efek perusahaan sering kali lebih dominan daripada efek industri agregat. Pada saat yang sama, arah koefisien HHI yang tetap positif membuat hasil skripsi ini tidak sepenuhnya menolak SCP; yang ditolak adalah klaim bahwa struktur industri sendirian sudah cukup kuat menjelaskan profitabilitas berkelanjutan pada konteks S\&P 500.
+
+Sebagai kesimpulan akhir BAB IV, hasil empiris menunjukkan bahwa kapabilitas internal yang ditangkap oleh BQS (RBV) memiliki dukungan empiris paling kuat dalam menjelaskan profitabilitas berkelanjutan pada sampel ini. Struktur industri tetap memiliki arah koefisien positif, tetapi perannya tidak cukup kuat secara statistik dalam spesifikasi utama dan hasilnya lebih sensitif terhadap taksonomi industri. Oleh karena itu, pesan paling defensibel dari Bab IV adalah bahwa BQS merupakan prediktor yang lebih konsisten daripada HHI dalam kerangka data yang digunakan, bukan bahwa BQS secara universal mengalahkan semua penjelasan industri. Formulasi seperti ini lebih hati-hati secara akademik sekaligus lebih sesuai dengan literatur ekonomi industri dan keuangan perusahaan yang memang sering menunjukkan hasil campuran.
 
 # **BAB V** **PENUTUP** {#bab-v-penutup}
 
-Bab ini menyajikan kesimpulan penelitian, implikasi, keterbatasan, serta saran untuk penelitian selanjutnya. Mengingat sebagian hasil pada BAB IV masih bersifat *placeholder/practice* (uji end-to-end pipeline), penarikan kesimpulan substantif akan difinalisasi setelah data Bloomberg tersedia dan seluruh analisis dijalankan ulang pada sampel penuh konstituen S\&P 500 periode 2015–2024.
+Bab ini menyajikan kesimpulan penelitian, implikasi teoretis dan praktis, keterbatasan penelitian, serta saran untuk pengembangan penelitian selanjutnya berdasarkan seluruh temuan analisis empiris data panel dari Bloomberg Terminal.
 
 ## **5.1 Simpulan**
 
-Berdasarkan kerangka teori SCP (struktur industri) dan RBV (kualitas bisnis internal), serta rancangan empiris data panel dengan two-way fixed effects, penelitian ini menyimpulkan beberapa poin utama berikut:
+Berdasarkan kerangka teori SCP (struktur industri) dan RBV (kualitas bisnis internal), serta rancangan empiris data panel dengan *two-way fixed effects*, penelitian ini menyimpulkan beberapa poin utama berikut. Seluruh kesimpulan di bawah harus dibaca sebagai temuan pada sampel, periode, dan definisi variabel yang digunakan, bukan sebagai hukum umum untuk seluruh pasar:
 
-1. Profitabilitas berkelanjutan perusahaan dapat diukur lebih stabil melalui pendekatan rata-rata bergerak (SROA) untuk mereduksi fluktuasi jangka pendek dan *transitory shocks*.  
-2. Struktur industri yang lebih terkonsentrasi (diukur dengan HHI) secara teoretis berpotensi menciptakan hambatan masuk yang meningkatkan kemampuan perusahaan mempertahankan profitabilitas.  
-3. Kualitas bisnis internal (diukur dengan Business Quality Score/BQS) secara teoretis berpotensi menjadi determinan yang lebih dominan dalam konteks pasar modern, karena mencerminkan kapabilitas internal yang sulit ditiru (pricing power, cash generation, leverage discipline, dan consistency).  
-4. Pengujian dominansi (H3) lebih tepat dilakukan menggunakan koefisien terstandarisasi (standardized beta) sehingga perbandingan dampak ekonomi relatif antar variabel lebih sebanding.
+1. Business Quality Score (BQS) berasosiasi positif dan signifikan dengan SROA. Hasil ini mendukung pandangan RBV bahwa kualitas internal perusahaan, yang mencakup margin, kemampuan menghasilkan arus kas bebas, disiplin leverage, kemampuan menutup beban bunga, dan konsistensi kinerja, merupakan penjelas penting profitabilitas berkelanjutan.  
+2. HHI memiliki arah koefisien positif tetapi tidak signifikan secara statistik. Dengan demikian, penelitian ini tidak menemukan bukti yang cukup kuat bahwa konsentrasi sub-industri dalam sampel aktif Mei 2026 secara mandiri menjelaskan SROA setelah mengendalikan efek tetap perusahaan dan efek tahun.  
+3. BQS memiliki *standardized beta* yang sedikit lebih besar daripada HHI dan signifikan secara statistik. Oleh karena itu, kualitas bisnis internal tampak lebih konsisten secara relatif dibandingkan struktur industri, meskipun selisihnya tipis dan perlu dibaca hati-hati.  
+4. GROWTH berasosiasi negatif secara marginal dengan SROA, mengindikasikan bahwa pertumbuhan penjualan pada perusahaan besar tidak selalu mencerminkan pertumbuhan yang berkualitas atau meningkatkan pengembalian aset berkelanjutan.
 
 Implikasi ringkas dari penelitian ini adalah:
 
 1. **Implikasi akademik:** konstruksi indeks komposit kontinu (BQS berbasis Z-score) dapat menjadi alternatif proksi “kualitas perusahaan” yang lebih informatif dibanding rasio tunggal.  
-2. **Implikasi praktis:** bila BQS dominan pada hasil final, evaluasi fundamental internal perlu diberi bobot lebih besar daripada sekadar *industry bet* berbasis konsentrasi pasar.  
-3. **Implikasi manajerial:** fokus pada penguatan pricing power, disiplin leverage, dan konsistensi arus kas/laba berpotensi meningkatkan ketahanan profitabilitas.
+2. **Implikasi praktis:** evaluasi fundamental internal perlu diberi bobot lebih besar daripada sekadar *industry bet* berbasis konsentrasi pasar, terutama ketika HHI tidak terbukti signifikan secara statistik.  
+3. **Implikasi manajerial:** fokus pada penguatan pricing power, arus kas bebas, disiplin leverage, kemampuan membayar bunga, dan konsistensi kinerja berpotensi meningkatkan ketahanan profitabilitas.
 
 ## **5.2 Keterbatasan**
 
 Keterbatasan penelitian ini meliputi:
 
-1. **Keterbatasan data (fase latihan):** sumber data latihan (yfinance) memiliki cakupan item dan historis yang lebih terbatas dibanding Bloomberg, berpotensi menghasilkan panel yang tidak seimbang dan ukuran sampel efektif yang kecil.  
-2. **Keterbatasan klasifikasi industri:** konstruksi HHI idealnya mengikuti klasifikasi GICS yang dinamis per tahun; perbedaan metadata industri dapat memengaruhi akurasi pengelompokan dan pangsa pasar.  
-3. **Keterbatasan endogeneity:** meskipun fixed effects mengurangi bias dari heterogenitas tidak teramati yang konstan, masih terdapat potensi endogeneity (misalnya reverse causality atau omitted variables yang berubah waktu) yang dapat dipertimbangkan pada pengembangan metodologi lanjutan.
+1. **Keterbatasan sampel (survivorship bias):** Sampel penelitian hanya mencakup konstituen indeks S&P 500 yang aktif per Mei 2026 dan menarik datanya ke belakang. Pendekatan ini tidak mencakup perusahaan yang telah keluar dari indeks (*delisted*), mengalami kepailitan, atau merger sebelum Mei 2026. Hal ini berpotensi menimbulkan *survivorship bias* yang memengaruhi tingkat generalisasi temuan.  
+2. **Keterbatasan klasifikasi industri dan HHI *within-sample*:** Penghitungan konsentrasi pasar (HHI) didasarkan pada penjualan perusahaan dalam sampel aktif Mei 2026. Meskipun penelitian ini menambahkan *robustness* berbasis ICB dan Bloomberg Industry Group, HHI tetap belum menangkap pesaing privat, perusahaan publik di luar S&P 500, atau perubahan klasifikasi historis perusahaan.  
+3. **Keterbatasan data *complete-case*:** Beberapa perusahaan dan tahun tidak memiliki data yang diperlukan untuk membentuk BQS utama, terutama karena kebutuhan *rolling* 3 tahun dan komponen *interest coverage*. Penelitian ini memilih mengeluarkan observasi tersebut dari regresi utama agar tidak melakukan imputasi yang tidak dapat diverifikasi, tetapi konsekuensinya ukuran sampel regresi menjadi lebih kecil.  
+4. **Keterbatasan endogenitas (*endogeneity bias*):** Meskipun model estimasi *two-way fixed effects* telah menyerap bias dari heterogenitas tidak teramati yang bersifat konstan (*firm fixed effects*) dan guncangan waktu (*year fixed effects*), model regresi ini belum secara penuh mengendalikan potensi endogenitas yang bersifat dinamis seperti hubungan kausalitas terbalik (*reverse causality*) atau variabel penting yang terlewat (*omitted variables*) yang berubah lintas waktu. Karena itu, hasil sebaiknya dibaca sebagai asosiasi yang kuat, bukan bukti kausal yang final.
 
 ## **5.3 Saran**
 
-Beberapa saran untuk penelitian selanjutnya:
+Beberapa saran taktis untuk penelitian selanjutnya meliputi:
 
-1. Menggunakan data Bloomberg (atau basis data komersial setara) untuk memastikan coverage historis 2013–2024 yang memadai dan konsistensi definisi variabel.  
-2. Menguji robustnes dengan variasi spesifikasi, misalnya alternatif proksi konsentrasi (CR4) atau variasi definisi BQS (mis. penambahan payout/safety components).  
-3. Mempertimbangkan pendekatan panel dinamis (mis. System GMM) atau instrumentasi yang relevan untuk mengurangi potensi bias endogeneity pada determinan profitabilitas berkelanjutan.
+1. Menggunakan daftar konstituen indeks historis yang dinamis per tahun (termasuk anggota yang sudah tidak aktif) guna mengeliminasi efek *survivorship bias* secara menyeluruh.  
+2. Mengembangkan HHI berbasis pasar yang lebih luas dengan memasukkan perusahaan privat, perusahaan publik di luar S&P 500, atau data pangsa pasar eksternal apabila tersedia.  
+3. Menggunakan data segmen bisnis perusahaan agar konglomerasi atau perusahaan multisegmen tidak dipaksa masuk ke satu klasifikasi industri tunggal.  
+4. Mempertimbangkan pendekatan estimasi panel dinamis seperti *System Generalized Method of Moments* (System GMM) untuk mengatasi masalah endogenitas secara lebih tangguh dalam analisis persistensi laba.  
+5. Mengeksplorasi pembobotan alternatif BQS, misalnya *principal component analysis* atau *factor score*, untuk menguji apakah kesimpulan tetap stabil ketika konstruksi indeks kualitas bisnis tidak memakai bobot rata-rata sederhana.
 
 # **Daftar Pustaka** {-}
 
@@ -937,11 +1227,11 @@ Barney, J. B. (1991). Firm resources and sustained competitive advantage. Journa
 
 Bhojraj, S., Lee, C. M. C., & Oler, D. (2003). Does the method of classification matter in the empirical measurement of industry structure? Journal of Accounting Research, 41(3), 441-475.
 
-Bivens, J. (2022). Corporate profits have contributed disproportionately to inflation. How should policymakers respond? Economic Policy Institute.
+Bivens, J. (2022, April 21). Corporate profits have contributed disproportionately to inflation: How should policymakers respond? Economic Policy Institute. https://www.epi.org/blog/corporate-profits-have-contributed-disproportionately-to-inflation-how-should-policymakers-respond/
 
-Bloomberg. (2025). Zombie companies surge to highest level since 2022\.
+Bloomberg News. (2025). Zombie companies surge to highest level since 2022\. Bloomberg Terminal.
 
-Board of Governors of the Federal Reserve System. (2024). Federal funds effective rate. Federal Reserve Bank of St. Louis.
+Board of Governors of the Federal Reserve System. (2024). Federal funds effective rate [Data set]. FRED, Federal Reserve Bank of St. Louis. Retrieved May 22, 2026, from https://fred.stlouisfed.org/series/FEDFUNDS
 
 Demsetz, H. (1973). Industry structure, market rivalry, and public policy. Journal of Law and Economics, 16(1), 1–9.
 
@@ -967,7 +1257,7 @@ Pervan, M., Pervan, I., & Curak, M. (2019). Determinants of firm profitability i
 
 Petersen, M. A. (2009). Estimating standard errors in finance panel data sets: Comparing approaches. Review of Financial Studies, 22(1), 435-480.
 
-S\&P Global Market Intelligence. (2025). US corporate bankruptcies hit 14-year high.
+S\&P Global Market Intelligence. (2025, January). U.S. corporate bankruptcies soar to 14-year high in 2024; 61 filings in December. https://www.spglobal.com/market-intelligence/en/news-insights/articles/2025/1/us-corporate-bankruptcies-soar-to-14-year-high-in-2024-61-filings-in-december-87008718
 
 Sloan, R. G. (1996). Do stock prices fully reflect information in accruals and cash flows about future earnings? The Accounting Review, 71(3), 289-315.
 

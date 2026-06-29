@@ -1,5 +1,5 @@
 {
-  "title": "Ringkasan Koefisien (FE + Firm-Clustered SE)",
+  "title": "Ringkasan Koefisien Final (FE + Firm-Clustered SE)",
   "labels": [
     "BQS",
     "HHI",
@@ -7,10 +7,10 @@
     "GROWTH"
   ],
   "values": [
-    0.04492626768750975,
-    -0.017376136411025478,
-    -0.0019468467654897778,
-    0.013092938249635568
+    0.033070938213921146,
+    0.0758917554075032,
+    0.006998471476794092,
+    -0.010272456152160443
   ],
-  "notes": "N=5000; firms=500; R2=0.979; SE=cluster(firm_id)."
+  "notes": "N=2241; firms=333; R2=0.817; SE=cluster(firm_id)."
 }

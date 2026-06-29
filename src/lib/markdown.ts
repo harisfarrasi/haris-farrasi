@@ -79,13 +79,40 @@ function renderInline(text: string, refs: Record<string, string>): string {
   output = output.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, renderImageInline);
   output = output.replace(/!\[([^\]]*)\]\[([^\]]+)\]/g, renderImageRef);
 
-  const renderLinkInline = (_: string, label: string, href: string) =>
-    `<a href="${href}" target="_blank" rel="noopener">${label}</a>`;
+  const renderLinkInline = (_: string, label: string, href: string) => {
+    const cleanLabel = label.replace(/\*\*/g, '').trim();
+    if (cleanLabel.includes('Aksa')) {
+      return `<a href="${href}" target="_blank" rel="noopener" class="entity-link aksa-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><img src="/aksa-icon.png" alt="Aksa" class="entity-icon" /></span><span class="entity-arrow">↗</span></a>`;
+    }
+    if (cleanLabel.includes('Universitas Diponegoro')) {
+      return `<a href="${href}" target="_blank" rel="noopener" class="entity-link undip-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><img src="/undip-icon.png" alt="Universitas Diponegoro" class="entity-icon" /></span><span class="entity-arrow">↗</span></a>`;
+    }
+    if (href.includes('x.com/harisfarrasi') || href.includes('twitter.com/harisfarrasi') || cleanLabel.includes('@harisfarrasi')) {
+      return `<a href="${href}" target="_blank" rel="noopener" class="entity-link x-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><svg viewBox="0 0 24 24" aria-hidden="true" class="entity-icon bg-black text-white dark:bg-white dark:text-black p-[2.5px] fill-current"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg></span><span class="entity-arrow">↗</span></a>`;
+    }
+    if (href.startsWith('mailto:') || cleanLabel.toLowerCase() === 'email') {
+      return `<a href="${href}" class="entity-link mail-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><svg viewBox="0 0 20 20" fill="currentColor" class="entity-icon bg-black text-white dark:bg-white dark:text-black p-[2.5px]"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg></span><span class="entity-arrow">↗</span></a>`;
+    }
+    return `<a href="${href}" target="_blank" rel="noopener">${label}</a>`;
+  };
 
   const renderLinkRef = (_: string, label: string, key: string) => {
     const href = refs[key] ?? '';
     if (!href) {
       return _;
+    }
+    const cleanLabel = label.replace(/\*\*/g, '').trim();
+    if (cleanLabel.includes('Aksa')) {
+      return `<a href="${href}" target="_blank" rel="noopener" class="entity-link aksa-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><img src="/aksa-icon.png" alt="Aksa" class="entity-icon" /></span><span class="entity-arrow">↗</span></a>`;
+    }
+    if (cleanLabel.includes('Universitas Diponegoro')) {
+      return `<a href="${href}" target="_blank" rel="noopener" class="entity-link undip-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><img src="/undip-icon.png" alt="Universitas Diponegoro" class="entity-icon" /></span><span class="entity-arrow">↗</span></a>`;
+    }
+    if (href.includes('x.com/harisfarrasi') || href.includes('twitter.com/harisfarrasi') || cleanLabel.includes('@harisfarrasi')) {
+      return `<a href="${href}" target="_blank" rel="noopener" class="entity-link x-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><svg viewBox="0 0 24 24" aria-hidden="true" class="entity-icon bg-black text-white dark:bg-white dark:text-black p-[2.5px] fill-current"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg></span><span class="entity-arrow">↗</span></a>`;
+    }
+    if (href.startsWith('mailto:') || cleanLabel.toLowerCase() === 'email') {
+      return `<a href="${href}" class="entity-link mail-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><svg viewBox="0 0 20 20" fill="currentColor" class="entity-icon bg-black text-white dark:bg-white dark:text-black p-[2.5px]"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg></span><span class="entity-arrow">↗</span></a>`;
     }
     return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener">${label}</a>`;
   };

@@ -1,4 +1,5 @@
 import TabbedShell from '@/components/tabbed-shell';
+import HomeClient from '@/components/home-client';
 import { getWikiContent } from '@/lib/wiki';
 
 export const metadata = {
@@ -6,11 +7,20 @@ export const metadata = {
 };
 
 export default function ReadPage() {
-  const { html } = getWikiContent('read');
+  const { html: aboutHtml } = getWikiContent('about');
+  const { html: beliefsHtml } = getWikiContent('beliefs');
+  const { html: peopleHtml } = getWikiContent('people');
+  const { html: readHtml } = getWikiContent('read');
 
   return (
-    <TabbedShell active="read">
-      <article className="wiki-content" dangerouslySetInnerHTML={{ __html: html }} />
+    <TabbedShell>
+      <HomeClient
+        aboutHtml={aboutHtml}
+        beliefsHtml={beliefsHtml}
+        peopleHtml={peopleHtml}
+        readHtml={readHtml}
+        defaultTab="read"
+      />
     </TabbedShell>
   );
 }

@@ -128,6 +128,50 @@
   .thesis-content a {
     @apply text-blue-600 hover:underline;
   }
+
+  /* Entity reference links style */
+  .wiki-content .entity-link {
+    @apply inline-flex items-center text-foreground font-semibold no-underline hover:no-underline transition-colors;
+    gap: 0.15rem;
+  }
+  
+  .wiki-content .entity-icon-wrapper {
+    @apply inline-flex items-center justify-center shrink-0;
+    margin: 0 0.1rem;
+  }
+  
+  .wiki-content .entity-icon {
+    @apply w-4 h-4 rounded-[22%] object-contain border border-black/5 dark:border-white/10;
+  }
+
+  .wiki-content .entity-arrow {
+    @apply text-[10px] text-muted-foreground/60 select-none align-super;
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1;
+    margin-left: 0.05rem;
+    transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.15s ease;
+  }
+
+  .wiki-content .entity-link:hover .entity-text {
+    @apply underline underline-offset-2 decoration-1;
+  }
+
+  /* Hide text label for X and email — icon-only badges */
+  .wiki-content .x-link .entity-text,
+  .wiki-content .mail-link .entity-text {
+    @apply sr-only;
+  }
+
+  /* Also hide the arrow for icon-only badges — icon is already the affordance */
+  .wiki-content .x-link .entity-arrow,
+  .wiki-content .mail-link .entity-arrow {
+    @apply hidden;
+  }
+
+  .wiki-content .entity-link:hover .entity-arrow {
+    @apply opacity-100;
+    transform: translate(0.05rem, -0.05rem);
+  }
 }
 
 @layer utilities {
