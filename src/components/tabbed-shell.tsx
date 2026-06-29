@@ -1,5 +1,3 @@
-'use client';
-
 type TabbedShellProps = {
   children: React.ReactNode;
 };
