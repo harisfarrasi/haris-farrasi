@@ -1,0 +1,90 @@
+{
+  "sample_frame": "S&P 500 active constituents as of May 2026",
+  "input_rows": 3604,
+  "input_firms": 406,
+  "panel_rows": 2241,
+  "panel_firms": 333,
+  "panel_years_min": 2019,
+  "panel_years_max": 2025,
+  "obs_by_year": {
+    "2019": 309,
+    "2020": 319,
+    "2021": 322,
+    "2022": 322,
+    "2023": 325,
+    "2024": 323,
+    "2025": 321
+  },
+  "dropped_rows_due_to_complete_case": 1363,
+  "missing_core_variables_before_complete_case": {
+    "SROA": 812,
+    "BQS": 1363,
+    "HHI": 0,
+    "SIZE": 0,
+    "GROWTH": 408,
+    "MARG": 381,
+    "FCF_MARGIN": 8,
+    "LEV": 2,
+    "INTEREST_COVERAGE": 334,
+    "CONS": 1139
+  },
+  "missing_robustness_variables_before_complete_case": {
+    "BQS_OLD": 1139,
+    "SROE": 970,
+    "LIQUIDITY": 224,
+    "CASH_RATIO": 0,
+    "CAPEX_INTENSITY": 8,
+    "MARKET_CAP_SIZE": 951
+  },
+  "bqs_policy": "Main BQS is computed only when MARG, FCF_MARGIN, LEV, INTEREST_COVERAGE, and CONS are all available.",
+  "bqs_components": [
+    "MARG",
+    "FCF_MARGIN",
+    "LEV",
+    "INTEREST_COVERAGE",
+    "CONS"
+  ],
+  "legacy_bqs_policy": "BQS_OLD is retained for robustness and uses MARG, OE, LEV, and CONS.",
+  "hhi_policy": "HHI baseline is GICS Sub-Industry x year using within-sample sales shares.",
+  "hhi_robustness_columns": {
+    "HHI_GICS_SUB": "gics_sub_industry",
+    "HHI_ICB_SUBSECTOR": "icb_subsector_name",
+    "HHI_ICB_SECTOR": "icb_sector_name",
+    "HHI_ICB_SUPERSECTOR": "icb_supersector_name",
+    "HHI_ICB_INDUSTRY": "icb_industry_name",
+    "HHI_BLOOMBERG_IND_GROUP": "bloomberg_ind_group"
+  },
+  "hhi_ranges": {
+    "HHI_GICS_SUB": {
+      "min": 0.10943578674305725,
+      "max": 1.0,
+      "missing": 0
+    },
+    "HHI_ICB_SUBSECTOR": {
+      "min": 0.09495400808853295,
+      "max": 1.0,
+      "missing": 0
+    },
+    "HHI_ICB_SECTOR": {
+      "min": 0.045163390654186716,
+      "max": 1.0,
+      "missing": 0
+    },
+    "HHI_ICB_SUPERSECTOR": {
+      "min": 0.024595564773827527,
+      "max": 0.9740349528786343,
+      "missing": 0
+    },
+    "HHI_ICB_INDUSTRY": {
+      "min": 0.021290383265581334,
+      "max": 0.9740349528786343,
+      "missing": 0
+    },
+    "HHI_BLOOMBERG_IND_GROUP": {
+      "min": 0.11486451193544363,
+      "max": 1.0,
+      "missing": 0
+    }
+  },
+  "computed_fcf_margin_policy": "FCF_MARGIN uses operating cash flow minus positive Capex divided by sales; raw Bloomberg FCF is not required for main BQS."
+}

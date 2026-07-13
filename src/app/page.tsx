@@ -1,21 +1,19 @@
 import TabbedShell from '@/components/tabbed-shell';
-import HomeClient from '@/components/home-client';
+import HomePageClient from '@/components/home-page-client';
 import { getWikiContent } from '@/lib/wiki';
+import { getAllItems } from '@/lib/content';
 
 export default function Home() {
   const { html: aboutHtml } = getWikiContent('about');
-  const { html: beliefsHtml } = getWikiContent('beliefs');
-  const { html: peopleHtml } = getWikiContent('people');
-  const { html: readHtml } = getWikiContent('read');
+  const thoughtItems = getAllItems('thought');
+  const artifactItems = getAllItems('artifact');
 
   return (
     <TabbedShell>
-      <HomeClient
+      <HomePageClient
         aboutHtml={aboutHtml}
-        beliefsHtml={beliefsHtml}
-        peopleHtml={peopleHtml}
-        readHtml={readHtml}
-        defaultTab="beliefs"
+        thoughtItems={thoughtItems}
+        artifactItems={artifactItems}
       />
     </TabbedShell>
   );

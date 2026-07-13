@@ -9,6 +9,78 @@ type ConvertResult = {
   html: string;
 };
 
+// --- Frontmatter ---
+
+export type Frontmatter = {
+  title: string;
+  slug: string;
+  type: 'thought' | 'artifact';
+  created: string;
+  updated?: string;
+  tags: string[];
+  featured: boolean;
+  order: number;
+  excerpt: string;
+  published: boolean;
+};
+
+const frontmatterRegex = /^---\n([\s\S]*?)\n---\n?/;
+
+export function parseFrontmatter(mdText: string): { frontmatter: Frontmatter | null; content: string } {
+  const match = mdText.match(frontmatterRegex);
+  if (!match) {
+    return { frontmatter: null, content: mdText };
+  }
+
+  const raw = match[1];
+  const content = mdText.slice(match[0].length);
+
+  const lines = raw.split('\n');
+  const fm: Record<string, any> = {};
+
+  for (const line of lines) {
+    const colonIdx = line.indexOf(':');
+    if (colonIdx === -1) continue;
+
+    const key = line.slice(0, colonIdx).trim();
+    let value: any = line.slice(colonIdx + 1).trim();
+
+    // Parse arrays: ["item1", "item2"]
+    if (value.startsWith('[') && value.endsWith(']')) {
+      value = value.slice(1, -1).split(',').map((s: string) => s.trim().replace(/^"|"$/g, ''));
+    }
+    // Parse booleans
+    else if (value === 'true') value = true;
+    else if (value === 'false') value = false;
+    // Parse numbers
+    else if (/^\d+$/.test(value)) value = parseInt(value, 10);
+    // Parse strings (strip surrounding quotes)
+    else {
+      value = value.replace(/^"|"$/g, '');
+    }
+
+    fm[key] = value;
+  }
+
+  return {
+    frontmatter: {
+      title: fm.title ?? '',
+      slug: fm.slug ?? '',
+      type: fm.type ?? 'thought',
+      created: fm.created ?? '',
+      updated: fm.updated,
+      tags: fm.tags ?? [],
+      featured: fm.featured ?? false,
+      order: fm.order ?? 0,
+      excerpt: fm.excerpt ?? '',
+      published: fm.published ?? true,
+    },
+    content,
+  };
+}
+
+// --- Core parsing ---
+
 const headingRegex = /^(#{1,6})\s+(.*)$/;
 const orderedListRegex = /^\s*\d+\.\s+(.*)$/;
 const unorderedListRegex = /^\s*[-*]\s+(.*)$/;
@@ -128,7 +200,9 @@ function renderInline(text: string, refs: Record<string, string>): string {
 }
 
 export function convertMarkdown(mdText: string): ConvertResult {
-  const rawLines = mdText.split(/\r?\n/);
+  // Strip frontmatter before parsing markdown
+  const { content } = parseFrontmatter(mdText);
+  const rawLines = content.split(/\r?\n/);
   const { lines, refs } = parseReferenceDefs(rawLines);
 
   const body: string[] = [];

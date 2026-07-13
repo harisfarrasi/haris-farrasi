@@ -1,0 +1,407 @@
+ticker,company_name,industry_key,years,missing_sales,missing_cogs,missing_net_income,missing_total_assets,missing_total_debt,missing_operating_cash_flow,missing_capex,missing_gross_margin,missing_free_cash_flow_raw,missing_roe,missing_total_equity,missing_market_cap,missing_operating_income,missing_interest_expense,missing_cash_and_equivalents,missing_current_assets,missing_current_liabilities,missing_required_total
+Q,QNITY ELECTRONIC,Semiconductor Materials & Equipment,9,7,7,7,7,7,7,7,7,7,8,7,8,7,8,7,7,7,115
+SNDK,SANDISK CORP,"Technology Hardware, Storage & Peripherals",9,5,5,5,6,8,8,8,5,8,7,6,8,5,5,6,6,6,102
+GEV,GE VERNOVA INC,Heavy Electrical Equipment,9,4,4,4,5,5,4,4,4,4,6,5,9,4,9,5,5,5,82
+SOLV,SOLVENTUM,Health Care Supplies,9,4,4,4,5,5,4,4,4,4,6,5,7,4,7,5,5,5,78
+PSKY,PARAMOUNT SKYDAN,Broadcasting,9,4,4,4,4,4,4,4,4,4,5,4,8,4,4,4,4,4,69
+VLTO,VERALTO CORP,Environmental & Facilities Services,9,3,3,3,5,5,3,4,3,4,6,5,6,3,3,5,5,5,68
+KVUE,KENVUE INC,Personal Care Products,9,2,2,2,3,3,2,2,2,2,4,3,6,2,5,3,3,3,47
+GEHC,GE HEALTHCARE TE,Health Care Equipment,9,2,2,2,3,3,2,2,2,2,4,3,5,2,2,3,3,3,43
+SW,SMURFIT WESTROCK,Paper & Plastic Packaging Products & Materials,9,2,2,2,2,2,2,2,2,2,3,2,7,2,6,2,2,2,42
+VICI,VICI PROPERTIES,Other Specialized REITs,9,1,9,1,1,1,1,2,9,1,2,1,1,1,1,1,9,9,42
+AMT,AMERICAN TOWER C,Telecom Tower REITs,9,0,9,0,0,0,0,0,9,0,0,0,8,0,0,0,9,9,35
+APP,APPLOVIN CO-CL A,Application Software,9,1,1,1,2,2,2,2,1,2,5,2,6,1,1,2,2,2,34
+PLD,PROLOGIS INC,Industrial REITs,9,0,9,0,0,0,0,0,9,0,0,0,6,0,0,0,9,9,33
+WELL,WELLTOWER INC,Health Care REITs,9,0,9,0,0,0,0,0,9,0,0,0,2,0,0,0,9,9,29
+CCI,CROWN CASTLE INC,Telecom Tower REITs,9,0,9,0,0,0,0,0,9,0,0,0,1,0,0,0,9,9,28
+SPG,SIMON PROPERTY,Retail REITs,9,0,9,0,0,0,0,0,9,0,0,0,1,0,0,0,9,9,28
+ARE,ALEXANDRIA REAL,Health Care REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+AVB,AVALONBAY COMMUN,Multi-Family Residential REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+BXP,BXP INC,Office REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+CPT,CAMDEN PROP TR,Multi-Family Residential REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+DLR,DIGITAL REALTY,Data Center REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+DOC,HEALTHPEAK PROPE,Health Care REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+EQR,EQUITY RESIDENTI,Multi-Family Residential REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+ESS,ESSEX PROPERTY,Multi-Family Residential REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+EXR,EXTRA SPACE STOR,Self-Storage REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+FRT,FED REALTY INVS,Retail REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+HST,HOST HOTELS & RE,Hotel & Resort REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+INVH,INVITATION HOMES,Single-Family Residential REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+KIM,KIMCO REALTY,Retail REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+MAA,MID-AMERICA APAR,Multi-Family Residential REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+O,REALTY INCOME,Retail REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+PSA,PUBLIC STORAGE,Self-Storage REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+REG,REGENCY CENTERS,Retail REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+UDR,UDR INC,Multi-Family Residential REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+VTR,VENTAS INC,Health Care REITs,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,9,9,27
+DASH,DOORDASH INC-A,Restaurants,9,1,1,1,1,1,1,2,1,1,4,1,5,1,1,1,1,1,24
+PLTR,PALANTIR TECHN-A,Application Software,9,1,1,1,1,1,1,2,1,1,4,1,5,1,1,1,1,1,24
+HCA,HCA HEALTHCARE I,Health Care Facilities,9,0,9,0,0,0,0,0,9,0,9,0,5,0,0,0,0,0,23
+GOOG,ALPHABET INC-C,Interactive Media & Services,9,0,0,0,0,0,0,0,0,3,0,9,9,0,0,0,0,0,21
+GOOGL,ALPHABET INC-A,Interactive Media & Services,9,0,0,0,0,0,0,0,0,3,0,9,9,0,0,0,0,0,21
+MSFT,MICROSOFT CORP,Systems Software,9,0,0,0,0,0,0,0,0,2,0,9,9,0,0,0,0,0,20
+TDG,TRANSDIGM GROUP,Aerospace & Defense,9,0,0,0,0,0,0,0,0,0,9,0,2,0,9,0,0,0,20
+AAPL,APPLE INC,"Technology Hardware, Storage & Peripherals",9,0,0,0,0,0,0,0,0,6,0,4,9,0,0,0,0,0,19
+ABNB,AIRBNB INC-A,"Hotels, Resorts & Cruise Lines",9,0,0,0,1,1,0,0,0,0,4,1,8,0,0,1,1,1,18
+BRK/B,BERKSHIRE HATH-B,Multi-Sector Holdings,9,0,0,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,18
+CPAY,CORPAY INC,Transaction & Payment Processing Services,9,0,9,0,0,0,0,0,9,0,0,0,0,0,9,0,0,0,18
+CVX,CHEVRON CORP,Integrated Oil & Gas,9,0,0,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,18
+MA,MASTERCARD INC-A,Transaction & Payment Processing Services,9,0,9,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,18
+META,META PLATFORMS-A,Interactive Media & Services,9,0,0,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,18
+PM,PHILIP MORRIS IN,Tobacco,9,0,0,0,0,0,0,0,0,0,9,0,9,0,0,0,0,0,18
+T,AT&T INC,Integrated Telecommunication Services,9,0,0,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,18
+UNP,UNION PAC CORP,Rail Transportation,9,0,9,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,18
+V,VISA INC-CLASS A,Transaction & Payment Processing Services,9,0,9,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,18
+WMT,WALMART INC,Consumer Staples Merchandise Retail,9,0,0,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,18
+XOM,EXXON MOBIL CORP,Integrated Oil & Gas,9,0,0,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,18
+BKNG,BOOKING HOLDINGS,"Hotels, Resorts & Cruise Lines",9,0,8,0,0,0,0,0,8,0,0,0,9,0,0,0,0,0,17
+CMCSA,COMCAST CORP-A,Integrated Telecommunication Services,9,0,0,0,0,0,0,0,0,0,0,8,9,0,0,0,0,0,17
+INTC,INTEL CORP,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,8,9,0,0,0,0,0,17
+DIS,WALT DISNEY CO/T,Movies & Entertainment,9,0,0,0,0,0,0,0,0,0,0,7,9,0,0,0,0,0,16
+VRT,VERTIV HOLDING-A,Electrical Components & Equipment,9,0,2,0,0,0,0,2,2,1,0,0,2,0,9,0,0,0,16
+AMZN,AMAZON.COM INC,Broadline Retail,9,0,0,0,0,0,0,0,0,0,0,6,9,0,0,0,0,0,15
+CRWD,CROWDSTRIKE HO-A,Systems Software,9,0,0,0,1,1,0,0,0,0,4,1,5,0,0,1,1,1,15
+CTVA,CORTEVA INC,Fertilizers & Agricultural Chemicals,9,0,0,0,1,1,1,2,0,1,2,2,2,0,0,1,1,1,15
+MCD,MCDONALDS CORP,Restaurants,9,0,0,0,0,0,0,0,0,0,6,0,9,0,0,0,0,0,15
+JNJ,JOHNSON&JOHNSON,Pharmaceuticals,9,0,0,0,0,0,0,0,0,0,0,5,9,0,0,0,0,0,14
+PFE,PFIZER INC,Pharmaceuticals,9,0,0,0,0,0,0,0,0,0,0,5,9,0,0,0,0,0,14
+RTX,RTX CORP,Aerospace & Defense,9,0,0,0,0,0,0,0,0,0,0,5,9,0,0,0,0,0,14
+UNH,UNITEDHEALTH GRP,Managed Health Care,9,0,0,0,0,0,0,0,0,0,0,5,9,0,0,0,0,0,14
+VZ,VERIZON COMMUNIC,Integrated Telecommunication Services,9,0,0,0,0,0,0,0,0,0,0,5,9,0,0,0,0,0,14
+CHTR,CHARTER COMMUN-A,Cable & Satellite,9,0,0,0,0,0,0,0,0,0,0,0,4,0,9,0,0,0,13
+BA,BOEING CO/THE,Aerospace & Defense,9,0,0,0,0,0,0,0,0,0,3,0,9,0,0,0,0,0,12
+CSX,CSX CORP,Rail Transportation,9,0,9,0,0,0,0,0,9,0,0,0,3,0,0,0,0,0,12
+CVS,CVS HEALTH CORP,Health Care Services,9,0,0,0,0,0,0,0,0,0,0,5,7,0,0,0,0,0,12
+FOX,FOX CORP - B,Broadcasting,9,0,9,0,0,0,0,0,9,0,1,0,2,0,0,0,0,0,12
+FOXA,FOX CORP - A,Broadcasting,9,0,9,0,0,0,0,0,9,0,1,0,2,0,0,0,0,0,12
+SBUX,STARBUCKS CORP,Restaurants,9,0,0,0,0,0,0,0,0,0,3,0,9,0,0,0,0,0,12
+AVGO,BROADCOM INC,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,2,9,0,0,0,0,0,11
+CARR,CARRIER GLOB,Building Products,9,0,0,0,1,1,0,0,0,0,2,1,3,0,0,1,1,1,11
+NSC,NORFOLK SOUTHERN,Rail Transportation,9,0,9,0,0,0,0,0,9,0,0,0,2,0,0,0,0,0,11
+ADSK,AUTODESK INC,Application Software,9,0,0,0,0,0,0,0,0,0,0,0,1,0,9,0,0,0,10
+AZO,AUTOZONE INC,Automotive Retail,9,0,0,0,0,0,0,0,0,0,9,0,1,0,0,0,0,0,10
+DOW,DOW INC,Commodity Chemicals,9,0,0,0,1,1,0,0,0,0,2,1,2,0,0,1,1,1,10
+HD,HOME DEPOT INC,Home Improvement Retail,9,0,0,0,0,0,0,0,0,0,1,0,9,0,0,0,0,0,10
+MO,ALTRIA GROUP INC,Tobacco,9,0,0,0,0,0,0,0,0,0,1,0,9,0,0,0,0,0,10
+TPL,TEXAS PACIFIC LA,Oil & Gas Exploration & Production,9,0,9,0,0,0,0,0,9,0,0,0,0,0,1,0,0,0,10
+UBER,UBER TECHNOLOGIE,Passenger Ground Transportation,9,0,0,0,0,0,0,0,0,0,3,0,7,0,0,0,0,0,10
+ABBV,ABBVIE INC,Biotechnology,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+ABT,ABBOTT LABS,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+ACN,ACCENTURE PLC-A,IT Consulting & Other Services,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+ADBE,ADOBE INC,Application Software,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+ALGN,ALIGN TECHNOLOGY,Health Care Supplies,9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+AMGN,AMGEN INC,Biotechnology,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+BKR,BAKER HUGHES CO,Oil & Gas Equipment & Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+BMY,BRISTOL-MYER SQB,Pharmaceuticals,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+CAT,CATERPILLAR INC,Construction Machinery & Heavy Transportation Equipment,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+CDW,CDW CORP/DE,Technology Distributors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+CHRW,CH ROBINSON,Air Freight & Logistics,9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+CSCO,CISCO SYSTEMS,Communications Equipment,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+DAL,DELTA AIR LI,Passenger Airlines,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,9
+DLTR,DOLLAR TREE INC,Consumer Staples Merchandise Retail,9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+DPZ,DOMINO'S PIZZA,Restaurants,9,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,9
+FFIV,F5 INC,Communications Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+GE,GENERAL ELECTRIC,Aerospace & Defense,9,0,0,0,0,0,0,0,0,0,0,1,8,0,0,0,0,0,9
+GILD,GILEAD SCIENCES,Biotechnology,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+HON,HONEYWELL INTL,Industrial Conglomerates,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+IBM,IBM,IT Consulting & Other Services,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+KO,COCA-COLA CO/THE,Soft Drinks & Non-alcoholic Beverages,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+LIN,LINDE PLC,Industrial Gases,9,0,0,0,0,0,0,0,0,0,1,0,8,0,0,0,0,0,9
+LLY,ELI LILLY & CO,Pharmaceuticals,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+LMT,LOCKHEED MARTIN,Aerospace & Defense,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+LUV,SOUTHWEST AIR,Passenger Airlines,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,9
+MDT,MEDTRONIC PLC,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+MPWR,MONOLITHIC POWER,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+MRK,MERCK & CO,Pharmaceuticals,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+NCLH,NORWEGIAN CRUISE,"Hotels, Resorts & Cruise Lines",9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+NFLX,NETFLIX INC,Movies & Entertainment,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+NKE,NIKE INC -CL B,Footwear,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+NVDA,NVIDIA CORP,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,1,8,0,0,0,0,0,9
+OMC,OMNICOM GROUP,Advertising,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,9
+ORCL,ORACLE CORP,Systems Software,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+OTIS,OTIS WORLDWI,Industrial Machinery & Supplies & Components,9,0,0,0,0,0,0,0,0,0,3,0,3,0,3,0,0,0,9
+PEP,PEPSICO INC,Soft Drinks & Non-alcoholic Beverages,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+PG,PROCTER & GAMBLE,Household Products,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+POOL,POOL CORP,Distributors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+QCOM,QUALCOMM INC,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+TMO,THERMO FISHER,Life Sciences Tools & Services,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+TRGP,TARGA RESOURCES,Oil & Gas Storage & Transportation,9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+TRMB,TRIMBLE INC,Application Software,9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+TSLA,TESLA INC,Automobile Manufacturers,9,0,0,0,0,0,0,0,0,0,0,2,7,0,0,0,0,0,9
+TTD,TRADE DESK INC-A,Advertising,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,9
+TXN,TEXAS INSTRUMENT,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+UAL,UNITED AIRLINES,Passenger Airlines,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,9
+UHS,UNIVERSAL HLTH-B,Health Care Facilities,9,0,9,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,9
+UPS,UNITED PARCEL-B,Air Freight & Logistics,9,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,9
+VEEV,VEEVA SYSTEMS-A,Health Care Technology,9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+VRSN,VERISIGN INC,Internet Services & Infrastructure,9,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,9
+WSM,WILLIAMS-SONOMA,Homefurnishing Retail,9,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,9
+CI,THE CIGNA GROUP,Health Care Services,9,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8
+COP,CONOCOPHILLIPS,Oil & Gas Exploration & Production,9,0,0,0,0,0,0,0,0,0,0,2,6,0,0,0,0,0,8
+COST,COSTCO WHOLESALE,Consumer Staples Merchandise Retail,9,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8
+CRM,SALESFORCE INC,Application Software,9,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8
+DDOG,DATADOG INC-A,Application Software,9,0,0,0,0,0,0,0,0,0,3,0,2,0,3,0,0,0,8
+DHR,DANAHER CORP,Life Sciences Tools & Services,9,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8
+ISRG,INTUITIVE SURGIC,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,6,0,2,0,0,0,8
+LOW,LOWE'S COS INC,Home Improvement Retail,9,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8
+MMM,3M CO,Industrial Conglomerates,9,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8
+MRNA,MODERNA INC,Biotechnology,9,0,3,0,0,0,0,0,3,0,2,0,3,0,0,0,0,0,8
+NWS,NEWS CORP-CL B,Publishing,9,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,8
+NWSA,NEWS CORP-CL A,Publishing,9,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,8
+PYPL,PAYPAL HOLDINGS,Transaction & Payment Processing Services,9,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,8
+SBAC,SBA COMM CORP,Telecom Tower REITs,9,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,8
+TMUS,T-MOBILE US INC,Wireless Telecommunication Services,9,0,0,0,0,0,0,0,0,0,0,2,6,0,0,0,0,0,8
+AMD,ADV MICRO DEVICE,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,1,6,0,0,0,0,0,7
+CL,COLGATE-PALMOLIV,Household Products,9,0,0,0,0,0,0,0,0,0,1,0,6,0,0,0,0,0,7
+ELV,ELEVANCE HEALTH,Managed Health Care,9,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,7
+EPAM,EPAM SYSTEMS INC,IT Consulting & Other Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,7
+INTU,INTUIT INC,Application Software,9,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,7
+MAS,MASCO CORP,Building Products,9,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,7
+MDLZ,MONDELEZ INTER-A,Packaged Foods & Meats,9,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,7
+SYK,STRYKER CORP,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,7
+ADP,AUTOMATIC DATA,Human Resource & Employment Services,9,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,6
+DE,DEERE & CO,Agricultural & Farm Machinery,9,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,6
+DELL,DELL TECHN-C,"Technology Hardware, Storage & Peripherals",9,0,0,0,0,0,0,0,0,0,3,0,3,0,0,0,0,0,6
+GM,GENERAL MOTORS C,Automobile Manufacturers,9,0,0,0,0,0,0,0,0,0,0,4,2,0,0,0,0,0,6
+HPQ,HP INC,"Technology Hardware, Storage & Peripherals",9,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,6
+LULU,LULULEMON ATH,"Apparel, Accessories & Luxury Goods",9,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,6
+MSI,MOTOROLA SOLUTIO,Communications Equipment,9,0,0,0,0,0,0,0,0,0,4,0,2,0,0,0,0,0,6
+NOW,SERVICENOW INC,Systems Software,9,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,6
+TYL,TYLER TECHNOLOG,Application Software,9,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,6
+WBD,WARNER BROS DISC,Movies & Entertainment,9,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,6
+YUM,YUM! BRANDS INC,Restaurants,9,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,6
+ADI,ANALOG DEVICES,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,5
+AMAT,APPLIED MATERIAL,Semiconductor Materials & Equipment,9,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,5
+BDX,BECTON DICKINSON,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,5
+ITW,ILLINOIS TOOL WO,Industrial Machinery & Supplies & Components,9,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,5
+PNR,PENTAIR PLC,Industrial Machinery & Supplies & Components,9,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,5
+TGT,TARGET CORP,Consumer Staples Merchandise Retail,9,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,5
+TJX,TJX COS INC,Apparel Retail,9,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,5
+XYZ,BLOCK INC,Transaction & Payment Processing Services,9,0,0,0,0,0,0,0,0,0,0,0,2,0,3,0,0,0,5
+ZTS,ZOETIS INC,Pharmaceuticals,9,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,5
+BSX,BOSTON SCIENTIFC,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4
+DD,DUPONT DE NEMOUR,Specialty Chemicals,9,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,4
+EQIX,EQUINIX INC,Data Center REITs,9,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4
+EXE,EXPAND ENERGY CO,Oil & Gas Exploration & Production,9,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4
+FISV,FISERV INC,Transaction & Payment Processing Services,9,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4
+GD,GENERAL DYNAMICS,Aerospace & Defense,9,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4
+HLT,HILTON WORLDWIDE,"Hotels, Resorts & Cruise Lines",9,0,0,0,0,0,0,0,0,0,3,0,1,0,0,0,0,0,4
+LRCX,LAM RESEARCH,Semiconductor Materials & Equipment,9,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4
+MU,MICRON TECH,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4
+NOC,NORTHROP GRUMMAN,Aerospace & Defense,9,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4
+REGN,REGENERON PHARM,Biotechnology,9,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4
+SHW,SHERWIN-WILLIAMS,Specialty Chemicals,9,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4
+ULTA,ULTA BEAUTY INC,Other Specialty Retail,9,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,4
+VRTX,VERTEX PHARM,Biotechnology,9,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4
+ANET,ARISTA NETWORKS,Communications Equipment,9,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3
+APD,AIR PRODS & CHEM,Industrial Gases,9,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3
+CDNS,CADENCE DESIGN,Application Software,9,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3
+EL,ESTEE LAUDER,Personal Care Products,9,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3
+EOG,EOG RESOURCES,Oil & Gas Exploration & Production,9,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3
+ETN,EATON CORP PLC,Electrical Components & Equipment,9,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3
+MAR,MARRIOTT INTL-A,"Hotels, Resorts & Cruise Lines",9,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3
+MCK,MCKESSON CORP,Health Care Distributors,9,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,3
+ORLY,O'REILLY AUTOMOT,Automotive Retail,9,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,3
+PANW,PALO ALTO NETWOR,Systems Software,9,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3
+SLB,SLB LTD,Oil & Gas Equipment & Services,9,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3
+SNPS,SYNOPSYS INC,Application Software,9,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3
+WM,WASTE MANAGEMENT,Environmental & Facilities Services,9,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,3
+APH,AMPHENOL CORP-A,Electronic Components,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+CRH,CRH PLC,Construction Materials,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+CSGP,COSTAR GROUP INC,Real Estate Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,2
+CTAS,CINTAS CORP,Diversified Support Services,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+ECL,ECOLAB INC,Specialty Chemicals,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+FDX,FEDEX CORP,Air Freight & Logistics,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+FIS,FIDELITY NATIONA,Transaction & Payment Processing Services,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+KLAC,KLA CORP,Semiconductor Materials & Equipment,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+KMB,KIMBERLY-CLARK,Household Products,9,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2
+LII,LENNOX INTL INC,Building Products,9,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2
+MNST,MONSTER BEVERAGE,Soft Drinks & Non-alcoholic Beverages,9,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,2
+PH,PARKER HANNIFIN,Industrial Machinery & Supplies & Components,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+RCL,ROYAL CARIBBEAN,"Hotels, Resorts & Cruise Lines",9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+RSG,REPUBLIC SVCS,Environmental & Facilities Services,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+TPR,TAPESTRY INC,"Apparel, Accessories & Luxury Goods",9,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,2
+TT,TRANE TECHNOLOGI,Building Products,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+TTWO,TAKE-TWO INTERAC,Interactive Home Entertainment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,2
+WDAY,WORKDAY INC-A,Application Software,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+WMB,WILLIAMS COS INC,Oil & Gas Storage & Transportation,9,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2
+WYNN,WYNN RESORTS LTD,Casinos & Gaming,9,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2
+AXON,AXON ENTERPRISE,Aerospace & Defense,9,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+CMG,CHIPOTLE MEXICAN,Restaurants,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+CMI,CUMMINS INC,Construction Machinery & Heavy Transportation Equipment,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+COR,CENCORA INC,Health Care Distributors,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+CVNA,CARVANA CO,Automotive Retail,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+EMR,EMERSON ELEC CO,Electrical Components & Equipment,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+EW,EDWARDS LIFE,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+F,FORD MOTOR CO,Automobile Manufacturers,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+FCX,FREEPORT-MCMORAN,Copper,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+FICO,FAIR ISAAC CORP,Application Software,9,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+FTNT,FORTINET INC,Systems Software,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+GLW,CORNING INC,Electronic Components,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+HWM,HOWMET AEROSPACE,Aerospace & Defense,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+IDXX,IDEXX LABS,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+JCI,JOHNSON CONTROLS,Building Products,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+KHC,KRAFT HEINZ CO/T,Packaged Foods & Meats,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+KMI,KINDER MORGAN IN,Oil & Gas Storage & Transportation,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+LYV,LIVE NATION ENTE,Movies & Entertainment,9,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+NEM,NEWMONT CORP,Gold,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+PWR,QUANTA SERVICES,Construction & Engineering,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+TDY,TELEDYNE TECH,Electronic Equipment & Instruments,9,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+TEL,TE CONNECTIVITY,Electronic Manufacturing Services,9,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+A,AGILENT TECH INC,Life Sciences Tools & Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ADM,ARCHER-DANIELS,Agricultural Products & Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+AKAM,AKAMAI TECHNOLOG,Internet Services & Infrastructure,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ALB,ALBEMARLE CORP,Specialty Chemicals,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ALLE,ALLEGION PLC,Building Products,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+AMCR,AMCOR PLC,Paper & Plastic Packaging Products & Materials,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+AME,AMETEK INC,Electrical Components & Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+AOS,SMITH (A.O.)CORP,Building Products,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+APA,APA CORP,Oil & Gas Exploration & Production,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+APTV,APTIV PLC,Automotive Parts & Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+AVY,AVERY DENNISON,Paper & Plastic Packaging Products & Materials,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BALL,BALL CORP,"Metal, Glass & Plastic Containers",9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BAX,BAXTER INTL INC,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BBY,BEST BUY CO INC,Computer & Electronics Retail,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BF/B,BROWN-FORMAN -B,Distillers & Vintners,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BG,BUNGE GLOBAL SA,Agricultural Products & Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BIIB,BIOGEN INC,Biotechnology,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BLDR,BUILDERS FIRSTSO,Building Products,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+BR,BROADRIDGE FINL,Data Processing & Outsourced Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CAG,CONAGRA BRANDS I,Packaged Foods & Meats,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CAH,CARDINAL HEALTH,Health Care Distributors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CASY,CASEY'S GENERAL,Food Retail,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CBRE,CBRE GROUP INC-A,Real Estate Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CCL,CARNIVAL CORP LT,"Hotels, Resorts & Cruise Lines",9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CF,CF INDUSTRIES HO,Fertilizers & Agricultural Chemicals,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CHD,CHURCH & DWIGHT,Household Products,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CIEN,CIENA CORP,Communications Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CLX,CLOROX CO,Household Products,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CNC,CENTENE CORP,Managed Health Care,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+COHR,COHERENT CORP,Electronic Components,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+COO,COOPER COS INC,Health Care Supplies,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CPB,THE CAMPBELL'S C,Packaged Foods & Meats,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CPRT,COPART INC,Diversified Support Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CRL,CHARLES RIVER LA,Life Sciences Tools & Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+CTSH,COGNIZANT TECH-A,IT Consulting & Other Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DECK,DECKERS OUTDOOR,Footwear,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DG,DOLLAR GENERAL C,Consumer Staples Merchandise Retail,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DGX,QUEST DIAGNOSTIC,Health Care Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DHI,DR HORTON INC,Homebuilding,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DOV,DOVER CORP,Industrial Machinery & Supplies & Components,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DRI,DARDEN RESTAURAN,Restaurants,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DVA,DAVITA INC,Health Care Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DVN,DEVON ENERGY CO,Oil & Gas Exploration & Production,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+DXCM,DEXCOM,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EA,ELECTRONIC ARTS,Interactive Home Entertainment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EBAY,EBAY INC,Broadline Retail,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EFX,EQUIFAX INC,Research & Consulting Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EME,EMCOR GROUP INC,Construction & Engineering,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EQT,EQT CORP,Oil & Gas Exploration & Production,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EXPD,EXPEDITORS INTL,Air Freight & Logistics,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+EXPE,EXPEDIA GROUP IN,"Hotels, Resorts & Cruise Lines",9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FANG,DIAMONDBACK ENER,Oil & Gas Exploration & Production,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FAST,FASTENAL CO,Trading Companies & Distributors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FIX,COMFORT SYSTEMS,Construction & Engineering,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FSLR,FIRST SOLAR INC,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+FTV,FORTIVE CORP,Industrial Machinery & Supplies & Components,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GDDY,GODADDY INC-A,Internet Services & Infrastructure,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GEN,GEN DIGITAL INC,Systems Software,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GIS,GENERAL MILLS IN,Packaged Foods & Meats,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GNRC,GENERAC HOLDINGS,Electrical Components & Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GPC,GENUINE PARTS CO,Distributors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GPN,GLOBAL PAYMENTS,Transaction & Payment Processing Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GRMN,GARMIN LTD,Consumer Electronics,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+GWW,WW GRAINGER INC,Trading Companies & Distributors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+HAL,HALLIBURTON CO,Oil & Gas Equipment & Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+HAS,HASBRO INC,Leisure Products,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+HII,HUNTINGTON INGAL,Aerospace & Defense,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+HPE,HEWLETT PACKA,"Technology Hardware, Storage & Peripherals",9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+HRL,HORMEL FOODS CRP,Packaged Foods & Meats,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+HSIC,HENRY SCHEIN INC,Health Care Distributors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+HSY,HERSHEY CO/THE,Packaged Foods & Meats,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+HUBB,HUBBELL INC,Electrical Components & Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+HUM,HUMANA INC,Managed Health Care,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+IEX,IDEX CORP,Industrial Machinery & Supplies & Components,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+IFF,INTL FLVR & FRAG,Specialty Chemicals,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+INCY,INCYTE CORP,Biotechnology,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+IP,INTL PAPER CO,Paper & Plastic Packaging Products & Materials,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+IQV,IQVIA HOLDINGS I,Life Sciences Tools & Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+IR,INGERSOLL-RAND I,Industrial Machinery & Supplies & Components,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+IRM,IRON MOUNTAIN,Other Specialized REITs,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+IT,GARTNER INC,IT Consulting & Other Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+J,JACOBS SOLUTIONS,Research & Consulting Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+JBHT,HUNT (JB) TRANS,Cargo Ground Transportation,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+JBL,JABIL INC,Electronic Manufacturing Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+JKHY,JACK HENRY,Transaction & Payment Processing Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KDP,KEURIG DR PEPPER,Soft Drinks & Non-alcoholic Beverages,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KEYS,KEYSIGHT TEC,Electronic Equipment & Instruments,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KR,KROGER CO,Food Retail,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LDOS,LEIDOS HOLDINGS,Research & Consulting Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LEN,LENNAR CORP-A,Homebuilding,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LH,LABCORP HOLDINGS,Health Care Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LHX,L3HARRIS TECHNOL,Aerospace & Defense,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LITE,LUMENTUM HOL,Communications Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LVS,LAS VEGAS SANDS,Casinos & Gaming,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LYB,LYONDELLBASELL-A,Commodity Chemicals,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MCHP,MICROCHIP TECH,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MGM,MGM RESORTS INTE,Casinos & Gaming,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MKC,MCCORMICK-N/V,Packaged Foods & Meats,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MLM,MARTIN MAR MTLS,Construction Materials,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MOS,MOSAIC CO/THE,Fertilizers & Agricultural Chemicals,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MPC,MARATHON PETROLE,Oil & Gas Refining & Marketing,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+MTD,METTLER-TOLEDO,Life Sciences Tools & Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NDSN,NORDSON CORP,Industrial Machinery & Supplies & Components,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NTAP,NETAPP INC,"Technology Hardware, Storage & Peripherals",9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NUE,NUCOR CORP,Steel,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NVR,NVR INC,Homebuilding,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NXPI,NXP SEMICONDUCTO,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ODFL,OLD DOMINION FRT,Cargo Ground Transportation,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+OKE,ONEOK INC,Oil & Gas Storage & Transportation,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ON,ON SEMICONDUCTOR,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+OXY,OCCIDENTAL PETE,Integrated Oil & Gas,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PAYX,PAYCHEX INC,Human Resource & Employment Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PCAR,PACCAR INC,Construction Machinery & Heavy Transportation Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PHM,PULTEGROUP INC,Homebuilding,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PKG,PACKAGING CORP,Paper & Plastic Packaging Products & Materials,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PODD,INSULET CORP,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PPG,PPG INDS INC,Specialty Chemicals,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PSX,PHILLIPS 66,Oil & Gas Refining & Marketing,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PTC,PTC INC,Application Software,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RL,RALPH LAUREN COR,"Apparel, Accessories & Luxury Goods",9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RMD,RESMED INC,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ROK,ROCKWELL AUTOMAT,Electrical Components & Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ROL,ROLLINS INC,Environmental & Facilities Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ROP,ROPER TECHNOLOGI,Application Software,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ROST,ROSS STORES INC,Apparel Retail,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RVTY,REVVITY INC,Life Sciences Tools & Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SATS,ECHOSTAR CORP-A,Cable & Satellite,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SJM,JM SMUCKER CO,Packaged Foods & Meats,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SMCI,SUPER MICRO COMP,"Technology Hardware, Storage & Peripherals",9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SNA,SNAP-ON INC,Industrial Machinery & Supplies & Components,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STE,STERIS PLC,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STLD,STEEL DYNAMICS,Steel,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STX,SEAGATE TECHNOLO,"Technology Hardware, Storage & Peripherals",9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STZ,CONSTELLATION-A,Distillers & Vintners,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SWK,STANLEY BLACK &,Industrial Machinery & Supplies & Components,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SWKS,SKYWORKS SOLUTIO,Semiconductors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SYY,SYSCO CORP,Food Distributors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TAP,MOLSON COORS-B,Brewers,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TECH,BIO-TECHNE CORP,Life Sciences Tools & Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TER,TERADYNE INC,Semiconductor Materials & Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TKO,TKO GROUP HOLDIN,Movies & Entertainment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TSCO,TRACTOR SUPPLY,Other Specialty Retail,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TSN,TYSON FOODS-A,Packaged Foods & Meats,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+TXT,TEXTRON INC,Aerospace & Defense,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+URI,UNITED RENTALS,Trading Companies & Distributors,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+VLO,VALERO ENERGY,Oil & Gas Refining & Marketing,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+VMC,VULCAN MATERIALS,Construction Materials,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+VRSK,VERISK ANALYTI,Research & Consulting Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+VTRS,VIATRIS INC,Pharmaceuticals,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+WAB,WABTEC CORP,Construction Machinery & Heavy Transportation Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+WAT,WATERS CORP,Life Sciences Tools & Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+WDC,WESTERN DIGITAL,"Technology Hardware, Storage & Peripherals",9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+WST,WEST PHARMACEUT,Life Sciences Tools & Services,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+WY,WEYERHAEUSER CO,Timber REITs,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+XYL,XYLEM INC,Industrial Machinery & Supplies & Components,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ZBH,ZIMMER BIOMET HO,Health Care Equipment,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ZBRA,ZEBRA TECH CORP,Electronic Equipment & Instruments,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

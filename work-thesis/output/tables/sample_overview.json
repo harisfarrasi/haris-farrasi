@@ -1,0 +1,97 @@
+{
+  "sample_frame": "S&P 500 active constituents as of May 2026",
+  "source": "Bloomberg Terminal export in raw-data.csv",
+  "complete_case_policy": "Main BQS complete-case: observations must have SROA, BQS, HHI, SIZE, GROWTH, MARG, FCF_MARGIN, LEV, INTEREST_COVERAGE, and CONS.",
+  "n_obs": 2241,
+  "n_firms": 333,
+  "n_industries": 92,
+  "years_min": 2019,
+  "years_max": 2025,
+  "obs_by_year": {
+    "2019": 309,
+    "2020": 319,
+    "2021": 322,
+    "2022": 322,
+    "2023": 325,
+    "2024": 323,
+    "2025": 321
+  },
+  "processed_rows": 3604,
+  "main_model_nobs": 2241,
+  "main_model_r2": 0.8169216632564066,
+  "main_model_adj_r2": 0.7839328375628823,
+  "main_model_f_stat": 8.170593135819484,
+  "main_model_f_p": 2.702902149501533e-06,
+  "main_model_f_df_num": 4.0,
+  "main_model_f_df_denom": 332.0,
+  "main_model_firms": 333,
+  "raw_firms": 503,
+  "excluded_firms_financials_utilities": 97,
+  "included_firms_after_exclusion": 406,
+  "included_rows_after_exclusion": 3654,
+  "parse_problem_counts": {
+    "Free Cash Flow": 14,
+    "Total Equity": 162,
+    "Market Cap": 890
+  },
+  "available_industry_classifications": {
+    "gics_sub_industry": 110,
+    "icb_subsector_name": 114,
+    "icb_sector_name": 36,
+    "icb_supersector_name": 18,
+    "icb_industry_name": 11,
+    "bloomberg_ind_group": 56
+  },
+  "dropped_rows_due_to_complete_case": 1363,
+  "missing_core_variables_before_complete_case": {
+    "SROA": 812,
+    "BQS": 1363,
+    "HHI": 0,
+    "SIZE": 0,
+    "GROWTH": 408,
+    "MARG": 381,
+    "FCF_MARGIN": 8,
+    "LEV": 2,
+    "INTEREST_COVERAGE": 334,
+    "CONS": 1139
+  },
+  "bqs_components": [
+    "MARG",
+    "FCF_MARGIN",
+    "LEV",
+    "INTEREST_COVERAGE",
+    "CONS"
+  ],
+  "hhi_ranges": {
+    "HHI_GICS_SUB": {
+      "min": 0.10943578674305725,
+      "max": 1.0,
+      "missing": 0
+    },
+    "HHI_ICB_SUBSECTOR": {
+      "min": 0.09495400808853295,
+      "max": 1.0,
+      "missing": 0
+    },
+    "HHI_ICB_SECTOR": {
+      "min": 0.045163390654186716,
+      "max": 1.0,
+      "missing": 0
+    },
+    "HHI_ICB_SUPERSECTOR": {
+      "min": 0.024595564773827527,
+      "max": 0.9740349528786343,
+      "missing": 0
+    },
+    "HHI_ICB_INDUSTRY": {
+      "min": 0.021290383265581334,
+      "max": 0.9740349528786343,
+      "missing": 0
+    },
+    "HHI_BLOOMBERG_IND_GROUP": {
+      "min": 0.11486451193544363,
+      "max": 1.0,
+      "missing": 0
+    }
+  }
+}

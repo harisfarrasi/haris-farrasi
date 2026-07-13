@@ -1,0 +1,24 @@
+{
+  "source": "yfinance",
+  "years_requested": "2018-2024",
+  "tickers_requested": 0,
+  "tickers_succeeded": 500,
+  "rows_pulled": 3878,
+  "errors": [],
+  "from_raw": "data/raw/fundamentals_raw.csv",
+  "practice": {
+    "expanded": true,
+    "target_firms": 500,
+    "jitter": 0.02,
+    "min_years": 4,
+    "base_firms": 500,
+    "eligible_firms": 500,
+    "cloned_firms": 0,
+    "final_firms": 500,
+    "final_rows": 3878
+  },
+  "notes": [
+    "This is practice data from Yahoo Finance via yfinance (not identical to Bloomberg).",
+    "yfinance fundamentals often cover only a limited number of yearly periods; expect an unbalanced panel."
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "source_file": "/Users/macbook/Downloads/Home - Startup/studio-thesis/raw-data.csv",
+  "sample_frame": "S&P 500 active constituents as of May 2026",
+  "raw_firms": 503,
+  "excluded_firms": 97,
+  "excluded_subindustry_counts": {
+    "Asset Management & Custody Banks": 11,
+    "Consumer Finance": 3,
+    "Diversified Banks": 8,
+    "Diversified Financial Services": 1,
+    "Electric Utilities": 17,
+    "Financial Exchanges & Data": 9,
+    "Gas Utilities": 1,
+    "Independent Power Producers & Energy Traders": 2,
+    "Insurance Brokers": 5,
+    "Investment Banking & Brokerage": 6,
+    "Life & Health Insurance": 5,
+    "Multi-Utilities": 10,
+    "Property & Casualty Insurance": 12,
+    "Regional Banks": 5,
+    "Reinsurance": 1,
+    "Water Utilities": 1
+  },
+  "included_firms": 406,
+  "included_rows": 3654,
+  "years_min": 2017,
+  "years_max": 2025,
+  "missing_required_fields_total": {
+    "sales": 37,
+    "cogs": 418,
+    "net_income": 37,
+    "total_assets": 50,
+    "total_debt": 52,
+    "operating_cash_flow": 42,
+    "capex": 49
+  },
+  "missing_optional_fields_total": {
+    "gross_margin": 418,
+    "free_cash_flow_raw": 58,
+    "roe": 209,
+    "total_equity": 212,
+    "market_cap": 1001,
+    "operating_income": 37,
+    "interest_expense": 280,
+    "cash_and_equivalents": 50,
+    "current_assets": 274,
+    "current_liabilities": 274
+  },
+  "parse_problem_counts": {
+    "Free Cash Flow": 14,
+    "Total Equity": 162,
+    "Market Cap": 890
+  },
+  "ambiguous_suffix_counts": {
+    "Free Cash Flow": 14,
+    "Total Equity": 162,
+    "Market Cap": 890
+  },
+  "available_industry_classifications": {
+    "gics_sub_industry": 110,
+    "icb_subsector_name": 114,
+    "icb_sector_name": 36,
+    "icb_supersector_name": 18,
+    "icb_industry_name": 11,
+    "bloomberg_ind_group": 56
+  },
+  "notes": [
+    "Financials and Utilities are excluded using the GICS Sub-Industry labels available in raw-data.csv.",
+    "The raw file does not contain historical S&P 500 membership; the thesis therefore uses current active constituents and documents survivorship bias.",
+    "Gross Margin and ROE are stored as decimal ratios when available.",
+    "Ambiguous repeated alphabetic suffixes are audited and parsed as missing rather than guessed."
+  ]
+}

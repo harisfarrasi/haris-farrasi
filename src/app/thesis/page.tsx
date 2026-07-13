@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function ThesisPage() {
   return (
-    <TabbedShell active="home">
+    <TabbedShell>
       <div className="flex flex-col gap-6 h-[calc(100vh-200px)]">
         <div className="flex justify-between items-center">
           <h1 className="text-xl font-bold">Undergraduate Thesis</h1>

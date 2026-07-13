@@ -1,0 +1,4 @@
+test,f_stat,p_value,df_num,df_denom,notes
+Uji gabungan two-way FE vs pooled OLS,20.408802791572576,0.0,338.0,1898.0,H0: seluruh efek perusahaan dan tahun = 0
+Uji efek perusahaan | year FE,20.457496847574802,0.0,332.0,1898.0,H0: alpha_i = 0 setelah efek tahun dimasukkan
+Uji efek waktu | firm FE,8.62054218917119,2.848193464066273e-09,6.0,1898.0,H0: delta_t = 0 setelah efek perusahaan dimasukkan

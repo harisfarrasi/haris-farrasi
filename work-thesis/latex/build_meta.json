@@ -1,0 +1,10 @@
+{
+  "input": "/Users/macbook/Downloads/Home - Startup/studio-thesis/skripsi.md",
+  "sanitized": "/Users/macbook/Downloads/Home - Startup/studio-thesis/latex/skripsi.sanitized.md",
+  "tex": "/Users/macbook/Downloads/Home - Startup/studio-thesis/latex/skripsi.tex",
+  "extracted_images": [],
+  "notes": [
+    "This generates .tex only. To compile PDF, install a LaTeX engine (xelatex/pdflatex) and run latexmk or xelatex.",
+    "The original `thesis/skripsi.md` is not modified; we build from a sanitized copy."
+  ]
+}

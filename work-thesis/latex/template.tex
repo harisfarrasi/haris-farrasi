@@ -1,0 +1,149 @@
+% !TeX program = pdflatex
+% !TeX encoding = UTF-8
+\documentclass[12pt,a4paper]{article}
+
+% Batas tepi penulisan sesuai pedoman UNDIP FEB: Atas 4cm, Bawah 3cm, Kiri 4cm, Kanan 3cm
+\usepackage[top=4cm, bottom=3cm, left=4cm, right=3cm]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{calc}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usepackage[table]{xcolor}
+\usepackage{soul}
+\IfFileExists{tikz-cd.sty}{\usepackage{tikz-cd}}{}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
+
+% Make all figures auto-fit within text width
+\setkeys{Gin}{width=\linewidth,keepaspectratio}
+
+% Make Pandoc longtables more compact/readable by default
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\usepackage{etoolbox}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,calc,patterns}
+
+% Center longtables on the page and make them single-spaced
+\AtBeginEnvironment{longtable}{\small\singlespacing}
+\AtEndEnvironment{longtable}{\normalsize}
+\AtBeginEnvironment{longtable}{\sloppy}
+\AtBeginEnvironment{tabular}{\singlespacing}
+\AtBeginEnvironment{tabularx}{\singlespacing}
+
+\setlength{\LTleft}{\fill}
+\setlength{\LTright}{\fill}
+\setlength{\LTpre}{6pt}
+\setlength{\LTpost}{6pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+
+\usepackage{titlesec}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern} % Font standar Latin Modern untuk sans dan mono
+\renewcommand{\rmdefault}{ptm} % Ubah default Serif (Roman) ke Times Roman
+\renewcommand{\ttdefault}{lmtt} % Gunakan Latin Modern Typewriter untuk mono
+
+% Jarak baris naskah utama dua spasi sesuai pedoman
+\doublespacing
+\setlength{\parindent}{1.0cm} % Paragraf baru menjorok 1cm (1 tab)
+\setlength{\parskip}{0pt}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}%
+}
+% Pandoc wraps images with \pandocbounded{...}; center them by default
+\providecommand{\pandocbounded}[1]{\begin{center}#1\end{center}}
+\providecommand{\real}[1]{#1}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+\renewcommand{\contentsname}{Daftar Isi}
+\renewcommand{\listtablename}{Daftar Tabel}
+\renewcommand{\listfigurename}{Daftar Gambar}
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\figurename}{Gambar}
+
+% Definisi warna untuk TikZ Diagram (Aksa Theme)
+\definecolor{AksaBlue}{HTML}{111111}
+\definecolor{AksaTeal}{HTML}{555555}
+\definecolor{AksaOrange}{HTML}{888888}
+\definecolor{AksaSand}{HTML}{E8E8E8}
+\definecolor{AksaMist}{HTML}{FFFFFF}
+
+\makeatletter
+\@addtoreset{table}{section}
+\@addtoreset{figure}{section}
+\makeatother
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+
+\captionsetup[table]{labelfont=bf,textfont=bf,justification=centering,format=plain,singlelinecheck=false,labelsep=space}
+\captionsetup[figure]{labelfont=bf,textfont=bf,justification=centering,format=plain,singlelinecheck=false,labelsep=space}
+\newcommand{\tabletitle}[1]{\begin{center}\textbf{#1}\end{center}}
+
+% Headings formatting (Bab size 14pt, subbab size 12pt)
+\newcommand{\sectionbreak}{\clearpage}
+\titleformat{\section}[display]{\centering\bfseries\large}{BAB \thesection}{0.5em}{\large}
+\titlespacing*{\section}{0pt}{0pt}{1.2\baselineskip}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{1\baselineskip}{0.5\baselineskip}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+\begin{document}
+
+\begin{titlepage}
+    \singlespacing
+    \centering
+    {\large \textbf{\MakeUppercase{$title$}}\par}
+    \vspace{1.5cm}
+    $if(logo)$
+    \includegraphics[width=4cm]{$logo$}\par
+    $endif$
+    \vspace{1.5cm}
+    {\large \textbf{$jenis$}\par}
+    \vspace{0.8cm}
+    {$untuk$\par}
+    \vspace{1.5cm}
+    {\large \textbf{$author$}\par}
+    $if(nim)$
+    {\large \textbf{NIM. $nim$}\par}
+    $endif$
+    \vfill
+    {\large \textbf{$prodi$}\par}
+    {\large \textbf{$departemen$}\par}
+    {\large \textbf{$fakultas$}\par}
+    {\large \textbf{$universitas$}\par}
+    \vspace{0.5cm}
+    {\large \textbf{$tahun_akademik$}\par}
+\end{titlepage}
+
+\pagenumbering{roman}
+
+\begin{spacing}{1.15}
+\tableofcontents
+\vspace{1cm}
+\begingroup
+\renewcommand{\numberline}[1]{Tabel~#1\hspace{1em}}
+\listoftables
+\endgroup
+\vspace{1cm}
+\begingroup
+\renewcommand{\numberline}[1]{Gambar~#1\hspace{1em}}
+\listoffigures
+\endgroup
+\vspace{1cm}
+\end{spacing}
+
+\pagenumbering{arabic}
+
+$body$
+
+\end{document}

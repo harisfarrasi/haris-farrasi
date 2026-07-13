@@ -1,0 +1,6 @@
+test,stat,p_value,df,notes
+Jarque-Bera (residual normality),929.014029979284,1.849978088849954e-202,2.0,Residuals from within regression
+Breusch-Pagan (LM),6.61975872187319,0.1573992909593307,4.0,Exog=within-demeaned regressors
+Breusch-Pagan (F),1.6561393880794213,0.15752251913199444,4.0,Exog=within-demeaned regressors
+"Pesaran CD (cross-sectional dependence, approx.)",-0.1316365210819409,0.8952717972265993,,Pairs=54851; Approx CD using pairwise correlations
+Within-firm residual AR(1) corr (mean),0.5785702756876743,0.0,,Firms used=328; Mean Fisher-z AR(1)

@@ -1,0 +1,479 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz-cd}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}
+
+\setstretch{1.3}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6\baselineskip}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\renewcommand{\contentsname}{Daftar Isi}
+\renewcommand{\chaptername}{BAB}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    {\Large \textbf{Determinan Profitabilitas Berkelanjutan: Analisis Struktur Industri dan Kualitas Bisnis pada Perusahaan Konstituen S\&P 500 (Periode 2015--2024)}\par}
+    \vspace{1.5cm}
+    \includegraphics[width=4cm]{logo.png}\par
+    \vspace{1.5cm}
+    {\Large \textbf{SKRIPSI}\par}
+    \vspace{0.8cm}
+    {Untuk menyelesaikan Program Studi S-1\par}
+    \vspace{1.5cm}
+    {\large \textbf{Alwan Haris Farrasi}\par}
+    {\large \textbf{NIM. 12020122140050}\par}
+    \vfill
+    {\large \textbf{Program Studi S1 Ekonomi}\par}
+    {\large \textbf{Departemen Ilmu Ekonomi dan Studi Pembangunan}\par}
+    {\large \textbf{Fakultas Ekonomika dan Bisnis}\par}
+    {\large \textbf{Universitas Diponegoro}\par}
+    \vspace{0.5cm}
+    {\large \textbf{2024/2025}\par}
+\end{titlepage}
+
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+
+\pagenumbering{arabic}
+
+\chapter{PENDAHULUAN}
+
+\section{Latar Belakang Masalah}
+
+Dinamika ekonomi global dalam satu dekade terakhir, khususnya pada periode 2015 hingga 2024, telah menyajikan lanskap yang penuh tantangan sekaligus anomali yang menuntut reevaluasi mendalam terhadap teori-teori ekonomi konvensional mengenai profitabilitas perusahaan. Secara fundamental, teori ekonomi mikro neoklasik mempostulatkan bahwa keuntungan (profit) perusahaan bersifat sementara dan akan mengalami \textit{mean reversion} atau kembali ke tingkat rata-rata normal dalam jangka panjang. Mekanisme kompetisi pasar, di mana tingkat pengembalian tidak normal (\textit{abnormal return}) akan menarik masuknya pendatang baru (\textit{new entrants}), diasumsikan akan mengikis margin keuntungan petahana hingga mencapai tingkat ekuilibrium. Namun, realitas empiris yang terekam dalam data pasar modal Amerika Serikat, khususnya pada indeks S\&P 500, menunjukkan fenomena yang kontradiktif: sebagian perusahaan mampu mempertahankan tingkat profitabilitas supernormal secara persisten dalam jangka waktu yang lama, menentang gravitasi kompetisi yang diprediksi oleh teori.
+
+Fenomena ini, yang dikenal sebagai \textit{profit persistence}, menjadi semakin relevan untuk diteliti di tengah volatilitas makroekonomi ekstrem yang menandai periode pengamatan penelitian ini. Mulai dari era suku bunga rendah pasca-Krisis Finansial Global, disrupsi rantai pasok akibat pandemi COVID-19, hingga lonjakan inflasi global dan siklus pengetatan moneter agresif pada tahun 2022--2024, korporasi dihadapkan pada ujian ketahanan yang belum pernah terjadi sebelumnya. Data menunjukkan bahwa laba korporasi domestik non-finansial di Amerika Serikat justru meningkat signifikan dari rata-rata 8,1\% dari pendapatan nasional pada periode 2010--2019 menjadi 11,2\% pada kuartal terakhir tahun 2024. Lebih lanjut, margin keuntungan bersih perusahaan S\&P 500 tetap bertahan di atas 12\% pada tahun 2024, jauh melampaui rata-rata historis jangka panjang. Ketahanan profitabilitas di tengah guncangan sistemik ini memicu pertanyaan fundamental: apakah persistensi ini merupakan hasil dari struktur pasar yang semakin terkonsentrasi dan protektif, ataukah buah dari keunggulan efisiensi dan kualitas fundamental internal perusahaan yang superior?
+
+Untuk menjawab pertanyaan tersebut, penelitian ini, yang berjudul \textit{``Determinan Profitabilitas Berkelanjutan: Analisis Struktur Industri dan Kualitas Bisnis pada Perusahaan Konstituen S\&P 500 (Periode 2015--2024)''}, mencoba mengurai ketegangan antara dua paradigma dominan dalam ekonomi industri dan manajemen strategis: Paradigma \textit{Structure-Conduct-Performance} (SCP) dan pandangan \textit{Resource-Based View} (RBV).
+
+\subsection{Perspektif External dengan Structure-Conduct-Performance (SCP)}
+
+Paradigma SCP, yang dipelopori oleh ekonom seperti Edward Mason dan Joe Bain, berargumen bahwa struktur pasar khususnya tingkat konsentrasi industri adalah determinan utama yang mendikte perilaku (\textit{conduct}) perusahaan dan pada akhirnya menentukan kinerja (\textit{performance}) mereka. Premis dasarnya adalah bahwa dalam industri yang sangat terkonsentrasi, di mana pangsa pasar didominasi oleh segelintir perusahaan besar, intensitas kompetisi cenderung menurun. Hal ini memungkinkan perusahaan petahana untuk melakukan kolusi diam-diam (\textit{tacit collusion}) atau menggunakan kekuatan pasar (\textit{market power}) mereka untuk menetapkan harga di atas biaya marjinal, sehingga menghasilkan profitabilitas yang lebih tinggi secara artifisial.
+
+Relevansi paradigma SCP dalam konteks penelitian ini sangat kuat mengingat tren sekuler peningkatan konsentrasi pasar di Amerika Serikat. Data menunjukkan bahwa tingkat konsentrasi pasar, yang diukur dengan \textit{Herfindahl-Hirschman Index} (HHI), telah mencapai level yang mengkhawatirkan di berbagai sektor. Pada tahun 2024, sepuluh perusahaan terbesar dalam indeks S\&P 500 menguasai hampir 40\% dari total kapitalisasi pasar indeks tersebut, sebuah rekor konsentrasi yang melampaui puncak era \textit{dot-com bubble} tahun 2000. Fenomena ini sering disebut sebagai pasar yang \textit{top-heavy}, di mana sekelompok kecil perusahaan raksasa sering dijuluki \textit{Magnificent Seven} yang mencakup Apple, Microsoft, NVIDIA, Alphabet, Amazon, Meta, dan Tesla menyerap sebagian besar \textit{profit pool} ekonomi.
+
+Peningkatan HHI ini tidak hanya terjadi secara nominal tetapi juga berdampak riil pada dinamika kompetisi. Pervan, Pervan, dan \v{C}urak (2019) menemukan bukti empiris bahwa konsentrasi industri berpengaruh positif dan signifikan terhadap Return on Assets (ROA) pada perusahaan manufaktur, mendukung hipotesis bahwa struktur pasar yang oligopolistik memberikan \textit{payung pelindung} bagi profitabilitas perusahaan. Dalam konteks modern, argumen ini diperkuat oleh pengamatan bahwa perusahaan-perusahaan di sektor terkonsentrasi mampu mempertahankan margin tinggi bahkan ketika inflasi input melonjak pada tahun 2021--2022. Kemampuan untuk membebankan kenaikan biaya kepada konsumen (\textit{pass-through ability}) tanpa kehilangan pangsa pasar adalah indikator klasik dari \textit{market power} yang derivatif dari struktur industri yang kaku.
+
+Namun, paradigma SCP mendapatkan tantangan serius dari hipotesis efisiensi yang diajukan oleh Demsetz (1973). Hipotesis ini menyatakan bahwa korelasi positif antara konsentrasi dan profitabilitas bukan disebabkan oleh praktik anti-kompetitif, melainkan karena perusahaan yang lebih efisien akan tumbuh lebih cepat, merebut pangsa pasar yang lebih besar, dan secara alami meningkatkan konsentrasi industri. Dalam pandangan ini, konsentrasi adalah hasil (\textit{outcome}) dari kompetisi yang sehat, bukan tanda kegagalan pasar. Perdebatan ini menuntut analisis yang lebih nuansa untuk memisahkan apakah profitabilitas berkelanjutan yang diamati pada periode 2015--2024 adalah rente monopoli atau hasil efisiensi operasional.
+
+\subsection{Perspektif Internal dengan Resource-Based View (RBV)}
+
+Berbeda dengan determinisme struktural SCP, perspektif \textit{Resource-Based View} (RBV) memandang ke dalam perusahaan (\textit{inside-out approach}). RBV, yang dikembangkan oleh Wernerfelt (1984) dan Barney (1991), berargumen bahwa sumber daya dan kapabilitas internal yang berharga, langka, tidak dapat ditiru, dan tidak tergantikan (VRIN resources) adalah sumber sejati dari keunggulan kompetitif berkelanjutan. Zeitun dan Tian (2014) memberikan dukungan empiris bagi pandangan ini dengan menunjukkan bahwa faktor spesifik perusahaan (\textit{firm-level factors}) seperti efisiensi manajemen, struktur modal, dan inovasi seringkali memiliki daya jelaskan yang lebih besar terhadap variasi kinerja dibandingkan faktor industri.
+
+Dalam konteks penelitian ini, RBV dioperasionalisasikan melalui konsep ``Kualitas Bisnis'' (\textit{Business Quality}) yang diukur secara komposit. Penelitian ini mengusulkan \textit{Business Quality Score} (BQS) yang mengintegrasikan empat dimensi fundamental:
+
+\begin{enumerate}
+    \item Kekuatan Penetapan Harga (\textit{Pricing Power}): diproksikan dengan \textit{gross margin}, yang mencerminkan kemampuan perusahaan untuk mempertahankan selisih antara harga jual dan biaya produksi.
+    \item Kualitas Arus Kas (\textit{Owner Earnings}): mengukur kemampuan perusahaan menghasilkan kas bebas setelah belanja modal, yang krusial untuk reinvestasi dan pengembalian kepada pemegang saham.
+    \item Disiplin Utang (\textit{Leverage Discipline}): mencerminkan kesehatan neraca dan ketahanan terhadap guncangan suku bunga.
+    \item Konsistensi Laba (\textit{Earnings Consistency}): mengukur stabilitas profitabilitas dari waktu ke waktu.
+\end{enumerate}
+
+Urgensi untuk memasukkan variabel kualitas bisnis ini didorong oleh fenomena divergensi kinerja yang ekstrem di pasar modal AS pasca-2020. Sementara perusahaan ``berkualitas tinggi'' dengan neraca kuat dan arus kas melimpah terus mencetak rekor profitabilitas, terdapat lonjakan signifikan dalam jumlah ``perusahaan zombie'' yaitu perusahaan yang pendapatan operasionalnya tidak cukup untuk menutupi beban bunga utang.
+
+Data dari S\&P Global Market Intelligence (2025) menunjukkan bahwa pengajuan kebangkrutan korporasi AS mencapai 686 kasus pada tahun 2024, level tertinggi sejak 2010. Lebih mengkhawatirkan lagi, data Bloomberg (2025) mengindikasikan bahwa jumlah perusahaan zombie dalam indeks Russell 3000 telah melonjak menjadi 639 perusahaan, di mana estimasi pasar menunjukkan bahwa satu dari lima perusahaan publik AS kini berisiko gagal menutup biaya bunganya. Situasi ini diperburuk oleh lingkungan suku bunga tinggi (\textit{Fed Funds Rate} di 5,25\%--5,50\%) yang memberatkan biaya modal.
+
+Fenomena perusahaan zombie ini menjadi bukti empiris yang kuat bagi argumen RBV: berada dalam industri yang tumbuh atau terkonsentrasi tidak menjamin kelangsungan hidup jika fundamental internal perusahaan rapuh. Perusahaan dengan leverage tinggi dan margin tipis terbukti sangat rentan ketika biaya modal meningkat, sementara perusahaan dengan kualitas bisnis superior (BQS tinggi) mampu memanfaatkan neraca mereka yang kuat untuk memperluas pangsa pasar dan mempertahankan profitabilitas. Oleh karena itu, mengabaikan faktor internal dalam analisis profitabilitas akan menghasilkan kesimpulan yang bias.
+
+\subsection{Konteks Makroekonomi (2015--2024)}
+
+Pemilihan periode 2015--2024 bukan tanpa alasan. Dekade ini merepresentasikan siklus ekonomi yang penuh dengan diskontinuitas yang menguji tesis SCP dan RBV secara ekstrem.
+
+\begin{enumerate}
+    \item Periode 2015--2019: ditandai dengan pertumbuhan moderat dan inflasi rendah, di mana perusahaan teknologi mulai mengonsolidasikan dominasi mereka, meningkatkan HHI secara struktural.
+    \item Periode 2020 (Pandemi COVID-19): menciptakan guncangan eksogen yang memisahkan ``pemenang'' (perusahaan digital, farmasi) dan ``pecundang'' (pariwisata, energi), memperlebar kesenjangan profitabilitas antarperusahaan.
+    \item Periode 2021--2022 (Lonjakan Inflasi): menguji \textit{pricing power} perusahaan. Data menunjukkan bahwa kontribusi laba perusahaan terhadap pertumbuhan harga mencapai 53,9\%, jauh di atas rata-rata historis 11,4\% (EPI, 2022), membuktikan bahwa perusahaan dengan kekuatan pasar mampu mempertahankan, bahkan menaikkan, margin di tengah inflasi input.
+    \item Periode 2023--2024 (Suku Bunga Tinggi): mengakhiri era \textit{easy money}. Kenaikan \textit{Federal Funds Rate} sebesar 525 basis poin ke rentang 5,25\%--5,50\% tertinggi dalam 22 tahun menekan perusahaan dengan struktur modal buruk, namun tidak menghalangi perusahaan besar dengan posisi kas kuat untuk terus tumbuh.
+\end{enumerate}
+
+\subsection{Kesenjangan Penelitian}
+
+Meskipun literatur mengenai determinan profitabilitas telah mapan, penelitian ini mengidentifikasi dan berupaya mengisi beberapa kesenjangan penelitian yang krusial:
+
+\begin{enumerate}
+    \item \textbf{Inkonsistensi Hasil Empiris (\textit{Empirical Gap}).} Terdapat perdebatan yang belum tuntas mengenai dominasi relatif antara faktor industri dan faktor perusahaan. Studi Pervan et al. (2019) mendukung dominasi faktor industri (SCP), sementara Zeitun dan Tian (2014) dan studi modern lainnya menemukan bahwa faktor spesifik perusahaan (RBV) lebih berpengaruh. Penelitian ini bertujuan untuk menguji ulang kontestasi ini menggunakan data terkini yang mencakup periode volatilitas tinggi.
+    \item \textbf{Kesenjangan Metodologis (\textit{Methodological Gap}).} Banyak penelitian terdahulu menggunakan rasio keuangan tunggal sebagai proksi faktor internal. Penelitian ini menawarkan kebaruan dengan menggunakan indeks komposit kualitas bisnis (BQS) yang menggabungkan dimensi margin, arus kas, struktur modal, dan konsistensi secara simultan.
+    \item \textbf{Kesenjangan Fenomena (\textit{Phenomena Gap}).} Teori ekonomi memprediksi penurunan profitabilitas (\textit{mean reversion}), namun data empiris 2024 menunjukkan persistensi margin tinggi dan konsentrasi pasar yang ekstrem di S\&P 500. Kesenjangan antara prediksi teori dan realitas data ini memerlukan penjelasan baru yang mempertimbangkan interaksi antara kekuatan pasar struktural dan efisiensi internal di era ekonomi digital.
+    \item \textbf{Kurangnya Studi pada Konteks Ekonomi Modern.} Sebagian besar studi klasik mengenai SCP vs. RBV dilakukan pada era ekonomi manufaktur. Penelitian ini menempatkan analisis pada konteks ekonomi modern yang didominasi oleh aset tak berwujud, efek jaringan digital, dan \textit{winner-takes-all dynamics}, yang mungkin mengubah mekanisme transmisi dari struktur dan sumber daya ke kinerja profitabilitas.
+\end{enumerate}
+
+Berdasarkan uraian di atas, penelitian ini menjadi penting dan relevan untuk dilakukan. Dengan mensintesiskan perspektif eksternal (struktur industri) dan internal (kualitas bisnis) serta menggunakan data panel yang komprehensif dari perusahaan konstituen S\&P 500, penelitian ini diharapkan dapat memberikan kontribusi signifikan dalam memahami arsitektur profitabilitas perusahaan di era modern.
+
+\section{Rumusan Masalah}
+
+Berangkat dari latar belakang masalah yang telah dipaparkan, inti permasalahan penelitian ini adalah adanya ketidakpastian mengenai faktor determinan utama yang memungkinkan perusahaan untuk mempertahankan profitabilitas di atas rata-rata (\textit{sustainable profitability}) di tengah kondisi pasar yang dinamis dan seringkali turbulen. Adanya dualisme perspektif teoritis antara \textit{market-based view} (SCP) yang menekankan posisi dalam struktur industri, dan \textit{resource-based view} (RBV) yang menekankan kapabilitas internal, menuntut pembuktian empiris untuk menentukan mana yang lebih relevan dalam konteks pasar modal Amerika Serikat periode 2015--2024.
+
+Secara spesifik, rumusan masalah dalam penelitian ini dirinci dalam tiga pertanyaan penelitian sebagai berikut:
+
+\begin{enumerate}
+    \item Apakah struktur industri, yang diproksikan dengan tingkat konsentrasi pasar (\textit{Herfindahl-Hirschman Index} -- HHI), berpengaruh signifikan terhadap profitabilitas berkelanjutan perusahaan konstituen S\&P 500 periode 2015--2024?
+    \item Apakah kualitas bisnis, yang diproksikan dengan skor komposit kualitas bisnis (\textit{Business Quality Score} -- BQS), berpengaruh signifikan terhadap profitabilitas berkelanjutan perusahaan konstituen S\&P 500 periode 2015--2024?
+    \item Di antara struktur industri dan kualitas bisnis, faktor manakah yang memiliki kontribusi lebih dominan dalam menjelaskan variasi profitabilitas berkelanjutan pada perusahaan konstituen S\&P 500?
+\end{enumerate}
+
+\section{Tujuan dan Kegunaan Penelitian}
+
+\subsection{Tujuan Penelitian}
+
+Penelitian ini dirancang untuk mencapai serangkaian tujuan analitis yang terstruktur, yang secara langsung merespons rumusan masalah yang telah ditetapkan. Tujuan-tujuan tersebut adalah:
+
+\begin{enumerate}
+    \item Menganalisis pengaruh struktur industri terhadap profitabilitas berkelanjutan.
+    \item Menganalisis pengaruh kualitas bisnis terhadap profitabilitas berkelanjutan.
+    \item Membandingkan dominasi relatif antara faktor struktur industri dan kualitas bisnis dalam menjelaskan variasi kinerja perusahaan.
+\end{enumerate}
+
+\subsection{Kegunaan Penelitian}
+
+Hasil dari penelitian ini diharapkan dapat memberikan kontribusi yang substansial dan multidimensi, baik bagi pengembangan ilmu pengetahuan maupun bagi praktik bisnis dan kebijakan publik.
+
+\begin{enumerate}
+    \item \textbf{Kegunaan Teoritis.} Penelitian ini memperkaya literatur SCP vs. RBV, memvalidasi pendekatan metodologis BQS, dan memperdalam pemahaman atas fenomena \textit{profit persistence}.
+    \item \textbf{Kegunaan Praktis.} Temuan penelitian dapat dimanfaatkan oleh investor, manajemen perusahaan, dan regulator sebagai dasar pengambilan keputusan strategis, finansial, dan kebijakan persaingan usaha.
+\end{enumerate}
+
+\section{Sistematika Penulisan}
+
+Untuk menyajikan hasil penelitian secara logis, terstruktur, dan komprehensif, skripsi ini disusun dengan sistematika penulisan yang mengacu pada Pedoman Penyusunan Skripsi Ekonomi Universitas Diponegoro. Sistematika tersebut terdiri dari lima bab utama sebagai berikut:
+
+\begin{itemize}
+    \item \textbf{BAB I: PENDAHULUAN} memuat latar belakang masalah, rumusan masalah, tujuan dan kegunaan penelitian, serta sistematika penulisan.
+    \item \textbf{BAB II: TINJAUAN PUSTAKA} berisi landasan teori, literatur empiris, kerangka pemikiran teoretis, dan pengembangan hipotesis.
+    \item \textbf{BAB III: METODE PENELITIAN} menjelaskan variabel penelitian, populasi dan sampel, jenis dan sumber data, metode pengumpulan data, serta metode analisis.
+    \item \textbf{BAB IV: HASIL DAN PEMBAHASAN} menyajikan deskripsi objek penelitian, hasil analisis, dan pembahasan temuan empiris.
+    \item \textbf{BAB V: PENUTUP} memuat kesimpulan, keterbatasan penelitian, dan saran.
+\end{itemize}
+
+\chapter{TINJAUAN PUSTAKA}
+
+\section{Literatur Teori}
+
+Berdasarkan rumusan masalah yang diajukan pada bab sebelumnya mengenai determinan profitabilitas berkelanjutan di tengah dinamika pasar, penelitian ini dibangun di atas sintesis tiga teori utama. Teori-teori ini dipilih untuk menjelaskan fenomena \textit{profit persistence} serta menguji kontestasi antara faktor eksternal dan internal perusahaan. Ketiga teori tersebut adalah: (1) Teori Persistensi Laba (\textit{The Persistence of Profit}) sebagai landasan fenomena dependen, (2) Paradigma \textit{Structure-Conduct-Performance} atau SCP sebagai landasan perspektif eksternal, dan (3) pandangan \textit{Resource-Based View} atau RBV yang diperluas ke dalam konsep \textit{Quality Investing} sebagai landasan perspektif internal.
+
+\subsection{Persistence of Profit}
+
+Teori Persistensi Laba, yang dikembangkan secara ekstensif oleh Dennis Mueller (1977, 1986), merupakan kritik dan pengembangan terhadap teori ekonomi neoklasik tentang kompetisi.
+
+Dalam model persaingan sempurna (\textit{perfect competition}), keberadaan laba di atas normal (\textit{abnormal profit}) diasumsikan bersifat sementara (\textit{transitory}). Jika sebuah perusahaan memperoleh laba supernormal, hal ini akan menarik masuknya pesaing baru (\textit{entry}) ke dalam pasar. Masuknya pesaing akan meningkatkan penawaran, menurunkan harga, dan pada akhirnya mengikis laba perusahaan tersebut hingga kembali ke tingkat normal (biaya modal). Proses ini dikenal sebagai \textit{Competitive Environment Hypothesis} atau hipotesis pengembalian ke rata-rata (\textit{mean reversion}).
+
+Namun, Mueller (1986) berargumen bahwa dalam realitasnya, proses \textit{mean reversion} ini seringkali terhambat atau tidak sempurna. Beberapa perusahaan mampu mempertahankan profitabilitas di atas rata-rata industri untuk jangka waktu yang sangat lama. Fenomena inilah yang disebut Persistensi Laba. Persistensi ini menunjukkan adanya hambatan kompetisi yang mencegah kekuatan pasar untuk menetralkan keuntungan perusahaan.
+
+Dalam penelitian ini, teori Mueller menjadi landasan utama penggunaan variabel dependen Profitabilitas Berkelanjutan (\textit{Sustained ROA}). Berbeda dengan laba tahunan yang fluktuatif, \textit{Sustained ROA} (rata-rata 3 tahun) menangkap komponen laba permanen yang mencerminkan keberhasilan perusahaan dalam melawan gaya gravitasi kompetisi.
+
+\subsection{Structure-Conduct-Performance (SCP)}
+
+Untuk menjelaskan faktor eksternal yang memungkinkan terjadinya persistensi laba, penelitian ini menggunakan Paradigma \textit{Structure-Conduct-Performance} (SCP) yang dipelopori oleh Mason (1939) dan Bain (1956) dalam bidang Organisasi Industri.
+
+Premis dasar SCP adalah bahwa kinerja perusahaan (\textit{Performance}) ditentukan oleh perilaku perusahaan (\textit{Conduct}) di pasar, yang pada gilirannya ditentukan oleh struktur pasar (\textit{Structure}) tempat perusahaan tersebut beroperasi. Hubungan kausalitasnya adalah: Struktur $\rightarrow$ Perilaku $\rightarrow$ Kinerja. Elemen struktur yang paling krusial dalam paradigma SCP adalah tingkat konsentrasi industri. Bain (1951) mempostulatkan bahwa dalam industri dengan konsentrasi tinggi, intensitas persaingan cenderung menurun.
+
+Perusahaan dominan dapat melakukan koordinasi diam-diam (\textit{tacit collusion}) untuk menghindari perang harga. Hal ini menciptakan hambatan masuk (\textit{barriers to entry}) bagi pesaing kecil. Akibatnya, perusahaan dalam struktur pasar yang terkonsentrasi (oligopoli) dapat menetapkan harga di atas biaya marjinal, sehingga menikmati profitabilitas yang lebih tinggi secara persisten dibandingkan perusahaan di pasar yang terfragmentasi.
+
+Teori ini mendasari penggunaan variabel independen Struktur Industri yang diukur dengan \textit{Herfindahl-Hirschman Index} (HHI). Semakin tinggi HHI, semakin kuat struktur oligopoli yang melindungi profitabilitas perusahaan.
+
+\subsection{Resource-Based View (RBV)}
+
+Sebagai antitesis dari paradigma SCP yang berfokus pada industri, penelitian ini menggunakan \textit{Resource-Based View} (RBV) untuk menjelaskan faktor internal. Teori ini dikembangkan oleh Penrose (1959), Wernerfelt (1984), dan Barney (1991).
+
+RBV menolak asumsi bahwa perusahaan dalam satu industri adalah identik. Sebaliknya, RBV memandang perusahaan sebagai sekumpulan sumber daya (\textit{bundle of resources}) yang unik, heterogen, dan sulit dipindahkan (\textit{immobile}). Kinerja perusahaan tidak ditentukan oleh industri, melainkan oleh seberapa baik perusahaan mengelola sumber daya internalnya.
+
+Menurut Barney (1991), agar sumber daya dapat menghasilkan Keunggulan Kompetitif Berkelanjutan, sumber daya tersebut harus memenuhi kriteria VRIO:
+
+\begin{enumerate}
+    \item \textit{Valuable} (bernilai),
+    \item \textit{Rare} (langka),
+    \item \textit{Inimitable} (sulit ditiru),
+    \item \textit{Organized} (terorganisir).
+\end{enumerate}
+
+Dalam konteks keuangan empiris, konsep RBV diterjemahkan menjadi faktor ``Kualitas'' (\textit{Quality}). Asness, Frazzini, dan Pedersen (2019) dalam makalah seminal \textit{Quality Minus Junk} mendefinisikan aset berkualitas tinggi sebagai perusahaan yang memiliki karakteristik profitabilitas tinggi, pertumbuhan stabil, dan keamanan finansial (\textit{Safety}).
+
+Teori ini menjadi landasan pembentukan variabel Kualitas Bisnis (\textit{Business Quality Score} -- BQS). BQS merupakan proksi dari kapabilitas internal VRIO perusahaan, yang meliputi kekuatan penetapan harga (margin), kemampuan menghasilkan kas riil (\textit{owner earnings}), dan ketahanan struktur modal (\textit{leverage discipline}).
+
+\subsection{Hubungan Antar Variabel}
+
+Berdasarkan ketiga landasan teori di atas, berikut adalah penjelasan teoretis mengenai pengaruh masing-masing variabel independen terhadap variabel dependen:
+
+\begin{enumerate}
+    \item \textbf{Pengaruh Struktur Industri (HHI) terhadap Profitabilitas Berkelanjutan.} Mengacu pada paradigma SCP, struktur industri memiliki hubungan positif dengan profitabilitas. Ketika HHI meningkat, pasar menjadi lebih terkonsentrasi sehingga perusahaan petahana memperoleh \textit{market power} untuk mempertahankan margin laba yang lebih tinggi.
+    \item \textbf{Pengaruh Kualitas Bisnis (BQS) terhadap Profitabilitas Berkelanjutan.} Mengacu pada teori RBV dan konsep \textit{Quality Investing}, kualitas fundamental perusahaan memiliki hubungan positif dengan profitabilitas jangka panjang. Margin tinggi, arus kas kuat, leverage rendah, dan konsistensi laba menciptakan \textit{economic moat} yang melindungi laba perusahaan dari erosi kompetisi.
+    \item \textbf{Perbandingan Dominasi: Faktor Industri vs. Faktor Internal.} Literatur manajemen strategis memperdebatkan mana yang lebih penting: ``di mana Anda bersaing'' atau ``bagaimana Anda bersaing''. Dalam pasar modern yang sangat dinamis, teori RBV memprediksi bahwa kapabilitas internal akan memiliki pengaruh yang lebih dominan terhadap persistensi laba.
+\end{enumerate}
+
+\section{Literatur Empiris}
+
+Berikut adalah ringkasan sistematis dari penelitian-penelitian empiris yang relevan mengenai pengaruh struktur industri, kualitas fundamental, dan karakteristik perusahaan terhadap kinerja keuangan.
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.64\textwidth}}
+\caption{Ringkasan Penelitian Terdahulu}\\
+\toprule
+\textbf{Identitas} & \textbf{Hasil} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Identitas} & \textbf{Hasil} \\
+\midrule
+\endhead
+Pervan et al. (2019) & Menemukan hubungan positif signifikan antara HHI dan profitabilitas. Studi ini mendukung paradigma SCP bahwa struktur pasar yang terkonsentrasi melindungi laba perusahaan. \\
+Zeitun \& Tian (2014) & Menemukan hubungan negatif signifikan antara leverage dan kinerja perusahaan. Perusahaan dengan utang rendah cenderung lebih profitabel, mendukung argumen RBV. \\
+Asness, Frazzini, \& Pedersen (2019) & Membuktikan bahwa saham dengan skor kualitas tinggi menghasilkan \textit{risk-adjusted returns} yang superior dan persisten secara global. \\
+Novy-Marx (2013) & Menemukan bahwa \textit{gross profitability} memiliki daya prediksi kinerja masa depan yang lebih kuat daripada laba bersih. \\
+Hirsch et al. (2021) & Menemukan tingkat persistensi laba yang tinggi pada peritel besar; \textit{market share} dan ukuran berpengaruh positif terhadap kemampuan mempertahankan laba. \\
+Stephan et al. (2008) & Menunjukkan bahwa profitabilitas masa lalu berpengaruh signifikan terhadap masa depan, namun tingkat persistensinya lebih rendah di negara berkembang. \\
+Sloan (1996) & Menemukan bahwa laba yang didominasi oleh arus kas lebih persisten dan berkualitas tinggi daripada laba yang didominasi akrual. \\
+Goddard et al. (2011) & Menemukan bahwa \textit{market share} lebih dominan memengaruhi profitabilitas dibandingkan konsentrasi industri. \\
+Dichev \& Tang (2009) & Menemukan korelasi negatif antara volatilitas laba dan prediktabilitas. Perusahaan dengan konsistensi laba tinggi memiliki persistensi kinerja yang lebih baik. \\
+McGahan \& Porter (1997) & Menemukan bahwa efek perusahaan menjelaskan variansi profitabilitas yang lebih besar dibandingkan efek industri. \\
+\bottomrule
+\end{longtable}
+
+\section{Kerangka Pemikiran Teoretis}
+
+Berdasarkan landasan teori dan tinjauan empiris di atas, penelitian ini membangun kerangka pemikiran untuk menguji determinan \textit{Sustained ROA}. Profitabilitas jangka panjang perusahaan diasumsikan dipengaruhi oleh dua kekuatan utama:
+
+\begin{enumerate}
+    \item Kekuatan eksternal (industri), diwakili oleh HHI. Sesuai paradigma SCP, struktur industri yang terkonsentrasi menciptakan hambatan kompetisi yang memungkinkan perusahaan mempertahankan margin tinggi.
+    \item Kekuatan internal (kualitas bisnis), diwakili oleh BQS. Sesuai RBV, perusahaan dengan fundamental superior memiliki kemampuan bertahan yang lebih baik terhadap guncangan makroekonomi dan kompetisi.
+\end{enumerate}
+
+\section{Pengembangan Hipotesis}
+
+Berdasarkan sintesis literatur di atas, hipotesis penelitian dirumuskan sebagai berikut:
+
+\begin{enumerate}
+    \item H1: Struktur Industri (HHI) berpengaruh positif signifikan terhadap Profitabilitas Berkelanjutan (\textit{Sustained ROA}), sejalan dengan paradigma SCP.
+    \item H2: Kualitas Bisnis (BQS) berpengaruh positif signifikan terhadap Profitabilitas Berkelanjutan (\textit{Sustained ROA}), sejalan dengan teori RBV dan \textit{Quality Investing}.
+    \item H3: Kualitas Bisnis (BQS) memiliki pengaruh yang lebih dominan dibandingkan Struktur Industri (HHI) dalam menjelaskan variasi profitabilitas.
+\end{enumerate}
+
+\chapter{METODE PENELITIAN}
+
+Pendekatan penelitian ini berakar pada paradigma positivisme, yang memandang bahwa realitas ekonomi, dalam hal ini persistensi kinerja perusahaan dan struktur pasar industri, bersifat objektif, terukur, dan diatur oleh hukum-hukum kausalitas yang dapat digeneralisasi. Berpijak pada ontologi ini, penelitian mengadopsi pendekatan kuantitatif deduktif (\textit{hypothetico-deductive method}).
+
+Desain penelitian bersifat eksplanatoris (\textit{explanatory research}), yang bertujuan tidak sekadar mendeskripsikan fenomena, melainkan menjelaskan hubungan kausal antara struktur industri (faktor eksternal) dan kualitas bisnis (faktor internal) terhadap profitabilitas berkelanjutan. Mengingat kompleksitas dinamika pasar modal Amerika Serikat dan heterogenitas perusahaan dalam indeks S\&P 500, metodologi ini dirancang untuk memitigasi bias estimasi melalui penggunaan teknik data panel dinamis dan kontrol ketat terhadap \textit{unobserved heterogeneity} serta autokorelasi pada tingkat perusahaan.
+
+\section{Variabel Penelitian dan Definisi Operasional Variabel}
+
+\subsection{Variabel Dependen: Profitabilitas Berkelanjutan (\textit{Sustained Return on Assets})}
+
+Dalam literatur keuangan korporat dan manajemen strategis, profitabilitas umumnya diukur menggunakan rasio keuangan standar pada satu periode waktu, seperti Return on Assets (ROA) tahunan. Namun, penelitian ini berfokus pada konsep profitabilitas berkelanjutan (\textit{profit persistence}), yang mencerminkan kemampuan perusahaan untuk mempertahankan kinerja di atas rata-rata industri dalam jangka menengah hingga panjang.
+
+Penelitian ini mengadopsi proksi \textit{Sustained ROA} (SROA), yaitu rata-rata bergerak dari ROA selama tiga tahun, mencakup tahun berjalan $(t)$, satu tahun sebelumnya $(t-1)$, dan dua tahun sebelumnya $(t-2)$.
+
+\[
+ROA_{i,t} = \frac{Net\ Income_{i,t}}{Total\ Assets_{i,t}}
+\]
+
+\[
+SROA_{i,t} = \frac{ROA_{i,t} + ROA_{i,t-1} + ROA_{i,t-2}}{3}
+\]
+
+\subsection{Variabel Independen 1: Struktur Industri (\textit{Industry Structure})}
+
+Variabel ini merepresentasikan determinan eksternal yang memengaruhi profitabilitas perusahaan, berakar pada paradigma \textit{Industrial Organization} klasik, khususnya kerangka SCP. Penelitian ini menggunakan \textit{Herfindahl-Hirschman Index} (HHI) sebagai proksi utama untuk mengukur struktur atau konsentrasi industri.
+
+\[
+HHI_{j,t} = \sum_{i=1}^{N_j} (S_{i,j,t})^2
+\]
+
+dengan:
+
+\[
+S_{i,j,t} = \frac{Sales_{i,j,t}}{\sum_{k=1}^{N_j} Sales_{k,j,t}}
+\]
+
+Penelitian ini menggunakan klasifikasi \textit{Global Industry Classification Standard} (GICS) pada level \textit{industry} atau \textit{sub-industry} karena dinilai lebih relevan dengan konteks pasar modal modern dibandingkan SIC.
+
+\subsection{Variabel Independen 2: Kualitas Bisnis (\textit{Business Quality Score})}
+
+Variabel ini merepresentasikan determinan internal dan merupakan inovasi metodologis utama dalam penelitian ini. \textit{Business Quality Score} (BQS) dikonstruksi dari empat sub-komponen utama:
+
+\begin{enumerate}
+    \item \textbf{Margin \& Pricing Power (MARG)}
+    \[
+    MARG_{i,t} = \frac{Sales_{i,t} - Cost\ of\ Goods\ Sold_{i,t}}{Sales_{i,t}}
+    \]
+    \item \textbf{Owner Earnings Proxy (OE)}
+    \[
+    OE_{i,t} = \frac{Operating\ Cash\ Flow_{i,t} - Capital\ Expenditures_{i,t}}{Sales_{i,t}}
+    \]
+    \item \textbf{Leverage Discipline (LEV)}
+    \[
+    Leverage\ Ratio_{i,t} = \frac{Total\ Debt_{i,t}}{Total\ Assets_{i,t}}
+    \]
+    \[
+    LEV_{i,t}(score) = 1 - Leverage\ Ratio_{i,t}
+    \]
+    \item \textbf{Earnings Consistency (CONS)}
+    \[
+    CV_{MARG} = \frac{\sigma MARG_{(t,t-1,t-2)}}{|\mu MARG_{(t,t-1,t-2)}|}
+    \]
+    \[
+    CONS_{i,t} = \frac{1}{CV_{MARG}}
+    \]
+\end{enumerate}
+
+Setiap komponen distandarisasi dengan Z-score:
+
+\[
+Z_{X,i,t} = \frac{X_{i,t} - \mu_{x,t}}{\sigma_{x,t}}
+\]
+
+Skor akhir BQS dirumuskan sebagai:
+
+\[
+BQS_{i,t} = \frac{Z_{MARG,i,t} + Z_{OE,i,t} + Z_{LEV,i,t} + Z_{CONS,i,t}}{4}
+\]
+
+\subsection{Variabel Kontrol}
+
+Untuk memastikan bahwa estimasi pengaruh HHI dan BQS terhadap SROA tidak bias oleh faktor pembaur, penelitian ini memasukkan dua variabel kontrol utama:
+
+\begin{enumerate}
+    \item \textbf{Ukuran Perusahaan (SIZE)}
+    \[
+    SIZE_{i,t} = \ln(Total\ Assets_{i,t})
+    \]
+    \item \textbf{Pertumbuhan Penjualan (GROWTH)}
+    \[
+    GROWTH_{i,t} = \frac{Sales_t - Sales_{t-1}}{Sales_{t-1}}
+    \]
+\end{enumerate}
+
+\begin{longtable}{lllll}
+\caption{Ringkasan Definisi Operasional Variabel}\\
+\toprule
+Variabel & Simbol & Definisi Operasional & Skala & Sumber Data \\
+\midrule
+\endfirsthead
+\toprule
+Variabel & Simbol & Definisi Operasional & Skala & Sumber Data \\
+\midrule
+\endhead
+Profitabilitas Berkelanjutan & SROA & Rata-rata ROA 3 tahun & Rasio & Bloomberg Terminal \\
+Struktur Industri & HHI & Jumlah kuadrat pangsa pasar industri & Rasio & Bloomberg Terminal \\
+Kualitas Bisnis & BQS & Rata-rata Z-score empat komponen kualitas & Interval & Bloomberg Terminal \\
+Ukuran Perusahaan & SIZE & Logaritma natural total aset & Rasio & Bloomberg Terminal \\
+Pertumbuhan Penjualan & GROWTH & Persentase perubahan penjualan tahunan & Rasio & Bloomberg Terminal \\
+\bottomrule
+\end{longtable}
+
+\section{Populasi dan Sampel}
+
+Populasi target dalam penelitian ini adalah seluruh perusahaan publik yang terdaftar sebagai konstituen indeks S\&P 500 selama periode pengamatan 2015 hingga 2024. Penelitian ini menggunakan teknik \textit{purposive sampling} dengan kriteria sebagai berikut:
+
+\begin{enumerate}
+    \item Perusahaan memiliki data laporan keuangan lengkap untuk periode 2013--2024.
+    \item Perusahaan sektor keuangan dan utilitas dikeluarkan dari sampel karena karakteristik strukturalnya berbeda secara fundamental.
+    \item Perusahaan menyajikan laporan keuangan dalam mata uang Dolar AS (USD).
+\end{enumerate}
+
+Penelitian ini juga menerapkan teknik \textit{winsorization} pada tingkat 1\% di kedua ekor distribusi untuk memitigasi pengaruh \textit{outlier} ekstrem.
+
+\section{Jenis dan Sumber Data}
+
+Jenis data yang digunakan adalah data sekunder kuantitatif dengan struktur data panel (\textit{longitudinal data}), yaitu gabungan data deret waktu selama 2015--2024 dan data lintas perusahaan. Data utama diperoleh dari Bloomberg Terminal dan klasifikasi industri GICS dari Bloomberg Terminal atau S\&P Global.
+
+\section{Metode Pengumpulan Data}
+
+Metode pengumpulan data dilakukan dengan teknik dokumentasi dan arsip melalui tahapan berikut:
+
+\begin{enumerate}
+    \item Identifikasi populasi historis konstituen S\&P 500.
+    \item Ekstraksi data fundamental tahunan untuk periode 2013--2024.
+    \item Konstruksi variabel, klasifikasi industri, dan perhitungan HHI serta BQS.
+    \item Penyusunan dataset panel dalam format \textit{long form}.
+\end{enumerate}
+
+\section{Metode Analisis}
+
+Analisis data dilakukan menggunakan perangkat lunak ekonometrika seperti Stata atau Python. Tahapan analisis dirancang secara hierarkis mulai dari statistik deskriptif hingga pengujian hipotesis menggunakan regresi data panel.
+
+\subsection{Statistik Deskriptif dan Matriks Korelasi}
+
+Langkah awal adalah menyajikan statistik deskriptif dan matriks korelasi Pearson untuk menggambarkan distribusi data dan mendeteksi potensi multikolinearitas. Pemeriksaan \textit{Variance Inflation Factor} (VIF) juga dilakukan.
+
+\subsection{Penentuan Model Estimasi Data Panel}
+
+Tiga pendekatan utama yang dipertimbangkan adalah \textit{Common Effect Model}, \textit{Fixed Effect Model}, dan \textit{Random Effect Model}. Pemilihan model terbaik dilakukan melalui Uji Chow, Uji Hausman, dan Uji Lagrange Multiplier Breusch-Pagan.
+
+\subsection{Spesifikasi Model Empiris}
+
+Persamaan regresi data panel yang diajukan adalah:
+
+\[
+SROA_{it} = \beta_0 + \beta_1 BQS_{it} + \beta_2 HHI_{jt} + \beta_3 SIZE_{it} + \beta_4 GROWTH_{it} + \alpha_i + \delta_t + \epsilon_{it}
+\]
+
+Keterangan:
+
+\begin{itemize}
+    \item $SROA_{it}$: profitabilitas berkelanjutan perusahaan $i$ pada tahun $t$;
+    \item $BQS_{it}$: skor kualitas bisnis;
+    \item $HHI_{jt}$: indeks konsentrasi industri;
+    \item $SIZE_{it}$: logaritma natural total aset;
+    \item $GROWTH_{it}$: pertumbuhan penjualan tahunan;
+    \item $\alpha_i$: \textit{firm fixed effects};
+    \item $\delta_t$: \textit{year fixed effects};
+    \item $\epsilon_{it}$: error term.
+\end{itemize}
+
+\subsection{Cluster-Robust Standard Errors}
+
+Untuk meningkatkan validitas inferensi statistik, penelitian ini menggunakan \textit{cluster-robust standard errors} pada tingkat perusahaan, mengikuti rekomendasi Petersen (2009). Implementasi dalam Stata dapat dituliskan sebagai:
+
+\texttt{xtreg SROA BQS HHI SIZE GROWTH i.year, fe vce(cluster firm\_id)}
+
+\subsection{Pengujian Hipotesis}
+
+Pengujian hipotesis dilakukan melalui uji parsial (uji $t$), uji simultan (uji $F$), koefisien determinasi (\textit{Within-$R^2$}), dan analisis dominansi berbasis \textit{standardized beta coefficients}.
+
+\chapter*{DAFTAR PUSTAKA}
+\addcontentsline{toc}{chapter}{Daftar Pustaka}
+
+\begin{flushleft}
+Asness, C. S., Frazzini, A., \& Pedersen, L. H. (2019). \textit{Quality minus junk}. Review of Accounting Studies, 24(1), 34--112.\par
+Bain, J. S. (1951). Relation of profit rate to industry concentration: American manufacturing, 1936--1940. \textit{The Quarterly Journal of Economics}, 65(3), 293--324.\par
+Bain, J. S. (1956). \textit{Barriers to new competition}. Harvard University Press.\par
+Barney, J. B. (1991). Firm resources and sustained competitive advantage. \textit{Journal of Management}, 17(1), 99--120.\par
+Bhojraj, S., Lee, C. M. C., \& Oler, D. (2003). Does the method of classification matter in the empirical measurement of industry structure? \textit{Journal of Accounting Research}, 41(3), 441--475.\par
+Bivens, J. (2022). \textit{Corporate profits have contributed disproportionately to inflation. How should policymakers respond?} Economic Policy Institute.\par
+Bloomberg. (2025). \textit{Zombie companies surge to highest level since 2022}.\par
+Board of Governors of the Federal Reserve System. (2024). \textit{Federal funds effective rate}. Federal Reserve Bank of St. Louis.\par
+Demsetz, H. (1973). Industry structure, market rivalry, and public policy. \textit{Journal of Law and Economics}, 16(1), 1--9.\par
+Dichev, I. D., \& Tang, V. W. (2009). Earnings volatility and earnings predictability. \textit{Journal of Accounting and Economics}, 47(1--2), 160--181.\par
+Goddard, J., Liu, H., Molyneux, P., \& Wilson, J. O. (2011). The persistence of profit. \textit{International Journal of Industrial Organization}, 29(4), 396--405.\par
+Hirsch, S., Schiefer, J., Gschwandtner, A., \& Hartmann, M. (2021). Profitability and profit persistence in EU food retailing. \textit{Agricultural Economics}, 52(1), 15--28.\par
+Mason, E. S. (1939). Price and production policies of large-scale enterprise. \textit{The American Economic Review}, 29(1), 61--74.\par
+McGahan, A. M., \& Porter, M. E. (1997). How much does industry matter, really? \textit{Strategic Management Journal}, 18(S1), 15--30.\par
+Mueller, D. C. (1977). The persistence of profits above the norm. \textit{Economica}, 44(176), 369--380.\par
+Mueller, D. C. (1986). \textit{Profits in the long run}. Cambridge University Press.\par
+Novy-Marx, R. (2013). The other side of value: The gross profitability premium. \textit{Journal of Financial Economics}, 108(1), 1--28.\par
+Penrose, E. T. (1959). \textit{The theory of the growth of the firm}. John Wiley \& Sons.\par
+Pervan, M., Pervan, I., \& \v{C}urak, M. (2019). Determinants of firm profitability in the Croatian manufacturing industry: Evidence from dynamic panel analysis. \textit{Economic Research-Ekonomska Istra\v{z}ivanja}, 32(1), 968--981.\par
+Petersen, M. A. (2009). Estimating standard errors in finance panel data sets: Comparing approaches. \textit{Review of Financial Studies}, 22(1), 435--480.\par
+S\&P Global Market Intelligence. (2025). \textit{US corporate bankruptcies hit 14-year high}.\par
+Sloan, R. G. (1996). Do stock prices fully reflect information in accruals and cash flows about future earnings? \textit{The Accounting Review}, 71(3), 289--315.\par
+Stephan, A., Talavera, O., \& Tsapin, A. (2008). Persistence and determinants of firm profit in emerging markets. \textit{Applied Economics Quarterly}, 54(3), 231--253.\par
+Wernerfelt, B. (1984). A resource-based view of the firm. \textit{Strategic Management Journal}, 5(2), 171--180.\par
+Zeitun, R., \& Tian, G. G. (2014). Capital structure and corporate performance: Evidence from Jordan. \textit{Australasian Accounting, Business and Finance Journal}, 8(4), 63--88.\par
+\end{flushleft}
+
+\end{document}

@@ -1,0 +1,6 @@
+metric,value,p_value,df_num,df_denom,notes
+R-squared,0.8169216632564066,,,,Two-way fixed effects model
+Adjusted R-squared,0.7839328375628823,,,,Includes firm and year fixed effects
+Uji F simultan,8.170593135819484,2.702902149501533e-06,4.0,332.0,"Joint test: BQS = HHI = SIZE = GROWTH = 0, using firm-clustered covariance"
+Observasi,2241.0,,,,Firm-year observations
+Perusahaan,333.0,,,,Unique firms

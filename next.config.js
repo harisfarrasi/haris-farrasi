@@ -15,11 +15,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/principle',
-        destination: '/beliefs',
-        permanent: true,
-      },
-      {
         source: '/bio',
         destination: '/',
         permanent: true,
@@ -40,12 +35,32 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/belief',
-        destination: '/beliefs',
+        source: '/works/:path*',
+        destination: '/',
         permanent: true,
       },
       {
-        source: '/works/:path*',
+        source: '/beliefs',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/belief',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/principle',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/people',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/read',
         destination: '/',
         permanent: true,
       },

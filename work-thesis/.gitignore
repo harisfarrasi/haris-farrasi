@@ -1,0 +1,10 @@
+.venv/
+.vscode/
+.pycache-tmp/
+__pycache__/
+scratch/
+*.log
+*.aux
+*.toc
+*.out
+*.synctex.gz

@@ -1,0 +1,158 @@
+[
+  {
+    "ticker": "ADSK",
+    "error": "Timestamp('2022-01-31 00:00:00')"
+  },
+  {
+    "ticker": "AVB",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "BRK-B",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "CCI",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "CSX",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "DELL",
+    "error": "Timestamp('2022-01-31 00:00:00')"
+  },
+  {
+    "ticker": "DHI",
+    "error": "Timestamp('2021-09-30 00:00:00')"
+  },
+  {
+    "ticker": "ELV",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "EOG",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "FCX",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "FDS",
+    "error": "Timestamp('2021-08-31 00:00:00')"
+  },
+  {
+    "ticker": "GEV",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "HCA",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "HPE",
+    "error": "Timestamp('2021-10-31 00:00:00')"
+  },
+  {
+    "ticker": "INVH",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "JBL",
+    "error": "Timestamp('2021-08-31 00:00:00')"
+  },
+  {
+    "ticker": "JNJ",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "KO",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "MCD",
+    "error": "Timestamp('2025-12-31 00:00:00')"
+  },
+  {
+    "ticker": "MDLZ",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "MNST",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "MS",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "NDAQ",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "NUE",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "PLD",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "PNW",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "POOL",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "PSX",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "Q",
+    "error": "Timestamp('2022-12-31 00:00:00')"
+  },
+  {
+    "ticker": "QCOM",
+    "error": "Timestamp('2021-09-30 00:00:00')"
+  },
+  {
+    "ticker": "RJF",
+    "error": "Timestamp('2021-09-30 00:00:00')"
+  },
+  {
+    "ticker": "ROST",
+    "error": "Timestamp('2026-01-31 00:00:00')"
+  },
+  {
+    "ticker": "SNDK",
+    "error": "Timestamp('2023-06-30 00:00:00')"
+  },
+  {
+    "ticker": "UNP",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "VRSN",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "VRTX",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "WM",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "WRB",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  },
+  {
+    "ticker": "XOM",
+    "error": "Timestamp('2021-12-31 00:00:00')"
+  }
+]

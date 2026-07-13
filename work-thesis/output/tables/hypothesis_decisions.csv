@@ -1,0 +1,4 @@
+hypothesis,statement,decision,basis
+H1,HHI berpengaruh positif terhadap SROA,Tidak terdukung secara statistik,Koefisien HHI pada model utama
+H2,BQS berpengaruh positif terhadap SROA,Terdukung,Koefisien BQS pada model utama
+H3,BQS lebih dominan dibanding HHI,"Terdukung secara inferensial, dominansi ekonomi tipis","Perbandingan standardized beta, signifikansi, dan robustness"

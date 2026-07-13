@@ -1,0 +1,5 @@
+step,test,stat,p_value,df_num,df_denom,distribution,decision,implication,notes
+1,Uji Chow / Restricted F: FEM vs Pooled OLS,20.138237690160288,1.1102230246251565e-16,332.0,1904.0,F,Tolak H0,FEM lebih tepat daripada pooled OLS,H0: seluruh efek perusahaan = 0
+2,Breusch-Pagan LM: REM vs Pooled OLS,3170.7530921740686,0.0,1.0,,Chi-square,Tolak H0,REM lebih tepat daripada pooled OLS,Breusch-Pagan LM approximation for unbalanced panel
+3,Uji Hausman: FEM vs REM,30.30814884232183,4.235953459552633e-06,4.0,,Chi-square,Tolak H0,FEM lebih konsisten daripada REM,Unadjusted covariance Hausman test
+4,Uji poolability two-way FE vs pooled OLS,20.408802791572576,1.1102230246251565e-16,338.0,1898.0,F,Tolak H0,Efek perusahaan dan/atau waktu perlu dimasukkan,H0: seluruh efek perusahaan dan tahun = 0
