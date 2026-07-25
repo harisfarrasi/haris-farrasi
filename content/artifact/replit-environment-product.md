@@ -2,10 +2,12 @@
 title: "Replit & The Environment as the Product"
 slug: "replit-environment-product"
 type: "artifact"
+company: "Replit"
+logo: "https://cdn.simpleicons.org/replit/F26207"
 created: "2025-05-01"
-tags: []
+tags: ["Workflow", "Creation", "Developer Product"]
 featured: true
-order: 3
+order: 4
 excerpt: "Replit won by understanding that the IDE is irrelevant — the environment is the actual product."
 published: true
 ---

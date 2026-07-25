@@ -2,8 +2,10 @@
 title: "Stripe & The GDP of the Internet"
 slug: "stripe-gdp-internet"
 type: "artifact"
+company: "Stripe"
+logo: "https://cdn.simpleicons.org/stripe/635BFF"
 created: "2025-02-10"
-tags: []
+tags: ["Platform", "Infrastructure", "Growth"]
 featured: true
 order: 2
 excerpt: "Stripe's real product isn't payments — it's economic infrastructure that reshapes what's possible."

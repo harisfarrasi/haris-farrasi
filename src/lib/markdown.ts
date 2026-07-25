@@ -15,6 +15,9 @@ export type Frontmatter = {
   title: string;
   slug: string;
   type: 'thought' | 'artifact';
+  company?: string;
+  logo?: string;
+  logoDark?: string;
   created: string;
   updated?: string;
   tags: string[];
@@ -67,6 +70,9 @@ export function parseFrontmatter(mdText: string): { frontmatter: Frontmatter | n
       title: fm.title ?? '',
       slug: fm.slug ?? '',
       type: fm.type ?? 'thought',
+      company: fm.company,
+      logo: fm.logo,
+      logoDark: fm.logoDark,
       created: fm.created ?? '',
       updated: fm.updated,
       tags: fm.tags ?? [],
@@ -154,7 +160,7 @@ function renderInline(text: string, refs: Record<string, string>): string {
   const renderLinkInline = (_: string, label: string, href: string) => {
     const cleanLabel = label.replace(/\*\*/g, '').trim();
     if (cleanLabel.includes('Aksa')) {
-      return `<a href="${href}" target="_blank" rel="noopener" class="entity-link aksa-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><img src="/aksa-icon.png" alt="Aksa" class="entity-icon" /></span><span class="entity-arrow">↗</span></a>`;
+      return `<a href="${href}" target="_blank" rel="noopener" class="entity-link aksa-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><img src="/logos/aksa.svg" alt="Aksa" class="entity-icon" /></span><span class="entity-arrow">↗</span></a>`;
     }
     if (cleanLabel.includes('Universitas Diponegoro')) {
       return `<a href="${href}" target="_blank" rel="noopener" class="entity-link undip-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><img src="/undip-icon.png" alt="Universitas Diponegoro" class="entity-icon" /></span><span class="entity-arrow">↗</span></a>`;
@@ -175,7 +181,7 @@ function renderInline(text: string, refs: Record<string, string>): string {
     }
     const cleanLabel = label.replace(/\*\*/g, '').trim();
     if (cleanLabel.includes('Aksa')) {
-      return `<a href="${href}" target="_blank" rel="noopener" class="entity-link aksa-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><img src="/aksa-icon.png" alt="Aksa" class="entity-icon" /></span><span class="entity-arrow">↗</span></a>`;
+      return `<a href="${href}" target="_blank" rel="noopener" class="entity-link aksa-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><img src="/logos/aksa.svg" alt="Aksa" class="entity-icon" /></span><span class="entity-arrow">↗</span></a>`;
     }
     if (cleanLabel.includes('Universitas Diponegoro')) {
       return `<a href="${href}" target="_blank" rel="noopener" class="entity-link undip-link"><span class="entity-text">${cleanLabel}</span><span class="entity-icon-wrapper"><img src="/undip-icon.png" alt="Universitas Diponegoro" class="entity-icon" /></span><span class="entity-arrow">↗</span></a>`;

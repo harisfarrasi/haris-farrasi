@@ -4,6 +4,9 @@ export type ContentItem = {
   slug: string;
   title: string;
   type: ContentType;
+  company?: string;
+  logo?: string;
+  logoDark?: string;
   created: string;
   updated?: string;
   tags: string[];

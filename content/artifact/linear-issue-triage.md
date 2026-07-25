@@ -2,8 +2,10 @@
 title: "Linear & The Art of Saying No"
 slug: "linear-issue-triage"
 type: "artifact"
+company: "Linear"
+logo: "https://cdn.simpleicons.org/linear/5E6AD2"
 created: "2024-06-15"
-tags: []
+tags: ["Triage", "Execution", "Product Ops"]
 featured: true
 order: 1
 excerpt: "Why Linear's triage model is the real product, not the UI."
