@@ -17,11 +17,11 @@ export default function HomePageClient({
   thoughtItems,
   artifactItems,
 }: HomePageClientProps) {
-  const [activeTab, setActiveTab] = useState<TabKey>('thought');
+  const [activeTab, setActiveTab] = useState<TabKey>('artifact');
 
   const tabs: { key: TabKey; label: string; items: ContentItem[] }[] = [
-    { key: 'thought', label: 'Thought', items: thoughtItems },
     { key: 'artifact', label: 'Artifact', items: artifactItems },
+    { key: 'thought', label: 'Thought', items: thoughtItems },
   ];
 
   const currentTab = tabs.find((t) => t.key === activeTab)!;

@@ -2,10 +2,12 @@
 title: "Arc & The Browser as an Operating System"
 slug: "arc-browser-os"
 type: "artifact"
+company: "Arc"
+logo: "https://cdn.simpleicons.org/arc/FCBFBD"
 created: "2024-08-20"
-tags: []
+tags: ["Interface", "Workflow", "Attention"]
 featured: true
-order: 1
+order: 3
 excerpt: "Arc won because they understood the browser isn't a tool — it's the environment where work happens."
 published: true
 ---
