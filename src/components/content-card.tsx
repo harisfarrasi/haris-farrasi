@@ -9,6 +9,7 @@ export default function ContentCard({
 }) {
   if (item.type === 'artifact') {
     const logoSrc = item.logoDark ?? item.logo;
+    const cardCopy = item.excerpt || item.preview;
 
     return (
       <a
@@ -34,9 +35,9 @@ export default function ContentCard({
             <h3 className="truncate text-sm font-semibold text-foreground">
               {item.title}
             </h3>
-            {item.preview && (
+            {cardCopy && (
               <p className="mt-1 text-xs leading-relaxed text-muted-foreground line-clamp-2">
-                {item.preview}
+                {cardCopy}
               </p>
             )}
           </div>
