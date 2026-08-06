@@ -104,6 +104,35 @@
     @apply text-blue-600 hover:underline;
   }
 
+  .home-hero-line {
+    @apply -mt-1 mb-1 max-w-3xl text-2xl font-semibold leading-tight tracking-[-0.035em] text-foreground sm:text-3xl;
+  }
+
+  .home-icon-chip {
+    @apply mr-1.5 inline-flex h-8 w-8 translate-y-1 items-center justify-center border border-slate-200 bg-slate-50 align-baseline text-slate-600;
+    border-radius: 30%;
+  }
+
+  .home-icon-chip svg {
+    @apply h-6 w-6 fill-current;
+  }
+
+  .home-icon-platform {
+    @apply text-slate-600;
+  }
+
+  .home-icon-academy {
+    @apply text-slate-600;
+  }
+
+  .home-icon-media {
+    @apply text-slate-600;
+  }
+
+  .home-intro p:last-child {
+    @apply mb-8 flex items-center gap-4;
+  }
+
   .thesis-content h1 {
     @apply text-3xl font-semibold text-foreground;
   }
@@ -147,7 +176,7 @@
   }
   
   .wiki-content .entity-icon {
-    @apply w-4 h-4 rounded-[22%] object-contain border border-black/5 dark:border-white/10;
+    @apply h-5 w-5 object-contain text-slate-400 transition-colors dark:text-slate-500;
   }
 
   .wiki-content .entity-arrow {
@@ -162,14 +191,21 @@
     @apply underline underline-offset-2 decoration-1;
   }
 
-  /* Hide text label for X and email — icon-only badges */
+  .wiki-content .entity-link:hover .entity-icon {
+    @apply text-slate-700 dark:text-slate-200;
+  }
+
+  /* Social links are intentionally icon-only, like a compact profile header. */
   .wiki-content .x-link .entity-text,
+  .wiki-content .linkedin-link .entity-text,
+  .wiki-content .instagram-link .entity-text,
   .wiki-content .mail-link .entity-text {
     @apply sr-only;
   }
 
-  /* Also hide the arrow for icon-only badges — icon is already the affordance */
   .wiki-content .x-link .entity-arrow,
+  .wiki-content .linkedin-link .entity-arrow,
+  .wiki-content .instagram-link .entity-arrow,
   .wiki-content .mail-link .entity-arrow {
     @apply hidden;
   }
