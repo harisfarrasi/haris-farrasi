@@ -19,12 +19,10 @@ export default function HomePageClient({
 }: HomePageClientProps) {
   const [activeTab, setActiveTab] = useState<TabKey>('artifact');
 
-  const tabs: { key: TabKey; label: string; items: ContentItem[] }[] = [
-    { key: 'artifact', label: 'Artifact', items: artifactItems },
-    { key: 'thought', label: 'Thought', items: thoughtItems },
+  const tabs: { key: TabKey; label: string }[] = [
+    { key: 'artifact', label: 'Artifact' },
+    { key: 'thought', label: 'Thought' },
   ];
-
-  const currentTab = tabs.find((t) => t.key === activeTab)!;
 
   return (
     <div className="flex flex-col gap-6">
@@ -93,17 +91,53 @@ export default function HomePageClient({
         </nav>
       </div>
 
-      {/* Content Grid */}
+      {/* Content Grid / Grouped List */}
       <div className="mt-2 animate-in fade-in duration-300">
-        <div className="grid grid-cols-2 gap-2">
-          {currentTab.items.map((item) => (
-            <ContentCard
-              key={item.slug}
-              item={item}
-              href={`/${currentTab.key}/${item.slug}`}
-            />
-          ))}
-        </div>
+        {activeTab === 'artifact' ? (
+          <div className="grid grid-cols-2 gap-2">
+            {artifactItems.map((item) => (
+              <ContentCard
+                key={item.slug}
+                item={item}
+                href={`/artifact/${item.slug}`}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="flex flex-col gap-8">
+            {/* Believe Section */}
+            <div className="flex flex-col gap-3">
+              <h3 className="text-xs font-semibold tracking-wide text-muted-foreground">
+                Believe
+              </h3>
+              <ul className="list-disc pl-5 space-y-3">
+                {thoughtItems.map((item) => (
+                  <li key={item.slug} className="text-base leading-relaxed text-foreground/90">
+                    <strong>{item.title}.</strong> {item.excerpt || item.preview}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Interests Section */}
+            <div className="flex flex-col gap-3">
+              <h3 className="text-xs font-semibold tracking-wide text-muted-foreground">
+                Things I'm Interested In
+              </h3>
+              <ul className="list-disc pl-5 space-y-3 text-base text-foreground/90 leading-relaxed">
+                <li>
+                  <strong>Empowerment.</strong> I am obsessed with building tools that amplify human agency, which is why I'm currently designing <a href="https://joinaksa.com" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Aksa</a> to help people see clearly and act correctly.
+                </li>
+                <li>
+                  <strong>Economics.</strong> I spent 4 years studying this at <a href="https://www.undip.ac.id" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Universitas Diponegoro</a>. I'm fascinated by platform mechanisms that transform scarcity into sustainable abundance.
+                </li>
+                <li>
+                  <strong>Religion.</strong> Having spent 6 years studying <a href="https://en.wikipedia.org/wiki/Islamic_studies" target="_blank" rel="noopener" className="text-blue-600 hover:underline">classical Islamic scholarship</a>, I think a lot about how metaphysics anchors moral frameworks in a post-secular world.
+                </li>
+              </ul>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

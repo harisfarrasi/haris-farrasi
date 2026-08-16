@@ -176,7 +176,7 @@
   }
   
   .wiki-content .entity-icon {
-    @apply h-5 w-5 object-contain text-slate-400 transition-colors dark:text-slate-500;
+    @apply h-5 w-5 object-contain;
   }
 
   .wiki-content .entity-arrow {
@@ -191,9 +191,6 @@
     @apply underline underline-offset-2 decoration-1;
   }
 
-  .wiki-content .entity-link:hover .entity-icon {
-    @apply text-slate-700 dark:text-slate-200;
-  }
 
   /* Social links are intentionally icon-only, like a compact profile header. */
   .wiki-content .x-link .entity-text,

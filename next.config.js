@@ -10,6 +10,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/thought/:slug*',
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: '/about',
         destination: '/',
         permanent: true,
